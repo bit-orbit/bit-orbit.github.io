@@ -3,6 +3,8 @@ languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
 title: bit-orbit
+publishDir: "docs/"
+
 
 languages:
     en:
