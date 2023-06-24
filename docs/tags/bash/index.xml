@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bash on bit-orbit</title><link>https://example.com/tags/bash/</link><description>Recent content in bash on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 11 Jan 2022 02:44:12 +0330</lastBuildDate><atom:link href="https://example.com/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title> zsh بهترین پلاگین های</title><link>https://example.com/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</link><pubDate>Tue, 11 Jan 2022 02:44:12 +0330</pubDate><guid>https://example.com/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</guid><description>&lt;img src="https://example.com/images/post/terminal.jpg" alt="Featured image of post zsh بهترین پلاگین های " />&lt;p>نوشتن یک برنامه کار سختی نیست، بلکه نگه‌داری و آپدیت یک برنامه‌ست، پلاگین این ویژگی را می‌دهد تا به راحتی عملکرد یک برنامه را بی‌افزاییم.&lt;/p>
+&lt;hr>
+&lt;div dir='rtl' style='font-size:25px'>
+&lt;h3 id="themeshttpsgithubcomohmyzshohmyzshtreemasterpluginsthemes-">&lt;a class="link" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/themes" target="_blank" rel="noopener"
+>themes&lt;/a> #Ⅳ&lt;/h3>
+&lt;p>انتخاب
+بین تم های
+zsh
+واقعا کار سختیه!‌ هر تم ظاهر جدیدی به ترمینال شما می‌دهد که
+کار کردن در ترمینال را جذاب تر می‌کند.&lt;/p>
+&lt;p>با استفاده از این پلاگین شما بدون نیاز به تغییر دستی فایل کانفیگ
+&lt;code>zshrc.&lt;/code>،
+می‌توانید تم را تغییر بدین.&lt;/p>
+&lt;p>&lt;img src="https://example.com/images/post/theme.gif"
+loading="lazy"
+alt="theme-plugin"
+>&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>تغییر به یک تم مشخص&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>theme theme_name&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;ul>
+&lt;li>تغییر رندم تم&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>theme&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;ul>
+&lt;li>دیدن لیستی از تم های نصب شده&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>lstheme&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;h3 id="zsh-autosuggestionshttpsgithubcomzsh-userszsh-autosuggestions-">&lt;a class="link" href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener"
+>zsh-autosuggestions&lt;/a> #Ⅲ&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener"
+>تنها پلاگینی که باید نصب بشه&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>این یکی از پلاگین هایی است که بدون آن زندگی ممکن نیست!&lt;/p>
+&lt;p>همانطور که شما دستوری را تایپ می‌کنید، متنی به رنگ خاکستری ظاهر می‌شود که
+به شما دستورات ممکن را پیشنهاد می‌دهد و یا از
+history
+دستور مشابه که قبلا اجرا کرده‌اید را جست و جو می‌کند و پیشنهاد می‌هد.
+و خب شما را برای تایپ کردن کامل دستور و سوییچ هایش راحت می‌کند.
+برای اینکه دستور ظاهر شده تایپ شود کافیست کلید
+&lt;code>right arrow key&lt;/code>
+یا همان
+&lt;code>فلش سمت راست&lt;/code>
+را فشار دهید.&lt;/p>
+&lt;p>&lt;img src="https://example.com/images/post/zsh-autosuggestions-gif.gif"
+loading="lazy"
+alt="zsh-autosuggestion"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="sudohttpsgithubcomohmyzshohmyzshtreemasterpluginssudo-">&lt;a class="link" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo" target="_blank" rel="noopener"
+>sudo&lt;/a> #Ⅱ&lt;/h3>
+&lt;p>بار ها اتفاق افتاده دستوری را که نیاز به دسترسی
+root
+داشته را بدون نوشتن کلمه
+&lt;em>sudo&lt;/em>
+اجرا کرده‌ام، و بعد از دیدن ارور، دستور را دوباره تایپ کردم و
+کلمه
+&lt;em>sudo&lt;/em>
+را هم به اول دستور اضافه کردم.
+اما این پلاگین بار تایپ مجدد یک دستور بخاطر فراموش کردن کلمه
+&lt;em>sudo&lt;/em>
+را از دوش ما بر‌ می‌دارد. کافیست بعد از نوشتن و اجرای دستور بدون
+&lt;em>sudo&lt;/em>،
+دوبار کلید
+&lt;code>esc&lt;/code>
+را بزنید&lt;/p>
+&lt;p>&lt;img src="https://example.com/images/post/sudo.gif"
+loading="lazy"
+alt="zsh-sudo-theme"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="web-searchhttpsgithubcomohmyzshohmyzshtreemasterpluginsweb-search-">&lt;a class="link" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search" target="_blank" rel="noopener"
+>web-search&lt;/a> #Ⅰ&lt;/h3>
+&lt;p>وقتی با لینوکس کار می‌‌کنید، تمام لحظه ها در ترمینال هستنید.
+فرض کنید سوالی دارید که باید آن را گوگل کنید،‌ شما مجبور می‌شوید مرورگر را باز
+کنید، یک تب جدید ایجاد کنید و متنتان را سرچ کنید. ولی به این
+فکر کنید که نیازی به باز کردن مرورگر و یا سوییچ کردن بین ویندوز ها ندارید،
+کافیست عبارت
+google
+را در ترمینال تایپ کنید و متن خود را جلو آن بنوسید و در آخر دکمه اینتر را
+بزنید!
+بنگ! گوگل باز می‌شود و حاصل جست و جوی شما آماده است.&lt;/p>
+&lt;p>&lt;img src="https://example.com/images/post/web-search.gif"
+loading="lazy"
+alt="web-search"
+>&lt;/p>
+&lt;/div>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">دستور\موتور جست و جو&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>bing&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>google&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>yahoo&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>ddg&lt;/code> or &lt;code>duckduckgo&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>sp&lt;/code> or &lt;code>startpage&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>yandex&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>github&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>baidu&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>ecosia&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>goodreads&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>qwant&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>givero&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>stackoverflow&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>wolframalpha&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>archive&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">&lt;code>scholar&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr></description></item></channel></rss>

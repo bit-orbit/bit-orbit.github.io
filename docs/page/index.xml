@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on bit-orbit</title><link>https://example.com/page/</link><description>Recent content in Pages on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://example.com/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://example.com/archives/</guid><description/></item><item><title>About</title><link>https://example.com/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://example.com/about/</guid><description>&lt;p>من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
+حتی شاید یه روزی از
+pastebin
+برای همین کار استفاده کنم (=&lt;/p>
+&lt;p>این هم یکی از وبلاگ های منه :)&lt;/p>
+&lt;p>علاقه‌ام سمت کار های کامپیوتری مثل توسعه نرم افزار و کانفیگ ابزار ها مختلف برای ساخت
+یک سرویسه.&lt;/p>
+&lt;p>از خودم هم بخواهم بگم، من یه دانشجوی نرم افزار هستم،
+لینوکسی‌ام و زبان اصلی‌ام پایتونه، و خب کم‌کم دارم مهارجت می‌کنم به زبان
+rust.&lt;/p>
+&lt;p>با
+django
+سایت و
+api
+می‌نویسم، ولی همینکار رو به زودی با
+rust
+پیش می‌برم.&lt;/p></description></item><item><title>Links</title><link>https://example.com/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/links/</guid><description>&lt;!--
+To use this feature, add `links` section to frontmatter.
+This page's frontmatter:
+```yaml
+links:
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+``` -->
+&lt;!-- `image` field accepts both local and external images. --></description></item><item><title>Search</title><link>https://example.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/search/</guid><description/></item></channel></rss>

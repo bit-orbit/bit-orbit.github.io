@@ -1,0 +1,174 @@
+<!doctype html><html lang=en-us dir=rtl><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="شما باید درباره اصطلاح tty زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما tty چیست؟
+آیا برای شما به عنوان یک کاربر دستکتاپ مفید است؟
+به آن نیاز دارید؟ می‌توانید با آن چه کار کنید؟
+اجازه دهید هر چیز ضروری برای آشنا کردن شما با اصطلاح tty را در این پست برسی کنیم.
+به یاد داشته باشید که پاسخ قطعی برای این سوال وجود ندارد، اما به نحوه تعامل دستگاه های input/output(ورودی/خروجی) در گذشته ربط دارد."><title>در لینوکس چیست؟ TTY</title><link rel=canonical href=https://example.com/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/><link rel=stylesheet href=/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content=" در لینوکس چیست؟ TTY "><meta property="og:description" content="شما باید درباره اصطلاح tty زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما tty چیست؟
+آیا برای شما به عنوان یک کاربر دستکتاپ مفید است؟
+به آن نیاز دارید؟ می‌توانید با آن چه کار کنید؟
+اجازه دهید هر چیز ضروری برای آشنا کردن شما با اصطلاح tty را در این پست برسی کنیم.
+به یاد داشته باشید که پاسخ قطعی برای این سوال وجود ندارد، اما به نحوه تعامل دستگاه های input/output(ورودی/خروجی) در گذشته ربط دارد."><meta property="og:url" content="https://example.com/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/"><meta property="og:site_name" content="bit-orbit"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="linux"><meta property="article:tag" content="linux-terminal"><meta property="article:tag" content="tty"><meta property="article:tag" content="tty چیست"><meta property="article:tag" content="tty در لینوکس چیست"><meta property="article:tag" content="terminal"><meta property="article:published_time" content="2022-01-31T19:57:05+03:30"><meta property="article:modified_time" content="2022-01-31T19:57:05+03:30"><meta property="og:image" content="https://example.com/images/post/tty.jpg"><meta name=twitter:title content=" در لینوکس چیست؟ TTY "><meta name=twitter:description content="شما باید درباره اصطلاح tty زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما tty چیست؟
+آیا برای شما به عنوان یک کاربر دستکتاپ مفید است؟
+به آن نیاز دارید؟ می‌توانید با آن چه کار کنید؟
+اجازه دهید هر چیز ضروری برای آشنا کردن شما با اصطلاح tty را در این پست برسی کنیم.
+به یاد داشته باشید که پاسخ قطعی برای این سوال وجود ندارد، اما به نحوه تعامل دستگاه های input/output(ورودی/خروجی) در گذشته ربط دارد."><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://example.com/images/post/tty.jpg"><link rel="shortcut icon" href=/favico.ico></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=منو>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu6497cd18a0b38fe5a894b4a634389306_35604_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>👾</span></figure><div class=site-meta><h1 class=site-name><a href=/>bit-orbit</a></h1><h2 class=site-description>Linux | Python | Book | Fun | Life | Rust | 0110</h2></div></header><ol class=social-menu><li><a href=https://github.com/shabane target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://twitter.com/m_shabane target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>About</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Links</span></a></li><div class=menu-bottom-section><li id=i18n-switch><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg><select name=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://example.com/en/>English</option><option value=https://example.com/ selected>فارسی</option></select></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>حالت شب</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">فهرست</h2><div class=widget--toc><nav id=TableOfContents><ol><li><ol><li><a href=#تاریخ-پشت-اصطلاح-tty>تاریخ پشت اصطلاح tty</a></li><li><a href=#مفهوم-مدرن>مفهوم مدرن</a></li><li><a href=#بسیارخب-tty-در-لینوکس-چیست>بسیارخب tty در لینوکس چیست؟</a></li><li><a href=#چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم>چگونه به tty در لینوکس دسترسی داشته باشیم؟</a></li><li><a href=#چه-زمانی-شما-از-tty-در-لینوکس-استفاده-خواهید-کرد>چه زمانی شما از tty در لینوکس استفاده خواهید کرد؟</a></li><li><a href=#tty-به-عنوان-یک-دستور-در-لینوکس>tty به عنوان یک دستور در لینوکس</a></li><li><a href=#خارج-از-ترجمه>خارج از ترجمه</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/><img src=/images/post/tty.jpg loading=lazy alt="Featured image of post  در لینوکس چیست؟ TTY "></a></div><div class=article-details><header class=article-category><a href=/categories/tech/>tech</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/>در لینوکس چیست؟ TTY</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Jan 31, 2022</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>مطالعه در 6 دقیقه</time></div></footer></div></header><section class=article-content><div dir=rtl style=font-size:x-large><p>شما باید درباره اصطلاح
+tty
+زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما
+tty
+چیست؟</p><p>آیا برای شما به عنوان یک کاربر دستکتاپ مفید است؟</p><p>به آن نیاز دارید؟ می‌توانید با آن چه کار کنید؟</p><p>اجازه دهید هر چیز ضروری برای آشنا کردن شما با اصطلاح
+tty
+را در این پست برسی کنیم.</p><p>به یاد داشته باشید که پاسخ قطعی برای این سوال وجود ندارد،
+اما به نحوه تعامل دستگاه های
+input/output(ورودی/خروجی)
+در گذشته ربط دارد.</p><p>برای اینکه تصویری شفاف از آن داشته باشید باید کمی از تاریخ‌ش را بدانید.</p><h3 id=تاریخ-پشت-اصطلاح-tty>تاریخ پشت اصطلاح tty</h3><p>همه چیز از یک
+<em>teleprinter</em>
+در سال 1830 شروع شد.</p><p>teleprinter
+به شما اجازه می‌داد که از طریق سیم پیام ارسال و دریافت کنید.
+teleprinter
+جایگزینی برای ارطبات مورس کد بود در آن دو اپراتور برای ارطبات با یکدیگر مود نیاز بود. اما در
+teleprinter
+فقط به یک اپراتور برای ارسال پیام نیاز داشت. درحالی که
+teleprinter
+یک صفحه کلید مدرن نداشت، بعد ها سیستم آن توسط
+Donald Murray
+به یک صفحه کلید
+<em>teletypewriter</em>
+تکامل یافت.</p><p>Murray
+زحمت اپراتور ها را برای
+ارسال و پیام را کاهش داد و این امکان را برای
+teletypeprinter
+فراهم کرد که به عنوان یک
+teletypewriter
+تجاری در سال 1908 بیرون بیاید.
+tty
+نام کوتاه شده
+teletypewrite
+است.</p><p><img src=/images/post/teletypewrite.jpg loading=lazy></p><p>تفاوت بین
+teletypewrite
+و
+typewriter
+های معمولی این بود که
+teletypewrite
+به یک دستگاه ارطباتی برای ارسال پیام نوشته شده متصل بود.
+teletypewriter
+ارطبات سریع تری را تا اکنون برای انسال بدون استفاده از کامپیوتر مقدور کرده است.
+و اینجا جایی است که
+tty
+بوجود آمد.</p><h3 id=مفهوم-مدرن>مفهوم مدرن</h3><p>اکنون شما باید متعجب شده باشید که چطور
+tty
+به لینوکس و کامپیوتر مدرن آمده است.</p><p>بسیار خب، برای شروع، زمانی که
+teletypewriter
+به بازار رسید، چند سال بعد ترانزیستور های نیمه هادی(نیمه رسانا) توسعه داده شد که به
+میکروپروسسور(micro proccessor)
+هایی تبدیل شدند که کامپیوتر را ممکن می‌کرند.</p><p>کامپیوتر های اولیه مفهومی به اسم صفحه کلید نداشتند.
+<a class=link href=https://en.wikipedia.org/wiki/Punched_card target=_blank rel=noopener>کارت های پانج</a>
+روش ورودی دادن به کامپیوتر ها بود</p><p><img src=/images/post/punch-card.jpg loading=lazy alt=card-punch></p><p>درحالی که کامپیوتر ها توسعه پیدا می‌کردند، بالاخره کارت های پانچ با
+teletypewriter
+به عنوان دستگاه <em><strong><u>ورودی/خروجی</u></strong></em> مناسب جایگزین شد.    </p><p><img src=/images/post/pc-tty.jpg loading=lazy alt="LGP-30 computer in 1956 with a TTY attached to it"></p><p>با توسعه تکنولوژی
+teletypewriter
+ها با استفاده از الکترونیک مجازی شدند. پس شما به یک
+tty
+فیزیکی، مکانیکی نیاز پیدا نمی‌کنید، بلکه به یک
+tty
+مجازی، الکترونیکی نیاز دارید.</p><p>اوایل کامپیوتر ها صفحه نمایش هم نداشتند. چیز ها بجای نمایش داده شدن بروی صفحه نمایش
+(که وجود نداشت)
+به روی کاغذ چاپ می‌شدند. به همین دلیل شما بجای دیدن اصطلاح
+<code>display</code>
+اصطلاح
+<code>print</code>
+را می‌بینید.
+ویدیو ها به عنوان تکنولوژی پیشرفته به ترمینال(پایانه) ها اضافه شد.
+به عبارت دیگر شما باید درباره ترمینال های ویدیویی شنیده باشید. یا شما می‌توانید
+آن ها را ترمینال های فیزیکی بنامید.</p><p>سپس اینها به ترمینال های نرم افزاری شبیه سازی شده تکامل پیدا کردند که با قابلیت ها و
+ویژگی های تسوسعه یافته‌ای همرا بود. این چیزی است که شما آن را
+terminal emulator
+می‌نامید.</p><p>برای نمونه ترمینال
+<a class=link href=https://en.wikipedia.org/wiki/GNOME_Terminal target=_blank rel=noopener>گنوم
+(Gnome)</a>
+یا
+<a class=link href=https://konsole.kde.org/ target=_blank rel=noopener>کنسول
+(Konsole)</a>
+<a class=link href=https://itsfoss.com/linux-terminal-emulators/ target=_blank rel=noopener>چنتا از بهترین ترمینال هایی هستند که می‌توانید برای لینوکس پیدا کنید.</a></p><h3 id=بسیارخب-tty-در-لینوکس-چیست>بسیارخب tty در لینوکس چیست؟</h3><p>زمانی که
+tty
+به لینوکس و یونیکس آمد، یک دستگاه مستقل در یونیکس و لینوکس بود گاهی
+tty
+به یک دستگاه ورودی فیزیکی مانند
+serial port(درگاه سریال)
+اشاره می‌کرد، و گاهی به ترمینال های مجازی اشاره می‌کرد که به کاربران اجازه تعامل با
+سیستم را می‌داد.</p><p>tty
+یک زیر سیستم در لینوکس و یونیکس است که مدریت فرایند، ویرایش خط و
+مدیریت نشست ها را در سطح کرنل از طریق درایور های
+tty
+ممکن می‌کند.</p><p>از دیدگاه برنامه نویسی شما باید در این موضوع عمیق تر شوید. اما محدوده این
+پست را در نظر بگیرید، این مقاله باید یک توضیح ساده برای درک بهتر باشد.
+در حقیقت، هر گاه یک ترمینال را باز می‌کنیم یا هر نوع
+shell
+دیگیری را در سیستمتان استفاده کنید، آن
+shell
+با
+tty
+مجازی که
+<em>PTY</em>
+یا
+<em>pseudo-tty</em>
+هم شناخته می‌شوند، تعامل خواهد داشت.</p><p>شما می‌توانید
+tty
+را در ترمینال تایپ کنید و
+pty
+مرتبط را پیدا کنید.</p><h3 id=چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم>چگونه به tty در لینوکس دسترسی داشته باشیم؟</h3><p><img src=/images/post/ubuntu-tty.png loading=lazy alt=tty-in-ubuntu></p><p>دسترسی به
+tty
+در لینوکس ساده است. در حقیت زمانی که هیچ سرنخی از اینکه
+tty
+چیست نداشتم، به طور اتفاقی به آن دسترسی پیدا کردم و از اینکه چطوری باید
+از آن خارج شوم وحشت زده شدم!</p><p>شما می‌توانید با کلید های میانبر زیر در اکثر توزیع های لینوکس به صفحه
+tty
+دسترسی پیدا کنید.</p><p><code>CTRL</code> + <code>ALT</code> + <code>F1</code> – <strong>Lockscreen</strong></p><p><code>CTRL</code> + <code>ALT</code> + <code>F2</code> – <strong>Desktop Environment</strong></p><p><code>CTRL</code> + <code>ALT</code> + <code>F3</code> – <strong>TTY3</strong></p><p><code>CTRL</code> + <code>ALT</code> + <code>F4</code> – <strong>TTY4</strong></p><p><code>CTRL</code> + <code>ALT</code> + <code>F5</code> – <strong>TT5</strong></p><p><code>CTRL</code> + <code>ALT</code> + <code>F6</code> – <strong>TTY6</strong></p><p>شما می‌توانید حد اکثر به
+<u>6</u>
+tty
+دسترسی داشته باشید، با این حال دو تا از اولین کلید های میانبر به صفحه قفل
+و محیط دسکتاپ اشاره دارد.</p><p><img src=/images/post/ubuntu-tty4.png loading=lazy alt=cmd-with-tty></p><p>بنابر این، با باقی کلید های میانبر شما به محیط
+command-line
+دسترسی می‌گیرید.</p><h3 id=چه-زمانی-شما-از-tty-در-لینوکس-استفاده-خواهید-کرد>چه زمانی شما از tty در لینوکس استفاده خواهید کرد؟</h3><p>tty
+فقط یک گنج تکنیکی نیست. حتی برای کاربرانی مثل من که توسعه دهنده هم نیستند مفید است.</p><p>زمانی که محیط گرافیکی فریز می‌شود باید به کار بیاید. در بعضی از مواقع
+نصب مجدد محیط گرافیکی با استفاده از
+tty
+می‌تواند مشکل را حل کند.</p><p>یا شما می‌توانید
+tty
+را برای انجام کار هایی مثل آپدیت انتخاب کنید جایی که شما نمی‌خواهید مشکلات بصری فرایند
+های شما را مختل کند.</p><p>بد ترین مورد سناریو، شما می‌تواند زمانی که محیط دستکتاپ جواب نمی‌دهد، برای ریبوت
+به
+tty
+مراجعه کنید.</p><p>بعضی از کاربران ترجیح می‌دهند که فایل های بزرگ را با
+tty
+منتقل کنند(من از آنها نیستم)</p><h3 id=tty-به-عنوان-یک-دستور-در-لینوکس>tty به عنوان یک دستور در لینوکس</h3><p><img src=/images/post/tty-cmd.png loading=lazy alt=tty-cmd></p><p>همانطور که در صفحه راهنمای
+(man page)
+tty
+توضیح داده شده است، زمانی که شما
+tty
+را در ترمینال تایپ کنید، نام فایل ترمینال که به وردی استاندارد متصل است را چاپ می‌کند.</p><p>به عبارت دیگر برای دانستن عدد
+tty
+که به آن متصل هستید، فقط
+tty
+را در ترمینال تایپ کنید.
+اگر چند کاربر از راه دور به سیستم لینوکس متصل هستند، می‌توانید برای برسی اینکه به
+چه متصل هستند از کامند
+<code>who</code>
+استفاده کنید.</p><h3 id=خارج-از-ترجمه>خارج از ترجمه</h3><p>متن ترجمه شده بود و خب من یک مترجم تخصصی نیستم، من یک برنامه نویسم که بلاگ نویسی
+و ترجمه رو هم دوست دارم، سعی کردم به بهترین نحو متن را ترجمه کنم
+و در اختیار بقیه بذارم، اگر حس کردین جایی از متن مشکلی داره، خیلی خوشحال می‌شوم
+که مشکلم رو بهم بیگید، این کمک بزرگیه.</p><p>متن اصلی رو می‌توانید از
+<a class=link href=https://itsfoss.com/what-is-tty-in-linux/ target=_blank rel=noopener>این لینک</a>
+بخوانید.</p></div></section><footer class=article-footer><section class=article-tags><a href=/tags/linux/>linux</a>
+<a href=/tags/linux-terminal/>linux-terminal</a>
+<a href=/tags/tty/>tty</a>
+<a href=/tags/tty-%DA%86%DB%8C%D8%B3%D8%AA/>tty چیست</a>
+<a href=/tags/tty-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA/>tty در لینوکس چیست</a>
+<a href=/tags/terminal/>terminal</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>مطالب مرتبط</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/><div class=article-image><img src=/images/post/terminal.jpg loading=lazy data-key data-hash=/images/post/terminal.jpg></div><div class=article-details><h2 class=article-title>zsh بهترین پلاگین های</h2></div></a></article><article class=has-image><a href=/p/%D8%A7%D8%B3%D9%86%D9%BE-%D8%B4%D8%A7%D8%AA-%DA%AF%D8%B1%D9%81%D8%AA%D9%86-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%B5%D9%81%D8%AD%D9%87-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7-%D8%AA%D9%85%D8%A7%D9%85%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87%D8%B4%D8%B9%DA%A9%D8%B3-%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA/><div class=article-image><img src=/images/post/snp.jpg loading=lazy data-key data-hash=/images/post/snp.jpg></div><div class=article-details><h2 class=article-title>اسنپ شات گرفتن از یک صفحه سایت با تمامی فایل های وابسته‌‌ش(عکس، استایل، جاوا اسکریپت)</h2></div></a></article><article class=has-image><a href=/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/><div class=article-image><img src=/images/post/matrix.jpg loading=lazy data-key data-hash=/images/post/matrix.jpg></div><div class=article-details><h2 class=article-title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</h2></div></a></article><article class=has-image><a href=/p/%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%DA%AF%D9%86%D9%88%D9%85/><div class=article-image><img src=/images/post/gp.jpg loading=lazy data-key data-hash=/images/post/gp.jpg></div><div class=article-details><h2 class=article-title>پلاگین های کاربردی گنوم</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2023 bit-orbit</section><section class=powerby>قدرت گرفته از <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>قالب <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.16.0>Stack</a></b> ساخته شده توسط <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

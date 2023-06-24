@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>messenger on bit-orbit</title><link>https://example.com/tags/messenger/</link><description>Recent content in messenger on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://example.com/tags/messenger/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title><link>https://example.com/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://example.com/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid><description>&lt;img src="https://example.com/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" />&lt;p>ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
+ارتباطات تحت شبکه مانند پیامرسان، اینترنت چیز ها
+(IoT)
+و هر چیز دیگری
+استفاده کنید. از ویژگی
+های این پروتکل، رمزنگاری سر تا سر
+(E2E)
+است، این ویژگی باعث میشود حتی سرور های ماتریکس که داده های ما را
+منتقل میکنند هم توانایی دسترسی به داده ها را نداشته باشند.&lt;/p>
+&lt;h3 id="پیام-رسان-ماتریکس">پیام رسان ماتریکس&lt;/h3>
+&lt;p>یکی از اصلی ترین استفاده های ماتریکس، پیامرسان است.
+این پیامرسان به صورت غیر متمرکز عمل میکند. با این روش سانسور/فیلتر شدن
+سرور هایی که پیام ها را ذخیره و منتقل میکنند غیر ممکن میشود!
+چرا که این سرور ها قابل تغییر هستند و هر زمان که
+یکی از این سرور ها سانسور شود، شما همچنان میتوانید با سرور دیگری
+مجدد اکانت بسازید و در ارتباط بمانید.
+و یا حتی از سرور خودتان استفاده کنید!&lt;/p>
+&lt;h3 id="ماتریکس-چگونه-کار-میکند">ماتریکس چگونه کار میکند؟&lt;/h3>
+&lt;p>هر سرور در ماتریکس
+&lt;em>HomeServer&lt;/em>
+نامیده میشود، شما به عنوان
+&lt;em>Client&lt;/em>
+انتخاب میکنید از هر
+HomeServer
+که میخواهید استفاده کنید.&lt;/p>
+&lt;p>HomeServer
+ها میتوانند سرور های عمومی مثل سروری که خود
+&lt;a class="link" href="matrix.org" >&lt;strong>ماتریکس&lt;/strong>&lt;/a>
+راه اندازی کرده است باشد
+و یا میتواند سرور های
+&lt;strong>شخصی خودتان&lt;/strong>
+باشد.&lt;/p>
+&lt;p>&lt;a class="link" href="https://example.com/images/post/page2-768x768.png" >&lt;img src="https://example.com/images/post/page2-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
+>&lt;/a>&lt;/p>
+&lt;p>زمانی که شما از یک
+HomeServer
+استفاده میکنید، این به آن معنی است که کلاینت شما به اکانتتان در آن
+HomeServer
+متصل میشود.&lt;/p>
+&lt;p>&lt;a class="link" href="https://example.com/images/post/page3-768x768.png" >&lt;img src="https://example.com/images/post/page3-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
+>&lt;/a>&lt;/p>
+&lt;p>زمانی که شما پیامی ارسال میکنید، پیامتان به
+HomeServer
+شما ارسال میشود،
+HomeServer
+بعد از دریافت پیام از شما، آن را به کاربران مشترک در آن روم ارسال میکند.&lt;/p>
+&lt;blockquote>
+&lt;p>در ماتریکس هر نوع چت(شخصی و یا گروه) را
+room
+مینامند&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://example.com/images/post/page4-768x768.png" >&lt;img src="https://example.com/images/post/page4-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
+>&lt;/a>&lt;/p>
+&lt;p>در واقع زمانی که شما پیامی ارسال میکنید
+HomeServer
+پیام را برای کاربران ارسال میکند. این کاربران ممکن است کاربران همان
+HomeServer
+و یا کاربران
+HomeServer
+های دیگری باشند. پس پیام شما اگر برای کاربران یک
+HomeServer
+دیگر باشد،
+Homeserver
+شما بعد از دریافت پیامتان، پیام را برای
+HomerServer
+های دیگر ارسال خواهد کرد. و آن
+HomeServer
+پیام را دریافت و به کاربران مربوطه ارسال خواهد کرد.&lt;/p>
+&lt;p>&lt;a class="link" href="https://example.com/images/post/page6-768x768.png" >&lt;img src="https://example.com/images/post/page6-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
+>&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>زمانی که شما پیامی را برای کاربر
+HomeServer
+دیگری ارسال میکنید، پیام شما تنها در
+HomeServer
+خودتان ذخیره نخواهد شد. بلکه در
+HomeServer
+کاربری/کاربرانی که پیام را به آن ارسال کرده اید هم ذخیره میشود.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="اصطلاحات-در-ماتریکس">اصطلاحات در ماتریکس&lt;/h3>
+&lt;p>در ماتریکس چند اصطلاح وجود دارد که آشنایی با آنها به درک بهتر این پروتکل کمک میکند.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>HomeServer:
+سروری که شما در آن اکانت خود را میسازید. این سرور پیام های شما را ذخیره
+و ارسال میکند.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Client:
+برای اینکه کاربران بتوانند از ماتریکس استفاده کنند، باید از ابزاری که از این
+پروتکل بهره میبرد استفاده کنند. به اینگونه از ابزار ها کلاینت گفته میشود.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Event:
+هر نوع داده ای که توسط ماتریکس ارسال شود
+&lt;em>event&lt;/em>
+نامیده میشود. برای مثال ممکن است شما پیام ارسال کنید و یا به یک پیام واکنش نشان دهید.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Room:
+قسمتی است که کاربر با آن
+event
+ها را دریافت و ارسال میکند.
+event
+ها به
+room
+ارسال میشوند، و تمامی کاربران مشترک در
+room
+میتوانند
+event
+ها را دریافت کنند.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Space:
+Space
+نوعی خاصی از
+room
+برای دسته بندی دیگر
+room
+ها است.
+space
+میتواند هم شامل گروه و هم کاربران عادی شود.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Bridge:
+پل یا
+Bridge
+به راهکاری گفته میشود که شما میتوانید با استفاده از آن
+بین ماتریکس و پیامرسان های دیگر چت کنید. برای مثال شما با استفاده از
+Brdige تلگرام
+میتوانید با ماتریکس به کاربران تلگرام پیام ارسال و دریافت کنید.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="چگونه-از-ماتریکس-استفاده-کنیم">چگونه از ماتریکس استفاده کنیم؟&lt;/h3>
+&lt;p>برای استفاده از ماتریکس، شما کافیست یکی از کلاینت های آن را نصب و به یک
+HomeServer
+متصل شوید.&lt;/p>
+&lt;p>یکی از محبوب ترین کلاینت ها، کلاینت
+&lt;a class="link" href="https://element.io/" target="_blank" rel="noopener"
+>Element&lt;/a>
+است، که شامل نسخه
+&lt;a class="link" href="https://play.google.com/store/apps/details?id=im.vector.app" target="_blank" rel="noopener"
+>Android&lt;/a>،
+&lt;a class="link" href="https://apps.apple.com/app/vector/id1083446067" target="_blank" rel="noopener"
+>IOS&lt;/a>،
+&lt;a class="link" href="https://element.io/get-started#downloads" target="_blank" rel="noopener"
+>Windows, Linux، Mac&lt;/a>
+و البته
+&lt;a class="link" href="https://app.element.io/" target="_blank" rel="noopener"
+>نسخه تحت وب میشود&lt;/a>.&lt;/p>
+&lt;p>استفاده از المنت مانند هر پیامرسان دیگری ساده است، اما اگر نیاز به کمک دارید
+&lt;a class="link" href="https://static.element.io/pdfs/element-user-guide.pdf" target="_blank" rel="noopener"
+>این لینک&lt;/a>
+میتواند کمکتان کند.&lt;/p>
+&lt;h3 id="چطور-از-سرور-شخصی-خودمان-استفاده-کنیم">چطور از سرور شخصی خودمان استفاده کنیم؟&lt;/h3>
+&lt;p>شما مجبور نیستید سرویس ماتریکس را روی سرور شخصی خودتان اجرا کنید مگر اینکه:&lt;/p>
+&lt;ul>
+&lt;li>سرور های عمومی ماتریکس سانسور و از دسترس خارج شده باشند&lt;/li>
+&lt;li>و یا شاید نگران دیتایی هستید که روی سرور های
+عمومی ماتریکس از طرف شما ذخیره میشود!(گرچه پیام ها تماما رمزنگاری سر تا سر میشود)&lt;/li>
+&lt;li>و یا حتی شاید میخواهید پیام رسان داخلی شرکت/خانه خودتان را داشته باشید&lt;/li>
+&lt;li>و یا البته ممکن است بخواهید
+Bridge
+بسازید.&lt;/li>
+&lt;/ul>
+&lt;p>نسخه سرور ماتریکس
+&lt;a class="link" href="https://github.com/matrix-org/synapse" target="_blank" rel="noopener"
+>&lt;em>Synapse&lt;/em>&lt;/a>
+نام دارد، شما میتوانید با استفاده از
+&lt;a class="link" href="https://hub.docker.com/r/matrixdotorg/synapse/" target="_blank" rel="noopener"
+>ایمیج داکر رسمی ماتریکس&lt;/a>،
+سرور شخصی خودتان را اجرا کنید.&lt;/p>
+&lt;h3 id="نتیجه-گیری">نتیجه گیری&lt;/h3>
+&lt;p>هدف من از نوشتن این پست در این روز های تلخ این بود که ابزاری را معرفی کنم
+تا ما با وجود قطعی های متعدد اینترنت و قطع دسترسی ما از سرور های خارجی، کماکان
+در ارتباط نگهدارد و صدایمان را&amp;hellip;&lt;/p>
+&lt;p>اگر روزی دسترسی ما از اینترنت قطع شد، کاری که لازم است برای در ارتباط ماندن انجام بدهیم
+این است که یک سرویس ماتریکس داخلی راه اندازی کنیم.&lt;/p>
+&lt;hr></description></item></channel></rss>
