@@ -1,4 +1,4 @@
-baseurl: https://example.com
+baseurl: https://bit-orbit.github.io/
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
