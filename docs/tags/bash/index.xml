@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bash on bit-orbit</title><link>https://example.com/tags/bash/</link><description>Recent content in bash on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 11 Jan 2022 02:44:12 +0330</lastBuildDate><atom:link href="https://example.com/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title> zsh بهترین پلاگین های</title><link>https://example.com/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</link><pubDate>Tue, 11 Jan 2022 02:44:12 +0330</pubDate><guid>https://example.com/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</guid><description>&lt;img src="https://example.com/images/post/terminal.jpg" alt="Featured image of post zsh بهترین پلاگین های " />&lt;p>نوشتن یک برنامه کار سختی نیست، بلکه نگه‌داری و آپدیت یک برنامه‌ست، پلاگین این ویژگی را می‌دهد تا به راحتی عملکرد یک برنامه را بی‌افزاییم.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bash on bit-orbit</title><link>https://bit-orbit.github.io/tags/bash/</link><description>Recent content in bash on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 11 Jan 2022 02:44:12 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title> zsh بهترین پلاگین های</title><link>https://bit-orbit.github.io/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</link><pubDate>Tue, 11 Jan 2022 02:44:12 +0330</pubDate><guid>https://bit-orbit.github.io/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/terminal.jpg" alt="Featured image of post zsh بهترین پلاگین های " />&lt;p>نوشتن یک برنامه کار سختی نیست، بلکه نگه‌داری و آپدیت یک برنامه‌ست، پلاگین این ویژگی را می‌دهد تا به راحتی عملکرد یک برنامه را بی‌افزاییم.&lt;/p>
 &lt;hr>
 &lt;div dir='rtl' style='font-size:25px'>
 &lt;h3 id="themeshttpsgithubcomohmyzshohmyzshtreemasterpluginsthemes-">&lt;a class="link" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/themes" target="_blank" rel="noopener"
@@ -11,7 +11,7 @@ zsh
 &lt;p>با استفاده از این پلاگین شما بدون نیاز به تغییر دستی فایل کانفیگ
 &lt;code>zshrc.&lt;/code>،
 می‌توانید تم را تغییر بدین.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/theme.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/theme.gif"
 loading="lazy"
 alt="theme-plugin"
 >&lt;/p>
@@ -51,7 +51,7 @@ history
 یا همان
 &lt;code>فلش سمت راست&lt;/code>
 را فشار دهید.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/zsh-autosuggestions-gif.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/zsh-autosuggestions-gif.gif"
 loading="lazy"
 alt="zsh-autosuggestion"
 >&lt;/p>
@@ -73,7 +73,7 @@ root
 دوبار کلید
 &lt;code>esc&lt;/code>
 را بزنید&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/sudo.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/sudo.gif"
 loading="lazy"
 alt="zsh-sudo-theme"
 >&lt;/p>
@@ -89,7 +89,7 @@ google
 را در ترمینال تایپ کنید و متن خود را جلو آن بنوسید و در آخر دکمه اینتر را
 بزنید!
 بنگ! گوگل باز می‌شود و حاصل جست و جوی شما آماده است.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/web-search.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/web-search.gif"
 loading="lazy"
 alt="web-search"
 >&lt;/p>

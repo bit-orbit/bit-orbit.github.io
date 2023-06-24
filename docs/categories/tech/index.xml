@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tech on bit-orbit</title><link>https://example.com/categories/tech/</link><description>Recent content in tech on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://example.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title><link>https://example.com/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://example.com/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid><description>&lt;img src="https://example.com/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" />&lt;p>ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tech on bit-orbit</title><link>https://bit-orbit.github.io/categories/tech/</link><description>Recent content in tech on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title><link>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" />&lt;p>ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
 ارتباطات تحت شبکه مانند پیامرسان، اینترنت چیز ها
 (IoT)
 و هر چیز دیگری
@@ -30,7 +30,7 @@ HomeServer
 و یا میتواند سرور های
 &lt;strong>شخصی خودتان&lt;/strong>
 باشد.&lt;/p>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page2-768x768.png" >&lt;img src="https://example.com/images/post/page2-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page2-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page2-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -39,7 +39,7 @@ HomeServer
 استفاده میکنید، این به آن معنی است که کلاینت شما به اکانتتان در آن
 HomeServer
 متصل میشود.&lt;/p>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page3-768x768.png" >&lt;img src="https://example.com/images/post/page3-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page3-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page3-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -53,7 +53,7 @@ HomeServer
 room
 مینامند&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page4-768x768.png" >&lt;img src="https://example.com/images/post/page4-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page4-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page4-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -72,7 +72,7 @@ HomerServer
 های دیگر ارسال خواهد کرد. و آن
 HomeServer
 پیام را دریافت و به کاربران مربوطه ارسال خواهد کرد.&lt;/p>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page6-768x768.png" >&lt;img src="https://example.com/images/post/page6-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page6-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page6-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -184,7 +184,7 @@ Bridge
 در ارتباط نگهدارد و صدایمان را&amp;hellip;&lt;/p>
 &lt;p>اگر روزی دسترسی ما از اینترنت قطع شد، کاری که لازم است برای در ارتباط ماندن انجام بدهیم
 این است که یک سرویس ماتریکس داخلی راه اندازی کنیم.&lt;/p>
-&lt;hr></description></item><item><title> در لینوکس چیست؟ TTY</title><link>https://example.com/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link><pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate><guid>https://example.com/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid><description>&lt;img src="https://example.com/images/post/tty.jpg" alt="Featured image of post در لینوکس چیست؟ TTY " />&lt;div dir='rtl' style='font-size:x-large'>
+&lt;hr></description></item><item><title> در لینوکس چیست؟ TTY</title><link>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link><pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/tty.jpg" alt="Featured image of post در لینوکس چیست؟ TTY " />&lt;div dir='rtl' style='font-size:x-large'>
 &lt;p>شما باید درباره اصطلاح
 tty
 زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما
@@ -227,7 +227,7 @@ tty
 نام کوتاه شده
 teletypewrite
 است.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/teletypewrite.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/teletypewrite.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;p>تفاوت بین
@@ -255,14 +255,14 @@ teletypewriter
 &lt;a class="link" href="https://en.wikipedia.org/wiki/Punched_card" target="_blank" rel="noopener"
 >کارت های پانج&lt;/a>
 روش ورودی دادن به کامپیوتر ها بود&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/punch-card.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/punch-card.jpg"
 loading="lazy"
 alt="card-punch"
 >&lt;/p>
 &lt;p>درحالی که کامپیوتر ها توسعه پیدا می‌کردند، بالاخره کارت های پانچ با
 teletypewriter
 به عنوان دستگاه &lt;em>&lt;strong>&lt;u>ورودی/خروجی&lt;/u>&lt;/strong>&lt;/em> مناسب جایگزین شد.    &lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/pc-tty.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/pc-tty.jpg"
 loading="lazy"
 alt="LGP-30 computer in 1956 with a TTY attached to it"
 >&lt;/p>
@@ -330,7 +330,7 @@ tty
 pty
 مرتبط را پیدا کنید.&lt;/p>
 &lt;h3 id="چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم">چگونه به tty در لینوکس دسترسی داشته باشیم؟&lt;/h3>
-&lt;p>&lt;img src="https://example.com/images/post/ubuntu-tty.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty.png"
 loading="lazy"
 alt="tty-in-ubuntu"
 >&lt;/p>
@@ -354,7 +354,7 @@ tty
 tty
 دسترسی داشته باشید، با این حال دو تا از اولین کلید های میانبر به صفحه قفل
 و محیط دسکتاپ اشاره دارد.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/ubuntu-tty4.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty4.png"
 loading="lazy"
 alt="cmd-with-tty"
 >&lt;/p>
@@ -380,7 +380,7 @@ tty
 tty
 منتقل کنند(من از آنها نیستم)&lt;/p>
 &lt;h3 id="tty-به-عنوان-یک-دستور-در-لینوکس">tty به عنوان یک دستور در لینوکس&lt;/h3>
-&lt;p>&lt;img src="https://example.com/images/post/tty-cmd.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tty-cmd.png"
 loading="lazy"
 alt="tty-cmd"
 >&lt;/p>
@@ -408,7 +408,7 @@ tty
 &lt;a class="link" href="https://itsfoss.com/what-is-tty-in-linux/" target="_blank" rel="noopener"
 >این لینک&lt;/a>
 بخوانید.&lt;/p>
-&lt;/div></description></item><item><title>اسنپ شات گرفتن از یک صفحه سایت با تمامی فایل های وابسته‌‌ش(عکس، استایل، جاوا اسکریپت)</title><link>https://example.com/p/%D8%A7%D8%B3%D9%86%D9%BE-%D8%B4%D8%A7%D8%AA-%DA%AF%D8%B1%D9%81%D8%AA%D9%86-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%B5%D9%81%D8%AD%D9%87-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7-%D8%AA%D9%85%D8%A7%D9%85%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87%D8%B4%D8%B9%DA%A9%D8%B3-%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA/</link><pubDate>Mon, 17 Jan 2022 14:56:14 +0330</pubDate><guid>https://example.com/p/%D8%A7%D8%B3%D9%86%D9%BE-%D8%B4%D8%A7%D8%AA-%DA%AF%D8%B1%D9%81%D8%AA%D9%86-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%B5%D9%81%D8%AD%D9%87-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7-%D8%AA%D9%85%D8%A7%D9%85%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87%D8%B4%D8%B9%DA%A9%D8%B3-%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA/</guid><description>&lt;img src="https://example.com/images/post/snp.jpg" alt="Featured image of post اسنپ شات گرفتن از یک صفحه سایت با تمامی فایل های وابسته‌‌ش(عکس، استایل، جاوا اسکریپت)" />&lt;div dir='rtl' style='font-size:23px'>
+&lt;/div></description></item><item><title>اسنپ شات گرفتن از یک صفحه سایت با تمامی فایل های وابسته‌‌ش(عکس، استایل، جاوا اسکریپت)</title><link>https://bit-orbit.github.io/p/%D8%A7%D8%B3%D9%86%D9%BE-%D8%B4%D8%A7%D8%AA-%DA%AF%D8%B1%D9%81%D8%AA%D9%86-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%B5%D9%81%D8%AD%D9%87-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7-%D8%AA%D9%85%D8%A7%D9%85%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87%D8%B4%D8%B9%DA%A9%D8%B3-%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA/</link><pubDate>Mon, 17 Jan 2022 14:56:14 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D8%B3%D9%86%D9%BE-%D8%B4%D8%A7%D8%AA-%DA%AF%D8%B1%D9%81%D8%AA%D9%86-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%B5%D9%81%D8%AD%D9%87-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7-%D8%AA%D9%85%D8%A7%D9%85%DB%8C-%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D9%88%D8%A7%D8%A8%D8%B3%D8%AA%D9%87%D8%B4%D8%B9%DA%A9%D8%B3-%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/snp.jpg" alt="Featured image of post اسنپ شات گرفتن از یک صفحه سایت با تمامی فایل های وابسته‌‌ش(عکس، استایل، جاوا اسکریپت)" />&lt;div dir='rtl' style='font-size:23px'>
 &lt;p>زمانی که مقاله یا پستی را می‌خوانم، گاهی احساس می‌کنم ممکنه یک مطلب را فراموش کنم.
 مثلا اگه مقاله‌ای از ویرگول درباره یک دستور لینوکس بخوانم، برای اینکه مطلبش را
 فراموش نکنم باید هرزگاهی به پست سر بزنم و مطالب را مرور کنم. اما فکر کنید مطلب
@@ -1740,7 +1740,7 @@ RSA
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Converted links in &lt;span class="m">3&lt;/span> files in 0.06 seconds.
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title> پلاگین های کاربردی گنوم</title><link>https://example.com/p/%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%DA%AF%D9%86%D9%88%D9%85/</link><pubDate>Fri, 14 Jan 2022 18:18:28 +0330</pubDate><guid>https://example.com/p/%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%DA%AF%D9%86%D9%88%D9%85/</guid><description>&lt;img src="https://example.com/images/post/gp.jpg" alt="Featured image of post پلاگین های کاربردی گنوم " />&lt;div dir='rtl' style="font-size:x-large;">
+&lt;/div></description></item><item><title> پلاگین های کاربردی گنوم</title><link>https://bit-orbit.github.io/p/%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%DA%AF%D9%86%D9%88%D9%85/</link><pubDate>Fri, 14 Jan 2022 18:18:28 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C-%DA%AF%D9%86%D9%88%D9%85/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/gp.jpg" alt="Featured image of post پلاگین های کاربردی گنوم " />&lt;div dir='rtl' style="font-size:x-large;">
 &lt;p>اگر مثل من از
 محیط
 gnome
@@ -1756,7 +1756,7 @@ gnome
 خاموش یا تعلیق
 شود.
 با نصب این پلاگین مجبور به وارد کردن کامند برای خاموش/تعلیق کردن نیستیم!&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/shut.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/shut.jpg"
 loading="lazy"
 alt="shutdown sch"
 >&lt;/p>
@@ -1771,7 +1771,7 @@ alt="shutdown sch"
 &lt;em>vlc&lt;/em>
 این امکان را خودشان فراهم کرده باشند. اما با این پلاگین شما به راحتی می‌توانید صدای
 هر برنامه را به صورت مجزا کنترل کنید.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/vl.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/vl.png"
 loading="lazy"
 alt="Vulume mixer"
 >&lt;/p>
@@ -1797,7 +1797,7 @@ dock
 پنهان شده است می‌رود
 dock
 ظاهر می‌شود.&lt;/p>
-&lt;h2 id="dash-to-dockimagespostdash_to_dockjpg">&lt;img src="https://example.com/images/post/dash_to_dock.jpg"
+&lt;h2 id="dash-to-dockimagespostdash_to_dockjpg">&lt;img src="https://bit-orbit.github.io/images/post/dash_to_dock.jpg"
 loading="lazy"
 alt="dash to dock"
 >&lt;/h2>
@@ -1817,7 +1817,7 @@ alt="dash to dock"
 و همچنین از فهرست اصلی جدا باشد.&lt;/p>
 &lt;p>و شاید بخشی از متنی را به یاد داشته باشید که نیاز دارید ببینید در کلیپ برد هست و یا
 نه، برای اینکار هم یک بخش جست و جو وجود دارد.&lt;/p>
-&lt;h2 id="clipboardimagespostclpjpg">&lt;img src="https://example.com/images/post/clp.jpg"
+&lt;h2 id="clipboardimagespostclpjpg">&lt;img src="https://bit-orbit.github.io/images/post/clp.jpg"
 loading="lazy"
 alt="Clipboard"
 >&lt;/h2>
@@ -1830,7 +1830,7 @@ alt="Clipboard"
 در هر لحظه بدانیم. پلاگین
 NetSpeed
 این قابلیت را دارد که سرعت شبکه وایرلس و شبکه سیمی را مجزا نشان دهد.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/netspeed.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/netspeed.png"
 loading="lazy"
 alt="netspeed"
 >&lt;/p>
@@ -1847,7 +1847,7 @@ suspend
 کار مفیدی نیست، چرا که ممکن است ساعات ها سیستم بدون هیچ استفاده‌ای روشن بماند.
 برای همین من این پلاگین را دارم، زمانی که نیاز دارم تا از سیستم دور باشم
 کافئین رو روشن می‌کنم و زمانی که نمی‌دونم چی پیش میاد! خاموشش می‌‌کنم.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/caf.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/caf.png"
 loading="lazy"
 alt="caffein"
 >&lt;/p>
@@ -1869,7 +1869,7 @@ alt="google search"
 &lt;h3 id="viii-jigglehttpsextensionsgnomeorgextension3438jiggle">#VIII &lt;a class="link" href="https://extensions.gnome.org/extension/3438/jiggle/" target="_blank" rel="noopener"
 >Jiggle&lt;/a>&lt;/h3>
 &lt;p>کرسر موس رو گم کردین؟ موس رو تکون بدین!&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/screenshot_3438.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/screenshot_3438.gif"
 loading="lazy"
 alt="Jiggle"
 >&lt;/p>
@@ -1881,11 +1881,11 @@ alt="Jiggle"
 منوی
 over view
 باز بشود. و یا مثلا نظیم می‌کنیم که وقتی موس به گوشه پایین سمنت چپ بر خورد کرد یک کامند اجرا شود.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/1.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/1.gif"
 loading="lazy"
 alt="Custom Hot Corner"
 >&lt;/p>
-&lt;/div></description></item><item><title> zsh بهترین پلاگین های</title><link>https://example.com/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</link><pubDate>Tue, 11 Jan 2022 02:44:12 +0330</pubDate><guid>https://example.com/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</guid><description>&lt;img src="https://example.com/images/post/terminal.jpg" alt="Featured image of post zsh بهترین پلاگین های " />&lt;p>نوشتن یک برنامه کار سختی نیست، بلکه نگه‌داری و آپدیت یک برنامه‌ست، پلاگین این ویژگی را می‌دهد تا به راحتی عملکرد یک برنامه را بی‌افزاییم.&lt;/p>
+&lt;/div></description></item><item><title> zsh بهترین پلاگین های</title><link>https://bit-orbit.github.io/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</link><pubDate>Tue, 11 Jan 2022 02:44:12 +0330</pubDate><guid>https://bit-orbit.github.io/p/zsh-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%BE%D9%84%D8%A7%DA%AF%DB%8C%D9%86-%D9%87%D8%A7%DB%8C/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/terminal.jpg" alt="Featured image of post zsh بهترین پلاگین های " />&lt;p>نوشتن یک برنامه کار سختی نیست، بلکه نگه‌داری و آپدیت یک برنامه‌ست، پلاگین این ویژگی را می‌دهد تا به راحتی عملکرد یک برنامه را بی‌افزاییم.&lt;/p>
 &lt;hr>
 &lt;div dir='rtl' style='font-size:25px'>
 &lt;h3 id="themeshttpsgithubcomohmyzshohmyzshtreemasterpluginsthemes-">&lt;a class="link" href="https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/themes" target="_blank" rel="noopener"
@@ -1898,7 +1898,7 @@ zsh
 &lt;p>با استفاده از این پلاگین شما بدون نیاز به تغییر دستی فایل کانفیگ
 &lt;code>zshrc.&lt;/code>،
 می‌توانید تم را تغییر بدین.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/theme.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/theme.gif"
 loading="lazy"
 alt="theme-plugin"
 >&lt;/p>
@@ -1938,7 +1938,7 @@ history
 یا همان
 &lt;code>فلش سمت راست&lt;/code>
 را فشار دهید.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/zsh-autosuggestions-gif.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/zsh-autosuggestions-gif.gif"
 loading="lazy"
 alt="zsh-autosuggestion"
 >&lt;/p>
@@ -1960,7 +1960,7 @@ root
 دوبار کلید
 &lt;code>esc&lt;/code>
 را بزنید&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/sudo.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/sudo.gif"
 loading="lazy"
 alt="zsh-sudo-theme"
 >&lt;/p>
@@ -1976,7 +1976,7 @@ google
 را در ترمینال تایپ کنید و متن خود را جلو آن بنوسید و در آخر دکمه اینتر را
 بزنید!
 بنگ! گوگل باز می‌شود و حاصل جست و جوی شما آماده است.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/web-search.gif"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/web-search.gif"
 loading="lazy"
 alt="web-search"
 >&lt;/p>

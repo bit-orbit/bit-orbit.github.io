@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>open-source on bit-orbit</title><link>https://example.com/tags/open-source/</link><description>Recent content in open-source on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://example.com/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title><link>https://example.com/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://example.com/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid><description>&lt;img src="https://example.com/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" />&lt;p>ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>open-source on bit-orbit</title><link>https://bit-orbit.github.io/tags/open-source/</link><description>Recent content in open-source on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title><link>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" />&lt;p>ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
 ارتباطات تحت شبکه مانند پیامرسان، اینترنت چیز ها
 (IoT)
 و هر چیز دیگری
@@ -30,7 +30,7 @@ HomeServer
 و یا میتواند سرور های
 &lt;strong>شخصی خودتان&lt;/strong>
 باشد.&lt;/p>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page2-768x768.png" >&lt;img src="https://example.com/images/post/page2-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page2-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page2-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -39,7 +39,7 @@ HomeServer
 استفاده میکنید، این به آن معنی است که کلاینت شما به اکانتتان در آن
 HomeServer
 متصل میشود.&lt;/p>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page3-768x768.png" >&lt;img src="https://example.com/images/post/page3-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page3-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page3-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -53,7 +53,7 @@ HomeServer
 room
 مینامند&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page4-768x768.png" >&lt;img src="https://example.com/images/post/page4-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page4-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page4-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>
@@ -72,7 +72,7 @@ HomerServer
 های دیگر ارسال خواهد کرد. و آن
 HomeServer
 پیام را دریافت و به کاربران مربوطه ارسال خواهد کرد.&lt;/p>
-&lt;p>&lt;a class="link" href="https://example.com/images/post/page6-768x768.png" >&lt;img src="https://example.com/images/post/page6-768x768.png"
+&lt;p>&lt;a class="link" href="https://bit-orbit.github.io/images/post/page6-768x768.png" >&lt;img src="https://bit-orbit.github.io/images/post/page6-768x768.png"
 loading="lazy"
 alt="matrix-homeserver"
 >&lt;/a>&lt;/p>

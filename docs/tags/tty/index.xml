@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tty on bit-orbit</title><link>https://example.com/tags/tty/</link><description>Recent content in tty on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 Jan 2022 19:57:05 +0330</lastBuildDate><atom:link href="https://example.com/tags/tty/index.xml" rel="self" type="application/rss+xml"/><item><title> در لینوکس چیست؟ TTY</title><link>https://example.com/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link><pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate><guid>https://example.com/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid><description>&lt;img src="https://example.com/images/post/tty.jpg" alt="Featured image of post در لینوکس چیست؟ TTY " />&lt;div dir='rtl' style='font-size:x-large'>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tty on bit-orbit</title><link>https://bit-orbit.github.io/tags/tty/</link><description>Recent content in tty on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 31 Jan 2022 19:57:05 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/tty/index.xml" rel="self" type="application/rss+xml"/><item><title> در لینوکس چیست؟ TTY</title><link>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link><pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/tty.jpg" alt="Featured image of post در لینوکس چیست؟ TTY " />&lt;div dir='rtl' style='font-size:x-large'>
 &lt;p>شما باید درباره اصطلاح
 tty
 زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما
@@ -41,7 +41,7 @@ tty
 نام کوتاه شده
 teletypewrite
 است.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/teletypewrite.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/teletypewrite.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;p>تفاوت بین
@@ -69,14 +69,14 @@ teletypewriter
 &lt;a class="link" href="https://en.wikipedia.org/wiki/Punched_card" target="_blank" rel="noopener"
 >کارت های پانج&lt;/a>
 روش ورودی دادن به کامپیوتر ها بود&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/punch-card.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/punch-card.jpg"
 loading="lazy"
 alt="card-punch"
 >&lt;/p>
 &lt;p>درحالی که کامپیوتر ها توسعه پیدا می‌کردند، بالاخره کارت های پانچ با
 teletypewriter
 به عنوان دستگاه &lt;em>&lt;strong>&lt;u>ورودی/خروجی&lt;/u>&lt;/strong>&lt;/em> مناسب جایگزین شد.    &lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/pc-tty.jpg"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/pc-tty.jpg"
 loading="lazy"
 alt="LGP-30 computer in 1956 with a TTY attached to it"
 >&lt;/p>
@@ -144,7 +144,7 @@ tty
 pty
 مرتبط را پیدا کنید.&lt;/p>
 &lt;h3 id="چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم">چگونه به tty در لینوکس دسترسی داشته باشیم؟&lt;/h3>
-&lt;p>&lt;img src="https://example.com/images/post/ubuntu-tty.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty.png"
 loading="lazy"
 alt="tty-in-ubuntu"
 >&lt;/p>
@@ -168,7 +168,7 @@ tty
 tty
 دسترسی داشته باشید، با این حال دو تا از اولین کلید های میانبر به صفحه قفل
 و محیط دسکتاپ اشاره دارد.&lt;/p>
-&lt;p>&lt;img src="https://example.com/images/post/ubuntu-tty4.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty4.png"
 loading="lazy"
 alt="cmd-with-tty"
 >&lt;/p>
@@ -194,7 +194,7 @@ tty
 tty
 منتقل کنند(من از آنها نیستم)&lt;/p>
 &lt;h3 id="tty-به-عنوان-یک-دستور-در-لینوکس">tty به عنوان یک دستور در لینوکس&lt;/h3>
-&lt;p>&lt;img src="https://example.com/images/post/tty-cmd.png"
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tty-cmd.png"
 loading="lazy"
 alt="tty-cmd"
 >&lt;/p>
