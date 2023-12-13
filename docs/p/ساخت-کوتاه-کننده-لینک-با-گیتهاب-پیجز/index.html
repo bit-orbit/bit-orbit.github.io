@@ -1,57 +1,663 @@
-<!doctype html><html lang=fa dir=rtl><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید، اما ایا سایت کوتاه کننده لینک خودتون رو درست کردین؟
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید، اما ایا سایت کوتاه کننده لینک خودتون رو درست کردین؟
 گیتهاب پیجز یک سرور رایگان برای دیپلوی سایت های ایستا است. در واقع شما می‌توانید صفحه های html رو توی ریپو قرار بدین و این سایت اون صفحه ها رو به رایگان برای شما نمایش می‌دهد.
-از همین قابلیت برای ساخت یک url redirector استفاده کردم، و با کمی جاوا اسکریپت یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید، مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد."><title>ساخت کوتاه کننده لینک با گیتهاب پیجز</title><link rel=canonical href=https://bit-orbit.github.io/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/><link rel=stylesheet href=/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content="ساخت کوتاه کننده لینک با گیتهاب پیجز"><meta property="og:description" content="شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید، اما ایا سایت کوتاه کننده لینک خودتون رو درست کردین؟
+از همین قابلیت برای ساخت یک url redirector استفاده کردم، و با کمی جاوا اسکریپت یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید، مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد.'>
+<title>ساخت کوتاه کننده لینک با گیتهاب پیجز</title>
+
+<link rel='canonical' href='https://bit-orbit.github.io/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='ساخت کوتاه کننده لینک با گیتهاب پیجز'>
+<meta property='og:description' content='شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید، اما ایا سایت کوتاه کننده لینک خودتون رو درست کردین؟
 گیتهاب پیجز یک سرور رایگان برای دیپلوی سایت های ایستا است. در واقع شما می‌توانید صفحه های html رو توی ریپو قرار بدین و این سایت اون صفحه ها رو به رایگان برای شما نمایش می‌دهد.
-از همین قابلیت برای ساخت یک url redirector استفاده کردم، و با کمی جاوا اسکریپت یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید، مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد."><meta property="og:url" content="https://bit-orbit.github.io/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/"><meta property="og:site_name" content="bit-orbit"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:published_time" content="2022-03-22T22:41:20+00:00"><meta property="article:modified_time" content="2022-03-22T22:41:20+00:00"><meta property="og:image" content="https://bit-orbit.github.io/images/post/carbon_r7tm.jpg"><meta name=twitter:title content="ساخت کوتاه کننده لینک با گیتهاب پیجز"><meta name=twitter:description content="شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید، اما ایا سایت کوتاه کننده لینک خودتون رو درست کردین؟
+از همین قابلیت برای ساخت یک url redirector استفاده کردم، و با کمی جاوا اسکریپت یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید، مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد.'>
+<meta property='og:url' content='https://bit-orbit.github.io/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/'>
+<meta property='og:site_name' content='bit-orbit'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-03-22T22:41:20&#43;00:00'/><meta property='article:modified_time' content='2022-03-22T22:41:20&#43;00:00'/><meta property='og:image' content='https://bit-orbit.github.io/images/post/carbon_r7tm.jpg' />
+<meta name="twitter:title" content="ساخت کوتاه کننده لینک با گیتهاب پیجز">
+<meta name="twitter:description" content="شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید، اما ایا سایت کوتاه کننده لینک خودتون رو درست کردین؟
 گیتهاب پیجز یک سرور رایگان برای دیپلوی سایت های ایستا است. در واقع شما می‌توانید صفحه های html رو توی ریپو قرار بدین و این سایت اون صفحه ها رو به رایگان برای شما نمایش می‌دهد.
-از همین قابلیت برای ساخت یک url redirector استفاده کردم، و با کمی جاوا اسکریپت یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید، مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد."><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://bit-orbit.github.io/images/post/carbon_r7tm.jpg"><link rel="shortcut icon" href=/favico.ico></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=منو>
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu6497cd18a0b38fe5a894b4a634389306_35604_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
-<span class=emoji>👾</span></figure><div class=site-meta><h1 class=site-name><a href=/>bit-orbit</a></h1><h2 class=site-description>Linux | Python | Book | Fun | Life | Rust | 0110</h2></div></header><ol class=social-menu><li><a href=https://github.com/shabane target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://twitter.com/m_shabane target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>About</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Links</span></a></li><div class=menu-bottom-section><li id=i18n-switch><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg><select name=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://bit-orbit.github.io/en/>English</option><option value=https://bit-orbit.github.io/ selected>فارسی</option></select></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>حالت شب</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">فهرست</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#deployment>Deployment</a></li><li><a href=#theme>Theme</a></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/><img src=/images/post/carbon_r7tm.jpg loading=lazy alt="Featured image of post ساخت کوتاه کننده لینک با گیتهاب پیجز"></a></div><div class=article-details><header class=article-category><a href=/categories/projects/>projects</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/>ساخت کوتاه کننده لینک با گیتهاب پیجز</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Mar 22, 2022</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>مطالعه در 3 دقیقه</time></div></footer></div></header><section class=article-content><div dir=rtl style=font-size:x-large><p>شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید،
-اما ایا سایت <em>کوتاه کننده لینک</em> خودتون رو درست کردین؟</p><p>گیتهاب پیجز یک سرور رایگان برای دیپلوی سایت های ایستا است.
+از همین قابلیت برای ساخت یک url redirector استفاده کردم، و با کمی جاوا اسکریپت یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید، مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://bit-orbit.github.io/images/post/carbon_r7tm.jpg' />
+    <link rel="shortcut icon" href="/favico.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="منو">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu6497cd18a0b38fe5a894b4a634389306_35604_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">👾</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">bit-orbit</a></h1>
+            <h2 class="site-description">Linux | Python | Book | Fun | Life | Rust | 0110</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/shabane'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/m_shabane'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://bit-orbit.github.io/en/" >English</option>
+                        
+                            <option value="https://bit-orbit.github.io/" selected>فارسی</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>حالت شب</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">فهرست</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#deployment">Deployment</a></li>
+    <li><a href="#theme">Theme</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/">
+                
+                    <img src="/images/post/carbon_r7tm.jpg" loading="lazy" alt="Featured image of post ساخت کوتاه کننده لینک با گیتهاب پیجز" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/projects/" >
+                projects
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%D8%B3%D8%A7%D8%AE%D8%AA-%DA%A9%D9%88%D8%AA%D8%A7%D9%87-%DA%A9%D9%86%D9%86%D8%AF%D9%87-%D9%84%DB%8C%D9%86%DA%A9-%D8%A8%D8%A7-%DA%AF%DB%8C%D8%AA%D9%87%D8%A7%D8%A8-%D9%BE%DB%8C%D8%AC%D8%B2/">ساخت کوتاه کننده لینک با گیتهاب پیجز</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 22, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    مطالعه در 3 دقیقه
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <div dir='rtl' style='font-size: x-large'>
+<p>شاید تا به حال از کوتاه کننده های لینک استفاده کرده باشید،
+اما ایا سایت <em>کوتاه کننده لینک</em> خودتون رو درست کردین؟</p>
+<p>گیتهاب پیجز یک سرور رایگان برای دیپلوی سایت های ایستا است.
 در واقع شما می‌توانید صفحه های
 html
 رو توی ریپو قرار بدین و این سایت اون صفحه ها رو به رایگان
-برای شما نمایش می‌دهد.</p><p>از همین قابلیت برای ساخت یک
+برای شما نمایش  می‌دهد.</p>
+<p>از همین قابلیت برای ساخت یک
 url redirector
 استفاده کردم، و با کمی جاوا اسکریپت
 یک صفحه درست کردم که وقتی شما با مرورگر اون رو باز می‌کنید،
-مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد.</p><p>ولی مشکل اینجاست که شما هر بار باید کلی
+مرورگر شما به صورت خودکار به یک آدرس متفاوت منتقل خواهد شد.</p>
+<p>ولی مشکل اینجاست که شما هر بار باید کلی
 html, css
-رو خودتان تغییر بدین و بعد قطعه کد جاوا اسکریپت رو اضافه کنید.</p><hr><div><h2><img style=width:5% src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE50lEQVRoge2aW2wUVRiAvzPbC2BSuYTL7laDCYEIgZgCMWpILLuFpMYHNPapRHvZECHWQoQSLmYRAlaMtI032G25v0AiL0ignbUmqBiDxIBoEIw+tLstSMFGge7uzO/D7jZtKWXa7tbS7Pd49sx//m/OzOzM+Q+ksYjXq+H1aqkeRqUy+Ax932INrRYkW6Ay5PacTdVYKRHJDRx0ihnZJYri3mOok6ZNe6stv+TPZI+ZVJHc746NN+90rgeqgAkgdxE+iI+0AdR44A5QrU3I2d3yfNHdZI2dNBFHwP8yQh0wMx6619m/f5akVYm2qdVdehilZLjjD1vEEWjIQ8waYEmsRS503w8iKrfpwKyWZSVXE/3tum+JghpQefGmsyitMugqvTCcPIYs4tQPThGi74KsAWzATYHtoY6cjykqMhyBhjxMsw7FXGzG7GD+qr+6DxZRTr1hpSipBmYAooQj4Qzbhhv5JW0jIjLv2LGsW1M6KxC2AI8DYYS6e5Fx2zsKizun6b7pGaidwBuABgSVyKutBZ7v+8aafOpIzrjMe1tRVABZwN8odky6mVN3uagonDIRh97gBrMWmBtrEd3E9nabu/SXhef3ZgZv21Yr2BYXjID67F44e2tHYXHnQHFzm/2zTIOdwGuxsFxTGptaXeXHkyri1PfNFrSPgJfiTVc0Tda1LPWcAnA2+l2iUQvMSwiKUBEq8PxqNREAZ8C3VIQaUPPj2QU007a2paDk0rBEnjz76aRoV1YVsJbY1N9CUT3pZs6ey0VF4fvOJFxVwtrWgvIvByPQi2Zvht1wliqldiBMBaIK1WCE1Za2wtIbgxPxejXnC08Ui2I3yDTAVMLRqBl5p335m9ennzn0mE3rWo9SVcA44F9EPpwQubvrWmFF15AlehA7idlekNVABtAh8F7I1vIJ+d6oJRGH7rvY7/SKKPtX9cVKeB9wACZwIIpsuu72tCdDoC+5Tfvnm5qxB8EVa5FLQbdngUURvwCIUq+EXGUnAOyN9YuUJnXAc/Fu58RUFaFlZedTIdAXe6B+hRL5AiDoLr8v74yBDk5IOHRfAchp4o9TUWwMLS07kox/ZKuEXGUnHLr/gb9ber22TzS/Bi4C1RFb15yQqzwprxUPw6H7mhy6r8lK3wFnJMGPi1ZFaPYu7u8mSy3KbbWn9Q+eEZcYHCn/chsp0iKjjbTIaCMtMtpIi4w20iKjjbTIaMO6SLPX0iv//4Wl5Bae35sZum37Ad1/JmLr2nEjf80/qU4shuhWe1qakdBt7UVgAVCVaWRfsQf8KxFJaW0FIOj2FATdngIrfQcUsQfqV8QDNompngXOAQ4lHHIE6r+1N9YvGn661kjk8iDGzHJQvzMS/Kb1GSXqdVDXEVymMn5yNvkPTW/8fGrIVX7YMLJmI7INCAOlGajfHU0+76xTddlJEzjtn+zQ62tNZVyIS3QIVAZtrXn99R/wOp/ZvH9i2DA2MgqWTMUW3dyrNDEYkQT9LGL/poR1iYT7W8ROrNIPxiEWR/b0vKyNKJXty8t/ftixQykr1PSXcFLLCnBVKTYnvazQkzFR6OnJIEpvT2Mz5vS6vrtX+7tLb6YSjkaUrB/q0y9dDO1LvDxdCzwVD33SMMyK9uWeP+ARKE/3ZExsGOjJI7+Foy8juakm9YzQNqcxw39CC6i8SsB1XwAAAABJRU5ErkJggg==" alt="carbon carbon-link-shortener arya-shabane shabane mohamad-shabane">
-Carbon</h2></div><p><a class=link href=/images/post/scarbon.jpg><img src=/images/post/scarbon.jpg loading=lazy alt=carbon-shot></a></p><p>من یک برنامه کوتاه کننده لینک درست کردم که
+رو خودتان تغییر بدین و بعد قطعه کد جاوا اسکریپت رو اضافه کنید.</p>
+<hr>
+<div>
+<h2>
+<img style="width: 5%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE50lEQVRoge2aW2wUVRiAvzPbC2BSuYTL7laDCYEIgZgCMWpILLuFpMYHNPapRHvZECHWQoQSLmYRAlaMtI032G25v0AiL0ignbUmqBiDxIBoEIw+tLstSMFGge7uzO/D7jZtKWXa7tbS7Pd49sx//m/OzOzM+Q+ksYjXq+H1aqkeRqUy+Ax932INrRYkW6Ay5PacTdVYKRHJDRx0ihnZJYri3mOok6ZNe6stv+TPZI+ZVJHc746NN+90rgeqgAkgdxE+iI+0AdR44A5QrU3I2d3yfNHdZI2dNBFHwP8yQh0wMx6619m/f5akVYm2qdVdehilZLjjD1vEEWjIQ8waYEmsRS503w8iKrfpwKyWZSVXE/3tum+JghpQefGmsyitMugqvTCcPIYs4tQPThGi74KsAWzATYHtoY6cjykqMhyBhjxMsw7FXGzG7GD+qr+6DxZRTr1hpSipBmYAooQj4Qzbhhv5JW0jIjLv2LGsW1M6KxC2AI8DYYS6e5Fx2zsKizun6b7pGaidwBuABgSVyKutBZ7v+8aafOpIzrjMe1tRVABZwN8odky6mVN3uagonDIRh97gBrMWmBtrEd3E9nabu/SXhef3ZgZv21Yr2BYXjID67F44e2tHYXHnQHFzm/2zTIOdwGuxsFxTGptaXeXHkyri1PfNFrSPgJfiTVc0Tda1LPWcAnA2+l2iUQvMSwiKUBEq8PxqNREAZ8C3VIQaUPPj2QU007a2paDk0rBEnjz76aRoV1YVsJbY1N9CUT3pZs6ey0VF4fvOJFxVwtrWgvIvByPQi2Zvht1wliqldiBMBaIK1WCE1Za2wtIbgxPxejXnC08Ui2I3yDTAVMLRqBl5p335m9ennzn0mE3rWo9SVcA44F9EPpwQubvrWmFF15AlehA7idlekNVABtAh8F7I1vIJ+d6oJRGH7rvY7/SKKPtX9cVKeB9wACZwIIpsuu72tCdDoC+5Tfvnm5qxB8EVa5FLQbdngUURvwCIUq+EXGUnAOyN9YuUJnXAc/Fu58RUFaFlZedTIdAXe6B+hRL5AiDoLr8v74yBDk5IOHRfAchp4o9TUWwMLS07kox/ZKuEXGUnHLr/gb9ber22TzS/Bi4C1RFb15yQqzwprxUPw6H7mhy6r8lK3wFnJMGPi1ZFaPYu7u8mSy3KbbWn9Q+eEZcYHCn/chsp0iKjjbTIaCMtMtpIi4w20iKjjbTIaMO6SLPX0iv//4Wl5Bae35sZum37Ad1/JmLr2nEjf80/qU4shuhWe1qakdBt7UVgAVCVaWRfsQf8KxFJaW0FIOj2FATdngIrfQcUsQfqV8QDNompngXOAQ4lHHIE6r+1N9YvGn661kjk8iDGzHJQvzMS/Kb1GSXqdVDXEVymMn5yNvkPTW/8fGrIVX7YMLJmI7INCAOlGajfHU0+76xTddlJEzjtn+zQ62tNZVyIS3QIVAZtrXn99R/wOp/ZvH9i2DA2MgqWTMUW3dyrNDEYkQT9LGL/poR1iYT7W8ROrNIPxiEWR/b0vKyNKJXty8t/ftixQykr1PSXcFLLCnBVKTYnvazQkzFR6OnJIEpvT2Mz5vS6vrtX+7tLb6YSjkaUrB/q0y9dDO1LvDxdCzwVD33SMMyK9uWeP+ARKE/3ZExsGOjJI7+Foy8juakm9YzQNqcxw39CC6i8SsB1XwAAAABJRU5ErkJggg==" alt="carbon carbon-link-shortener arya-shabane shabane mohamad-shabane">
+Carbon
+</h2>
+</div>
+<p><a class="link" href="/images/post/scarbon.jpg" ><img src="/images/post/scarbon.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="carbon-shot"
+	
+	
+></a></p>
+<p>من یک برنامه کوتاه کننده لینک درست کردم که
 زمانی که شما برنامه رو اجرا کنید، فایل های مورد نیاز رو برای شما
-می‌سازه.</p><p>برنامه رو که اجرا کنید یک
+می‌سازه.</p>
+<p>برنامه رو که اجرا کنید یک
 CLI
-اجرا خواهد شد و از شما چند ورودی را درخواست خواهد کرد.</p><p>اولین ورودی لینک طولانی است که
-شما نیاز دارید آن را کوتاه کنید.</p><p>در قدم دوم، برنامه یک نام که همان لینک کوتاه شده است را از شما خواهد گرفت،
+اجرا خواهد شد و از شما چند ورودی را درخواست خواهد کرد.</p>
+<p>اولین ورودی لینک طولانی است که
+شما نیاز دارید آن را کوتاه کنید.</p>
+<p>در قدم دوم، برنامه یک نام که همان لینک کوتاه شده است را از شما خواهد گرفت،
 این نام را اگر به صورت خالی رها کنید، یک نام تصادفی بر اساس فایل کانفیگ
-در نظر گرفته خواهد شد.</p><p>شاید سایت هایی را دیده باشید که از کاربر می‌خواند برای بازکردن لینک
+در نظر گرفته خواهد شد.</p>
+<p>شاید سایت هایی را دیده باشید که از کاربر می‌خواند برای بازکردن لینک
 روی یک دکمه کلیک کنند، و در این فرصت که کاربر هنوز وارد لیک اصلی نشده است،
 تبلیغاتی را به آنها نمایش می‌دهند. پس سوال سوم این خواهد بود که آیا
 کاربر باید برای وارد شدن به لینک اصلی، دکمه‌ای را بزند و یا به صورت
-خودکار وارد آن شود؟</p><p>سوال سوم از شما یک عنوان می‌خواهد که برای هدر سایت
+خودکار وارد آن شود؟</p>
+<p>سوال سوم از شما یک عنوان می‌خواهد که برای هدر سایت
 از آن استفاده کند، البته اگر تم سایت را کاستومایز کنید، این عنوان
-در هر جایی ممکن است قرار بگیرد.</p><p>و آخرین سوال از شما یک توضیح برای لینک می‌خواهد. ممکن شما
+در هر جایی ممکن است قرار بگیرد.</p>
+<p>و آخرین سوال از شما یک توضیح برای لینک می‌خواهد. ممکن شما
 بخواهید قبل از اینکه کاربر وارد لینک اصلی شود یک متنی را بخواند.
-این توضیحات به کاربر نمایش داده خواهد شد.</p><p>برنامه کربن را منبع باز داخل این
-<a class=link href=https://shabane.github.io/carbon/on_open target=_blank rel=noopener>آدرس</a>
-در گیتهاب قرار دادم، امیدوارم که مفید باشه.</p><hr><h2 id=deployment>Deployment</h2><p>البته همینطور که می‌دانید نیاز نیست حتما از گیتهاب پیجز برای
+این توضیحات به کاربر نمایش داده خواهد شد.</p>
+<p>برنامه کربن را منبع باز داخل این
+<a class="link" href="https://shabane.github.io/carbon/on_open"  target="_blank" rel="noopener"
+    >آدرس</a>
+در گیتهاب قرار دادم، امیدوارم که مفید باشه.</p>
+<hr>
+<h2 id="deployment">Deployment</h2>
+<p>البته همینطور که می‌دانید نیاز نیست حتما از گیتهاب پیجز برای
 دیپلوی استفاده کنید. و تنها مشکلی که در این قضیه هست
 لینک هایی هست که تولید می‌شوند، این لینک ها به ساب دامین اکانت شما
 متصل می‌شوند، پس حفظ آن ها برای شما ساده است :)
-اما نکته اینجاست که کافیست شما یک دامنه ثبت کنید.</p><p>راه دوم این است که با یک وب سرور مثل
+اما نکته اینجاست که کافیست شما یک دامنه ثبت کنید.</p>
+<p>راه دوم این است که با یک وب سرور مثل
 nginx
 این سایت را مستقر کنید، و هرگاه نیاز به ساخت لینک کوتاه داشتید،
-برنامه رو اجرا کنید.</p><hr><h2 id=theme>Theme</h2><p>من هیچ وقت دیزانر خوبی نبودم و به همین دلیل تم اصلی سایت ساده‌س.
+برنامه رو اجرا کنید.</p>
+<hr>
+<h2 id="theme">Theme</h2>
+<p>من هیچ وقت دیزانر خوبی نبودم و به همین دلیل تم اصلی سایت ساده‌س.
 شما می‌توانید به راحتی تم خودتان رو بسازید، کافیه که
-<a class=link href=https://github.com/shabane/carbon/blob/master/documentation/theme.md target=_blank rel=noopener>داکیومنت ساخت</a>
+<a class="link" href="https://github.com/shabane/carbon/blob/master/documentation/theme.md"  target="_blank" rel="noopener"
+    >داکیومنت ساخت</a>
 تم رو مطالعه کنید.
 فقط و فقط چند تگ و فایل هست که باید ازش درون تم استفاده کنید، اگر تمی ساختید که
-قشنگتر از تم اصلی هست، خوشحال می‌شم به ریپو اصلی پوش کنید.</p></div></section><footer class=article-footer><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>مطالب مرتبط</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/%DA%A9%D9%BE%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86-%D8%B1%DB%8C%D8%B2%D8%A7%D9%84%D8%AA-%D9%BE%D8%A7%DB%8C%D9%BE-%D8%A8%D9%87-%DA%A9%D9%84%DB%8C%D9%BE-%D8%A8%D8%B1%D8%AF/><div class=article-image><img src=/images/post/cclp.jpg loading=lazy data-key data-hash=/images/post/cclp.jpg></div><div class=article-details><h2 class=article-title>کپی کردن ریزالت پایپ به کلیپ برد</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
-2020 -
-2023 bit-orbit</section><section class=powerby>قدرت گرفته از <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>قالب <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.16.0>Stack</a></b> ساخته شده توسط <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
-<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
+قشنگتر از تم اصلی هست، خوشحال می‌شم به ریپو اصلی پوش کنید.</p>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">مطالب مرتبط</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%DA%A9%D9%BE%DB%8C-%DA%A9%D8%B1%D8%AF%D9%86-%D8%B1%DB%8C%D8%B2%D8%A7%D9%84%D8%AA-%D9%BE%D8%A7%DB%8C%D9%BE-%D8%A8%D9%87-%DA%A9%D9%84%DB%8C%D9%BE-%D8%A8%D8%B1%D8%AF/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/post/cclp.jpg" loading="lazy" data-key="" data-hash="/images/post/cclp.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">کپی کردن ریزالت پایپ به کلیپ برد</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 bit-orbit
+    </section>
+    
+    <section class="powerby">
+        قدرت گرفته از <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        قالب <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> ساخته شده توسط <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
