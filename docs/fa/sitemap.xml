@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bit-orbit.github.io/</loc>
-    <lastmod>2023-12-11T01:39:34+03:30</lastmod>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://bit-orbit.github.io/categories/</loc>
-    <lastmod>2023-12-11T01:39:34+03:30</lastmod>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,16 +29,16 @@
                 />
   </url><url>
     <loc>https://bit-orbit.github.io/categories/cloud/</loc>
-    <lastmod>2023-12-11T01:39:34+03:30</lastmod>
-  </url><url>
-    <loc>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</loc>
-    <lastmod>2023-12-11T01:39:34+03:30</lastmod>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/post/</loc>
-    <lastmod>2023-12-11T01:39:34+03:30</lastmod>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/categories/python/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/tags/</loc>
-    <lastmod>2023-12-11T01:39:34+03:30</lastmod>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -51,6 +51,24 @@
                 />
   </url><url>
     <loc>https://bit-orbit.github.io/categories/tech/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%A7%D9%BE%D9%84%D9%88%D8%AF-%D9%81%D8%A7%DB%8C%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85-%D8%A8%D8%AF%D9%88%D9%86-%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%A7%D9%BE%D9%84%D9%88%D8%AF-%D9%81%D8%A7%DB%8C%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85-%D8%A8%D8%AF%D9%88%D9%86-%D9%86%DB%8C%D8%A7%D8%B2-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%D8%B1/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%DA%86%D8%B7%D9%88%D8%B1%DB%8C-%D8%A8%D8%A7-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85-%D9%81%D8%A7%DB%8C%D9%84-%D8%A7%D9%BE%D9%84%D9%88%D8%AF-%DA%A9%D9%86%DB%8C%D9%85/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D9%86%D8%AD%D9%88%D9%87-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%DA%A9%D9%88%D9%84%D8%A8/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</loc>
     <lastmod>2023-12-11T01:39:34+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/tags/umbrel-os-%DA%86%DB%8C%D8%B3%D8%AA/</loc>
