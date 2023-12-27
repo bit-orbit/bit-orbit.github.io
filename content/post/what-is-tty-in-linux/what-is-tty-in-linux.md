@@ -15,7 +15,10 @@ tags: [
     'terminal'
 ]
 
-categories: ['tech']
+categories: [
+    'tech',
+    'linux',
+]
 image: 'images/post/tty.jpg'
 ---
 
