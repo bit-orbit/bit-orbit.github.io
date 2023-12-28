@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='اوایل که لینوکس نصب کرده بودم کامند هایی که توی فروم های مختلف می‌دیدم و برای من جدید بود را دوست داشتم یاد بگیرم و بدونم کارشون چی هست، برای همین هر کامندی را که می‌دیدم در اولین فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده بودم، به اسم فورک بمب (fork bomb) شناخته می‌شود. کامند به این صورت هست'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='اوایل که لینوکس نصب کرده بودم کامند هایی که توی فروم های مختلف می‌دیدم و برای من جدید بود را دوست داشتم یاد بگیرم و بدانم کار آنها چی هست، برای همین هر کامندی را که می‌دیدم در اولین فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده بودم، به اسم فورک بمب (fork bomb) شناخته می‌شود.'>
 <title>فورک بمب چیست و چطور کار می‌کند؟</title>
 
 <link rel='canonical' href='https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/'>
 
 <link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='فورک بمب چیست و چطور کار می‌کند؟'>
-<meta property='og:description' content='اوایل که لینوکس نصب کرده بودم کامند هایی که توی فروم های مختلف می‌دیدم و برای من جدید بود را دوست داشتم یاد بگیرم و بدونم کارشون چی هست، برای همین هر کامندی را که می‌دیدم در اولین فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده بودم، به اسم فورک بمب (fork bomb) شناخته می‌شود. کامند به این صورت هست'>
+<meta property='og:description' content='اوایل که لینوکس نصب کرده بودم کامند هایی که توی فروم های مختلف می‌دیدم و برای من جدید بود را دوست داشتم یاد بگیرم و بدانم کار آنها چی هست، برای همین هر کامندی را که می‌دیدم در اولین فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده بودم، به اسم فورک بمب (fork bomb) شناخته می‌شود.'>
 <meta property='og:url' content='https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/'>
 <meta property='og:site_name' content='bit-orbit'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='فورک بومب چیست' /><meta property='article:tag' content='forkbomb چیست' /><meta property='article:tag' content=':(){ :|:&amp; };:' /><meta property='article:tag' content='ریکرشن بینهایت' /><meta property='article:tag' content='infinite recursion' /><meta property='article:tag' content='recursion' /><meta property='article:published_time' content='2023-12-27T16:39:27&#43;03:30'/><meta property='article:modified_time' content='2023-12-27T16:39:27&#43;03:30'/><meta property='og:image' content='https://bit-orbit.github.io/images/post/fork_bomb.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='فورک بومب چیست' /><meta property='article:tag' content='forkbomb چیست' /><meta property='article:tag' content=':(){ :|:&amp; };:' /><meta property='article:tag' content='ریکرشن بینهایت' /><meta property='article:tag' content='infinite recursion' /><meta property='article:tag' content='recursion' /><meta property='article:tag' content='arya shabane' /><meta property='article:tag' content='آریا شبانه' /><meta property='article:published_time' content='2023-12-27T16:39:27&#43;03:30'/><meta property='article:modified_time' content='2023-12-27T16:39:27&#43;03:30'/><meta property='og:image' content='https://bit-orbit.github.io/images/post/fork_bomb.jpg' />
 <meta name="twitter:title" content="فورک بمب چیست و چطور کار می‌کند؟">
-<meta name="twitter:description" content="اوایل که لینوکس نصب کرده بودم کامند هایی که توی فروم های مختلف می‌دیدم و برای من جدید بود را دوست داشتم یاد بگیرم و بدونم کارشون چی هست، برای همین هر کامندی را که می‌دیدم در اولین فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده بودم، به اسم فورک بمب (fork bomb) شناخته می‌شود. کامند به این صورت هست"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="اوایل که لینوکس نصب کرده بودم کامند هایی که توی فروم های مختلف می‌دیدم و برای من جدید بود را دوست داشتم یاد بگیرم و بدانم کار آنها چی هست، برای همین هر کامندی را که می‌دیدم در اولین فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده بودم، به اسم فورک بمب (fork bomb) شناخته می‌شود."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://bit-orbit.github.io/images/post/fork_bomb.jpg' />
     <link rel="shortcut icon" href="/favico.ico" />
 
@@ -327,8 +327,9 @@
     
     <p>اوایل که لینوکس نصب کرده بودم کامند هایی که توی
 فروم های مختلف می‌دیدم و برای من جدید بود
-را دوست داشتم یاد بگیرم و بدونم
-کارشون چی هست، برای همین هر کامندی را که می‌دیدم در اولین
+را دوست داشتم یاد بگیرم و بدانم
+کار آنها چی هست، برای همین هر کامندی را که می‌دیدم در
+اولین
 فرصت داخل سیستم خودم اجرا می‌کردم. که خب کور کورانه اجرای
 هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده
 بودم، به اسم فورک بمب
@@ -343,9 +344,9 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>اگر این کامند را اجرا کنید(امیدوارم تا الان نکرده باشید) تقریبا زیر یک دقیقه سیستم شما
-هنگ می‌کنه و مجبور می‌شوید ری‌استارت‌ش کنید.</p>
+هنگ می‌کند و مجبور می‌شوید سیستم را ریبوت کنید.</p>
 <hr>
-<p>توی این پست من ساختار این کامند را تشریح می‌کنم و باهم
+<p>توی این پست ساختار این کامند را تشریح می‌کنم و باهم
 کمی
 bash
 یاد می‌گیریم.</p>
@@ -369,8 +370,8 @@ call recursion
 <blockquote>
 <p>درختی که می‌بینید را اجرای فورک بمب درنظر بگیرید،
 هر ستاره یک پروسه جدید است که توسط پروسه قبلی اجرا شده،
-و خودش هم دائم پروسه جدید باز می‌کند و هر یک از پروسه ها
-هم همین راند را ادامه می‌دهند.</p>
+و خودش هم دو پروسه جدید باز می‌کند و هر یک از پروسه ها
+هم همین روند را ادامه می‌دهند.</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -411,68 +412,48 @@ call recursion
 </span><span class="lnt">35
 </span><span class="lnt">36
 </span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">           </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">           </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">           </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">           </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">               </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">               </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">               </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">               </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">               </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">               </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">    
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">       </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">           </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">                   </span><span class="err">├──</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">                   </span><span class="err">└──</span><span class="w"> </span><span class="o">*</span><span class="w">   
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>من برای اینکه سیستم‌م هنگ نکند فورک بمب را روی داکر
+</div><p>من برای اینکه سیستم‌ خودم هنگ نکند فورک بمب را روی داکر
 اجرا کردم و خب حتی یک ثانیه هم طول نکشید و آن کانتینر
 کاملا هنگ کرد.</p>
 <blockquote>
@@ -503,24 +484,20 @@ call recursion
 </blockquote>
 <hr>
 <p>بیایید وارد کد بشیم، این علامت ها و کاراکتر ها چی هستند؟</p>
-<p>برای تعریف یک فانکشن توی
+<!-- برای تعریف یک فانکشن توی 
 bash
-ما به این صورت عمل می‌کنیم که اول اسم فانکشن بعد پرانتر
-و بعد کرلی براکت(توی فارسی می‌گیم آکولاد) و داخل کرلی
+ما به این صورت عمل می‌کنیم که اول اسم فانکشن بعد پرانتز 
+و بعد کرلی براکت(توی فارسی می‌گیم آکولاد) و داخل کرلی 
 براکت ما قطعه کد را می‌نویسیم. مثلا برای فانکشنی که یک
-اسم را روی صفحه چاپ کنه به این صورت عمل می‌کنیم</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pname<span class="o">(){</span> <span class="nb">echo</span> <span class="s1">&#39;foo&#39;</span><span class="p">;</span> <span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>حالا اگه دقت کنید اولین کاراکتر فورک بمب، علامت
+اسم را روی صفحه چاپ کنه به این صورت عمل می‌کنیم
+
+```bash
+pname(){ echo 'foo'; }
+``` -->
+<p>اگه دقت کنید اولین کاراکتر فورک بمب، علامت
 <code>:</code>
 است. این علامت اسم فانکشن ما است. برخلاف قانون تعریف نام
-متغییر ها توی
+برای متغییر ها توی
 bash،
 می‌توانیم از کاراتر های یونیکد هم برای تعریف نام فانکشن
 استفاده کنیم، مثلا یک
@@ -583,8 +560,8 @@ bash
 <code>|</code>
 به اسم پایپ شناخته می‌شود، وظیفه این علامت
 دادن خروجی یک کامند بعنوان ورودی به یک کامند دیگر هست،
-حلا اگر
-دقت کنید ما ریزالت اجرای
+حلا
+دقت کنید که ما خروجی اجرای
 <code>:</code>
 را به خودش می‌دهیم. دقیقا به این شکل</p>
 <div class="highlight"><div class="chroma">
@@ -597,17 +574,24 @@ bash
 </div>
 </div><p>با این علامت هر پروسه دو بار پروسه جدیدی از خودش می‌سازد
 اگر از این علامت استفاده نکنیم، پروسه ما به صورت خطی خودش
-را اجرا خواهد کرد، اینطوری کد ما با یک عادی
+را اجرا خواهد کرد، اینطوری کد ما با یک حلقه
 <code>while</code>
-تفاوتی نخواهد داشت.</p>
+تفاوتی زیادی نخواهد داشت.</p>
 <p>علامت
 <code>&amp;</code>
 اجرای یک کامند را به بکگراند(پس زمینه) می‌برد.
-برای مثال اگر یک برنامه اجرا کنید و تا تمام شدن اجرای
-آن برنامه نتوانید از ترمینال استفاده کنید، شما می‌توانید
-آن برنامه را در بکگراند اجرا کنید. حالا توی فورک بمب
-این علامت باعث می‌شه تا یک کد درحالی که کارش به اتمام
-نرسیده است، کامند بعدی اجرا بشود.</p>
+برای مثال بعد از اجرای یک دستور باید صبر کنید پروسه
+آن تمام شود تا بتوانید دستور بعدی را اجرا کنید.
+ولی اگر از علامت
+<code>&amp;</code>
+بعد از هر دستور استفاده کنید، دیگر نیاز نیست
+صبر کنید تا روند اجرای آن برنامه تمام شود.
+درواقع با علامت
+<code>&amp;</code>
+شما می‌توانید
+هر برنامه را در بکگراند اجرا کنید. حالا توی فورک بمب
+این علامت باعث می‌شود تا فانشکنی که اجرا کردین درحالی که کارش به اتمام
+نرسیده است، فانکشن بعدی اجرا بشود.</p>
 <p><img src="/images/post/forkbomb_and.jpg"
 	
 	
@@ -665,6 +649,10 @@ bash
             <a href="/tags/infinite-recursion/">infinite recursion</a>
         
             <a href="/tags/recursion/">recursion</a>
+        
+            <a href="/tags/arya-shabane/">arya shabane</a>
+        
+            <a href="/tags/%D8%A2%D8%B1%DB%8C%D8%A7-%D8%B4%D8%A8%D8%A7%D9%86%D9%87/">آریا شبانه</a>
         
     </section>
 
