@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bit-orbit.github.io/</loc>
-    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://bit-orbit.github.io/categories/</loc>
-    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,17 +28,23 @@
                 href="https://bit-orbit.github.io/categories/"
                 />
   </url><url>
-    <loc>https://bit-orbit.github.io/categories/cloud/</loc>
-    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+    <loc>https://bit-orbit.github.io/tags/forkbomb-%DA%86%DB%8C%D8%B3%D8%AA/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/infinite-recursion/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/categories/linux/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/post/</loc>
-    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
   </url><url>
-    <loc>https://bit-orbit.github.io/categories/python/</loc>
-    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+    <loc>https://bit-orbit.github.io/tags/recursion/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/tags/</loc>
-    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,6 +55,21 @@
                 hreflang="fa"
                 href="https://bit-orbit.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%B1%DB%8C%DA%A9%D8%B1%D8%B4%D9%86-%D8%A8%DB%8C%D9%86%D9%87%D8%A7%DB%8C%D8%AA/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%88%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/categories/cloud/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/categories/python/</loc>
+    <lastmod>2023-12-18T00:08:38+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/categories/tech/</loc>
     <lastmod>2023-12-18T00:08:38+03:30</lastmod>
@@ -162,9 +183,6 @@
     <lastmod>2022-03-22T22:41:20+00:00</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</loc>
-    <lastmod>2022-01-31T19:57:05+03:30</lastmod>
-  </url><url>
-    <loc>https://bit-orbit.github.io/categories/linux/</loc>
     <lastmod>2022-01-31T19:57:05+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/tags/linux-terminal/</loc>

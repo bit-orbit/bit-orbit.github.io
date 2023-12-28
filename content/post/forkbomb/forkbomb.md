@@ -1,7 +1,7 @@
 ---
 title: "فورک بمب چیست و چطور کار می‌کند؟"
 date: 2023-12-27T16:39:27+03:30
-draft: true
+draft: false
 image: '/images/post/fork_bomb.jpg'
 descrioption: 'dsf'
 categories: [
