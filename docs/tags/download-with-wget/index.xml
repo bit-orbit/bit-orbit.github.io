@@ -1,107 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>download-with-wget on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/download-with-wget/</link>
-        <description>Recent content in download-with-wget on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Fri, 07 Jul 2023 02:45:19 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/download-with-wget/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>چرا لینوکس رو دوست دارم؟</title>
-        <link>https://bit-orbit.github.io/p/%DA%86%D8%B1%D8%A7-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D8%B1%D9%88-%D8%AF%D9%88%D8%B3%D8%AA-%D8%AF%D8%A7%D8%B1%D9%85/</link>
-        <pubDate>Fri, 07 Jul 2023 02:45:19 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%DA%86%D8%B1%D8%A7-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D8%B1%D9%88-%D8%AF%D9%88%D8%B3%D8%AA-%D8%AF%D8%A7%D8%B1%D9%85/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/ill.png" alt="Featured image of post چرا لینوکس رو دوست دارم؟" /&gt;&lt;p&gt;دوست داشتن لینوکس واقعا دلایل زیادی داره و احتمالا هر کسی به دلیل خاصی لینوکس رو دوست داره.
-مثلا یکی ممکنه آزادی‌اش رو دوست داشته باشه یکی دیگه از پکیج منیجر علاقه رو به لینوکس پیدا کرده باشه و &amp;hellip;&lt;/p&gt;
-&lt;p&gt;من ترمینال قدرتمند لینوکس رو دوست دارم، چیزی که هیچوقت توی ویندوز تجربه نکرده بودم.
-یکی زیبایی های ترمینال برای من ترکیب ریزالت برنامه‌های مختلف با یکدیگر و بدست اوردن نتیجه جدیده&lt;/p&gt;
-&lt;p&gt;مثلا بابام برای چندین پست فرستاد که هر پست شامل چهار یا پنج لینکه که من باید همه‌ش رو دانلود کنم،
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>download-with-wget on bit-orbit</title><link>https://bit-orbit.github.io/tags/download-with-wget/</link><description>Recent content in download-with-wget on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 07 Jul 2023 02:45:19 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/download-with-wget/index.xml" rel="self" type="application/rss+xml"/><item><title>چرا لینوکس رو دوست دارم؟</title><link>https://bit-orbit.github.io/p/%DA%86%D8%B1%D8%A7-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D8%B1%D9%88-%D8%AF%D9%88%D8%B3%D8%AA-%D8%AF%D8%A7%D8%B1%D9%85/</link><pubDate>Fri, 07 Jul 2023 02:45:19 +0330</pubDate><guid>https://bit-orbit.github.io/p/%DA%86%D8%B1%D8%A7-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D8%B1%D9%88-%D8%AF%D9%88%D8%B3%D8%AA-%D8%AF%D8%A7%D8%B1%D9%85/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/ill.png" alt="Featured image of post چرا لینوکس رو دوست دارم؟" />&lt;p>دوست داشتن لینوکس واقعا دلایل زیادی داره و احتمالا هر کسی به دلیل خاصی لینوکس رو دوست داره.
+مثلا یکی ممکنه آزادی‌اش رو دوست داشته باشه یکی دیگه از پکیج منیجر علاقه رو به لینوکس پیدا کرده باشه و &amp;hellip;&lt;/p>
+&lt;p>من ترمینال قدرتمند لینوکس رو دوست دارم، چیزی که هیچوقت توی ویندوز تجربه نکرده بودم.
+یکی زیبایی های ترمینال برای من ترکیب ریزالت برنامه‌های مختلف با یکدیگر و بدست اوردن نتیجه جدیده&lt;/p>
+&lt;p>مثلا بابام برای چندین پست فرستاد که هر پست شامل چهار یا پنج لینکه که من باید همه‌ش رو دانلود کنم،
 درحالت عادی اگر روی ویندوز بودم خب باید هر لینک رو کپی می‌کردم و بعد وارد دانلود منیجر می‌کردم برای دانلود.
-ولی خب ما مجهزیم به قدرت ترمینال لینوکس :)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tfiles.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;telegram-post-contain-links&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;خب من کاری که می‌کنم اینه که متن پست ها رو کپی می‌کنم و توی یک فایل می‌ریزم
-اینطوری هم متن های فارسی پست ها و هم لینک های فایل ها رو دارم&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/ffiles2.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;save-links-to-file&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;بعد با دستور
+ولی خب ما مجهزیم به قدرت ترمینال لینوکس :)&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tfiles.jpg"
+loading="lazy"
+alt="telegram-post-contain-links"
+>&lt;/p>
+&lt;p>خب من کاری که می‌کنم اینه که متن پست ها رو کپی می‌کنم و توی یک فایل می‌ریزم
+اینطوری هم متن های فارسی پست ها و هم لینک های فایل ها رو دارم&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ffiles2.jpg"
+loading="lazy"
+alt="save-links-to-file"
+>&lt;/p>
+&lt;p>بعد با دستور
 grep
 با یک پترن ساده
 regex
 همه لینک ها رو از متن های فارسی جدا می‌کنم و داخل یک فایل دیگه می‌ریزم.
 این پترن به این شکل هست که می‌گه هر خطی که اولش
 http
-باشه رو پیدا کن.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat dl.txt &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; egrep &lt;span class=&#34;s1&#34;&gt;&amp;#39;^http&amp;#39;&lt;/span&gt; &amp;gt; dl.lst
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tfiles3.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;save-links-to-file&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;و تمام، همه لینک ها رو یکجا آماده دارم، حالا کافیه با یک دستور همه فایل
-ها رو دانلود کنم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget -c -i dl.lst
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;خب بعد از دانلود شدن فایل ها، یک مشکلی که دارم این هست که هر پست شامل تمامی درس های یکی از فصل هایی هست
+باشه رو پیدا کن.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">cat dl.txt &lt;span class="p">|&lt;/span> egrep &lt;span class="s1">&amp;#39;^http&amp;#39;&lt;/span> &amp;gt; dl.lst
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tfiles3.jpg"
+loading="lazy"
+alt="save-links-to-file"
+>&lt;/p>
+&lt;p>و تمام، همه لینک ها رو یکجا آماده دارم، حالا کافیه با یک دستور همه فایل
+ها رو دانلود کنم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">wget -c -i dl.lst
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>خب بعد از دانلود شدن فایل ها، یک مشکلی که دارم این هست که هر پست شامل تمامی درس های یکی از فصل هایی هست
 که بابام می‌بینه.
 من باید فایل ها رو براساس فصل هاشون داخل دایرکتوری های مشخص خودش قرار بدم.
 اینم یک راهکار خیلی ساده داره.
 اسم فایل ها به این شکل هست که فصل رو داخلش نوشته
-&lt;code&gt;Option402-J04-01.mp4&lt;/code&gt;
-کافیه با یه وایلد کارت هر فصل رو جدا کنم و داخل دایرکتوری خودش بریزم&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv Option402-J04* j04
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv Option402-J05* j05
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv Option402-J06* j06
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv Option402-J07* j07
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;این یک مثال ساده‌ای بود که می‌تونستم بزنم برای
-توضیح اینکه چرا لینوکس برام جذاب تره و کارم رو ساده تر می‌کنه.&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;code>Option402-J04-01.mp4&lt;/code>
+کافیه با یه وایلد کارت هر فصل رو جدا کنم و داخل دایرکتوری خودش بریزم&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mv Option402-J04* j04
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mv Option402-J05* j05
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mv Option402-J06* j06
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">mv Option402-J07* j07
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>این یک مثال ساده‌ای بود که می‌تونستم بزنم برای
+توضیح اینکه چرا لینوکس برام جذاب تره و کارم رو ساده تر می‌کنه.&lt;/p></description></item></channel></rss>

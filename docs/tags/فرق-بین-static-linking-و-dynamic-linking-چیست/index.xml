@@ -1,92 +1,73 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>فرق بین static linking و dynamic linking چیست on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/%D9%81%D8%B1%D9%82-%D8%A8%DB%8C%D9%86-static-linking-%D9%88-dynamic-linking-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <description>Recent content in فرق بین static linking و dynamic linking چیست on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Fri, 03 Nov 2023 00:21:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/%D9%81%D8%B1%D9%82-%D8%A8%DB%8C%D9%86-static-linking-%D9%88-dynamic-linking-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی</title>
-        <link>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
-        <pubDate>Fri, 03 Nov 2023 00:21:46 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/staticvsdynamic.jpg" alt="Featured image of post تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی" /&gt;&lt;p&gt;یکسری مفاهیمی در برنامه نویسی داریم که من تصمیم داریم درباره آنها توی چند پست توضیح بدم، اولین مورد
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>فرق بین static linking و dynamic linking چیست on bit-orbit</title><link>https://bit-orbit.github.io/tags/%D9%81%D8%B1%D9%82-%D8%A8%DB%8C%D9%86-static-linking-%D9%88-dynamic-linking-%DA%86%DB%8C%D8%B3%D8%AA/</link><description>Recent content in فرق بین static linking و dynamic linking چیست on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 03 Nov 2023 00:21:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/%D9%81%D8%B1%D9%82-%D8%A8%DB%8C%D9%86-static-linking-%D9%88-dynamic-linking-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml"/><item><title>تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی</title><link>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link><pubDate>Fri, 03 Nov 2023 00:21:46 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/staticvsdynamic.jpg" alt="Featured image of post تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی" />&lt;p>یکسری مفاهیمی در برنامه نویسی داریم که من تصمیم داریم درباره آنها توی چند پست توضیح بدم، اولین مورد
 که شامل این پست می‌شه تفاوت
 static linking
 و
 dynamic linking
 در زبان های برامه نویسی هست‌ش. مفاهیم دیگه‌ای که داخل پست های بعدی می‌نویسم چیز هایی مثل
-&lt;strong&gt;static type, dynamic type, compiler language, interpreter language&lt;/strong&gt; و &amp;hellip;
-خواهد بود.&lt;/p&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;دو مفهموم
+&lt;strong>static type, dynamic type, compiler language, interpreter language&lt;/strong> و &amp;hellip;
+خواهد بود.&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>دو مفهموم
 static linking
 و
 dynamic linking
-چه هستند؟&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;هر کدام چه مشکلات و فوایدی دارند؟&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;ما در نوشتن برنامه ها معمولا از لایبراری های زیادی استفاده می‌کنیم، حتی یک برانامه ساده.
+چه هستند؟&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>هر کدام چه مشکلات و فوایدی دارند؟&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>ما در نوشتن برنامه ها معمولا از لایبراری های زیادی استفاده می‌کنیم، حتی یک برانامه ساده.
 سیستم ما برای اجرای یک برنامه، کد برنامه رو به ماشین-کد تبدیل می‌کنه و بعد خط به خط
-اون ها رو اجرا می‌کنه.&lt;/p&gt;
-&lt;p&gt;اصطلاح
+اون ها رو اجرا می‌کنه.&lt;/p>
+&lt;p>اصطلاح
 linking
 به روندی گفته می‌شود که کد شما به اشیاء(کد و داده) های خارجی برای استفاده از انها اشاره کند.
 معمولا دو روش برای اینکار وجود دارد،
 static linking(لینک کردن ایستا),
-dynamic linking(لینک کردن پویا).&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;static linking
-زمانی اتفاق می‌افتد که کامپایلر منابع خارجی(لایبراری) ها را داخل فایل اجرایی برنامه کپی کند&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;در واقع در این روش برنامه شما تمامی لایبراری هایی که شما در کد استفاده کردین رو
+dynamic linking(لینک کردن پویا).&lt;/p>
+&lt;blockquote>
+&lt;p>static linking
+زمانی اتفاق می‌افتد که کامپایلر منابع خارجی(لایبراری) ها را داخل فایل اجرایی برنامه کپی کند&lt;/p>
+&lt;/blockquote>
+&lt;p>در واقع در این روش برنامه شما تمامی لایبراری هایی که شما در کد استفاده کردین رو
 با کد شما درون یک فایل اجرایی کامپایل می‌کند، زمانی که برنامه اجرا شود، تمامی لایبراری های
-مورد نیازش وارد مموری کامپیوتر می‌شود.&lt;/p&gt;
-&lt;p&gt;فایده هایی که می‌تونم بهش اشاره کنم&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;توی منتشر کردن برنامه به دیگران، مشکل نصب کامپوننت ها رو دیگه ندارن، و به راحتی اجرا می‌کنند.&lt;/li&gt;
-&lt;li&gt;ممکنه برنامه اندکی سریع تر اجرا بشه&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;این روش واقعا خوبیه ولی خب معایب خودش رو هم داره&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;فایل اجرایی حجم زیادی‌تری نسب‌ت به لینک کردن پویا داره&lt;/li&gt;
-&lt;li&gt;وقتی برنامه اجرا بشه، بخاطر اینکه همه لایبراری و داده های مورد نیاز داخل همان فایل اجرایی بود، برنامه رم زیادی استفاده می‌کنه.&lt;/li&gt;
-&lt;li&gt;اگر لایبراری های مورد استفاده تغییر کنند، برنامه نویس باید مجدد برنامه رو کامپایل و منتشر کنه&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;dynamic linking
+مورد نیازش وارد مموری کامپیوتر می‌شود.&lt;/p>
+&lt;p>فایده هایی که می‌تونم بهش اشاره کنم&lt;/p>
+&lt;ul>
+&lt;li>توی منتشر کردن برنامه به دیگران، مشکل نصب کامپوننت ها رو دیگه ندارن، و به راحتی اجرا می‌کنند.&lt;/li>
+&lt;li>ممکنه برنامه اندکی سریع تر اجرا بشه&lt;/li>
+&lt;/ul>
+&lt;p>این روش واقعا خوبیه ولی خب معایب خودش رو هم داره&lt;/p>
+&lt;ul>
+&lt;li>فایل اجرایی حجم زیادی‌تری نسب‌ت به لینک کردن پویا داره&lt;/li>
+&lt;li>وقتی برنامه اجرا بشه، بخاطر اینکه همه لایبراری و داده های مورد نیاز داخل همان فایل اجرایی بود، برنامه رم زیادی استفاده می‌کنه.&lt;/li>
+&lt;li>اگر لایبراری های مورد استفاده تغییر کنند، برنامه نویس باید مجدد برنامه رو کامپایل و منتشر کنه&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>dynamic linking
 لینک کردن پویا زمانی است که نام لایبراری خارجی در زمان اجرا وارد فایل اجرایی می‌شود.
-و اینکه فقط در این زمان است که لایبراری مورد نیاز وارد مموری می‌شود.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;در این مواقع لایبراری ها باید در سیستم عامل از قبل نصب شده باشند، و یا در موقغ نصب برنامه جدید
+و اینکه فقط در این زمان است که لایبراری مورد نیاز وارد مموری می‌شود.&lt;/p>
+&lt;/blockquote>
+&lt;p>در این مواقع لایبراری ها باید در سیستم عامل از قبل نصب شده باشند، و یا در موقغ نصب برنامه جدید
 اون لایبراری ها نصب شوند. و اگر هر تغییری در لایبرار رخ بده، برنامه نویس نیاز نیست دوباره برنامه رو
-کامپایل و منتشر کند، فقط لایبراری مورد نیاز اپدیت می‌شود.&lt;/p&gt;
-&lt;p&gt;این روش هم مزیت های خودش رو داره، مثلا:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;حجم فایل های اجرایی خیلی کمتری داره&lt;/li&gt;
-&lt;li&gt;تا زمانی که نیاز به لایبراری نشده باشد(اگر در کد نویسی رعایت شده باشه) لایبراری ها رم اشغال نمی‌کنند.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;مهمترین عیبی که می‌تونه این روش داشته باشه اینه که
-حذف شدن و یا خراب شدن لایبراری باعث می‌شه برنامه دیگه اجرا نشه.&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;این مطلب خلاصه‌ای کلی بود برای آشنایی با این دو مفهموم
+کامپایل و منتشر کند، فقط لایبراری مورد نیاز اپدیت می‌شود.&lt;/p>
+&lt;p>این روش هم مزیت های خودش رو داره، مثلا:&lt;/p>
+&lt;ul>
+&lt;li>حجم فایل های اجرایی خیلی کمتری داره&lt;/li>
+&lt;li>تا زمانی که نیاز به لایبراری نشده باشد(اگر در کد نویسی رعایت شده باشه) لایبراری ها رم اشغال نمی‌کنند.&lt;/li>
+&lt;/ul>
+&lt;p>مهمترین عیبی که می‌تونه این روش داشته باشه اینه که
+حذف شدن و یا خراب شدن لایبراری باعث می‌شه برنامه دیگه اجرا نشه.&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>این مطلب خلاصه‌ای کلی بود برای آشنایی با این دو مفهموم
 برای مطالعه بیشتر این
-&lt;a class=&#34;link&#34; href=&#34;https://blog.hubspot.com/website/static-vs-dynamic-linking#static-linking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;لینک&lt;/a&gt;
-می‌تونه مفید باشه.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;a class="link" href="https://blog.hubspot.com/website/static-vs-dynamic-linking#static-linking" target="_blank" rel="noopener"
+>لینک&lt;/a>
+می‌تونه مفید باشه.&lt;/p>
+&lt;/blockquote>
+&lt;hr></description></item></channel></rss>

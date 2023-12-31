@@ -4,10 +4,18 @@ date: 2024-01-01T01:39:05+03:30
 draft: false
 image: 'images/post/datatypes-rust.jpg'
 tags: [
+    'آموزش راست',
+    'اموزش زبان راست',
+    'آموزش rust',
+    'اموزش زبان rust',
+    'rust',
+    'آموزش فارسی زبان rust',
+    'اموزش فارسی زبان راست',
 
 ]
 categories: [
-
+    'rust',
+    'programming',
 ]
 ---
 

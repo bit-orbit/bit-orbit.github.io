@@ -1,39 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>rust on bit-orbit</title>
-        <link>https://bit-orbit.github.io/categories/rust/</link>
-        <description>Recent content in rust on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/rust/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Rust</title>
-        <link>https://bit-orbit.github.io/rust/</link>
-        <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/rust/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/rust.png" alt="Featured image of post Rust" /&gt;&lt;p&gt;من مدتی هست که دارم زبان
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rust on bit-orbit</title><link>https://bit-orbit.github.io/categories/rust/</link><description>Recent content in rust on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 01 Jan 2024 01:39:05 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>متغیر در rust</title><link>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</link><pubDate>Mon, 01 Jan 2024 01:39:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/datatypes-rust.jpg" alt="Featured image of post متغیر در rust" />&lt;h4 id="تعریف-متغیر">تعریف متغیر&lt;/h4>
+&lt;p>در هر زبانی تعریف متغیر سینتکس خودش را دارد.
+مثلا اگر زبان های خانواده
+c
+را کار کرده باشید
+(مثل c++, c#)
+متوجه می‌شوید که نوع داده‌ای متغیر، قبل از اسم آن تعریف
+می‌شود. و یا مثلا توی زبان پایتون تعریف نوع داده‌ای
+یک متغیر حتی اهمیتی هم ندارد!&lt;/p>
+&lt;blockquote>
+&lt;p>انواع نوع داده یا
+date types
+را توی پست بعدی می‌نویسم&lt;/p>
+&lt;/blockquote>
+&lt;p>توی زبان
+rust
+بعد از اسم متغیر، نوع آن نوشته می‌شود.
+مثلا برای تعریف یک متغیر عددی به اندازه یک بایت از کلمه
+کلیدی
+&lt;code>i8&lt;/code>
+بعد اسم استفاده می‌کنیم. البته
+قبل از اسم هر متغیر هم ما باید از کلمه کلیدی
+&lt;code>let&lt;/code>
+استفاده کنیم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//let name: type = value;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">age&lt;/span>: &lt;span class="kt">i8&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">22&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="متغیر-های-تغییرپذیر">متغیر های تغییرپذیر&lt;/h4>
+&lt;p>توی زبان
+rust
+هر متغیری که تعریف می‌کنیم غیر قابل تغیر است.
+توی مثال بالا من پیشفرض مقدار 22 را برای متغیر
+age
+قرار داده‌ام، حالا اگر بخواهم مقدار آن را
+به 23 تغیر بدهم به ارور می‌خورم&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="n">age&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">23&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="n">error&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">E0384&lt;/span>&lt;span class="p">]&lt;/span>: &lt;span class="nc">cannot&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">assign&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">twice&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">immutable&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">variable&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">`&lt;/span>&lt;span class="n">age&lt;/span>&lt;span class="err">`&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">-&lt;/span>-&amp;gt; &lt;span class="nc">src&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">main&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">rs&lt;/span>:&lt;span class="mi">3&lt;/span>:&lt;span class="mi">5&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">age&lt;/span>: &lt;span class="kt">i8&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">22&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">first&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">assignment&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">`&lt;/span>&lt;span class="n">age&lt;/span>&lt;span class="err">`&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">help&lt;/span>: &lt;span class="nc">consider&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">making&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">this&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">binding&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">mutable&lt;/span>: &lt;span class="err">`&lt;/span>&lt;span class="k">mut&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">age&lt;/span>&lt;span class="err">`&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">age&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">23&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">^^^^^^^^&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">cannot&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">assign&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">twice&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">immutable&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">variable&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>خب برای همین باید اگر می‌خواهم مقدار بمتغیری را تغییر
+بدهم آن را از اول مشخص کنم. مشخص کردن آن با کلمه کلیدی
+&lt;code>mut&lt;/code>
+بعد از کلمه
+&lt;code>let&lt;/code>
+است.
+کلمه
+mut
+مخفف
+&lt;strong>mutable&lt;/strong>
+به معنی
+&lt;strong>قابل تغییر&lt;/strong>
+است. خب بیایید اینکار را برای مثال اولیه انجام بدیم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">mut&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">age&lt;/span>: &lt;span class="kt">i8&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">22&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">age&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">23&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Rust</title><link>https://bit-orbit.github.io/rust/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/rust.png" alt="Featured image of post Rust" />&lt;p>من مدتی هست که دارم زبان
 rust
 رو یاد می‌گیرم، توی این تایمی که خودم یادش می‌گیرم،
 یک خلاصه‌ای هم از آموزش هایی که می‌بینم رو اینجا در پست های
 مجزا می‌نویسم. اینطوری هم برای خودم نوت دارم و هم
-شما :)&lt;/p&gt;
-&lt;p&gt;هر پست آموزش
+شما :)&lt;/p>
+&lt;p>هر پست آموزش
 rust
 که می‌نویسم رو اینجا لیست می‌کنم که
-به راحتی در دسترس باشند.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;بعنوان نکته بگم که توی این مجموعه از پست ها، قرار نیست
-برنامه نویسی را از صفر یاد بگیرم، صرفا سینتکس زبان
+به راحتی در دسترس باشند.&lt;/p>
+&lt;blockquote>
+&lt;p>بعنوان نکته بگم که توی این مجموعه از پست ها، قرار نیست
+برنامه نویسی را از صفر یاد بگیریم، صرفا سینتکس زبان
 rust
-را یاد می‌گیریم.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/p/variable&#34; &gt;متغییر ها در rust&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+را یاد می‌گیریم.&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://bit-orbit.github.io/p/%d9%85%d8%aa%d8%ba%db%8c%d8%b1-%d8%af%d8%b1-rust/" >متغییر ها در rust&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

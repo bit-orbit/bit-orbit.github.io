@@ -1,104 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Pages on bit-orbit</title>
-        <link>https://bit-orbit.github.io/page/</link>
-        <description>Recent content in Pages on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Rust</title>
-        <link>https://bit-orbit.github.io/rust/</link>
-        <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/rust/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/rust.png" alt="Featured image of post Rust" /&gt;&lt;p&gt;من مدتی هست که دارم زبان
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on bit-orbit</title><link>https://bit-orbit.github.io/page/</link><description>Recent content in Pages on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust</title><link>https://bit-orbit.github.io/rust/</link><pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/rust.png" alt="Featured image of post Rust" />&lt;p>من مدتی هست که دارم زبان
 rust
 رو یاد می‌گیرم، توی این تایمی که خودم یادش می‌گیرم،
 یک خلاصه‌ای هم از آموزش هایی که می‌بینم رو اینجا در پست های
 مجزا می‌نویسم. اینطوری هم برای خودم نوت دارم و هم
-شما :)&lt;/p&gt;
-&lt;p&gt;هر پست آموزش
+شما :)&lt;/p>
+&lt;p>هر پست آموزش
 rust
 که می‌نویسم رو اینجا لیست می‌کنم که
-به راحتی در دسترس باشند.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;بعنوان نکته بگم که توی این مجموعه از پست ها، قرار نیست
-برنامه نویسی را از صفر یاد بگیرم، صرفا سینتکس زبان
+به راحتی در دسترس باشند.&lt;/p>
+&lt;blockquote>
+&lt;p>بعنوان نکته بگم که توی این مجموعه از پست ها، قرار نیست
+برنامه نویسی را از صفر یاد بگیریم، صرفا سینتکس زبان
 rust
-را یاد می‌گیریم.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/p/variable&#34; &gt;متغییر ها در rust&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://bit-orbit.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://bit-orbit.github.io/about/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/about/</guid>
-        <description>&lt;p&gt;من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
+را یاد می‌گیریم.&lt;/p>
+&lt;/blockquote>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://bit-orbit.github.io/p/%d9%85%d8%aa%d8%ba%db%8c%d8%b1-%d8%af%d8%b1-rust/" >متغییر ها در rust&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Archives</title><link>https://bit-orbit.github.io/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/archives/</guid><description/></item><item><title>About</title><link>https://bit-orbit.github.io/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/about/</guid><description>&lt;p>من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
 حتی شاید یه روزی از
 pastebin
-برای همین کار استفاده کنم (=&lt;/p&gt;
-&lt;p&gt;این هم یکی از وبلاگ های منه :)&lt;/p&gt;
-&lt;p&gt;علاقه‌ام سمت کار های کامپیوتری مثل توسعه نرم افزار و کانفیگ ابزار ها مختلف برای ساخت
-یک سرویسه.&lt;/p&gt;
-&lt;p&gt;از خودم هم بخواهم بگم، من یه دانشجوی نرم افزار هستم،
+برای همین کار استفاده کنم (=&lt;/p>
+&lt;p>این هم یکی از وبلاگ های منه :)&lt;/p>
+&lt;p>علاقه‌ام سمت کار های کامپیوتری مثل توسعه نرم افزار و کانفیگ ابزار ها مختلف برای ساخت
+یک سرویسه.&lt;/p>
+&lt;p>از خودم هم بخواهم بگم، من یه دانشجوی نرم افزار هستم،
 لینوکسی‌ام و زبان اصلی‌ام پایتونه، و خب کم‌کم دارم مهارجت می‌کنم به زبان
-rust.&lt;/p&gt;
-&lt;p&gt;با
+rust.&lt;/p>
+&lt;p>با
 django
 سایت و
 api
 می‌نویسم، ولی همینکار رو به زودی با
 rust
-پیش می‌برم.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Links</title>
-        <link>https://bit-orbit.github.io/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/links/</guid>
-        <description>&lt;!-- 
+پیش می‌برم.&lt;/p></description></item><item><title>Links</title><link>https://bit-orbit.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/links/</guid><description>&lt;!--
 To use this feature, add `links` section to frontmatter.
-
-This page&#39;s frontmatter:
-
+This page's frontmatter:
 ```yaml
 links:
-  - title: GitHub
-    description: GitHub is the world&#39;s largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-``` --&gt;
-&lt;!-- `image` field accepts both local and external images. --&gt;</description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>https://bit-orbit.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/search/</guid>
-        <description></description>
-        </item>
-        
-    </channel>
-</rss>
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+``` -->
+&lt;!-- `image` field accepts both local and external images. --></description></item><item><title>Search</title><link>https://bit-orbit.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/search/</guid><description/></item></channel></rss>
