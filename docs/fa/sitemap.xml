@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bit-orbit.github.io/tags/arya-shabane/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
-  </url><url>
     <loc>https://bit-orbit.github.io/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <lastmod>2024-01-01T01:39:05+03:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,8 +15,14 @@
                 href="https://bit-orbit.github.io/"
                 />
   </url><url>
+    <loc>https://bit-orbit.github.io/post/</loc>
+    <lastmod>2024-01-01T01:39:05+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</loc>
+    <lastmod>2024-01-01T01:39:05+03:30</lastmod>
+  </url><url>
     <loc>https://bit-orbit.github.io/categories/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -31,23 +34,20 @@
                 href="https://bit-orbit.github.io/categories/"
                 />
   </url><url>
-    <loc>https://bit-orbit.github.io/tags/forkbomb-%DA%86%DB%8C%D8%B3%D8%AA/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <loc>https://bit-orbit.github.io/page/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bit-orbit.github.io/tags/infinite-recursion/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <loc>https://bit-orbit.github.io/categories/programming/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bit-orbit.github.io/categories/linux/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <loc>https://bit-orbit.github.io/categories/rust/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://bit-orbit.github.io/post/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
-  </url><url>
-    <loc>https://bit-orbit.github.io/tags/recursion/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <loc>https://bit-orbit.github.io/rust/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/tags/</loc>
-    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -58,6 +58,33 @@
                 hreflang="fa"
                 href="https://bit-orbit.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B2%D8%A8%D8%A7%D9%86-rust/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B2%D8%A8%D8%A7%D9%86-%D8%B1%D8%A7%D8%B3%D8%AA/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%A7%D9%85%D9%88%D8%B2%D8%B4-rust/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/%D8%A7%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%D8%B3%D8%AA/</loc>
+    <lastmod>2023-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/arya-shabane/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/forkbomb-%DA%86%DB%8C%D8%B3%D8%AA/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/infinite-recursion/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/categories/linux/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
+  </url><url>
+    <loc>https://bit-orbit.github.io/tags/recursion/</loc>
+    <lastmod>2023-12-27T16:39:27+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/tags/%D8%A2%D8%B1%DB%8C%D8%A7-%D8%B4%D8%A8%D8%A7%D9%86%D9%87/</loc>
     <lastmod>2023-12-27T16:39:27+03:30</lastmod>
@@ -109,9 +136,6 @@
   </url><url>
     <loc>https://bit-orbit.github.io/tags/%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84-umbrel-%D8%AC%DB%8C%D8%B3%D8%AA/</loc>
     <lastmod>2023-12-11T01:39:34+03:30</lastmod>
-  </url><url>
-    <loc>https://bit-orbit.github.io/categories/programming/</loc>
-    <lastmod>2023-11-03T00:21:46+03:30</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/categories/software-engineering/</loc>
     <lastmod>2023-11-03T00:21:46+03:30</lastmod>
@@ -238,9 +262,6 @@
   </url><url>
     <loc>https://bit-orbit.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bit-orbit.github.io/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bit-orbit.github.io/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>

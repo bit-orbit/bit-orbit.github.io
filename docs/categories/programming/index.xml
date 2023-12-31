@@ -6,7 +6,35 @@
         <description>Recent content in programming on bit-orbit</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fa</language>
-        <lastBuildDate>Fri, 03 Nov 2023 00:21:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rust</title>
+        <link>https://bit-orbit.github.io/rust/</link>
+        <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://bit-orbit.github.io/rust/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/rust.png" alt="Featured image of post Rust" /&gt;&lt;p&gt;من مدتی هست که دارم زبان
+rust
+رو یاد می‌گیرم، توی این تایمی که خودم یادش می‌گیرم،
+یک خلاصه‌ای هم از آموزش هایی که می‌بینم رو اینجا در پست های
+مجزا می‌نویسم. اینطوری هم برای خودم نوت دارم و هم
+شما :)&lt;/p&gt;
+&lt;p&gt;هر پست آموزش
+rust
+که می‌نویسم رو اینجا لیست می‌کنم که
+به راحتی در دسترس باشند.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;بعنوان نکته بگم که توی این مجموعه از پست ها، قرار نیست
+برنامه نویسی را از صفر یاد بگیرم، صرفا سینتکس زبان
+rust
+را یاد می‌گیریم.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/p/variable&#34; &gt;متغییر ها در rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی</title>
         <link>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
         <pubDate>Fri, 03 Nov 2023 00:21:46 +0330</pubDate>

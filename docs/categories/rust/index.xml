@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>rust on bit-orbit</title>
+        <link>https://bit-orbit.github.io/categories/rust/</link>
+        <description>Recent content in rust on bit-orbit</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fa</language>
+        <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/rust/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rust</title>
+        <link>https://bit-orbit.github.io/rust/</link>
+        <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://bit-orbit.github.io/rust/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/rust.png" alt="Featured image of post Rust" /&gt;&lt;p&gt;من مدتی هست که دارم زبان
+rust
+رو یاد می‌گیرم، توی این تایمی که خودم یادش می‌گیرم،
+یک خلاصه‌ای هم از آموزش هایی که می‌بینم رو اینجا در پست های
+مجزا می‌نویسم. اینطوری هم برای خودم نوت دارم و هم
+شما :)&lt;/p&gt;
+&lt;p&gt;هر پست آموزش
+rust
+که می‌نویسم رو اینجا لیست می‌کنم که
+به راحتی در دسترس باشند.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;بعنوان نکته بگم که توی این مجموعه از پست ها، قرار نیست
+برنامه نویسی را از صفر یاد بگیرم، صرفا سینتکس زبان
+rust
+را یاد می‌گیریم.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/p/variable&#34; &gt;متغییر ها در rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

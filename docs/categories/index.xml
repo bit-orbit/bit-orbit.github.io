@@ -6,7 +6,23 @@
         <description>Recent content in Categories on bit-orbit</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fa</language>
-        <lastBuildDate>Wed, 27 Dec 2023 16:39:27 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 31 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>programming</title>
+        <link>https://bit-orbit.github.io/categories/programming/</link>
+        <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://bit-orbit.github.io/categories/programming/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>rust</title>
+        <link>https://bit-orbit.github.io/categories/rust/</link>
+        <pubDate>Sun, 31 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://bit-orbit.github.io/categories/rust/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>linux</title>
         <link>https://bit-orbit.github.io/categories/linux/</link>
         <pubDate>Wed, 27 Dec 2023 16:39:27 +0330</pubDate>
@@ -36,14 +52,6 @@
         <pubDate>Mon, 18 Dec 2023 00:08:38 +0330</pubDate>
         
         <guid>https://bit-orbit.github.io/categories/tech/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>programming</title>
-        <link>https://bit-orbit.github.io/categories/programming/</link>
-        <pubDate>Fri, 03 Nov 2023 00:21:46 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/categories/programming/</guid>
         <description></description>
         </item>
         <item>
