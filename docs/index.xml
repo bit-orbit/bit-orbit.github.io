@@ -165,19 +165,94 @@ rust
 اگر جایی کمبودی حس کردین، می‌توانید ساختار داده‌ی خودتان
 را بسازید.&lt;/p>
 &lt;blockquote>
-&lt;p>‌ انواع عددی ترجمه‌ی کلمه
+&lt;p>‌ انواع داده ترجمه‌ی کلمه
 data type
-هست. برای من هم استفاده از کلمه انگلیسی‌اش خیلی راحت
+هست. و خب برای من استفاده از کلمه انگلیسی‌اش خیلی راحت
 تره.&lt;/p>
 &lt;/blockquote>
 &lt;h4 id="نوع-داده-عدد-صحیح">نوع داده عدد صحیح&lt;/h4>
 &lt;p>همینطور که می‌دونید عدد صحیح از منفی بی‌نهایت تا مثبت
 بی‌نهایت است(بدون هیچ علامت کسر، رادیکال و بدون اعشار).&lt;/p>
+&lt;p>این نوع داده در
+rust
+به این صورت است&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="n">variable_name&lt;/span>: &lt;span class="kt">i32&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2147483648&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">variable_name&lt;/span>: &lt;span class="kt">i32&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">2147483647&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>به این باید دقت کنیم که هر متغییری مقداری فضا نیاز دارد
+برای مثال این نوع داده که داده اصلی است به پنج صورت پیاده سازی می‌شود
+i8, i16, i32, i64, i128
+اعداد پس از کاراکتر i نشان دهنده تعداد بیت هایی است که این نوع متغییر می‌تواند
+اشغال کند. مثلا i128 می‌تواند به اندازه 128 بیت فضا اشغال کند.&lt;/p>
 &lt;h4 id="نوع-داده-عدد-اعشاری">نوع داده عدد اعشاری&lt;/h4>
-&lt;h4 id="نوع-داده-کاراکتر">نوع داده کاراکتر&lt;/h4>
-&lt;h4 id="داده-stringرشتهای-از-کاراکتر-ها">داده string(رشته‌ای از کاراکتر ها)&lt;/h4>
-&lt;h4 id="نوع-داده-منطقی">نوع داده منطقی&lt;/h4>
-&lt;h4 id="نوع-داده-ترکیبی">نوع داده ترکیبی&lt;/h4>
+&lt;p>این نوع داده هم مثل نوع عدد صحیح است اما با این تفاوت که اعداد اعشاری را درون خودش ذخیره می‌کند&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="n">variable_name&lt;/span>: &lt;span class="kt">f32&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mf">3.14&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">variable_name&lt;/span>: &lt;span class="kt">f32&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">3.14&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="نوع-داده-کاراکتر">نوع داده کاراکتر&lt;/h4>
+&lt;p>کاراکتر نوع داده‌ای است که فقط یک مقدار از حروف الفبا یا عدد و یا سیمبول را می‌تواند درون
+خودش ذخیره کند. پس باید به اندازه 8 بیت فضا اشغال کند اما به دلیل اینکه کاراکتر های زبان های دیگر را هم
+بتواند ذخیره کند از انکدینگ(encoding)
+utf-16
+استفاده می‌کند که 16 بیت فضا اشغال می‌کند.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">a&lt;/span>: &lt;span class="kt">char&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="sc">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="داده-stringرشتهای-از-کاراکتر-ها">داده string(رشته‌ای از کاراکتر ها)&lt;/h4>
+&lt;p>String
+نوع داده‌ای است که درواقع رشته‌ای از کاراکتر ها را درون یک نوع
+vector
+ذخیره می‌کند.&lt;/p>
+&lt;blockquote>
+&lt;p>این نکته را هم بگم که
+encoding
+رشته
+UTF-8
+است. به این معنی که هر نوع کاراکتری را می‌تواند داخل خودش ذخیره کند حتی ایموجی.&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">heart&lt;/span>: &lt;span class="nb">String&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">String&lt;/span>::&lt;span class="n">from&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;♥&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="نوع-داده-منطقی">نوع داده منطقی&lt;/h4>
+&lt;p>نوع داده منطقی به اسم
+boolian
+است. این نوع مقدار هایt
+true و یا false
+را ذخیره می‌کند.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">is_good&lt;/span>: &lt;span class="kt">bool&lt;/span> &lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="نوع-داده-ترکیبی">نوع داده ترکیبی&lt;/h4>
+&lt;p>این نوع داده ها را توی پست های مجزا توضیح می‌دم.&lt;/p>
 &lt;ul>
 &lt;li>tuple&lt;/li>
 &lt;li>array&lt;/li>
