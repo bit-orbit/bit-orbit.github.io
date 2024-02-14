@@ -1,4 +1,189 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bit-orbit</title><link>https://bit-orbit.github.io/</link><description>Recent content on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 01 Jan 2024 01:39:05 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>متغیر در rust</title><link>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</link><pubDate>Mon, 01 Jan 2024 01:39:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/datatypes-rust.jpg" alt="Featured image of post متغیر در rust" />&lt;h4 id="تعریف-متغیر">تعریف متغیر&lt;/h4>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bit-orbit</title><link>https://bit-orbit.github.io/</link><description>Recent content on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 09 Feb 2024 01:49:42 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux File Locking چیست؟</title><link>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</link><pubDate>Fri, 09 Feb 2024 01:49:42 +0330</pubDate><guid>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/flilock.jpeg" alt="Featured image of post Linux File Locking چیست؟" />&lt;p>بیایید قبل از اینکه راه حل را ببینیم، اول مشکل را دقیق تر برسی کنیم.
+به این فکر کنید که شما یک فایلی دارید که شامل یک عدد است که اشاره می‌کند به مقدار
+اعتباری که کاربر در حسابش دارد. حالا اگر قرار باشد یک پورسه اون مقدار را بر اساس ارائه
+سرویسی، از حساب کاربر کم کند، و پروسه دیگری به دلیل افزایش اعتبار، مقداری را به حساب
+کاربر اضافه کند، چه مشکلاتی اتفاق می‌افتد؟&lt;/p>
+&lt;p>برای اینکه دقیق تر بشیم، این روند رو باهم پیش می‌بریم.
+فرض کنید فایلی به اسم
+amount.txt
+مقدار 100 داخلش نوشته شده است. و دو پروسه کم و اضافه کردن را اجرا می‌کنیم.
+توی این مثال،‌ ما می‌خواهیم مقدار 20 از حساب کاربر کم و مقدار 50 به حساب کاربر
+اضافه کنیم، پس ما انتظار داریم در انتها فایل ما مقدار 130 را درونش ذخیره کرده باشد.&lt;/p>
+&lt;ul>
+&lt;li>پروسه اول فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li>
+&lt;li>پروسه دوم فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li>
+&lt;li>پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را در حافظه ذخیره می‌کند&lt;/li>
+&lt;li>پروسه دوم مقدار 50 را به 100 اضافه می‌کند و مقدار 150 را در حافظه ذخیره می‌کند&lt;/li>
+&lt;li>پروسه اول مقدار 80 را در فایل ذخیره می‌کند&lt;/li>
+&lt;li>پروسه دوم مقدار 150 را در فایل ذخیره می‌کند&lt;/li>
+&lt;/ul>
+&lt;p>همینطور که همه ما انتظار داشتیم، ما باید در این فایل مقدار 130 را ذخیره می‌کردیم،
+اما پروسه های ما به دلیل اینکه هیچ همکاری و یا هیچ مکانیزمی دیگری ندارند که این مقدار ها را
+به یکدیگر اطلاع دهند، مشکل
+&lt;a class="link" href="https://en.wikipedia.org/wiki/Race_condition#Software" target="_blank" rel="noopener"
+>Race condition&lt;/a>
+رخ می‌دهد.&lt;/p>
+&lt;p>یکی از راه حل های این مشکل
+lock
+کردن فایل توسط هر پروسه است، که به این کار
+file locking
+گفته می‌شود.&lt;/p>
+&lt;p>&lt;strong>file locking&lt;/strong>
+یک مکانیزم برای کنترل دسترسی چندین پروسه به یک فایل است.&lt;/p>
+&lt;blockquote>
+&lt;p>توی لینوکس یکی از دستورات خطرناکی که داریم دستور
+sudo rm -rf /
+است. وقتی این دستور را اجرا کنیم کل فایل های لینوکس ما حذف می‌شود.
+دلیل اینکار این است که لینوکس به صورت پیشفرض فایل های باز شده را
+lock
+نمی‌کند.&lt;/p>
+&lt;/blockquote>
+&lt;p>با اینحال لینوکس دو مکانیزم مختلف
+&lt;em>advisory&lt;/em> و &lt;em>mandatory&lt;/em>
+را پشتیبانی می‌کند.&lt;/p>
+&lt;blockquote>
+&lt;p>توی این پست بیشتر تمرکز من روی مکانیزم
+advisory locking(مشورتی)
+است.&lt;/p>
+&lt;/blockquote>
+&lt;p>این روش به این شکل عمل می‌کند که هیچ پروسه‌ای مجبور به اجرای این روش نیست و اگر حتی
+فایل توسط یک پروسه‌ای
+lock
+شده باشد، باز هم پروسه های دیگر می‌توانند به
+lock
+بودن فایل اهمیت ندهند و مقدار آن را تغییر دهند. این اتفاق به این دلیل می‌افتد که
+advisory lock
+توسط سیستم عامل و یا فایل سیستم انجام نمی‌شود.&lt;/p>
+&lt;p>خب بیایید با یک مثال این فرایند را برسی کنیم. مثل مثال قبلی فرض کنید ما مقدار 100
+را داخل فایل
+amount.txt
+داریم و می‌خواهیم مقدار 20 از آن کم و مقدار 50 به آن اضافه کنیم.&lt;/p>
+&lt;ul>
+&lt;li>پروسه اول قبل از خواندن فایل، فایل را لاک می‌کند&lt;/li>
+&lt;li>پروسه دوم برای لاک کردن فایل اقدام می‌کند و از جایی که پروسه اول از پیش فایل را لاک کرده است، برای آزاد شدن لاک صبر می‌کند&lt;/li>
+&lt;li>پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را درون فایل می‌نویسد&lt;/li>
+&lt;li>پروسه اول لاک فایل را آزاد می‌کند.&lt;/li>
+&lt;li>پروسه دوم فایل را لاک و مقدار جدید 80 را از فایل می‌خواند&lt;/li>
+&lt;li>پروسه دوم مقدار 50 را به 80 اضافه و مقدار 120 را درون فایل می‌نویسد&lt;/li>
+&lt;li>پروسه دوم لاک فایل را آزاد می‌کند تا پروسه های دیگر بتوانند با فایل کار کنند.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>اگر شما می‌خواهید این مکانیزم را روی یک فایل اجرا کنید، دستور
+flock
+برای شما اینکار را خواهد کرد.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">flock &lt;span class="o">[&lt;/span>options&lt;span class="o">]&lt;/span> file&lt;span class="p">|&lt;/span>directory &lt;span class="nb">command&lt;/span> &lt;span class="o">[&lt;/span>arguments&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>این کامند در حالت عادی از شما یک فایل و یک دستور خواهد گرفت و مکانیزم
+advisory lock
+را روی ان فایل اجرا خواهد کرد.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">flock /tmp/fli &lt;span class="nb">echo&lt;/span> 12&amp;gt;/tmp/fli
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>برای اینکه روند را بهتر درک کنیم یک فایل
+bash
+می‌نویسیم که بتوانیم مثال اولیه را روی آن اجرا کنیم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="nv">file&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;balance.dat&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>cat &lt;span class="nv">$file&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Read current balance:&lt;/span>&lt;span class="nv">$value&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#sleep 10 seconds to simulate business calculation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">progress&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$progress&lt;/span> -lt &lt;span class="m">101&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> -n -e &lt;span class="s2">&amp;#34;\033[77DCalculating new balance..&lt;/span>&lt;span class="nv">$progress&lt;/span>&lt;span class="s2">%&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sleep &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">progress&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$((&lt;/span>&lt;span class="m">10&lt;/span>&lt;span class="o">+&lt;/span>progress&lt;span class="k">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$((&lt;/span>value+&lt;span class="nv">$1&lt;/span>&lt;span class="k">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Write new balance (&lt;/span>&lt;span class="nv">$value&lt;/span>&lt;span class="s2">) back to &lt;/span>&lt;span class="nv">$file&lt;/span>&lt;span class="s2">.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$value&lt;/span> &amp;gt; &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$file&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Done.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ما این فایل را همزمان با دو ترمینال اجرا می‌کنیم.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/advisory_lock.gif"
+loading="lazy"
+alt="advisory lock"
+>&lt;/p>
+&lt;p>همینطور که می‌بینید پروسه دوم برای اینکه محتوای فایل را تغییر دهد، باید صبر کند تا لاک فایل
+آزاد شود.&lt;/p>
+&lt;hr>
+&lt;p>این پست خلاصه‌ای بود از
+&lt;a class="link" href="https://www.baeldung.com/linux/file-locking" target="_blank" rel="noopener"
+>این بلاگ&lt;/a>
+که هر دو نوع
+advisory lock و mandatory lock
+را توضیح می‌دهد.&lt;/p>
+&lt;p>برای من سوال بود که من چطور می‌توانم مکانیزمی که
+flock
+استفاده می‌کند را در برنامه های خودم پیاده سازی کنم، و خب نتیجه این بود که معمولا برای
+advisory lock
+هر زبانی یک کتابخانه استاندار دارد
+توی
+&lt;a class="link" href="https://docs.python.org/3/library/fcntl.html" target="_blank" rel="noopener"
+>پایتون کتابخانه&lt;/a>
+&lt;code>fcntl&lt;/code>
+اینکار را انجام می‌دهد.&lt;/p></description></item><item><title>انواع داده های اولیه در rust</title><link>https://bit-orbit.github.io/p/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AF%D8%B1-rust/</link><pubDate>Wed, 03 Jan 2024 01:30:52 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/rustdatatypes.jpg" alt="Featured image of post انواع داده های اولیه در rust" />&lt;p>هر زبان برنامه نویسی انواعی از داده ها رو داره، مثلا
+داده های عددی، کاراکتر و یا رشته‌ای از کاراکتر ها. زبان
+rust
+هم انواع داده‌ای زیادی رو پشتیبانی می‌کنه و خب حتی
+اگر جایی کمبودی حس کردین، می‌توانید ساختار داده‌ی خودتان
+را بسازید.&lt;/p>
+&lt;blockquote>
+&lt;p>‌ انواع عددی ترجمه‌ی کلمه
+data type
+هست. برای من هم استفاده از کلمه انگلیسی‌اش خیلی راحت
+تره.&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="نوع-داده-عدد-صحیح">نوع داده عدد صحیح&lt;/h4>
+&lt;p>همینطور که می‌دونید عدد صحیح از منفی بی‌نهایت تا مثبت
+بی‌نهایت است(بدون هیچ علامت کسر، رادیکال و بدون اعشار).&lt;/p>
+&lt;h4 id="نوع-داده-عدد-اعشاری">نوع داده عدد اعشاری&lt;/h4>
+&lt;h4 id="نوع-داده-کاراکتر">نوع داده کاراکتر&lt;/h4>
+&lt;h4 id="داده-stringرشتهای-از-کاراکتر-ها">داده string(رشته‌ای از کاراکتر ها)&lt;/h4>
+&lt;h4 id="نوع-داده-منطقی">نوع داده منطقی&lt;/h4>
+&lt;h4 id="نوع-داده-ترکیبی">نوع داده ترکیبی&lt;/h4>
+&lt;ul>
+&lt;li>tuple&lt;/li>
+&lt;li>array&lt;/li>
+&lt;li>list&lt;/li>
+&lt;li>vector&lt;/li>
+&lt;/ul></description></item><item><title>متغیر در rust</title><link>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</link><pubDate>Mon, 01 Jan 2024 01:39:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/datatypes-rust.jpg" alt="Featured image of post متغیر در rust" />&lt;h4 id="تعریف-متغیر">تعریف متغیر&lt;/h4>
 &lt;p>در هر زبانی تعریف متغیر سینتکس خودش را دارد.
 مثلا اگر زبان های خانواده
 c
@@ -74,8 +259,8 @@ age
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">^^^^^^^^&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">cannot&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">assign&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">twice&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">immutable&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">variable&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>خب برای همین باید اگر می‌خواهم مقدار بمتغیری را تغییر
-بدهم آن را از اول مشخص کنم. مشخص کردن آن با کلمه کلیدی
+&lt;/div>&lt;p>خب برای همین اگر می‌خواهیم مقدار متغیری را تغییر
+بدهیم آن را باید از اول مشخص کنیم. مشخص کردن آن با کلمه کلیدی
 &lt;code>mut&lt;/code>
 بعد از کلمه
 &lt;code>let&lt;/code>
@@ -86,7 +271,7 @@ mut
 &lt;strong>mutable&lt;/strong>
 به معنی
 &lt;strong>قابل تغییر&lt;/strong>
-است. خب بیایید اینکار را برای مثال اولیه انجام بدیم.&lt;/p>
+است. خب بیایید اینکار را برای مثال اولیه انجام بدهیم.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1

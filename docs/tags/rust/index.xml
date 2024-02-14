@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rust on bit-orbit</title><link>https://bit-orbit.github.io/tags/rust/</link><description>Recent content in rust on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 01 Jan 2024 01:39:05 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>متغیر در rust</title><link>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</link><pubDate>Mon, 01 Jan 2024 01:39:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/datatypes-rust.jpg" alt="Featured image of post متغیر در rust" />&lt;h4 id="تعریف-متغیر">تعریف متغیر&lt;/h4>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rust on bit-orbit</title><link>https://bit-orbit.github.io/tags/rust/</link><description>Recent content in rust on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Wed, 03 Jan 2024 01:30:52 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>انواع داده های اولیه در rust</title><link>https://bit-orbit.github.io/p/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AF%D8%B1-rust/</link><pubDate>Wed, 03 Jan 2024 01:30:52 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/rustdatatypes.jpg" alt="Featured image of post انواع داده های اولیه در rust" />&lt;p>هر زبان برنامه نویسی انواعی از داده ها رو داره، مثلا
+داده های عددی، کاراکتر و یا رشته‌ای از کاراکتر ها. زبان
+rust
+هم انواع داده‌ای زیادی رو پشتیبانی می‌کنه و خب حتی
+اگر جایی کمبودی حس کردین، می‌توانید ساختار داده‌ی خودتان
+را بسازید.&lt;/p>
+&lt;blockquote>
+&lt;p>‌ انواع عددی ترجمه‌ی کلمه
+data type
+هست. برای من هم استفاده از کلمه انگلیسی‌اش خیلی راحت
+تره.&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="نوع-داده-عدد-صحیح">نوع داده عدد صحیح&lt;/h4>
+&lt;p>همینطور که می‌دونید عدد صحیح از منفی بی‌نهایت تا مثبت
+بی‌نهایت است(بدون هیچ علامت کسر، رادیکال و بدون اعشار).&lt;/p>
+&lt;h4 id="نوع-داده-عدد-اعشاری">نوع داده عدد اعشاری&lt;/h4>
+&lt;h4 id="نوع-داده-کاراکتر">نوع داده کاراکتر&lt;/h4>
+&lt;h4 id="داده-stringرشتهای-از-کاراکتر-ها">داده string(رشته‌ای از کاراکتر ها)&lt;/h4>
+&lt;h4 id="نوع-داده-منطقی">نوع داده منطقی&lt;/h4>
+&lt;h4 id="نوع-داده-ترکیبی">نوع داده ترکیبی&lt;/h4>
+&lt;ul>
+&lt;li>tuple&lt;/li>
+&lt;li>array&lt;/li>
+&lt;li>list&lt;/li>
+&lt;li>vector&lt;/li>
+&lt;/ul></description></item><item><title>متغیر در rust</title><link>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</link><pubDate>Mon, 01 Jan 2024 01:39:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-rust/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/datatypes-rust.jpg" alt="Featured image of post متغیر در rust" />&lt;h4 id="تعریف-متغیر">تعریف متغیر&lt;/h4>
 &lt;p>در هر زبانی تعریف متغیر سینتکس خودش را دارد.
 مثلا اگر زبان های خانواده
 c
@@ -74,8 +99,8 @@ age
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="o">|&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">^^^^^^^^&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">cannot&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">assign&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">twice&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">immutable&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">variable&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>خب برای همین باید اگر می‌خواهم مقدار بمتغیری را تغییر
-بدهم آن را از اول مشخص کنم. مشخص کردن آن با کلمه کلیدی
+&lt;/div>&lt;p>خب برای همین اگر می‌خواهیم مقدار متغیری را تغییر
+بدهیم آن را باید از اول مشخص کنیم. مشخص کردن آن با کلمه کلیدی
 &lt;code>mut&lt;/code>
 بعد از کلمه
 &lt;code>let&lt;/code>
@@ -86,7 +111,7 @@ mut
 &lt;strong>mutable&lt;/strong>
 به معنی
 &lt;strong>قابل تغییر&lt;/strong>
-است. خب بیایید اینکار را برای مثال اولیه انجام بدیم.&lt;/p>
+است. خب بیایید اینکار را برای مثال اولیه انجام بدهیم.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
