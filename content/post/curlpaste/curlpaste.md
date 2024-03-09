@@ -208,6 +208,8 @@ $ echo 'Some Random Text' | curl -L octocat.ir -F once=@-
 # octocat.ir/file/-_W00DSbS/
 ```
 
+> اینطوری خیلی راحت می‌شه خروجی هر کامندی رو روی به اشتراک گذاشت
+
 ---
 
 سایت من توی آدرس
