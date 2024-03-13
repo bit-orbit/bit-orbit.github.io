@@ -253,7 +253,7 @@ curl -L octocat.ir -F arya_1=/path/to/file
 ریدایرکت کنم.
 
 ```bash
-curl -L octocat.ir -F url=/path/to/file
+curl -L octocat.ir -F url='https://example.com/some/looooong/url/'
 ```
 
 اگه اینها رو اضافه کنم، این پست رو اپدیت می‌کنم ولی خوشحال می‌شم شما
