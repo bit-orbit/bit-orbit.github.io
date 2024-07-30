@@ -1,8 +1,8 @@
 ---
-title: "Transpiler"
+title: "Transpiler  |  ترجمه کد C به Bash"
 date: 2024-07-27T18:27:21+03:30
 draft: false
-mage: images/post/transpiler.jpg
+image: images/post/transpiler.jpg
 author: 'arya shabane'
 categories: [
     "programming",
@@ -12,6 +12,7 @@ tags: [
 ]
 ---
 
+<span style='font-size: 25px'>
 
 همان‌طور که می‌دانید، کامپایلرها سورس کد ما که به یک زبان سطح بالا نوشته شده است را به یک زبان سطح پایین‌تر ترجمه می‌کنند. برای مثال، کامپایلر کدی که به زبان
 C
@@ -54,3 +55,5 @@ C
 Bash
 ترجمه کرد. با این حال اینکار برای تبدیل بعضی از کد های ساده به یک کد
 پرتابل می‌تواند مفید باشد
+
+</span>
