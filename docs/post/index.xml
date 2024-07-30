@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on bit-orbit</title><link>https://bit-orbit.github.io/post/</link><description>Recent content in Posts on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Wed, 06 Mar 2024 23:50:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Crul Paste</title><link>https://bit-orbit.github.io/p/crul-paste/</link><pubDate>Wed, 06 Mar 2024 23:50:46 +0330</pubDate><guid>https://bit-orbit.github.io/p/crul-paste/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/curlpaste.jpg" alt="Featured image of post Crul Paste" />&lt;p>اول بیایید ببینم
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on bit-orbit</title><link>https://bit-orbit.github.io/post/</link><description>Recent content in Posts on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Sat, 27 Jul 2024 18:27:21 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Transpiler</title><link>https://bit-orbit.github.io/p/transpiler/</link><pubDate>Sat, 27 Jul 2024 18:27:21 +0330</pubDate><guid>https://bit-orbit.github.io/p/transpiler/</guid><description>&lt;p>همان‌طور که می‌دانید، کامپایلرها سورس کد ما که به یک زبان سطح بالا نوشته شده است را به یک زبان سطح پایین‌تر ترجمه می‌کنند. برای مثال، کامپایلر کدی که به زبان
+C
+نوشته شده است را به زبان اسمبلی ترجمه می‌کند. همچنین باید ذکر کنم که در زبان
+C،
+پس از ترجمه به اسمبلی، کد به زبان ماشین که می‌تواند مستقیماً روی سخت‌افزار اجرا شود، ترجمه می‌شود.&lt;/p>
+&lt;p>اما ما نرم افزاری داریم که سورس کد را به یک سورس کد دیگر ترجمه می‌کند، به این نوع نرم افزار ها
+transpiler
+گفته می‌شود.
+برای مثال شما یک کد را به زبان پایتون نوشته‌اید را می‌توانید با برنامه مشخصی تبدیل کنید به زبان
+JavaScrip.&lt;/p>
+&lt;p>اگر به نظرتون
+Bash
+سینتکس سختی داره، خب کافیه
+C
+بلد باشین و کدتون رو به زبان
+C
+بنویسید، و با
+&lt;a class="link" href="https://pnut.sh/" target="_blank" rel="noopener"
+>Pnut.sh&lt;/a>
+به
+Bash
+ترجمه کنید!&lt;/p>
+&lt;p>البته محدودیت هایی وجود داره&lt;/p>
+&lt;ul>
+&lt;li>عدد اعشار, goto, switch ساپورت نمی‌شود.&lt;/li>
+&lt;li>همچنین نمی‌توان یک متغییر را رفرنس کرد(&amp;amp;)&lt;/li>
+&lt;/ul>
+&lt;p>البته باید در نظر داشت که
+Bash
+جایگزین
+C
+نیست. و خب هر چیزی که به
+C
+نوشته شده رو نمی‌شود به
+Bash
+ترجمه کرد. با این حال اینکار برای تبدیل بعضی از کد های ساده به یک کد
+پرتابل می‌تواند مفید باشد&lt;/p></description></item><item><title>Crul Paste</title><link>https://bit-orbit.github.io/p/crul-paste/</link><pubDate>Wed, 06 Mar 2024 23:50:46 +0330</pubDate><guid>https://bit-orbit.github.io/p/crul-paste/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/curlpaste.jpg" alt="Featured image of post Crul Paste" />&lt;p>اول بیایید ببینم
 FileBin
 چیه!
 قبل از اون هم فکر می‌کنم همه بدونیم
