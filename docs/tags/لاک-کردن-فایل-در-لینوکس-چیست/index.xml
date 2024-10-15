@@ -1,186 +1,161 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>لاک کردن فایل در لینوکس چیست؟ on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/%D9%84%D8%A7%DA%A9-%DA%A9%D8%B1%D8%AF%D9%86-%D9%81%D8%A7%DB%8C%D9%84-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <description>Recent content in لاک کردن فایل در لینوکس چیست؟ on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Fri, 09 Feb 2024 01:49:42 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/%D9%84%D8%A7%DA%A9-%DA%A9%D8%B1%D8%AF%D9%86-%D9%81%D8%A7%DB%8C%D9%84-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux File Locking چیست؟</title>
-        <link>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <pubDate>Fri, 09 Feb 2024 01:49:42 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/flilock.jpeg" alt="Featured image of post Linux File Locking چیست؟" /&gt;&lt;p&gt;بیایید قبل از اینکه راه حل را ببینیم، اول مشکل را دقیق تر برسی کنیم.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>لاک کردن فایل در لینوکس چیست؟ on bit-orbit</title><link>https://bit-orbit.github.io/tags/%D9%84%D8%A7%DA%A9-%DA%A9%D8%B1%D8%AF%D9%86-%D9%81%D8%A7%DB%8C%D9%84-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA/</link><description>Recent content in لاک کردن فایل در لینوکس چیست؟ on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 09 Feb 2024 01:49:42 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/%D9%84%D8%A7%DA%A9-%DA%A9%D8%B1%D8%AF%D9%86-%D9%81%D8%A7%DB%8C%D9%84-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux File Locking چیست؟</title><link>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</link><pubDate>Fri, 09 Feb 2024 01:49:42 +0330</pubDate><guid>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/flilock.jpeg" alt="Featured image of post Linux File Locking چیست؟" />&lt;p>بیایید قبل از اینکه راه حل را ببینیم، اول مشکل را دقیق تر برسی کنیم.
 به این فکر کنید که شما یک فایلی دارید که شامل یک عدد است که اشاره می‌کند به مقدار
 اعتباری که کاربر در حسابش دارد. حالا اگر قرار باشد یک پورسه اون مقدار را بر اساس ارائه
 سرویسی، از حساب کاربر کم کند، و پروسه دیگری به دلیل افزایش اعتبار، مقداری را به حساب
-کاربر اضافه کند، چه مشکلاتی اتفاق می‌افتد؟&lt;/p&gt;
-&lt;p&gt;برای اینکه دقیق تر بشیم، این روند رو باهم پیش می‌بریم.
+کاربر اضافه کند، چه مشکلاتی اتفاق می‌افتد؟&lt;/p>
+&lt;p>برای اینکه دقیق تر بشیم، این روند رو باهم پیش می‌بریم.
 فرض کنید فایلی به اسم
 amount.txt
 مقدار 100 داخلش نوشته شده است. و دو پروسه کم و اضافه کردن را اجرا می‌کنیم.
 توی این مثال،‌ ما می‌خواهیم مقدار 20 از حساب کاربر کم و مقدار 50 به حساب کاربر
-اضافه کنیم، پس ما انتظار داریم در انتها فایل ما مقدار 130 را درونش ذخیره کرده باشد.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;پروسه اول فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li&gt;
-&lt;li&gt;پروسه دوم فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li&gt;
-&lt;li&gt;پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را در حافظه ذخیره می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه دوم مقدار 50 را به 100 اضافه می‌کند و مقدار 150 را در حافظه ذخیره می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه اول مقدار 80 را در فایل ذخیره می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه دوم مقدار 150 را در فایل ذخیره می‌کند&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;همینطور که همه ما انتظار داشتیم، ما باید در این فایل مقدار 130 را ذخیره می‌کردیم،
+اضافه کنیم، پس ما انتظار داریم در انتها فایل ما مقدار 130 را درونش ذخیره کرده باشد.&lt;/p>
+&lt;ul>
+&lt;li>پروسه اول فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li>
+&lt;li>پروسه دوم فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li>
+&lt;li>پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را در حافظه ذخیره می‌کند&lt;/li>
+&lt;li>پروسه دوم مقدار 50 را به 100 اضافه می‌کند و مقدار 150 را در حافظه ذخیره می‌کند&lt;/li>
+&lt;li>پروسه اول مقدار 80 را در فایل ذخیره می‌کند&lt;/li>
+&lt;li>پروسه دوم مقدار 150 را در فایل ذخیره می‌کند&lt;/li>
+&lt;/ul>
+&lt;p>همینطور که همه ما انتظار داشتیم، ما باید در این فایل مقدار 130 را ذخیره می‌کردیم،
 اما پروسه های ما به دلیل اینکه هیچ همکاری و یا هیچ مکانیزمی دیگری ندارند که این مقدار ها را
 به یکدیگر اطلاع دهند، مشکل
-&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Race_condition#Software&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Race condition&lt;/a&gt;
-رخ می‌دهد.&lt;/p&gt;
-&lt;p&gt;یکی از راه حل های این مشکل
+&lt;a class="link" href="https://en.wikipedia.org/wiki/Race_condition#Software" target="_blank" rel="noopener"
+>Race condition&lt;/a>
+رخ می‌دهد.&lt;/p>
+&lt;p>یکی از راه حل های این مشکل
 lock
 کردن فایل توسط هر پروسه است، که به این کار
 file locking
-گفته می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;file locking&lt;/strong&gt;
-یک مکانیزم برای کنترل دسترسی چندین پروسه به یک فایل است.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;توی لینوکس یکی از دستورات خطرناکی که داریم دستور
+گفته می‌شود.&lt;/p>
+&lt;p>&lt;strong>file locking&lt;/strong>
+یک مکانیزم برای کنترل دسترسی چندین پروسه به یک فایل است.&lt;/p>
+&lt;blockquote>
+&lt;p>توی لینوکس یکی از دستورات خطرناکی که داریم دستور
 sudo rm -rf /
 است. وقتی این دستور را اجرا کنیم کل فایل های لینوکس ما حذف می‌شود.
 دلیل اینکار این است که لینوکس به صورت پیشفرض فایل های باز شده را
 lock
-نمی‌کند.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;با اینحال لینوکس دو مکانیزم مختلف
-&lt;em&gt;advisory&lt;/em&gt; و &lt;em&gt;mandatory&lt;/em&gt;
-را پشتیبانی می‌کند.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;توی این پست بیشتر تمرکز من روی مکانیزم
+نمی‌کند.&lt;/p>
+&lt;/blockquote>
+&lt;p>با اینحال لینوکس دو مکانیزم مختلف
+&lt;em>advisory&lt;/em> و &lt;em>mandatory&lt;/em>
+را پشتیبانی می‌کند.&lt;/p>
+&lt;blockquote>
+&lt;p>توی این پست بیشتر تمرکز من روی مکانیزم
 advisory locking(مشورتی)
-است.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;این روش به این شکل عمل می‌کند که هیچ پروسه‌ای مجبور به اجرای این روش نیست و اگر حتی
+است.&lt;/p>
+&lt;/blockquote>
+&lt;p>این روش به این شکل عمل می‌کند که هیچ پروسه‌ای مجبور به اجرای این روش نیست و اگر حتی
 فایل توسط یک پروسه‌ای
 lock
 شده باشد، باز هم پروسه های دیگر می‌توانند به
 lock
 بودن فایل اهمیت ندهند و مقدار آن را تغییر دهند. این اتفاق به این دلیل می‌افتد که
 advisory lock
-توسط سیستم عامل و یا فایل سیستم انجام نمی‌شود.&lt;/p&gt;
-&lt;p&gt;خب بیایید با یک مثال این فرایند را برسی کنیم. مثل مثال قبلی فرض کنید ما مقدار 100
+توسط سیستم عامل و یا فایل سیستم انجام نمی‌شود.&lt;/p>
+&lt;p>خب بیایید با یک مثال این فرایند را برسی کنیم. مثل مثال قبلی فرض کنید ما مقدار 100
 را داخل فایل
 amount.txt
-داریم و می‌خواهیم مقدار 20 از آن کم و مقدار 50 به آن اضافه کنیم.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;پروسه اول قبل از خواندن فایل، فایل را لاک می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه دوم برای لاک کردن فایل اقدام می‌کند و از جایی که پروسه اول از پیش فایل را لاک کرده است، برای آزاد شدن لاک صبر می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را درون فایل می‌نویسد&lt;/li&gt;
-&lt;li&gt;پروسه اول لاک فایل را آزاد می‌کند.&lt;/li&gt;
-&lt;li&gt;پروسه دوم فایل را لاک و مقدار جدید 80 را از فایل می‌خواند&lt;/li&gt;
-&lt;li&gt;پروسه دوم مقدار 50 را به 80 اضافه و مقدار 120 را درون فایل می‌نویسد&lt;/li&gt;
-&lt;li&gt;پروسه دوم لاک فایل را آزاد می‌کند تا پروسه های دیگر بتوانند با فایل کار کنند.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;اگر شما می‌خواهید این مکانیزم را روی یک فایل اجرا کنید، دستور
+داریم و می‌خواهیم مقدار 20 از آن کم و مقدار 50 به آن اضافه کنیم.&lt;/p>
+&lt;ul>
+&lt;li>پروسه اول قبل از خواندن فایل، فایل را لاک می‌کند&lt;/li>
+&lt;li>پروسه دوم برای لاک کردن فایل اقدام می‌کند و از جایی که پروسه اول از پیش فایل را لاک کرده است، برای آزاد شدن لاک صبر می‌کند&lt;/li>
+&lt;li>پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را درون فایل می‌نویسد&lt;/li>
+&lt;li>پروسه اول لاک فایل را آزاد می‌کند.&lt;/li>
+&lt;li>پروسه دوم فایل را لاک و مقدار جدید 80 را از فایل می‌خواند&lt;/li>
+&lt;li>پروسه دوم مقدار 50 را به 80 اضافه و مقدار 120 را درون فایل می‌نویسد&lt;/li>
+&lt;li>پروسه دوم لاک فایل را آزاد می‌کند تا پروسه های دیگر بتوانند با فایل کار کنند.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>اگر شما می‌خواهید این مکانیزم را روی یک فایل اجرا کنید، دستور
 flock
-برای شما اینکار را خواهد کرد.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;flock &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;options&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; file&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;directory &lt;span class=&#34;nb&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;arguments&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;این کامند در حالت عادی از شما یک فایل و یک دستور خواهد گرفت و مکانیزم
+برای شما اینکار را خواهد کرد.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">flock &lt;span class="o">[&lt;/span>options&lt;span class="o">]&lt;/span> file&lt;span class="p">|&lt;/span>directory &lt;span class="nb">command&lt;/span> &lt;span class="o">[&lt;/span>arguments&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>این کامند در حالت عادی از شما یک فایل و یک دستور خواهد گرفت و مکانیزم
 advisory lock
-را روی ان فایل اجرا خواهد کرد.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;flock   /tmp/fli    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; 12&amp;gt;/tmp/fli
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;برای اینکه روند را بهتر درک کنیم یک فایل
+را روی ان فایل اجرا خواهد کرد.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">flock /tmp/fli &lt;span class="nb">echo&lt;/span> 12&amp;gt;/tmp/fli
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>برای اینکه روند را بهتر درک کنیم یک فایل
 bash
-می‌نویسیم که بتوانیم مثال اولیه را روی آن اجرا کنیم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;balance.dat&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;cat &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Read current balance:&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$value&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#sleep 10 seconds to simulate business calculation&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;progress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$progress&lt;/span&gt; -lt &lt;span class=&#34;m&#34;&gt;101&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -n -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[77DCalculating new balance..&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$progress&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;%&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	sleep &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nv&#34;&gt;progress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;progress&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;value+&lt;span class=&#34;nv&#34;&gt;$1&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Write new balance (&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$value&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;) back to &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;.&amp;#34;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$value&lt;/span&gt; &amp;gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Done.&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;ما این فایل را همزمان با دو ترمینال اجرا می‌کنیم.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/advisory_lock.gif&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;advisory lock&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;همینطور که می‌بینید پروسه دوم برای اینکه محتوای فایل را تغییر دهد، باید صبر کند تا لاک فایل
-آزاد شود.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;این پست خلاصه‌ای بود از
-&lt;a class=&#34;link&#34; href=&#34;https://www.baeldung.com/linux/file-locking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این بلاگ&lt;/a&gt;
+می‌نویسیم که بتوانیم مثال اولیه را روی آن اجرا کنیم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="nv">file&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;balance.dat&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>cat &lt;span class="nv">$file&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Read current balance:&lt;/span>&lt;span class="nv">$value&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#sleep 10 seconds to simulate business calculation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">progress&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$progress&lt;/span> -lt &lt;span class="m">101&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> -n -e &lt;span class="s2">&amp;#34;\033[77DCalculating new balance..&lt;/span>&lt;span class="nv">$progress&lt;/span>&lt;span class="s2">%&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sleep &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">progress&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$((&lt;/span>&lt;span class="m">10&lt;/span>&lt;span class="o">+&lt;/span>progress&lt;span class="k">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$((&lt;/span>value+&lt;span class="nv">$1&lt;/span>&lt;span class="k">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Write new balance (&lt;/span>&lt;span class="nv">$value&lt;/span>&lt;span class="s2">) back to &lt;/span>&lt;span class="nv">$file&lt;/span>&lt;span class="s2">.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$value&lt;/span> &amp;gt; &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$file&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Done.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ما این فایل را همزمان با دو ترمینال اجرا می‌کنیم.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/advisory_lock.gif"
+loading="lazy"
+alt="advisory lock"
+>&lt;/p>
+&lt;p>همینطور که می‌بینید پروسه دوم برای اینکه محتوای فایل را تغییر دهد، باید صبر کند تا لاک فایل
+آزاد شود.&lt;/p>
+&lt;hr>
+&lt;p>این پست خلاصه‌ای بود از
+&lt;a class="link" href="https://www.baeldung.com/linux/file-locking" target="_blank" rel="noopener"
+>این بلاگ&lt;/a>
 که هر دو نوع
 advisory lock و mandatory lock
-را توضیح می‌دهد.&lt;/p&gt;
-&lt;p&gt;برای من سوال بود که من چطور می‌توانم مکانیزمی که
+را توضیح می‌دهد.&lt;/p>
+&lt;p>برای من سوال بود که من چطور می‌توانم مکانیزمی که
 flock
 استفاده می‌کند را در برنامه های خودم پیاده سازی کنم، و خب نتیجه این بود که معمولا برای
 advisory lock
 هر زبانی یک کتابخانه استاندار دارد
 توی
-&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/library/fcntl.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;پایتون کتابخانه&lt;/a&gt;
-&lt;code&gt;fcntl&lt;/code&gt;
-اینکار را انجام می‌دهد.&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;a class="link" href="https://docs.python.org/3/library/fcntl.html" target="_blank" rel="noopener"
+>پایتون کتابخانه&lt;/a>
+&lt;code>fcntl&lt;/code>
+اینکار را انجام می‌دهد.&lt;/p></description></item></channel></rss>
