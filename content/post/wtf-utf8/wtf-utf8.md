@@ -3,6 +3,12 @@ title: "فرق utf-8 با unicode چیه؟"
 date: 2025-08-11T00:16:06+03:30
 draft: false
 image: images/post/wtf-utf8.png
+categories: ['software-engineering']
+tags: [
+    'utf-8 چیست',
+    'unicode چیست',
+    'فرق utf-8 با unicode چیست',
+]
 ---
 
  [این پست](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
