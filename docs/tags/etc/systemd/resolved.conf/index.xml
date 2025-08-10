@@ -1,18 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>/Etc/Systemd/Resolved.conf on bit-orbit</title><link>https://bit-orbit.github.io/tags/etc/systemd/resolved.conf/</link><description>Recent content in /Etc/Systemd/Resolved.conf on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Thu, 01 Aug 2024 03:03:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/etc/systemd/resolved.conf/index.xml" rel="self" type="application/rss+xml"/><item><title>etc/resolve.conf/</title><link>https://bit-orbit.github.io/p/etc/resolve.conf/</link><pubDate>Thu, 01 Aug 2024 03:03:46 +0330</pubDate><guid>https://bit-orbit.github.io/p/etc/resolve.conf/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/OIG4.jpeg" alt="Featured image of post etc/resolve.conf/" />&lt;span style='font-size: 25px'>
-&lt;h3 id="مقدمه">مقدمه
-&lt;/h3>&lt;p>همیشه موقع ویرایش فایل
-&lt;em>resolve.conf&lt;/em>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>/Etc/Systemd/Resolved.conf on bit-orbit</title>
+        <link>https://bit-orbit.github.io/tags/etc/systemd/resolved.conf/</link>
+        <description>Recent content in /Etc/Systemd/Resolved.conf on bit-orbit</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fa</language>
+        <lastBuildDate>Thu, 01 Aug 2024 03:03:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/etc/systemd/resolved.conf/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>etc/resolve.conf/</title>
+        <link>https://bit-orbit.github.io/p/etc/resolve.conf/</link>
+        <pubDate>Thu, 01 Aug 2024 03:03:46 +0330</pubDate>
+        
+        <guid>https://bit-orbit.github.io/p/etc/resolve.conf/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/OIG4.jpeg" alt="Featured image of post etc/resolve.conf/" /&gt;&lt;span style=&#39;font-size: 25px&#39;&gt;
+&lt;h3 id=&#34;مقدمه&#34;&gt;مقدمه
+&lt;/h3&gt;&lt;p&gt;همیشه موقع ویرایش فایل
+&lt;em&gt;resolve.conf&lt;/em&gt;
 برام سوال بود که گزین های دیگه‌ای که توی این فایل تنظیم شده‌اند چکاری انجام می‌دهند.
 درواقع من همیشه دستور
-&lt;code>namveserver&lt;/code>
+&lt;code&gt;namveserver&lt;/code&gt;
 را برای تغییر سرور
-&lt;em>dns&lt;/em>
+&lt;em&gt;dns&lt;/em&gt;
 ویرایش می‌کردم. اما دستور هایی دیگه‌ای هم برای این فایل وجود دارد که لیست آنها در
-&lt;code>man resolve.conf&lt;/code>
-توضیح داده شده است.&lt;/p>
-&lt;p>توی این پست من بعضی از دستورات این فایل را توضیح می‌دم.&lt;/p>
-&lt;blockquote>
-&lt;p>در مرحله اول یادتون باشه لینوکس هایی که
+&lt;code&gt;man resolve.conf&lt;/code&gt;
+توضیح داده شده است.&lt;/p&gt;
+&lt;p&gt;توی این پست من بعضی از دستورات این فایل را توضیح می‌دم.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;در مرحله اول یادتون باشه لینوکس هایی که
 systemd
 دارند، معمولا از سرویس
 systemd-resolved
@@ -22,48 +36,46 @@ DNS
 resolve
 می‌کند و سپس آنها را کش می‌کند که یک دامنه را چندین بار
 resolve
-نکند.&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>یک دامنه حد اقل از &lt;em>دو&lt;/em> بخش تشکیل می‌شود.&lt;/p>
-&lt;ol>
-&lt;li>TLD&lt;/li>
-&lt;li>Domain&lt;/li>
-&lt;/ol>
-&lt;/blockquote>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">bin.example.com
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ │
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ └─► TDL(Top Level Domain)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └───────► Domain
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─────────────► SubDomain
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;h3 id="دستورات">دستورات
-&lt;/h3>&lt;ul>
-&lt;li>
-&lt;p>1 &lt;code>nameserver&lt;/code>&lt;/p>
-&lt;p>این دستور برای تعیین
+نکند.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;یک دامنه حد اقل از &lt;em&gt;دو&lt;/em&gt; بخش تشکیل می‌شود.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TLD&lt;/li&gt;
+&lt;li&gt;Domain&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bin.example.com        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │     │         
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │     └─► TDL(Top Level Domain) 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │               
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     └───────► Domain
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│                                        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└─────────────► SubDomain
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                                 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;دستورات&#34;&gt;دستورات
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1 &lt;code&gt;nameserver&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;این دستور برای تعیین
 IP
 یک سرور
 DNS
-استفاده می‌شود.(در واقع اینجا منظورم یک سرویسی است که به نامه دامنه ها پاسخ دهد که به آن NS می‌گویم.)&lt;/p>
-&lt;p>شما می‌توانید تا حداقل سه
+استفاده می‌شود.(در واقع اینجا منظورم یک سرویسی است که به نامه دامنه ها پاسخ دهد که به آن NS می‌گویم.)&lt;/p&gt;
+&lt;p&gt;شما می‌توانید تا حداقل سه
 IP
 لیست کنید، و
 resolver
@@ -72,68 +84,68 @@ resolver
 NS
 جواب گو نباشد، از دیگر
 NS
-های لیست شده استفاده خواهد شد.&lt;/p>
-&lt;p>اگر به همین ترتیب هر یک از
+های لیست شده استفاده خواهد شد.&lt;/p&gt;
+&lt;p&gt;اگر به همین ترتیب هر یک از
 NS
-ها جوابگو نباشد، کوئری ها از اول شروع می‌شود تا به حداکثر تعداد کوئری تعیین شده برسد.&lt;/p>
-&lt;p>برای مثال من می‌توانم چند
+ها جوابگو نباشد، کوئری ها از اول شروع می‌شود تا به حداکثر تعداد کوئری تعیین شده برسد.&lt;/p&gt;
+&lt;p&gt;برای مثال من می‌توانم چند
 NS
-مختلف را برای خودم تعیین کنم.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">nameserver 1.1.1.1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 8.8.8.8
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;ul>
-&lt;li>
-&lt;p>2 &lt;code>options&lt;/code>&lt;/p>
-&lt;p>برای این دستور متغیر های مختلفی را می‌توان تعیین کرد.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>2.1 &lt;code>ndots&lt;/code>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>حداقل هر دامنه‌ای در سطح اینترنت یک نقطه دارد، برای مثال
+مختلف را برای خودم تعیین کنم.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 1.1.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 8.8.8.8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2 &lt;code&gt;options&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;برای این دستور متغیر های مختلفی را می‌توان تعیین کرد.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2.1 &lt;code&gt;ndots&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;حداقل هر دامنه‌ای در سطح اینترنت یک نقطه دارد، برای مثال
 google.com
 یک نقطه دارد.
 شما می‌توانید با این متغیر تعین کنید که دامنه‌های در سطح اینترنت
 باید چند نقطه داشته باشند، هر نقطه نشانه ساب دامنه‌ است.
-برای مثال به صورت پیشفرض این متغیر &lt;em>1&lt;/em> تنظیم شده است.
+برای مثال به صورت پیشفرض این متغیر &lt;em&gt;1&lt;/em&gt; تنظیم شده است.
 به این معنی است که هر دامنه‌ای یک نقطه داشت، این دامنه
 در سطح اینترنت است. ولی اگر شما مقدار این متغیر را
 2 تنظیم کنید، دامنه‌ای مثل
-&lt;code>google.com&lt;/code>
+&lt;code&gt;google.com&lt;/code&gt;
 بعنوان دامنه لوکال تشخیص داده خواهد شد و
-&lt;code>hostname&lt;/code>
+&lt;code&gt;hostname&lt;/code&gt;
 شما به اول دامنه اضافه خواهد شد.
 مثلا اگر
-&lt;code>hostname&lt;/code>
+&lt;code&gt;hostname&lt;/code&gt;
 شما
-&lt;code>arya&lt;/code>
+&lt;code&gt;arya&lt;/code&gt;
 باشد، دامنه به این شکل کوئری زده خواهد شد
-&lt;code>google.com.arya&lt;/code>&lt;/p>
-&lt;p>در صورتی که شما برای جست و جوی یک دامنه از هیچ
-&lt;strong>TLD&lt;/strong>
+&lt;code&gt;google.com.arya&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;در صورتی که شما برای جست و جوی یک دامنه از هیچ
+&lt;strong&gt;TLD&lt;/strong&gt;
 استفاده نکید، از
-&lt;code>hostname&lt;/code>
+&lt;code&gt;hostname&lt;/code&gt;
 و یا از مقداری که برای
-&lt;code>search&lt;/code>
-مشخص کرده‌اید استفاده خواهد شد.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>2.2 &lt;code>timeout&lt;/code>&lt;/p>
-&lt;ul>
-&lt;li>این متغیر تعیین می‌کند که
+&lt;code&gt;search&lt;/code&gt;
+مشخص کرده‌اید استفاده خواهد شد.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.2 &lt;code&gt;timeout&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;این متغیر تعیین می‌کند که
 resolver
 چه مقدار زمانی باید منتظر جواب از سمت
 NS
@@ -141,19 +153,19 @@ NS
 NS
 جواب نداد، از
 NS
-های بعدی سوال کند.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>2.3 &lt;code>attempts&lt;/code>&lt;/p>
-&lt;ul>
-&lt;li>این متغیر تعین می‌کند که
+های بعدی سوال کند.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.3 &lt;code&gt;attempts&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;این متغیر تعین می‌کند که
 resolver
 در صورت جواب ندادن توسط
 NS
-باید در نهایت چند کوئری دیگر ارسال کند.&lt;/li>
-&lt;/ul>
-&lt;p>برای مثال اگر اولین
+باید در نهایت چند کوئری دیگر ارسال کند.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;برای مثال اگر اولین
 NS
 پاسخ نداد، سوال از
 NS
@@ -164,12 +176,12 @@ attempts
 attempts
 مجوع سوال ها از همه
 NS
-ها است.)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>2.4 &lt;code>rotate&lt;/code>&lt;/p>
-&lt;ul>
-&lt;li>به صورت پیشفرض کوئری های
+ها است.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2.4 &lt;code&gt;rotate&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;به صورت پیشفرض کوئری های
 DNS
 همه برای اولین
 NS
@@ -180,50 +192,50 @@ NS
 ها تقسیم کنیم، کافیست از این متغیر استفاده کنیم.
 اینکار باعث می‌شود که هر کوئری ها به صورت چرخشی به ترتیب به
 NS
-های لیست شده ارسال شود.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;ul>
-&lt;li>3 &lt;code>search&lt;/code>
+های لیست شده ارسال شود.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;3 &lt;code&gt;search&lt;/code&gt;
 همانطور که در مثال بالا گفتم، ما نام دامنه ها را تنظیم می‌کنیم که حداقل وقتی یک نقطه دارند،
 resolver
 آنها را دامنه‌ در سطح اینترنت در نظر بگیرد و به
 NS
 کوئری بزند. ولی اگر هیچ نقطه‌ای نداشت و یا شما
-&lt;code>ndots&lt;/code>
+&lt;code&gt;ndots&lt;/code&gt;
 را بیشتر یا مساوی با 2 نتظیم کرده باشید،
-&lt;code>hostname&lt;/code>
+&lt;code&gt;hostname&lt;/code&gt;
 سیستم شما به آخر آن دامنه اضافه خواهد شد و یک دامنه داخلی
 (local)
 تلقی خواهد شد.
 اما اگر می‌خواهید قبل از اضافه شدن
-&lt;code>hostname&lt;/code>
-به آن چیز دیگری اضافه کنید، کافیست متغیر سرچ را تعریف کنید و یک یا چند مقدار برای آن تعیین کنید.&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h3 id="سرویس-systemd-resolve">سرویس systemd-resolve
-&lt;/h3>&lt;p>اگر به فایل
+&lt;code&gt;hostname&lt;/code&gt;
+به آن چیز دیگری اضافه کنید، کافیست متغیر سرچ را تعریف کنید و یک یا چند مقدار برای آن تعیین کنید.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;سرویس-systemd-resolve&#34;&gt;سرویس systemd-resolve
+&lt;/h3&gt;&lt;p&gt;اگر به فایل
 /etc/resolve.conf
 نگاه کنید، می‌بینید که یک
 ns
 برای شما تنظیم شده است که
 IP
-آن داخلی است.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl"># cat /etc/resolve.conf
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 127.0.0.53
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>همانطور که توی نکته‌ای در مقدمه این پست گفتم،
+آن داخلی است.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# cat /etc/resolve.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 127.0.0.53
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;همانطور که توی نکته‌ای در مقدمه این پست گفتم،
 سیستم عاملی هایی که از
 systemd
 استفاده می‌کنند معمولا سرویس
@@ -235,76 +247,79 @@ IP
 127.0.0.53
 و
 127.0.0.54
-شنود می‌کند.&lt;/p>
-&lt;p>این سرویس خودش یک کانفیگ در
-&lt;code>etc/ststemd/resolved.conf/&lt;/code>
-دارد.&lt;/p>
-&lt;p>اگر داخل این فایل را نگاه کنیم، می‌بنیم که در قسمت
+شنود می‌کند.&lt;/p&gt;
+&lt;p&gt;این سرویس خودش یک کانفیگ در
+&lt;code&gt;etc/ststemd/resolved.conf/&lt;/code&gt;
+دارد.&lt;/p&gt;
+&lt;p&gt;اگر داخل این فایل را نگاه کنیم، می‌بنیم که در قسمت
 ‌DNS
 می‌توان
 NS
 های بالاتر را وارد کرد، اینکار باعث می‌شود که سیستم شما وقتی یک دامنه را
 در حافظه کش خود نداشت، از
 NS
-های بالاتر که در این فایل تنظیم شده است سوال کند.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">[Resolve]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">DNS=1.1.1.1 8.8.8.8
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>ابته تاکید کنم در صورتی از این
+های بالاتر که در این فایل تنظیم شده است سوال کند.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Resolve]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;DNS=1.1.1.1 8.8.8.8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;ابته تاکید کنم در صورتی از این
 NS
 ها استفاده می‌شود که شما
 ‌از 127.0.0.53 و 127.0.0.54 در کانفیگ
 /etc/resolve.conf
-استفاده کرده باشید.&lt;/p>
-&lt;blockquote>
-&lt;p>تفاوت 127.0.0.54 این است که هر کوئری را مستقیم به
+استفاده کرده باشید.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;تفاوت 127.0.0.54 این است که هر کوئری را مستقیم به
 NS
 بالاتر ارسال خواهد کرد و از دیتای کش شده استفاده نمی‌کند.
-ولی 127.0.0.53 از قابلیت کش استفاده می‌کند.&lt;/p>
-&lt;/blockquote>
-&lt;hr>
-&lt;h3 id="مثال">مثال
-&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nameserver 1.1.1.1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 8.8.8.8
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 9.9.9.9
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options ndots:1
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options timeout:2
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options attempts:3
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options rotate
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">search server1 server2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;h3 id="سخنی-با-شما">سخنی با شما
-&lt;/h3>&lt;p>این را بگم که
+ولی 127.0.0.53 از قابلیت کش استفاده می‌کند.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;مثال&#34;&gt;مثال
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 1.1.1.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 8.8.8.8
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 9.9.9.9
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options ndots:1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options timeout:2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options attempts:3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options rotate
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;search server1 server2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;سخنی-با-شما&#34;&gt;سخنی با شما
+&lt;/h3&gt;&lt;p&gt;این را بگم که
 DNS
 به صورت
 recursive(بازگشتی)
 عمل می‌کنه، این یعنی وقتی شما یک کوئری ارسال می‌کنید،
 این کوئری هر بار به یک سرور بالاتر ارسال می‌شود
 تا در نهایت به جواب برسه. و خب این موضوع خودش در نهایت یک جریان
-خیلی جالب داره که امیدوارم یک روز اون رو هم بنویسم :)&lt;/p>
-&lt;/span></description></item></channel></rss>
+خیلی جالب داره که امیدوارم یک روز اون رو هم بنویسم :)&lt;/p&gt;
+&lt;/span&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

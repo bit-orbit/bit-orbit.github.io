@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on bit-orbit</title><link>https://bit-orbit.github.io/categories/cloud/</link><description>Recent content in Cloud on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 18 Dec 2023 00:08:38 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>از گوگل به تلگرام!</title><link>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</link><pubDate>Mon, 18 Dec 2023 00:08:38 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/colab.jpg" alt="Featured image of post از گوگل به تلگرام!" />&lt;p>به احتمال زیاد سایت
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Cloud on bit-orbit</title>
+        <link>https://bit-orbit.github.io/categories/cloud/</link>
+        <description>Recent content in Cloud on bit-orbit</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fa</language>
+        <lastBuildDate>Mon, 18 Dec 2023 00:08:38 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/cloud/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>از گوگل به تلگرام!</title>
+        <link>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</link>
+        <pubDate>Mon, 18 Dec 2023 00:08:38 +0330</pubDate>
+        
+        <guid>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/colab.jpg" alt="Featured image of post از گوگل به تلگرام!" /&gt;&lt;p&gt;به احتمال زیاد سایت
 google colab
 رو می‌شناسید، این سایت برای کسانی که پایتون کار می‌کنند
 یک معجزه‌ست. خیلی راحت شما می‌توانید کد پایتون خود
@@ -8,30 +22,30 @@ google colab
 این سرویس گوگل واقعا کار رو راحت می‌کنه.
 حالا فرض کنید این فایل رو باید با تیم به اشتراک بگذارید،
 خیلی راحت این سروریس به گوگل درایو شما متصل می‌شه
-و فایل رو براتون آپلود می‌کنه.&lt;/p>
-&lt;p>اما من توی این پست می‌خواهم کار متفاوتی با این سرویس
+و فایل رو براتون آپلود می‌کنه.&lt;/p&gt;
+&lt;p&gt;اما من توی این پست می‌خواهم کار متفاوتی با این سرویس
 انجام بدم، جای اینکه فایل‌م رو توی گوگل درایو آپلود کنم
 می‌خواهم که یک پلی لیست موزیک راک رو که فایل با فرمت
 zip
 هست رو روی
 google colab
 دانلود کنم و بعد با همین کولب فایل
-ها را استخراج و به تلگرام اپلود کنم.&lt;/p>
-&lt;p>اینو بگم که خب روی کولب خیلی تریک های جالب دیگه‌ای هم
+ها را استخراج و به تلگرام اپلود کنم.&lt;/p&gt;
+&lt;p&gt;اینو بگم که خب روی کولب خیلی تریک های جالب دیگه‌ای هم
 می‌زنند، مثلا من یه تایمی به کولب
 ssh
 می‌کردم و بعنوان
 vpn
-استفاده می‌کردم.&lt;/p>
-&lt;hr>
-&lt;p>ادرس سرویس
+استفاده می‌کردم.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;ادرس سرویس
 google colab
-&lt;a class="link" href="https://colab.research.google.com/" target="_blank" rel="noopener"
->این&lt;/a>
+&lt;a class=&#34;link&#34; href=&#34;https://colab.research.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;این&lt;/a&gt;
 هست، ولی من یک اسکریپت نوشتم که به اون نیاز داریم
 برای همین
-&lt;a class="link" href="https://colab.research.google.com/github/shabane/upload-to-telegram/blob/master/upload_to_telegram.ipynb" target="_blank" rel="noopener"
->این لینک&lt;/a>
+&lt;a class=&#34;link&#34; href=&#34;https://colab.research.google.com/github/shabane/upload-to-telegram/blob/master/upload_to_telegram.ipynb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;این لینک&lt;/a&gt;
 رو باز کنید
 تا اسکریپتی که من نوشته‌م توی
 colab
@@ -39,204 +53,229 @@ colab
 jupyter
 کار کرده باشین این محیط باید براتون خیلی آشنا باشه.
 اگر نه، خیلی ساده بگم، این محیط دستورات پایتون رو
-براتون روی سروس های گوگل ران می‌کنه :)&lt;/p>
-&lt;p>خب ما یه فایل این برای مثالمون نیاز داریم، من یک پلی
+براتون روی سروس های گوگل ران می‌کنه :)&lt;/p&gt;
+&lt;p&gt;خب ما یه فایل این برای مثالمون نیاز داریم، من یک پلی
 لیست راک از
 AC/DC
-که از تورنت می‌گیرم رو برای اینکار استفاده می‌کنم.&lt;/p>
-&lt;p>اول من فایل رو باید دانلود کنم، من از تورنت برای دانلود
+که از تورنت می‌گیرم رو برای اینکار استفاده می‌کنم.&lt;/p&gt;
+&lt;p&gt;اول من فایل رو باید دانلود کنم، من از تورنت برای دانلود
 موزیک، فیلم و &amp;hellip; استفاده می‌کنم.
 پس کافیه لینک تورنت رو به برنامه
 aria2c
 بدم
 و یا فایل رو با یک سایت دانلودر تورنت دانلود کنم و لینک‌ش
 رو بدم به برنامه
-wget&lt;/p>
-&lt;p>برای اینکه دستورات خودتون رو اجرا کنید از بالای سایت
+wget&lt;/p&gt;
+&lt;p&gt;برای اینکه دستورات خودتون رو اجرا کنید از بالای سایت
 گزینه
-&lt;em>+ code&lt;/em>
+&lt;em&gt;+ code&lt;/em&gt;
 رو بزنید تا یک
 code snipp
 جدید براتون باز کنه. توی این قسمت فقط می‌شه کد های
 پایتون رو اجرا کرد ولی اگه از علامت
-&lt;strong>!&lt;/strong>
+&lt;strong&gt;!&lt;/strong&gt;
 قبل از دستور استفاده کنیم اون رو بعنوان دستور
 bash
 اجرا خواهد کرد. و خب بیس سیستم عامل هم دبیان هست
-و دستورات دبیانی رو اجرا می‌کنه.&lt;/p>
-&lt;p>پس اگه مستقیم قرار بود فایل رو از تورنت بگیرم باید برنامه
+و دستورات دبیانی رو اجرا می‌کنه.&lt;/p&gt;
+&lt;p&gt;پس اگه مستقیم قرار بود فایل رو از تورنت بگیرم باید برنامه
 aria2
-رو نصب می‌کردم. برای نصب کافیه این دستور رو بزنیم&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">!sudo apt-get install aria2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>دقت کنید که از علامت
-&lt;code>!&lt;/code>
-قبل از دستور استفاده کردم.&lt;/p>
-&lt;/blockquote>
-&lt;p>بعد از نصب، لینک رو می‌دیم به برنامه تا فایل ها رو برامون
-دانلود کنه.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">!aria2c &lt;span class="s1">&amp;#39;&amp;lt;your magnet link&amp;gt;&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>به این دقت کنید که برنامه با کامند
+رو نصب می‌کردم. برای نصب کافیه این دستور رو بزنیم&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!sudo apt-get install aria2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;دقت کنید که از علامت
+&lt;code&gt;!&lt;/code&gt;
+قبل از دستور استفاده کردم.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;بعد از نصب، لینک رو می‌دیم به برنامه تا فایل ها رو برامون
+دانلود کنه.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!aria2c &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;your magnet link&amp;gt;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;به این دقت کنید که برنامه با کامند
 aria2c
 اجرا می‌شه. ولی با به اسم
 aria2
-نصب می‌شه.&lt;/p>
-&lt;/blockquote>
-&lt;p>و یا اینکه لینک دانلود مستقیم رو به برنامه
+نصب می‌شه.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;و یا اینکه لینک دانلود مستقیم رو به برنامه
 wget
 می‌دیم. این برنامه به صورت دیفالت نصب هست و لازم نیست
-کار خاصی بکنیم.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">!wget &lt;span class="s1">&amp;#39;&amp;lt;your file link&amp;gt;&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/wgetcolab.jpg"
-loading="lazy"
-alt="from google to telegram as cloud"
->&lt;/p>
-&lt;p>بعد از اینکه فایل روی سرور گوگل دانلود شد کافیه فایل
-رو به تلگرام آپلود کنیم! ولی قبل‌ش چند کاری هست که باید
-باهم بکنیم.&lt;/p>
-&lt;ul>
-&lt;li>فایل من زیپه پس باید استخراج کنم.&lt;/li>
-&lt;li>فایل ها توی دایرکتوری های تو در تو قرار دارند، و باید همه فایل های مورد نظرم رو که توی این مورد
+کار خاصی بکنیم.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!wget &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;your file link&amp;gt;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/wgetcolab.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;from google to telegram as cloud&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;بعد از اینکه فایل روی سرور گوگل دانلود شد کافیه فایل
+رو به تلگرام آپلود کنیم! ولی قبل‌ش  چند کاری هست که باید
+باهم بکنیم.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;فایل من زیپه پس باید استخراج کنم.&lt;/li&gt;
+&lt;li&gt;فایل ها توی دایرکتوری های تو در تو قرار دارند، و باید همه فایل های مورد نظرم رو که توی این مورد
 mp3
 هستند رو بیارم داخل پوشه‌ای که اسکریپت دیفالت آنجا ران
-می‌شه.&lt;/li>
-&lt;li>نیاز به یک کانال تلگرام دارم که فایل ها مستقیم اونجا
-اپلود بشوند&lt;/li>
-&lt;li>یک توکن ربات تلگرام هم نیازه که با استفاده از دسترسی
-ربات به کانال، فایل ها رو اپلود کنیم.&lt;/li>
-&lt;/ul>
-&lt;p>خب برای اسختراج فایل ها خیلی ساده از کامند
-&lt;code>unzip&lt;/code>
-و اسم فایل جلوی این کامند استفاده می‌کنیم.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">!unzip &amp;lt;your file name&amp;gt;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>با کامند
-&lt;code>ls&lt;/code>
-نام فایلی که دانلود کردین رو می‌تونید ببینید.&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/unzipcolab.jpg"
-loading="lazy"
-alt="uizip in colab"
->&lt;/p>
-&lt;p>با اجرای کامند
-&lt;code>tree&lt;/code>
-می‌تونید دایرکتوری های تو در تو رو ببینید.&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/treecolab.jpg"
-loading="lazy"
-alt="tree in colab"
->&lt;/p>
-&lt;p>توی این مرحله من همه فایل های
+می‌شه.&lt;/li&gt;
+&lt;li&gt;نیاز به یک کانال تلگرام دارم که فایل ها مستقیم اونجا
+اپلود بشوند&lt;/li&gt;
+&lt;li&gt;یک توکن ربات تلگرام هم نیازه که با استفاده از دسترسی
+ربات به کانال، فایل ها رو اپلود کنیم.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;خب برای اسختراج فایل ها خیلی ساده از کامند
+&lt;code&gt;unzip&lt;/code&gt;
+و اسم فایل جلوی این کامند استفاده می‌کنیم.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!unzip &amp;lt;your file name&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;با کامند
+&lt;code&gt;ls&lt;/code&gt;
+نام فایلی که دانلود کردین رو می‌تونید ببینید.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/unzipcolab.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;uizip in colab&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;با اجرای کامند
+&lt;code&gt;tree&lt;/code&gt;
+می‌تونید دایرکتوری های تو در تو رو ببینید.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/treecolab.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;tree in colab&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;توی این مرحله من همه فایل های
 mp3
 رو باید بیارم توی پوشه اصلی که اسکریپت‌ اپلود اجرا میشه،
 دلیل این کار این هست که این اسکریپ‌ت فقط فایل های
 mp3
-داخل همین پوشه رو پیدا و اپلود می‌کنه.&lt;/p>
-&lt;p>برای انتقال این فایل ها از پوشه های تو در تو به یک پوشه از کامند
-&lt;code>find&lt;/code>
+داخل همین پوشه رو پیدا و اپلود می‌کنه.&lt;/p&gt;
+&lt;p&gt;برای انتقال این فایل ها از پوشه های تو در تو به یک پوشه از کامند
+&lt;code&gt;find&lt;/code&gt;
 استفاده می‌کنم و هر فایل که پیدا می‌شه رو با کامند
-&lt;code>mv&lt;/code>
-به پوشه اصلی‌مون انتقال می‌دم.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">!find . -type f -iname &lt;span class="s1">&amp;#39;*mp3&amp;#39;&lt;/span> -exec mv &lt;span class="o">{}&lt;/span> . &lt;span class="se">\;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>بیایید سوییچ های این دستور رو بهتون بگم&lt;/p>
-&lt;ul>
-&lt;li>type-&lt;/li>
-&lt;/ul>
-&lt;p>این سوییچ انواع نوع فایل ها رو مشخص می‌کنه. مثلا شما می‌تونید دنبال یک دایرکتوری، فایل، سوکت و &amp;hellip; بگردین&lt;/p>
-&lt;ul>
-&lt;li>iname-&lt;/li>
-&lt;/ul>
-&lt;p>این سویچ که مشخص هست نام فایل رو ازتون می‌گیره که شما می‌تونید پترن ریجکس بدین بهش.
+&lt;code&gt;mv&lt;/code&gt;
+به پوشه اصلی‌مون انتقال می‌دم.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!find . -type f -iname &lt;span class=&#34;s1&#34;&gt;&amp;#39;*mp3&amp;#39;&lt;/span&gt; -exec mv &lt;span class=&#34;o&#34;&gt;{}&lt;/span&gt; . &lt;span class=&#34;se&#34;&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;بیایید سوییچ های این دستور رو بهتون بگم&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;type-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;این سوییچ انواع نوع فایل ها رو مشخص می‌کنه. مثلا شما می‌تونید دنبال یک دایرکتوری، فایل، سوکت و &amp;hellip; بگردین&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;iname-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;این سویچ که مشخص هست نام فایل رو ازتون می‌گیره که شما می‌تونید پترن ریجکس بدین بهش.
 و اون
-&lt;strong>i&lt;/strong>
-مشخص می‌کنه که نام فایل به کوچیکی و بزرگی حساس نباشه.&lt;/p>
-&lt;ul>
-&lt;li>exec-&lt;/li>
-&lt;/ul>
-&lt;p>یک کامندی رو ازتون می‌گیره و روی تک تک ریزالت های جست و جو اون کامند رو اجرا می‌کنه.
+&lt;strong&gt;i&lt;/strong&gt;
+مشخص می‌کنه که نام فایل به کوچیکی و بزرگی حساس نباشه.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;exec-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;یک کامندی رو ازتون می‌گیره و روی تک تک ریزالت های جست و جو اون کامند رو اجرا می‌کنه.
 من کامند
-&lt;code>mv&lt;/code>
+&lt;code&gt;mv&lt;/code&gt;
 رو دادم که برای انتقال فایل استفاده می‌شه. علامت های
-&lt;strong>{}&lt;/strong>
-هم یک متغییر هست که نام فایل تک به تک جای اون قرار می‌گیره.&lt;/p>
-&lt;blockquote>
-&lt;p>پایان سوییچ
+&lt;strong&gt;{}&lt;/strong&gt;
+هم یک متغییر هست که نام فایل تک به تک جای اون قرار می‌گیره.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;پایان سوییچ
 exec
 همیشه با
-&lt;code>;\&lt;/code>
-مشخص می‌شه.&lt;/p>
-&lt;/blockquote>
-&lt;p>خب تا اینجا که خیلی ساده بود،‌ نه؟&lt;/p>
-&lt;p>مرحله آخر اینه که یک ربات با
-&lt;a class="link" href="https://t.me/BotFather" target="_blank" rel="noopener"
->این ربات&lt;/a>
-بسازین، و بعد اون رو عضو یک کانالی که می‌سازید بکنید، کانال رو فعلا پابلیک بسازید و یک یوزرنیم بهش بدین.&lt;/p>
-&lt;p>توکن ربات رو کپی کنید و توی اسکریپت من، جایی که نوشته
-&lt;your token>
+&lt;code&gt;;\&lt;/code&gt;
+مشخص می‌شه.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;خب تا اینجا که خیلی ساده بود،‌ نه؟&lt;/p&gt;
+&lt;p&gt;مرحله آخر اینه که یک ربات با
+&lt;a class=&#34;link&#34; href=&#34;https://t.me/BotFather&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;این ربات&lt;/a&gt;
+بسازین، و بعد اون رو عضو یک کانالی که می‌سازید بکنید، کانال رو فعلا پابلیک بسازید و یک یوزرنیم بهش بدین.&lt;/p&gt;
+&lt;p&gt;توکن ربات رو کپی کنید و توی اسکریپت من، جایی که نوشته
+&lt;your token&gt;
 وارد کنید و توی قسمت
-&lt;chat id>
-هم ایدی کانالتون رو با علامت @ اول جایگذاری کنید.&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/acdccolab.jpg"
-loading="lazy"
-alt="ac and dc telegram channel"
->&lt;/p>
-&lt;blockquote>
-&lt;p>اگه کانال پرایوت دارید باید بجای ای‌دی کانال از
+&lt;chat id&gt;
+هم ایدی کانالتون رو با علامت @ اول جایگذاری کنید.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/acdccolab.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ac and dc telegram channel&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;اگه کانال پرایوت دارید باید بجای ای‌دی کانال از
 chatid
-استفاده کنید، که یک ای‌دی عددی هست.&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;strong>تمام&lt;/strong>!‌
-کافیه برنامه رو اجرا کنید و کانال تلگرامتون رو نگاه کنید :)&lt;/p>
-&lt;blockquote>
-&lt;p>اگه خیلی زیاد دارین فایل اپلود می‌کنید احتمالا تلگرام ارور
+استفاده کنید، که یک ای‌دی عددی هست.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;تمام&lt;/strong&gt;!‌
+کافیه برنامه رو اجرا کنید و کانال تلگرامتون رو نگاه کنید :)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;اگه خیلی زیاد دارین فایل اپلود می‌کنید احتمالا تلگرام ارور
 flood mood
 بهتون بده. توی این مورد کافیه فقط صبر کنید، اسکریپت از اجرا قطع نمی‌شه و روی همون فایل مجددا اجرا می‌شه
-تا بالاخره فایل اپلود بشه.&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>هرچیزی رو می‌تونید آپلود کنید ولی دقت کنید که ربات ها محدودیت حجم اپلود دارن که نهایتش 50MB هست&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>اینم بگم که توی اسکریپت اگه
+تا بالاخره فایل اپلود بشه.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;هرچیزی رو می‌تونید آپلود کنید ولی دقت کنید که ربات ها محدودیت حجم اپلود دارن که نهایتش 50MB هست&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;اینم بگم که توی اسکریپت اگه
 mp3
-رو به چیز دیگه‌ای تغییر بدین، اسکریپت به دنبال اون پسوند ها خواهد گشت.&lt;/p>
-&lt;/blockquote></description></item><item><title>cloud را به خانه خود ببرید!</title><link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link><pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate><guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" />&lt;h3 id="چطور-این-ایده-به-ذهن-من-رسید-">چطور این ایده به ذهن من رسید ؟
-&lt;/h3>&lt;p>جریان این ایده به این شکل بود که خب ما ایرانی ها اینترنت
+رو به چیز دیگه‌ای تغییر بدین، اسکریپت به دنبال اون پسوند ها خواهد گشت.&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>cloud را به خانه خود ببرید!</title>
+        <link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link>
+        <pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate>
+        
+        <guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" /&gt;&lt;h3 id=&#34;چطور-این-ایده-به-ذهن-من-رسید-&#34;&gt;چطور این ایده به ذهن من رسید ؟
+&lt;/h3&gt;&lt;p&gt;جریان این ایده به این شکل بود که خب ما ایرانی ها اینترنت
 به شدت محدود شده‌ای داریم، برای همین ما برای استفاده از
 اینترنت از
 vpn
@@ -249,82 +288,100 @@ ip
 vpn
 رو که به هزار زحمت وصل شده بود، قطع کنیم.
 خب چاره چیه؟ اینکه اگه یک سیستم توی خونه یا شرکت دارین
-که همیشه روشنه رو تبدیل به یک سرور کنیم :)&lt;/p>
-&lt;p>توی این فکر بودم که نیازم رو به چنین سیستم عاملی حس کردم، بعد کمی نیاز های دیگه رو بهش اضافه کردم و یه پست
+که همیشه روشنه رو تبدیل به یک سرور کنیم :)&lt;/p&gt;
+&lt;p&gt;توی این فکر بودم که نیازم رو به چنین سیستم عاملی حس کردم، بعد کمی نیاز های دیگه رو بهش اضافه کردم و یه پست
 داخل تلگرام نوشتم، یکی کامنت گذاشت و خب این سیستم عامل
-را معرفی کرد.&lt;/p>
-&lt;hr>
-&lt;h3 id="umbrel-چیست-">umbrel چیست ؟
-&lt;/h3>&lt;p>درواقع
+را معرفی کرد.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;umbrel-چیست-&#34;&gt;umbrel چیست ؟
+&lt;/h3&gt;&lt;p&gt;درواقع
 umbrel
 یک سیستم عامل است، زمانی که شما این سیستم عامل را نصب
 کنید، یک صفحه وب در اختیار شما می‌گذارد و شما از طریق این صفحه درون مرورگر خود می‌توانید به سیستم دسترسی داشته باشید. برای مثلا می‌توانید سرویس های مختلف و ابزار های
-مختلف را روی
+مختلف  را روی
 umbrel
-نصب و یا کانفیگ کنید.&lt;/p>
-&lt;p>سرویس هایی که
+نصب و یا کانفیگ کنید.&lt;/p&gt;
+&lt;p&gt;سرویس هایی که
 umbrel
 ارائه می‌دهد تقریبا همان سرویس هایی هستند که شما در طول
-روز از نسخه های تجاری آنها استفاده می‌کنید.&lt;/p>
-&lt;p>اگه دقیق تر بخواهم بگم، این سیستم عامل یک
+روز از نسخه های تجاری آنها استفاده می‌کنید.&lt;/p&gt;
+&lt;p&gt;اگه دقیق تر بخواهم بگم، این سیستم عامل یک
 store
 در اختیار کاربران‌ش قرار می‌ده. و خب این یکی از مهم ترین
 کار هایی است که این سیستم عامل انجام می‌ده چرا که اگر
 این استور وجود نداشت، شما شخصا باید فرایند کانفیگ و نصب
 سرویس ها را به عهده می‌گرفتید(این کار یک متخصص دواپس
-هست، خیلی هم جالیه)&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbrelstore.jpg"
-loading="lazy"
-alt="umbrel store"
->&lt;/p>
-&lt;hr>
-&lt;h3 id="umbrel-چه-نیازی-را-برطرف-میکند-">umbrel چه نیازی را برطرف می‌کند ؟
-&lt;/h3>&lt;p>وقتی از سرویس های تحت اینترنت استفاده می‌کنید،
+هست، خیلی هم جالیه)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelstore.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;umbrel store&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;umbrel-چه-نیازی-را-برطرف-میکند-&#34;&gt;umbrel چه نیازی را برطرف می‌کند ؟
+&lt;/h3&gt;&lt;p&gt;وقتی از سرویس های تحت اینترنت استفاده می‌کنید،
 به احتمال زیاد شما کالای اون شرکتی هستید که ابزار را
 در اختیارتون قرار داده است. اگر دقت کنیم می‌بینیم که این
 شرکت ها بسیاری کاربر دارند و خب برای ارائه درست خدمت
 به کاربرانشون سرور های زیادی اجاره می‌کنند
 سرویس ها رو دائم اپدیت و بهتر می‌کنند
-و خب سرویس های متعددی هم ارائه می‌کنند.&lt;/p>
-&lt;p>همه این کار ها نیاز به هزینه های زیادی دارند،
+و خب سرویس های متعددی هم ارائه می‌کنند.&lt;/p&gt;
+&lt;p&gt;همه این کار ها نیاز به هزینه های زیادی دارند،
 بودجه این شرکت ها فقط و فقط با تبلیغات تامین نمی‌شود بلکه
 با فروش اطلاعات کاربرانشون(خود ما) به شرکت ها و دولت ها
-تامین می‌شود.&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/zuker.jpg"
-loading="lazy"
-alt="zukerberg spying"
->&lt;/p>
-&lt;p>و البته اگر حتی شما برای سرویسی که استفاده می‌کنید
+تامین می‌شود.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/zuker.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;zukerberg spying&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;و البته اگر حتی شما برای سرویسی که استفاده می‌کنید
 هزینه‌ای پرداخت کنید، مثلا برای استفاده از گوگل دایو
 ماهانه هزینه هم پرداخت کنید، باز هم مشکلاتی وجود دارد،
 مثلا قانونا گوگل مالک فایلی است که شما روی سرور هایش
-آپلود می‌کنید.&lt;/p>
-&lt;p>در چنین مواقعی هست که اصطلاح
+آپلود می‌کنید.&lt;/p&gt;
+&lt;p&gt;در چنین مواقعی هست که اصطلاح
 self-hosting
 سرویس ها استفاده می‌شود. به این معنی که سرویس هایی
 که شما روزانه از آن استفاده می‌کنید را خودتان راه اندازی
-کنید. اما اینکار نیاز به دانش بالایی داره.&lt;/p>
-&lt;p>سیستم عامل
+کنید. اما اینکار نیاز به دانش بالایی داره.&lt;/p&gt;
+&lt;p&gt;سیستم عامل
 umbrel
 این کار را ساده کرده است، با این تفاوت که قبلا شما باید
 برای استفاده چند ابزار روی یک سرور، باید سرور رو به درستی
 کانفیگ می‌کردین سپس ابزار ها را کانفیگ،
 و بعد سرویس ها راه اجرا می‌کردین.
 اما الان فقط با یک کلیک شما سرویس توییتر خود را
-راه اندازی می‌کنید!&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg"
-loading="lazy"
-alt="umbrel self hosting"
->&lt;/p>
-&lt;hr>
-&lt;h3 id="umbrel-به-روی-سیستم-عامل-دسکتاپ">umbrel به روی سیستم عامل دسکتاپ
-&lt;/h3>&lt;p>نصب
+راه اندازی می‌کنید!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;umbrel self hosting&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;umbrel-به-روی-سیستم-عامل-دسکتاپ&#34;&gt;umbrel به روی سیستم عامل دسکتاپ
+&lt;/h3&gt;&lt;p&gt;نصب
 umbrel
 بسیاز سادهست فقط کافیه یک سیستم عامل
 debian
 رو روی سیستمتون داشته باشید، یک ترمینال باز کنید و کامند
-نصب را بزنید، با یک کامند این سیستم نصب می‌شه.&lt;/p>
-&lt;p>ولی خب اگر سیستم عاملی ندارید که بر پایه
+نصب را بزنید، با یک کامند این سیستم نصب می‌شه.&lt;/p&gt;
+&lt;p&gt;ولی خب اگر سیستم عاملی ندارید که بر پایه
 debain
 باشه، می‌شه به سادگی روی ماشین مجازی یک دبیان نصب کنید،
 حالت شبکه اون سیستم عامل رو
@@ -341,10 +398,10 @@ IP
 debain
 که
 umbrel
-را روی ان نصب کردین را وارد کنید و تمام!&lt;/p>
-&lt;hr>
-&lt;h3 id="umbrel-به-روی-رزبری-پای">umbrel به روی رزبری پای
-&lt;/h3>&lt;p>رزبری پای! یک سخت افزار کوچک که تقریبا یک کامپیوتر کامل
+را روی ان نصب کردین را وارد کنید و تمام!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;umbrel-به-روی-رزبری-پای&#34;&gt;umbrel به روی رزبری پای
+&lt;/h3&gt;&lt;p&gt;رزبری پای! یک سخت افزار کوچک که تقریبا یک کامپیوتر کامل
 است! البته که قدرت پردازش بالایی ندارد ولی در
 IOT
 استفاده زیادی دارد. با توجه به اینکه پردازنده های
@@ -356,18 +413,24 @@ umbrel
 را نصب کرد، برای همین سیستم عامل
 umbrel
 یک نسخه مخصوص برای رزبری پای دارد، کافیست آن را دانلود و
-به روی ربزی خود نصب کنید.&lt;/p>
-&lt;p>به این دقت کنید که خب سعنی کنید یک هارد اکسترنال به
+به روی ربزی خود نصب کنید.&lt;/p&gt;
+&lt;p&gt;به این دقت کنید که خب سعنی کنید یک هارد اکسترنال به
 رزبری متصل کنید که فضای کافی برای سروریسی مانند
 next cloud
-داشته باشید.&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbrelonressbery.jpg"
-loading="lazy"
-alt="umbrel on ressbery pi"
->&lt;/p>
-&lt;hr>
-&lt;h3 id="umbrel-بروی-سرور-شخصی">umbrel بروی سرور شخصی
-&lt;/h3>&lt;p>به سادگی اچرای یک کامند! کافیست فقط سیستم عامل
+داشته باشید.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelonressbery.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;umbrel on ressbery pi&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;umbrel-بروی-سرور-شخصی&#34;&gt;umbrel بروی سرور شخصی
+&lt;/h3&gt;&lt;p&gt;به سادگی اچرای یک کامند! کافیست فقط سیستم عامل
 سرورتون
 debain
 و یا کلا بر پایه
@@ -376,10 +439,10 @@ debian
 ubuntu
 باشه. کامند اجرا را وارد کنید و بعد از اتمام فرایند نصب،
 IP
-سرور را وارد مرورگر کنید، تمام!&lt;/p>
-&lt;hr>
-&lt;h3 id="دستگاه-umbrel">دستگاه umbrel
-&lt;/h3>&lt;p>شرکت سازنده
+سرور را وارد مرورگر کنید، تمام!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;دستگاه-umbrel&#34;&gt;دستگاه umbrel
+&lt;/h3&gt;&lt;p&gt;شرکت سازنده
 umbrel
 به جز سیستم عامل، یک دستگاهی طراحی کرده است که
 به صورت پیشفرض سیستم عامل
@@ -391,29 +454,35 @@ umbrel
 به روی
 rassbery PI
 استفاده می‌کنید، شما نیاز به یک فن دارید تا این دستگاه
-را دائم خنک کند، از طرفی خود فن هم باید خنک شود.&lt;/p>
-&lt;p>اینجاست که این دستگاه رو برای شرکت یا خانه‌ شما مناسب‌تر
-می‌کند(مطمئن باشید تبلیغ نمی‌کنم)&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbreldevice.jpg"
-loading="lazy"
-alt="umbrel device"
->&lt;/p>
-&lt;hr>
-&lt;h3 id="umbrel-چطور-کار-میکند-">umbrel چطور کار می‌کند ؟
-&lt;/h3>&lt;p>اگه بخواهم کمی فنی‌تر وارد ماجرا بشم، همونطور که گفت
+را دائم خنک کند، از طرفی خود فن هم باید خنک شود.&lt;/p&gt;
+&lt;p&gt;اینجاست که این دستگاه رو برای شرکت یا خانه‌ شما مناسب‌تر
+می‌کند(مطمئن باشید تبلیغ نمی‌کنم)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldevice.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;umbrel device&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;umbrel-چطور-کار-میکند-&#34;&gt;umbrel چطور کار می‌کند ؟
+&lt;/h3&gt;&lt;p&gt;اگه بخواهم کمی فنی‌تر وارد ماجرا بشم، همونطور که گفت
 این سیستم عامل بهترین ویژگی که ارائه می‌کند
 store
 آن است. البته که اینجا
 store
 به معنی فروشگاه نیست، بلکه شبیه یک بازاری است که همه
-اجناس‌ش رایگان است :)&lt;/p>
-&lt;p>سرویس های
+اجناس‌ش رایگان است :)&lt;/p&gt;
+&lt;p&gt;سرویس های
 umbrel
 همه سرویس هایی هستند که به صورت منبع باز در اختیار همه
 قرار گرفته است، این سرویس ها برای اجرا شدن نیاز به شخصی
 دارد که دانش کافی از سرور داشته باشد و خب نحوه کانفیگ
-کردن هر کدام از ابزار ها و سرویس ها را بداند.&lt;/p>
-&lt;p>دانلود و نصب هر سرویس به صورت جدگانه ممکن است به مشکلات
+کردن هر کدام از ابزار ها و سرویس ها را بداند.&lt;/p&gt;
+&lt;p&gt;دانلود و نصب هر سرویس به صورت جدگانه ممکن است به مشکلات
 متعددی برخورد کند، مثلا در نصب سرویسی مثل
 nexcloud
 شما ممکن است نیاز به ورژن خاصی از
@@ -422,11 +491,11 @@ php
 nginx
 برای اجرای اسکریپت های
 php
-هم واقعا به اندازه زیادی دردسر دارد.&lt;/p>
-&lt;p>اینجاست که داکر وارد ماجرا می‌شود!
+هم واقعا به اندازه زیادی دردسر دارد.&lt;/p&gt;
+&lt;p&gt;اینجاست که داکر وارد ماجرا می‌شود!
 umbrel
-از قبل تمامی سرویس ها را داکرایز کرده است.&lt;/p>
-&lt;p>داکرایز به چه معنیست؟
+از قبل تمامی سرویس ها را داکرایز کرده است.&lt;/p&gt;
+&lt;p&gt;داکرایز به چه معنیست؟
 درواقع به این فکر کنید که شما یک برنامه را می‌خواهید نصب
 کنید، این سرویس توسط سازنده آن از ورژن خاصی از زبان
 مشخصی، لایبراری و فایل هایی استفاده کرده است که پیشفرض
@@ -437,8 +506,8 @@ image
 قرار داده است، و بعد کافیست شما آن فایل را به
 برنامه
 docker engine
-بدهید، آن برنامه باید بدون هیچ مشکلی اجرا شود.&lt;/p>
-&lt;p>سیستم عامل
+بدهید، آن برنامه باید بدون هیچ مشکلی اجرا شود.&lt;/p&gt;
+&lt;p&gt;سیستم عامل
 umbrel
 دقیقا چنین کاری می‌کند. تمامی
 image
@@ -446,14 +515,20 @@ image
 store
 برای شما شما لیست می‌کند، شما کافیست که دکمه
 install
-را بزنید، بنگ! سرویس شما آماده است :)&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbreldocker.jpg"
-loading="lazy"
-alt="umbrel dockeriz"
->&lt;/p>
-&lt;hr>
-&lt;h3 id="امنیت">امنیت
-&lt;/h3>&lt;p>اگر
+را بزنید، بنگ! سرویس شما آماده است :)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldocker.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;umbrel dockeriz&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;امنیت&#34;&gt;امنیت
+&lt;/h3&gt;&lt;p&gt;اگر
 umbrel
 را به روی چیزی به جز سرور دارید، حتی اگر برای آن
 یک دامنه هم بگیرید،
@@ -463,8 +538,8 @@ umbrel
 tor
 به آن متصل شوید و یا یک
 VPN
-سرور داخل شبکه داخلی خود راه اندازی کنید.&lt;/p>
-&lt;p>البته
+سرور داخل شبکه داخلی خود راه اندازی کنید.&lt;/p&gt;
+&lt;p&gt;البته
 umbrel
 به جز
 tor
@@ -474,54 +549,57 @@ VPN
 tailscale
 که مستقیم به روی
 umbrel
-نصب می‌شود.&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg"
-loading="lazy"
-alt="tailscala umbrel"
->&lt;/p>
-&lt;hr>
-&lt;h3 id="سرویس-های-کاربردی-umbrel">سرویس های کاربردی umbrel
-&lt;/h3>&lt;ul>
-&lt;li>matrix&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>خیلی ساده بگم، می‌تونید با این سرویس
+نصب می‌شود.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;tailscala umbrel&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;سرویس-های-کاربردی-umbrel&#34;&gt;سرویس های کاربردی umbrel
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;matrix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;خیلی ساده بگم، می‌تونید با این سرویس
 telegtam
 خودتون رو راه اندازی کنید.
 برای اینکه بیشتر درباراه این سرویس بدونید،
-&lt;a class="link" href="https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/" target="_blank" rel="noopener"
->این پست&lt;/a>
-من را بخوانید.&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>nextcloud&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>خیلی شبیه به گوگل درایو است، به جز نسخه وب
+&lt;a class=&#34;link&#34; href=&#34;https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;این پست&lt;/a&gt;
+من را بخوانید.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;nextcloud&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;خیلی شبیه به گوگل درایو است، به جز نسخه وب
 حتی یک اپ اندروید هم دارد که می‌توانید آدرس
 nextcloud
 را درون آن وارد کنید و از هرکحا به فضای خودتون
 دسترسی داشته باشید.
 و خب حتی بعنوان ادمین
-برای افراد خانواده و یا شرکت‌تون اکانت بسازید، و فضای شخصی خودشان را در اختیارشان قرار بدین.&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>qbittorrent&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>اگر تورنت را می‌شناسید، قطعا این کلاینت معروف را هم باید
+برای افراد خانواده و یا شرکت‌تون اکانت بسازید، و فضای شخصی خودشان را در اختیارشان قرار بدین.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;qbittorrent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;اگر تورنت را می‌شناسید، قطعا این کلاینت معروف را هم باید
 بشناسید، این کلاینت یک نسخه وب دارد که داخل
 فروشگاه
 umbrel
 قرار دارد. فایل های خود را برای دانلود به این کلاینت بدین
 و در زمانی که از اینرنت استفاده نمی‌کنید مثلا 2 تا 7 صبح
-آن ها را بگذارید تا دانلود بشوند.&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>pi-hole&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>برای خلاص شدن از تبلیغات اینترنت کافیه این سرویس
+آن ها را بگذارید تا دانلود بشوند.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;pi-hole&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;برای خلاص شدن از تبلیغات اینترنت کافیه این سرویس
 DNS
 را به روی
 umbrel
@@ -529,13 +607,12 @@ umbrel
 DHCP
 را تنظیم کنید که
 IP
-این سرویس را به دیگر دستگاه های شبکه بدهد.&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>Jellyfin&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>یکی از نیاز های واقعا اساسی من، این سرویس است.
+این سرویس را به دیگر دستگاه های شبکه بدهد.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Jellyfin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;یکی از نیاز های واقعا اساسی من، این سرویس است.
 فیلم هایی که می‌بینم، و یا قرار است که ببینم‌شون رو
 می‌تونم با این سرویس به درستی دنبال کنم. در اصل این
 سرویس برای پخش کردن فیلم ها ساخته شده‌ است.
@@ -545,58 +622,65 @@ jellyfin
 فیلم ها رو تماشا کنید، مثلا اگر تلویزیون هوشمند دارید
 کافیست از طریق مرورگر آن وارد
 umbrel
-خود بشین.&lt;/p>
-&lt;/blockquote>
-&lt;p>-snapdrop&lt;/p>
-&lt;blockquote>
-&lt;p>سرویس خیلی ساده‌ای است که برای انتقال فایل داخل
-شبکه لوکال استفاده می‌شود.&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>whoogle search&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>البته
+خود بشین.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;-snapdrop&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;سرویس خیلی ساده‌ای است که برای انتقال فایل داخل
+شبکه لوکال استفاده می‌شود.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;whoogle search&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;البته
 whoogle
 یک موتور جست و جوی
 meta
 است، به این معنی که خودش وب را خزش نمی‌کند و از
 موتور های جست و جوی دیگر برای نتیجه جست و جوی شما استفاده
-می‌کند.&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>LlamaGPT&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>چیزی شبیه
+می‌کند.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;LlamaGPT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;چیزی شبیه
 ChatGPT
-ولی افلاین و کاملا خصوصی.&lt;/p>
-&lt;/blockquote>
-&lt;hr>
-&lt;h3 id="راه-اندازی-سرویس-های-شخصی">راه اندازی سرویس های شخصی
-&lt;/h3>&lt;p>خیلی از سرویس ها هنوز به
+ولی افلاین و کاملا خصوصی.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;راه-اندازی-سرویس-های-شخصی&#34;&gt;راه اندازی سرویس های شخصی
+&lt;/h3&gt;&lt;p&gt;خیلی از سرویس ها هنوز به
 umbrel
 اضافه نشده. اضافه کردن سرویس به خود
 store
-هم کار سختی نیستی، کافیه فقط داکرایز کردن رو بلد باشین.&lt;/p>
-&lt;ul>
-&lt;li>cache server&lt;/li>
-&lt;/ul>
-&lt;p>کش سرور ها معمولا با
+هم کار سختی نیستی، کافیه فقط داکرایز کردن رو بلد باشین.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cache server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;کش سرور ها معمولا با
 transparent proxy
 بدون اینکه کاربران متوجه پروکسی بشوند پیاده سازی می‌شوند.
-کار آنها کاهش مصرف ترافیک است.&lt;/p>
-&lt;p>یکی از سرویس هایی که خیلی از شرکت ها برای کاهش هزینه های
+کار آنها کاهش مصرف ترافیک است.&lt;/p&gt;
+&lt;p&gt;یکی از سرویس هایی که خیلی از شرکت ها برای کاهش هزینه های
 اینرنت و یا خب برای بهبود سرعت اینترنت می‌کنند، ارائه
 cache server
-هست.&lt;/p>
-&lt;p>خیلی خلاصه بگم کش سرور محتوایی که کاربران بازدید می‌کنند
+هست.&lt;/p&gt;
+&lt;p&gt;خیلی خلاصه بگم کش سرور محتوایی که کاربران بازدید می‌کنند
 را درون خود برای مدتی و با شرایطی از پیش تعیین شده نگه
 ‌می‌دارد و هر بار که کاربران به محتوای قبلی درخواست
 بدهند، دیگر آن ریکوئست تا سایت اصلی نمی‌رود و خود
-کش سرور که در شبکه داخلی است جواب آن را می‌دهد&lt;/p>
-&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/cacheumber.jpg"
-loading="lazy"
-alt="cache server"
->&lt;/p>
-&lt;hr></description></item></channel></rss>
+کش سرور که در شبکه داخلی است جواب آن را می‌دهد&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/cacheumber.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;cache server&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
