@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Umbrel Os چیست on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/umbrel-os-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <description>Recent content in Umbrel Os چیست on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Mon, 11 Dec 2023 01:39:34 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/umbrel-os-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>cloud را به خانه خود ببرید!</title>
-        <link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link>
-        <pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" /&gt;&lt;h3 id=&#34;چطور-این-ایده-به-ذهن-من-رسید-&#34;&gt;چطور این ایده به ذهن من رسید ؟
-&lt;/h3&gt;&lt;p&gt;جریان این ایده به این شکل بود که خب ما ایرانی ها اینترنت
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Umbrel Os چیست on bit-orbit</title><link>https://bit-orbit.github.io/tags/umbrel-os-%DA%86%DB%8C%D8%B3%D8%AA/</link><description>Recent content in Umbrel Os چیست on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 11 Dec 2023 01:39:34 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/umbrel-os-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml"/><item><title>cloud را به خانه خود ببرید!</title><link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link><pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate><guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" />&lt;h3 id="چطور-این-ایده-به-ذهن-من-رسید-">چطور این ایده به ذهن من رسید ؟
+&lt;/h3>&lt;p>جریان این ایده به این شکل بود که خب ما ایرانی ها اینترنت
 به شدت محدود شده‌ای داریم، برای همین ما برای استفاده از
 اینترنت از
 vpn
@@ -26,100 +12,82 @@ ip
 vpn
 رو که به هزار زحمت وصل شده بود، قطع کنیم.
 خب چاره چیه؟ اینکه اگه یک سیستم توی خونه یا شرکت دارین
-که همیشه روشنه رو تبدیل به یک سرور کنیم :)&lt;/p&gt;
-&lt;p&gt;توی این فکر بودم که نیازم رو به چنین سیستم عاملی حس کردم، بعد کمی نیاز های دیگه رو بهش اضافه کردم و یه پست
+که همیشه روشنه رو تبدیل به یک سرور کنیم :)&lt;/p>
+&lt;p>توی این فکر بودم که نیازم رو به چنین سیستم عاملی حس کردم، بعد کمی نیاز های دیگه رو بهش اضافه کردم و یه پست
 داخل تلگرام نوشتم، یکی کامنت گذاشت و خب این سیستم عامل
-را معرفی کرد.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چیست-&#34;&gt;umbrel چیست ؟
-&lt;/h3&gt;&lt;p&gt;درواقع
+را معرفی کرد.&lt;/p>
+&lt;hr>
+&lt;h3 id="umbrel-چیست-">umbrel چیست ؟
+&lt;/h3>&lt;p>درواقع
 umbrel
 یک سیستم عامل است، زمانی که شما این سیستم عامل را نصب
 کنید، یک صفحه وب در اختیار شما می‌گذارد و شما از طریق این صفحه درون مرورگر خود می‌توانید به سیستم دسترسی داشته باشید. برای مثلا می‌توانید سرویس های مختلف و ابزار های
-مختلف  را روی
+مختلف را روی
 umbrel
-نصب و یا کانفیگ کنید.&lt;/p&gt;
-&lt;p&gt;سرویس هایی که
+نصب و یا کانفیگ کنید.&lt;/p>
+&lt;p>سرویس هایی که
 umbrel
 ارائه می‌دهد تقریبا همان سرویس هایی هستند که شما در طول
-روز از نسخه های تجاری آنها استفاده می‌کنید.&lt;/p&gt;
-&lt;p&gt;اگه دقیق تر بخواهم بگم، این سیستم عامل یک
+روز از نسخه های تجاری آنها استفاده می‌کنید.&lt;/p>
+&lt;p>اگه دقیق تر بخواهم بگم، این سیستم عامل یک
 store
 در اختیار کاربران‌ش قرار می‌ده. و خب این یکی از مهم ترین
 کار هایی است که این سیستم عامل انجام می‌ده چرا که اگر
 این استور وجود نداشت، شما شخصا باید فرایند کانفیگ و نصب
 سرویس ها را به عهده می‌گرفتید(این کار یک متخصص دواپس
-هست، خیلی هم جالیه)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelstore.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel store&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چه-نیازی-را-برطرف-میکند-&#34;&gt;umbrel چه نیازی را برطرف می‌کند ؟
-&lt;/h3&gt;&lt;p&gt;وقتی از سرویس های تحت اینترنت استفاده می‌کنید،
+هست، خیلی هم جالیه)&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbrelstore.jpg"
+loading="lazy"
+alt="umbrel store"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="umbrel-چه-نیازی-را-برطرف-میکند-">umbrel چه نیازی را برطرف می‌کند ؟
+&lt;/h3>&lt;p>وقتی از سرویس های تحت اینترنت استفاده می‌کنید،
 به احتمال زیاد شما کالای اون شرکتی هستید که ابزار را
 در اختیارتون قرار داده است. اگر دقت کنیم می‌بینیم که این
 شرکت ها بسیاری کاربر دارند و خب برای ارائه درست خدمت
 به کاربرانشون سرور های زیادی اجاره می‌کنند
 سرویس ها رو دائم اپدیت و بهتر می‌کنند
-و خب سرویس های متعددی هم ارائه می‌کنند.&lt;/p&gt;
-&lt;p&gt;همه این کار ها نیاز به هزینه های زیادی دارند،
+و خب سرویس های متعددی هم ارائه می‌کنند.&lt;/p>
+&lt;p>همه این کار ها نیاز به هزینه های زیادی دارند،
 بودجه این شرکت ها فقط و فقط با تبلیغات تامین نمی‌شود بلکه
 با فروش اطلاعات کاربرانشون(خود ما) به شرکت ها و دولت ها
-تامین می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/zuker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;zukerberg spying&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;و البته اگر حتی شما برای سرویسی که استفاده می‌کنید
+تامین می‌شود.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/zuker.jpg"
+loading="lazy"
+alt="zukerberg spying"
+>&lt;/p>
+&lt;p>و البته اگر حتی شما برای سرویسی که استفاده می‌کنید
 هزینه‌ای پرداخت کنید، مثلا برای استفاده از گوگل دایو
 ماهانه هزینه هم پرداخت کنید، باز هم مشکلاتی وجود دارد،
 مثلا قانونا گوگل مالک فایلی است که شما روی سرور هایش
-آپلود می‌کنید.&lt;/p&gt;
-&lt;p&gt;در چنین مواقعی هست که اصطلاح
+آپلود می‌کنید.&lt;/p>
+&lt;p>در چنین مواقعی هست که اصطلاح
 self-hosting
 سرویس ها استفاده می‌شود. به این معنی که سرویس هایی
 که شما روزانه از آن استفاده می‌کنید را خودتان راه اندازی
-کنید. اما اینکار نیاز به دانش بالایی داره.&lt;/p&gt;
-&lt;p&gt;سیستم عامل
+کنید. اما اینکار نیاز به دانش بالایی داره.&lt;/p>
+&lt;p>سیستم عامل
 umbrel
 این کار را ساده کرده است، با این تفاوت که قبلا شما باید
 برای استفاده چند ابزار روی یک سرور، باید سرور رو به درستی
 کانفیگ می‌کردین سپس ابزار ها را کانفیگ،
 و بعد سرویس ها راه اجرا می‌کردین.
 اما الان فقط با یک کلیک شما سرویس توییتر خود را
-راه اندازی می‌کنید!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel self hosting&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;umbrel-به-روی-سیستم-عامل-دسکتاپ&#34;&gt;umbrel به روی سیستم عامل دسکتاپ
-&lt;/h3&gt;&lt;p&gt;نصب
+راه اندازی می‌کنید!&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg"
+loading="lazy"
+alt="umbrel self hosting"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="umbrel-به-روی-سیستم-عامل-دسکتاپ">umbrel به روی سیستم عامل دسکتاپ
+&lt;/h3>&lt;p>نصب
 umbrel
 بسیاز سادهست فقط کافیه یک سیستم عامل
 debian
 رو روی سیستمتون داشته باشید، یک ترمینال باز کنید و کامند
-نصب را بزنید، با یک کامند این سیستم نصب می‌شه.&lt;/p&gt;
-&lt;p&gt;ولی خب اگر سیستم عاملی ندارید که بر پایه
+نصب را بزنید، با یک کامند این سیستم نصب می‌شه.&lt;/p>
+&lt;p>ولی خب اگر سیستم عاملی ندارید که بر پایه
 debain
 باشه، می‌شه به سادگی روی ماشین مجازی یک دبیان نصب کنید،
 حالت شبکه اون سیستم عامل رو
@@ -136,10 +104,10 @@ IP
 debain
 که
 umbrel
-را روی ان نصب کردین را وارد کنید و تمام!&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;umbrel-به-روی-رزبری-پای&#34;&gt;umbrel به روی رزبری پای
-&lt;/h3&gt;&lt;p&gt;رزبری پای! یک سخت افزار کوچک که تقریبا یک کامپیوتر کامل
+را روی ان نصب کردین را وارد کنید و تمام!&lt;/p>
+&lt;hr>
+&lt;h3 id="umbrel-به-روی-رزبری-پای">umbrel به روی رزبری پای
+&lt;/h3>&lt;p>رزبری پای! یک سخت افزار کوچک که تقریبا یک کامپیوتر کامل
 است! البته که قدرت پردازش بالایی ندارد ولی در
 IOT
 استفاده زیادی دارد. با توجه به اینکه پردازنده های
@@ -151,24 +119,18 @@ umbrel
 را نصب کرد، برای همین سیستم عامل
 umbrel
 یک نسخه مخصوص برای رزبری پای دارد، کافیست آن را دانلود و
-به روی ربزی خود نصب کنید.&lt;/p&gt;
-&lt;p&gt;به این دقت کنید که خب سعنی کنید یک هارد اکسترنال به
+به روی ربزی خود نصب کنید.&lt;/p>
+&lt;p>به این دقت کنید که خب سعنی کنید یک هارد اکسترنال به
 رزبری متصل کنید که فضای کافی برای سروریسی مانند
 next cloud
-داشته باشید.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelonressbery.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel on ressbery pi&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;umbrel-بروی-سرور-شخصی&#34;&gt;umbrel بروی سرور شخصی
-&lt;/h3&gt;&lt;p&gt;به سادگی اچرای یک کامند! کافیست فقط سیستم عامل
+داشته باشید.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbrelonressbery.jpg"
+loading="lazy"
+alt="umbrel on ressbery pi"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="umbrel-بروی-سرور-شخصی">umbrel بروی سرور شخصی
+&lt;/h3>&lt;p>به سادگی اچرای یک کامند! کافیست فقط سیستم عامل
 سرورتون
 debain
 و یا کلا بر پایه
@@ -177,10 +139,10 @@ debian
 ubuntu
 باشه. کامند اجرا را وارد کنید و بعد از اتمام فرایند نصب،
 IP
-سرور را وارد مرورگر کنید، تمام!&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;دستگاه-umbrel&#34;&gt;دستگاه umbrel
-&lt;/h3&gt;&lt;p&gt;شرکت سازنده
+سرور را وارد مرورگر کنید، تمام!&lt;/p>
+&lt;hr>
+&lt;h3 id="دستگاه-umbrel">دستگاه umbrel
+&lt;/h3>&lt;p>شرکت سازنده
 umbrel
 به جز سیستم عامل، یک دستگاهی طراحی کرده است که
 به صورت پیشفرض سیستم عامل
@@ -192,35 +154,29 @@ umbrel
 به روی
 rassbery PI
 استفاده می‌کنید، شما نیاز به یک فن دارید تا این دستگاه
-را دائم خنک کند، از طرفی خود فن هم باید خنک شود.&lt;/p&gt;
-&lt;p&gt;اینجاست که این دستگاه رو برای شرکت یا خانه‌ شما مناسب‌تر
-می‌کند(مطمئن باشید تبلیغ نمی‌کنم)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldevice.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel device&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چطور-کار-میکند-&#34;&gt;umbrel چطور کار می‌کند ؟
-&lt;/h3&gt;&lt;p&gt;اگه بخواهم کمی فنی‌تر وارد ماجرا بشم، همونطور که گفت
+را دائم خنک کند، از طرفی خود فن هم باید خنک شود.&lt;/p>
+&lt;p>اینجاست که این دستگاه رو برای شرکت یا خانه‌ شما مناسب‌تر
+می‌کند(مطمئن باشید تبلیغ نمی‌کنم)&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbreldevice.jpg"
+loading="lazy"
+alt="umbrel device"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="umbrel-چطور-کار-میکند-">umbrel چطور کار می‌کند ؟
+&lt;/h3>&lt;p>اگه بخواهم کمی فنی‌تر وارد ماجرا بشم، همونطور که گفت
 این سیستم عامل بهترین ویژگی که ارائه می‌کند
 store
 آن است. البته که اینجا
 store
 به معنی فروشگاه نیست، بلکه شبیه یک بازاری است که همه
-اجناس‌ش رایگان است :)&lt;/p&gt;
-&lt;p&gt;سرویس های
+اجناس‌ش رایگان است :)&lt;/p>
+&lt;p>سرویس های
 umbrel
 همه سرویس هایی هستند که به صورت منبع باز در اختیار همه
 قرار گرفته است، این سرویس ها برای اجرا شدن نیاز به شخصی
 دارد که دانش کافی از سرور داشته باشد و خب نحوه کانفیگ
-کردن هر کدام از ابزار ها و سرویس ها را بداند.&lt;/p&gt;
-&lt;p&gt;دانلود و نصب هر سرویس به صورت جدگانه ممکن است به مشکلات
+کردن هر کدام از ابزار ها و سرویس ها را بداند.&lt;/p>
+&lt;p>دانلود و نصب هر سرویس به صورت جدگانه ممکن است به مشکلات
 متعددی برخورد کند، مثلا در نصب سرویسی مثل
 nexcloud
 شما ممکن است نیاز به ورژن خاصی از
@@ -229,11 +185,11 @@ php
 nginx
 برای اجرای اسکریپت های
 php
-هم واقعا به اندازه زیادی دردسر دارد.&lt;/p&gt;
-&lt;p&gt;اینجاست که داکر وارد ماجرا می‌شود!
+هم واقعا به اندازه زیادی دردسر دارد.&lt;/p>
+&lt;p>اینجاست که داکر وارد ماجرا می‌شود!
 umbrel
-از قبل تمامی سرویس ها را داکرایز کرده است.&lt;/p&gt;
-&lt;p&gt;داکرایز به چه معنیست؟
+از قبل تمامی سرویس ها را داکرایز کرده است.&lt;/p>
+&lt;p>داکرایز به چه معنیست؟
 درواقع به این فکر کنید که شما یک برنامه را می‌خواهید نصب
 کنید، این سرویس توسط سازنده آن از ورژن خاصی از زبان
 مشخصی، لایبراری و فایل هایی استفاده کرده است که پیشفرض
@@ -244,8 +200,8 @@ image
 قرار داده است، و بعد کافیست شما آن فایل را به
 برنامه
 docker engine
-بدهید، آن برنامه باید بدون هیچ مشکلی اجرا شود.&lt;/p&gt;
-&lt;p&gt;سیستم عامل
+بدهید، آن برنامه باید بدون هیچ مشکلی اجرا شود.&lt;/p>
+&lt;p>سیستم عامل
 umbrel
 دقیقا چنین کاری می‌کند. تمامی
 image
@@ -253,20 +209,14 @@ image
 store
 برای شما شما لیست می‌کند، شما کافیست که دکمه
 install
-را بزنید، بنگ! سرویس شما آماده است :)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldocker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel dockeriz&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;امنیت&#34;&gt;امنیت
-&lt;/h3&gt;&lt;p&gt;اگر
+را بزنید، بنگ! سرویس شما آماده است :)&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/umbreldocker.jpg"
+loading="lazy"
+alt="umbrel dockeriz"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="امنیت">امنیت
+&lt;/h3>&lt;p>اگر
 umbrel
 را به روی چیزی به جز سرور دارید، حتی اگر برای آن
 یک دامنه هم بگیرید،
@@ -276,8 +226,8 @@ umbrel
 tor
 به آن متصل شوید و یا یک
 VPN
-سرور داخل شبکه داخلی خود راه اندازی کنید.&lt;/p&gt;
-&lt;p&gt;البته
+سرور داخل شبکه داخلی خود راه اندازی کنید.&lt;/p>
+&lt;p>البته
 umbrel
 به جز
 tor
@@ -287,57 +237,51 @@ VPN
 tailscale
 که مستقیم به روی
 umbrel
-نصب می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tailscala umbrel&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;سرویس-های-کاربردی-umbrel&#34;&gt;سرویس های کاربردی umbrel
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;matrix&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;خیلی ساده بگم، می‌تونید با این سرویس
+نصب می‌شود.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg"
+loading="lazy"
+alt="tailscala umbrel"
+>&lt;/p>
+&lt;hr>
+&lt;h3 id="سرویس-های-کاربردی-umbrel">سرویس های کاربردی umbrel
+&lt;/h3>&lt;ul>
+&lt;li>matrix&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>خیلی ساده بگم، می‌تونید با این سرویس
 telegtam
 خودتون رو راه اندازی کنید.
 برای اینکه بیشتر درباراه این سرویس بدونید،
-&lt;a class=&#34;link&#34; href=&#34;https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این پست&lt;/a&gt;
-من را بخوانید.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;nextcloud&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;خیلی شبیه به گوگل درایو است، به جز نسخه وب
+&lt;a class="link" href="https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/" target="_blank" rel="noopener"
+>این پست&lt;/a>
+من را بخوانید.&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>nextcloud&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>خیلی شبیه به گوگل درایو است، به جز نسخه وب
 حتی یک اپ اندروید هم دارد که می‌توانید آدرس
 nextcloud
 را درون آن وارد کنید و از هرکحا به فضای خودتون
 دسترسی داشته باشید.
 و خب حتی بعنوان ادمین
-برای افراد خانواده و یا شرکت‌تون اکانت بسازید، و فضای شخصی خودشان را در اختیارشان قرار بدین.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;qbittorrent&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;اگر تورنت را می‌شناسید، قطعا این کلاینت معروف را هم باید
+برای افراد خانواده و یا شرکت‌تون اکانت بسازید، و فضای شخصی خودشان را در اختیارشان قرار بدین.&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>qbittorrent&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>اگر تورنت را می‌شناسید، قطعا این کلاینت معروف را هم باید
 بشناسید، این کلاینت یک نسخه وب دارد که داخل
 فروشگاه
 umbrel
 قرار دارد. فایل های خود را برای دانلود به این کلاینت بدین
 و در زمانی که از اینرنت استفاده نمی‌کنید مثلا 2 تا 7 صبح
-آن ها را بگذارید تا دانلود بشوند.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;pi-hole&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;برای خلاص شدن از تبلیغات اینترنت کافیه این سرویس
+آن ها را بگذارید تا دانلود بشوند.&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>pi-hole&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>برای خلاص شدن از تبلیغات اینترنت کافیه این سرویس
 DNS
 را به روی
 umbrel
@@ -345,12 +289,12 @@ umbrel
 DHCP
 را تنظیم کنید که
 IP
-این سرویس را به دیگر دستگاه های شبکه بدهد.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Jellyfin&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;یکی از نیاز های واقعا اساسی من، این سرویس است.
+این سرویس را به دیگر دستگاه های شبکه بدهد.&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>Jellyfin&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>یکی از نیاز های واقعا اساسی من، این سرویس است.
 فیلم هایی که می‌بینم، و یا قرار است که ببینم‌شون رو
 می‌تونم با این سرویس به درستی دنبال کنم. در اصل این
 سرویس برای پخش کردن فیلم ها ساخته شده‌ است.
@@ -360,65 +304,54 @@ jellyfin
 فیلم ها رو تماشا کنید، مثلا اگر تلویزیون هوشمند دارید
 کافیست از طریق مرورگر آن وارد
 umbrel
-خود بشین.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;-snapdrop&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;سرویس خیلی ساده‌ای است که برای انتقال فایل داخل
-شبکه لوکال استفاده می‌شود.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;whoogle search&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;البته
+خود بشین.&lt;/p>&lt;/blockquote>
+&lt;p>-snapdrop&lt;/p>
+&lt;blockquote>
+&lt;p>سرویس خیلی ساده‌ای است که برای انتقال فایل داخل
+شبکه لوکال استفاده می‌شود.&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>whoogle search&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>البته
 whoogle
 یک موتور جست و جوی
 meta
 است، به این معنی که خودش وب را خزش نمی‌کند و از
 موتور های جست و جوی دیگر برای نتیجه جست و جوی شما استفاده
-می‌کند.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;LlamaGPT&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;چیزی شبیه
+می‌کند.&lt;/p>&lt;/blockquote>
+&lt;ul>
+&lt;li>LlamaGPT&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>چیزی شبیه
 ChatGPT
-ولی افلاین و کاملا خصوصی.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;راه-اندازی-سرویس-های-شخصی&#34;&gt;راه اندازی سرویس های شخصی
-&lt;/h3&gt;&lt;p&gt;خیلی از سرویس ها هنوز به
+ولی افلاین و کاملا خصوصی.&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h3 id="راه-اندازی-سرویس-های-شخصی">راه اندازی سرویس های شخصی
+&lt;/h3>&lt;p>خیلی از سرویس ها هنوز به
 umbrel
 اضافه نشده. اضافه کردن سرویس به خود
 store
-هم کار سختی نیستی، کافیه فقط داکرایز کردن رو بلد باشین.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;cache server&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;کش سرور ها معمولا با
+هم کار سختی نیستی، کافیه فقط داکرایز کردن رو بلد باشین.&lt;/p>
+&lt;ul>
+&lt;li>cache server&lt;/li>
+&lt;/ul>
+&lt;p>کش سرور ها معمولا با
 transparent proxy
 بدون اینکه کاربران متوجه پروکسی بشوند پیاده سازی می‌شوند.
-کار آنها کاهش مصرف ترافیک است.&lt;/p&gt;
-&lt;p&gt;یکی از سرویس هایی که خیلی از شرکت ها برای کاهش هزینه های
+کار آنها کاهش مصرف ترافیک است.&lt;/p>
+&lt;p>یکی از سرویس هایی که خیلی از شرکت ها برای کاهش هزینه های
 اینرنت و یا خب برای بهبود سرعت اینترنت می‌کنند، ارائه
 cache server
-هست.&lt;/p&gt;
-&lt;p&gt;خیلی خلاصه بگم کش سرور محتوایی که کاربران بازدید می‌کنند
+هست.&lt;/p>
+&lt;p>خیلی خلاصه بگم کش سرور محتوایی که کاربران بازدید می‌کنند
 را درون خود برای مدتی و با شرایطی از پیش تعیین شده نگه
 ‌می‌دارد و هر بار که کاربران به محتوای قبلی درخواست
 بدهند، دیگر آن ریکوئست تا سایت اصلی نمی‌رود و خود
-کش سرور که در شبکه داخلی است جواب آن را می‌دهد&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/cacheumber.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;cache server&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;hr&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+کش سرور که در شبکه داخلی است جواب آن را می‌دهد&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/cacheumber.jpg"
+loading="lazy"
+alt="cache server"
+>&lt;/p>
+&lt;hr></description></item></channel></rss>

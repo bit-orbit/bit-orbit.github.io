@@ -1,32 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Linux on bit-orbit</title>
-        <link>https://bit-orbit.github.io/categories/linux/</link>
-        <description>Recent content in Linux on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Thu, 01 Aug 2024 03:03:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>etc/resolve.conf/</title>
-        <link>https://bit-orbit.github.io/p/etc/resolve.conf/</link>
-        <pubDate>Thu, 01 Aug 2024 03:03:46 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/etc/resolve.conf/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/OIG4.jpeg" alt="Featured image of post etc/resolve.conf/" /&gt;&lt;span style=&#39;font-size: 25px&#39;&gt;
-&lt;h3 id=&#34;مقدمه&#34;&gt;مقدمه
-&lt;/h3&gt;&lt;p&gt;همیشه موقع ویرایش فایل
-&lt;em&gt;resolve.conf&lt;/em&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on bit-orbit</title><link>https://bit-orbit.github.io/categories/linux/</link><description>Recent content in Linux on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Thu, 01 Aug 2024 03:03:46 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>etc/resolve.conf/</title><link>https://bit-orbit.github.io/p/etc/resolve.conf/</link><pubDate>Thu, 01 Aug 2024 03:03:46 +0330</pubDate><guid>https://bit-orbit.github.io/p/etc/resolve.conf/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/OIG4.jpeg" alt="Featured image of post etc/resolve.conf/" />&lt;span style='font-size: 25px'>
+&lt;h3 id="مقدمه">مقدمه
+&lt;/h3>&lt;p>همیشه موقع ویرایش فایل
+&lt;em>resolve.conf&lt;/em>
 برام سوال بود که گزین های دیگه‌ای که توی این فایل تنظیم شده‌اند چکاری انجام می‌دهند.
 درواقع من همیشه دستور
-&lt;code&gt;namveserver&lt;/code&gt;
+&lt;code>namveserver&lt;/code>
 را برای تغییر سرور
-&lt;em&gt;dns&lt;/em&gt;
+&lt;em>dns&lt;/em>
 ویرایش می‌کردم. اما دستور هایی دیگه‌ای هم برای این فایل وجود دارد که لیست آنها در
-&lt;code&gt;man resolve.conf&lt;/code&gt;
-توضیح داده شده است.&lt;/p&gt;
-&lt;p&gt;توی این پست من بعضی از دستورات این فایل را توضیح می‌دم.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;در مرحله اول یادتون باشه لینوکس هایی که
+&lt;code>man resolve.conf&lt;/code>
+توضیح داده شده است.&lt;/p>
+&lt;p>توی این پست من بعضی از دستورات این فایل را توضیح می‌دم.&lt;/p>
+&lt;blockquote>
+&lt;p>در مرحله اول یادتون باشه لینوکس هایی که
 systemd
 دارند، معمولا از سرویس
 systemd-resolved
@@ -36,46 +22,46 @@ DNS
 resolve
 می‌کند و سپس آنها را کش می‌کند که یک دامنه را چندین بار
 resolve
-نکند.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;یک دامنه حد اقل از &lt;em&gt;دو&lt;/em&gt; بخش تشکیل می‌شود.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;TLD&lt;/li&gt;
-&lt;li&gt;Domain&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bin.example.com        
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │     │         
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │     └─► TDL(Top Level Domain) 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     │               
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│     └───────► Domain
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;│                                        
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└─────────────► SubDomain
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                                                 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;دستورات&#34;&gt;دستورات
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;1 &lt;code&gt;nameserver&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;این دستور برای تعیین
+نکند.&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>یک دامنه حد اقل از &lt;em>دو&lt;/em> بخش تشکیل می‌شود.&lt;/p>
+&lt;ol>
+&lt;li>TLD&lt;/li>
+&lt;li>Domain&lt;/li>
+&lt;/ol>&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">bin.example.com
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ │
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │ └─► TDL(Top Level Domain)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ │
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│ └───────► Domain
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└─────────────► SubDomain
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h3 id="دستورات">دستورات
+&lt;/h3>&lt;ul>
+&lt;li>
+&lt;p>1 &lt;code>nameserver&lt;/code>&lt;/p>
+&lt;p>این دستور برای تعیین
 IP
 یک سرور
 DNS
-استفاده می‌شود.(در واقع اینجا منظورم یک سرویسی است که به نامه دامنه ها پاسخ دهد که به آن NS می‌گویم.)&lt;/p&gt;
-&lt;p&gt;شما می‌توانید تا حداقل سه
+استفاده می‌شود.(در واقع اینجا منظورم یک سرویسی است که به نامه دامنه ها پاسخ دهد که به آن NS می‌گویم.)&lt;/p>
+&lt;p>شما می‌توانید تا حداقل سه
 IP
 لیست کنید، و
 resolver
@@ -84,68 +70,68 @@ resolver
 NS
 جواب گو نباشد، از دیگر
 NS
-های لیست شده استفاده خواهد شد.&lt;/p&gt;
-&lt;p&gt;اگر به همین ترتیب هر یک از
+های لیست شده استفاده خواهد شد.&lt;/p>
+&lt;p>اگر به همین ترتیب هر یک از
 NS
-ها جوابگو نباشد، کوئری ها از اول شروع می‌شود تا به حداکثر تعداد کوئری تعیین شده برسد.&lt;/p&gt;
-&lt;p&gt;برای مثال من می‌توانم چند
+ها جوابگو نباشد، کوئری ها از اول شروع می‌شود تا به حداکثر تعداد کوئری تعیین شده برسد.&lt;/p>
+&lt;p>برای مثال من می‌توانم چند
 NS
-مختلف را برای خودم تعیین کنم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 1.1.1.1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 8.8.8.8
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;2 &lt;code&gt;options&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;برای این دستور متغیر های مختلفی را می‌توان تعیین کرد.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;2.1 &lt;code&gt;ndots&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;حداقل هر دامنه‌ای در سطح اینترنت یک نقطه دارد، برای مثال
+مختلف را برای خودم تعیین کنم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">nameserver 1.1.1.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 8.8.8.8
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>2 &lt;code>options&lt;/code>&lt;/p>
+&lt;p>برای این دستور متغیر های مختلفی را می‌توان تعیین کرد.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>2.1 &lt;code>ndots&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>حداقل هر دامنه‌ای در سطح اینترنت یک نقطه دارد، برای مثال
 google.com
 یک نقطه دارد.
 شما می‌توانید با این متغیر تعین کنید که دامنه‌های در سطح اینترنت
 باید چند نقطه داشته باشند، هر نقطه نشانه ساب دامنه‌ است.
-برای مثال به صورت پیشفرض این متغیر &lt;em&gt;1&lt;/em&gt; تنظیم شده است.
+برای مثال به صورت پیشفرض این متغیر &lt;em>1&lt;/em> تنظیم شده است.
 به این معنی است که هر دامنه‌ای یک نقطه داشت، این دامنه
 در سطح اینترنت است. ولی اگر شما مقدار این متغیر را
 2 تنظیم کنید، دامنه‌ای مثل
-&lt;code&gt;google.com&lt;/code&gt;
+&lt;code>google.com&lt;/code>
 بعنوان دامنه لوکال تشخیص داده خواهد شد و
-&lt;code&gt;hostname&lt;/code&gt;
+&lt;code>hostname&lt;/code>
 شما به اول دامنه اضافه خواهد شد.
 مثلا اگر
-&lt;code&gt;hostname&lt;/code&gt;
+&lt;code>hostname&lt;/code>
 شما
-&lt;code&gt;arya&lt;/code&gt;
+&lt;code>arya&lt;/code>
 باشد، دامنه به این شکل کوئری زده خواهد شد
-&lt;code&gt;google.com.arya&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;در صورتی که شما برای جست و جوی یک دامنه از هیچ
-&lt;strong&gt;TLD&lt;/strong&gt;
+&lt;code>google.com.arya&lt;/code>&lt;/p>
+&lt;p>در صورتی که شما برای جست و جوی یک دامنه از هیچ
+&lt;strong>TLD&lt;/strong>
 استفاده نکید، از
-&lt;code&gt;hostname&lt;/code&gt;
+&lt;code>hostname&lt;/code>
 و یا از مقداری که برای
-&lt;code&gt;search&lt;/code&gt;
-مشخص کرده‌اید استفاده خواهد شد.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2.2 &lt;code&gt;timeout&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;این متغیر تعیین می‌کند که
+&lt;code>search&lt;/code>
+مشخص کرده‌اید استفاده خواهد شد.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>2.2 &lt;code>timeout&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>این متغیر تعیین می‌کند که
 resolver
 چه مقدار زمانی باید منتظر جواب از سمت
 NS
@@ -153,19 +139,19 @@ NS
 NS
 جواب نداد، از
 NS
-های بعدی سوال کند.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2.3 &lt;code&gt;attempts&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;این متغیر تعین می‌کند که
+های بعدی سوال کند.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>2.3 &lt;code>attempts&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>این متغیر تعین می‌کند که
 resolver
 در صورت جواب ندادن توسط
 NS
-باید در نهایت چند کوئری دیگر ارسال کند.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;برای مثال اگر اولین
+باید در نهایت چند کوئری دیگر ارسال کند.&lt;/li>
+&lt;/ul>
+&lt;p>برای مثال اگر اولین
 NS
 پاسخ نداد، سوال از
 NS
@@ -176,12 +162,12 @@ attempts
 attempts
 مجوع سوال ها از همه
 NS
-ها است.)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;2.4 &lt;code&gt;rotate&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;به صورت پیشفرض کوئری های
+ها است.)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>2.4 &lt;code>rotate&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>به صورت پیشفرض کوئری های
 DNS
 همه برای اولین
 NS
@@ -192,50 +178,50 @@ NS
 ها تقسیم کنیم، کافیست از این متغیر استفاده کنیم.
 اینکار باعث می‌شود که هر کوئری ها به صورت چرخشی به ترتیب به
 NS
-های لیست شده ارسال شود.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;3 &lt;code&gt;search&lt;/code&gt;
+های لیست شده ارسال شود.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>3 &lt;code>search&lt;/code>
 همانطور که در مثال بالا گفتم، ما نام دامنه ها را تنظیم می‌کنیم که حداقل وقتی یک نقطه دارند،
 resolver
 آنها را دامنه‌ در سطح اینترنت در نظر بگیرد و به
 NS
 کوئری بزند. ولی اگر هیچ نقطه‌ای نداشت و یا شما
-&lt;code&gt;ndots&lt;/code&gt;
+&lt;code>ndots&lt;/code>
 را بیشتر یا مساوی با 2 نتظیم کرده باشید،
-&lt;code&gt;hostname&lt;/code&gt;
+&lt;code>hostname&lt;/code>
 سیستم شما به آخر آن دامنه اضافه خواهد شد و یک دامنه داخلی
 (local)
 تلقی خواهد شد.
 اما اگر می‌خواهید قبل از اضافه شدن
-&lt;code&gt;hostname&lt;/code&gt;
-به آن چیز دیگری اضافه کنید، کافیست متغیر سرچ را تعریف کنید و یک یا چند مقدار برای آن تعیین کنید.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;سرویس-systemd-resolve&#34;&gt;سرویس systemd-resolve
-&lt;/h3&gt;&lt;p&gt;اگر به فایل
+&lt;code>hostname&lt;/code>
+به آن چیز دیگری اضافه کنید، کافیست متغیر سرچ را تعریف کنید و یک یا چند مقدار برای آن تعیین کنید.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="سرویس-systemd-resolve">سرویس systemd-resolve
+&lt;/h3>&lt;p>اگر به فایل
 /etc/resolve.conf
 نگاه کنید، می‌بینید که یک
 ns
 برای شما تنظیم شده است که
 IP
-آن داخلی است.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# cat /etc/resolve.conf
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 127.0.0.53
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;همانطور که توی نکته‌ای در مقدمه این پست گفتم،
+آن داخلی است.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl"># cat /etc/resolve.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 127.0.0.53
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>همانطور که توی نکته‌ای در مقدمه این پست گفتم،
 سیستم عاملی هایی که از
 systemd
 استفاده می‌کنند معمولا سرویس
@@ -247,259 +233,236 @@ IP
 127.0.0.53
 و
 127.0.0.54
-شنود می‌کند.&lt;/p&gt;
-&lt;p&gt;این سرویس خودش یک کانفیگ در
-&lt;code&gt;etc/ststemd/resolved.conf/&lt;/code&gt;
-دارد.&lt;/p&gt;
-&lt;p&gt;اگر داخل این فایل را نگاه کنیم، می‌بنیم که در قسمت
+شنود می‌کند.&lt;/p>
+&lt;p>این سرویس خودش یک کانفیگ در
+&lt;code>etc/ststemd/resolved.conf/&lt;/code>
+دارد.&lt;/p>
+&lt;p>اگر داخل این فایل را نگاه کنیم، می‌بنیم که در قسمت
 ‌DNS
 می‌توان
 NS
 های بالاتر را وارد کرد، اینکار باعث می‌شود که سیستم شما وقتی یک دامنه را
 در حافظه کش خود نداشت، از
 NS
-های بالاتر که در این فایل تنظیم شده است سوال کند.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Resolve]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;DNS=1.1.1.1 8.8.8.8
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;ابته تاکید کنم در صورتی از این
+های بالاتر که در این فایل تنظیم شده است سوال کند.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">[Resolve]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">DNS=1.1.1.1 8.8.8.8
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ابته تاکید کنم در صورتی از این
 NS
 ها استفاده می‌شود که شما
 ‌از 127.0.0.53 و 127.0.0.54 در کانفیگ
 /etc/resolve.conf
-استفاده کرده باشید.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;تفاوت 127.0.0.54 این است که هر کوئری را مستقیم به
+استفاده کرده باشید.&lt;/p>
+&lt;blockquote>
+&lt;p>تفاوت 127.0.0.54 این است که هر کوئری را مستقیم به
 NS
 بالاتر ارسال خواهد کرد و از دیتای کش شده استفاده نمی‌کند.
-ولی 127.0.0.53 از قابلیت کش استفاده می‌کند.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;مثال&#34;&gt;مثال
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 1.1.1.1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 8.8.8.8
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nameserver 9.9.9.9
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options ndots:1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options timeout:2
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options attempts:3
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;options rotate
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;search server1 server2
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;سخنی-با-شما&#34;&gt;سخنی با شما
-&lt;/h3&gt;&lt;p&gt;این را بگم که
+ولی 127.0.0.53 از قابلیت کش استفاده می‌کند.&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;h3 id="مثال">مثال
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">nameserver 1.1.1.1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 8.8.8.8
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nameserver 9.9.9.9
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options ndots:1
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options timeout:2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options attempts:3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">options rotate
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">search server1 server2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;h3 id="سخنی-با-شما">سخنی با شما
+&lt;/h3>&lt;p>این را بگم که
 DNS
 به صورت
 recursive(بازگشتی)
 عمل می‌کنه، این یعنی وقتی شما یک کوئری ارسال می‌کنید،
 این کوئری هر بار به یک سرور بالاتر ارسال می‌شود
 تا در نهایت به جواب برسه. و خب این موضوع خودش در نهایت یک جریان
-خیلی جالب داره که امیدوارم یک روز اون رو هم بنویسم :)&lt;/p&gt;
-&lt;/span&gt;</description>
-        </item>
-        <item>
-        <title>Linux File Locking چیست؟</title>
-        <link>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <pubDate>Fri, 09 Feb 2024 01:49:42 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/flilock.jpeg" alt="Featured image of post Linux File Locking چیست؟" /&gt;&lt;p&gt;بیایید قبل از اینکه راه حل را ببینیم، اول مشکل را دقیق تر برسی کنیم.
+خیلی جالب داره که امیدوارم یک روز اون رو هم بنویسم :)&lt;/p>
+&lt;/span></description></item><item><title>Linux File Locking چیست؟</title><link>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</link><pubDate>Fri, 09 Feb 2024 01:49:42 +0330</pubDate><guid>https://bit-orbit.github.io/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/flilock.jpeg" alt="Featured image of post Linux File Locking چیست؟" />&lt;p>بیایید قبل از اینکه راه حل را ببینیم، اول مشکل را دقیق تر برسی کنیم.
 به این فکر کنید که شما یک فایلی دارید که شامل یک عدد است که اشاره می‌کند به مقدار
 اعتباری که کاربر در حسابش دارد. حالا اگر قرار باشد یک پورسه اون مقدار را بر اساس ارائه
 سرویسی، از حساب کاربر کم کند، و پروسه دیگری به دلیل افزایش اعتبار، مقداری را به حساب
-کاربر اضافه کند، چه مشکلاتی اتفاق می‌افتد؟&lt;/p&gt;
-&lt;p&gt;برای اینکه دقیق تر بشیم، این روند رو باهم پیش می‌بریم.
+کاربر اضافه کند، چه مشکلاتی اتفاق می‌افتد؟&lt;/p>
+&lt;p>برای اینکه دقیق تر بشیم، این روند رو باهم پیش می‌بریم.
 فرض کنید فایلی به اسم
 amount.txt
 مقدار 100 داخلش نوشته شده است. و دو پروسه کم و اضافه کردن را اجرا می‌کنیم.
 توی این مثال،‌ ما می‌خواهیم مقدار 20 از حساب کاربر کم و مقدار 50 به حساب کاربر
-اضافه کنیم، پس ما انتظار داریم در انتها فایل ما مقدار 130 را درونش ذخیره کرده باشد.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;پروسه اول فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li&gt;
-&lt;li&gt;پروسه دوم فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li&gt;
-&lt;li&gt;پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را در حافظه ذخیره می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه دوم مقدار 50 را به 100 اضافه می‌کند و مقدار 150 را در حافظه ذخیره می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه اول مقدار 80 را در فایل ذخیره می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه دوم مقدار 150 را در فایل ذخیره می‌کند&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;همینطور که همه ما انتظار داشتیم، ما باید در این فایل مقدار 130 را ذخیره می‌کردیم،
+اضافه کنیم، پس ما انتظار داریم در انتها فایل ما مقدار 130 را درونش ذخیره کرده باشد.&lt;/p>
+&lt;ul>
+&lt;li>پروسه اول فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li>
+&lt;li>پروسه دوم فایل را می‌خواند و مقدار 100 را در حاظه‌اش نگه می‌دارد&lt;/li>
+&lt;li>پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را در حافظه ذخیره می‌کند&lt;/li>
+&lt;li>پروسه دوم مقدار 50 را به 100 اضافه می‌کند و مقدار 150 را در حافظه ذخیره می‌کند&lt;/li>
+&lt;li>پروسه اول مقدار 80 را در فایل ذخیره می‌کند&lt;/li>
+&lt;li>پروسه دوم مقدار 150 را در فایل ذخیره می‌کند&lt;/li>
+&lt;/ul>
+&lt;p>همینطور که همه ما انتظار داشتیم، ما باید در این فایل مقدار 130 را ذخیره می‌کردیم،
 اما پروسه های ما به دلیل اینکه هیچ همکاری و یا هیچ مکانیزمی دیگری ندارند که این مقدار ها را
 به یکدیگر اطلاع دهند، مشکل
-&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Race_condition#Software&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Race condition&lt;/a&gt;
-رخ می‌دهد.&lt;/p&gt;
-&lt;p&gt;یکی از راه حل های این مشکل
+&lt;a class="link" href="https://en.wikipedia.org/wiki/Race_condition#Software" target="_blank" rel="noopener"
+>Race condition&lt;/a>
+رخ می‌دهد.&lt;/p>
+&lt;p>یکی از راه حل های این مشکل
 lock
 کردن فایل توسط هر پروسه است، که به این کار
 file locking
-گفته می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;file locking&lt;/strong&gt;
-یک مکانیزم برای کنترل دسترسی چندین پروسه به یک فایل است.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;توی لینوکس یکی از دستورات خطرناکی که داریم دستور
+گفته می‌شود.&lt;/p>
+&lt;p>&lt;strong>file locking&lt;/strong>
+یک مکانیزم برای کنترل دسترسی چندین پروسه به یک فایل است.&lt;/p>
+&lt;blockquote>
+&lt;p>توی لینوکس یکی از دستورات خطرناکی که داریم دستور
 sudo rm -rf /
 است. وقتی این دستور را اجرا کنیم کل فایل های لینوکس ما حذف می‌شود.
 دلیل اینکار این است که لینوکس به صورت پیشفرض فایل های باز شده را
 lock
-نمی‌کند.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;با اینحال لینوکس دو مکانیزم مختلف
-&lt;em&gt;advisory&lt;/em&gt; و &lt;em&gt;mandatory&lt;/em&gt;
-را پشتیبانی می‌کند.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;توی این پست بیشتر تمرکز من روی مکانیزم
+نمی‌کند.&lt;/p>&lt;/blockquote>
+&lt;p>با اینحال لینوکس دو مکانیزم مختلف
+&lt;em>advisory&lt;/em> و &lt;em>mandatory&lt;/em>
+را پشتیبانی می‌کند.&lt;/p>
+&lt;blockquote>
+&lt;p>توی این پست بیشتر تمرکز من روی مکانیزم
 advisory locking(مشورتی)
-است.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;این روش به این شکل عمل می‌کند که هیچ پروسه‌ای مجبور به اجرای این روش نیست و اگر حتی
+است.&lt;/p>&lt;/blockquote>
+&lt;p>این روش به این شکل عمل می‌کند که هیچ پروسه‌ای مجبور به اجرای این روش نیست و اگر حتی
 فایل توسط یک پروسه‌ای
 lock
 شده باشد، باز هم پروسه های دیگر می‌توانند به
 lock
 بودن فایل اهمیت ندهند و مقدار آن را تغییر دهند. این اتفاق به این دلیل می‌افتد که
 advisory lock
-توسط سیستم عامل و یا فایل سیستم انجام نمی‌شود.&lt;/p&gt;
-&lt;p&gt;خب بیایید با یک مثال این فرایند را برسی کنیم. مثل مثال قبلی فرض کنید ما مقدار 100
+توسط سیستم عامل و یا فایل سیستم انجام نمی‌شود.&lt;/p>
+&lt;p>خب بیایید با یک مثال این فرایند را برسی کنیم. مثل مثال قبلی فرض کنید ما مقدار 100
 را داخل فایل
 amount.txt
-داریم و می‌خواهیم مقدار 20 از آن کم و مقدار 50 به آن اضافه کنیم.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;پروسه اول قبل از خواندن فایل، فایل را لاک می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه دوم برای لاک کردن فایل اقدام می‌کند و از جایی که پروسه اول از پیش فایل را لاک کرده است، برای آزاد شدن لاک صبر می‌کند&lt;/li&gt;
-&lt;li&gt;پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را درون فایل می‌نویسد&lt;/li&gt;
-&lt;li&gt;پروسه اول لاک فایل را آزاد می‌کند.&lt;/li&gt;
-&lt;li&gt;پروسه دوم فایل را لاک و مقدار جدید 80 را از فایل می‌خواند&lt;/li&gt;
-&lt;li&gt;پروسه دوم مقدار 50 را به 80 اضافه و مقدار 120 را درون فایل می‌نویسد&lt;/li&gt;
-&lt;li&gt;پروسه دوم لاک فایل را آزاد می‌کند تا پروسه های دیگر بتوانند با فایل کار کنند.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;اگر شما می‌خواهید این مکانیزم را روی یک فایل اجرا کنید، دستور
+داریم و می‌خواهیم مقدار 20 از آن کم و مقدار 50 به آن اضافه کنیم.&lt;/p>
+&lt;ul>
+&lt;li>پروسه اول قبل از خواندن فایل، فایل را لاک می‌کند&lt;/li>
+&lt;li>پروسه دوم برای لاک کردن فایل اقدام می‌کند و از جایی که پروسه اول از پیش فایل را لاک کرده است، برای آزاد شدن لاک صبر می‌کند&lt;/li>
+&lt;li>پروسه اول مقدار 20 را از 100 کم می‌کند و مقدار 80 را درون فایل می‌نویسد&lt;/li>
+&lt;li>پروسه اول لاک فایل را آزاد می‌کند.&lt;/li>
+&lt;li>پروسه دوم فایل را لاک و مقدار جدید 80 را از فایل می‌خواند&lt;/li>
+&lt;li>پروسه دوم مقدار 50 را به 80 اضافه و مقدار 120 را درون فایل می‌نویسد&lt;/li>
+&lt;li>پروسه دوم لاک فایل را آزاد می‌کند تا پروسه های دیگر بتوانند با فایل کار کنند.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>اگر شما می‌خواهید این مکانیزم را روی یک فایل اجرا کنید، دستور
 flock
-برای شما اینکار را خواهد کرد.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;flock &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;options&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; file&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;directory &lt;span class=&#34;nb&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;arguments&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;این کامند در حالت عادی از شما یک فایل و یک دستور خواهد گرفت و مکانیزم
+برای شما اینکار را خواهد کرد.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">flock &lt;span class="o">[&lt;/span>options&lt;span class="o">]&lt;/span> file&lt;span class="p">|&lt;/span>directory &lt;span class="nb">command&lt;/span> &lt;span class="o">[&lt;/span>arguments&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>این کامند در حالت عادی از شما یک فایل و یک دستور خواهد گرفت و مکانیزم
 advisory lock
-را روی ان فایل اجرا خواهد کرد.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;flock   /tmp/fli    &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; 12&amp;gt;/tmp/fli
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;برای اینکه روند را بهتر درک کنیم یک فایل
+را روی ان فایل اجرا خواهد کرد.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">flock /tmp/fli &lt;span class="nb">echo&lt;/span> 12&amp;gt;/tmp/fli
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>برای اینکه روند را بهتر درک کنیم یک فایل
 bash
-می‌نویسیم که بتوانیم مثال اولیه را روی آن اجرا کنیم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;balance.dat&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;cat &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Read current balance:&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$value&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#sleep 10 seconds to simulate business calculation&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;progress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$progress&lt;/span&gt; -lt &lt;span class=&#34;m&#34;&gt;101&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -n -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[77DCalculating new balance..&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$progress&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;%&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	sleep &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nv&#34;&gt;progress&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;progress&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$((&lt;/span&gt;value+&lt;span class=&#34;nv&#34;&gt;$1&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Write new balance (&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$value&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;) back to &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;.&amp;#34;&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$value&lt;/span&gt; &amp;gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Done.&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;ما این فایل را همزمان با دو ترمینال اجرا می‌کنیم.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/advisory_lock.gif&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;advisory lock&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;همینطور که می‌بینید پروسه دوم برای اینکه محتوای فایل را تغییر دهد، باید صبر کند تا لاک فایل
-آزاد شود.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;این پست خلاصه‌ای بود از
-&lt;a class=&#34;link&#34; href=&#34;https://www.baeldung.com/linux/file-locking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این بلاگ&lt;/a&gt;
+می‌نویسیم که بتوانیم مثال اولیه را روی آن اجرا کنیم.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="nv">file&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;balance.dat&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$(&lt;/span>cat &lt;span class="nv">$file&lt;/span>&lt;span class="k">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Read current balance:&lt;/span>&lt;span class="nv">$value&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#sleep 10 seconds to simulate business calculation&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">progress&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">while&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="nv">$progress&lt;/span> -lt &lt;span class="m">101&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> -n -e &lt;span class="s2">&amp;#34;\033[77DCalculating new balance..&lt;/span>&lt;span class="nv">$progress&lt;/span>&lt;span class="s2">%&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sleep &lt;span class="m">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">progress&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$((&lt;/span>&lt;span class="m">10&lt;/span>&lt;span class="o">+&lt;/span>progress&lt;span class="k">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nv">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">$((&lt;/span>value+&lt;span class="nv">$1&lt;/span>&lt;span class="k">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Write new balance (&lt;/span>&lt;span class="nv">$value&lt;/span>&lt;span class="s2">) back to &lt;/span>&lt;span class="nv">$file&lt;/span>&lt;span class="s2">.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="nv">$value&lt;/span> &amp;gt; &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$file&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Done.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ما این فایل را همزمان با دو ترمینال اجرا می‌کنیم.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/advisory_lock.gif"
+loading="lazy"
+alt="advisory lock"
+>&lt;/p>
+&lt;p>همینطور که می‌بینید پروسه دوم برای اینکه محتوای فایل را تغییر دهد، باید صبر کند تا لاک فایل
+آزاد شود.&lt;/p>
+&lt;hr>
+&lt;p>این پست خلاصه‌ای بود از
+&lt;a class="link" href="https://www.baeldung.com/linux/file-locking" target="_blank" rel="noopener"
+>این بلاگ&lt;/a>
 که هر دو نوع
 advisory lock و mandatory lock
-را توضیح می‌دهد.&lt;/p&gt;
-&lt;p&gt;برای من سوال بود که من چطور می‌توانم مکانیزمی که
+را توضیح می‌دهد.&lt;/p>
+&lt;p>برای من سوال بود که من چطور می‌توانم مکانیزمی که
 flock
 استفاده می‌کند را در برنامه های خودم پیاده سازی کنم، و خب نتیجه این بود که معمولا برای
 advisory lock
 هر زبانی یک کتابخانه استاندار دارد
 توی
-&lt;a class=&#34;link&#34; href=&#34;https://docs.python.org/3/library/fcntl.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;پایتون کتابخانه&lt;/a&gt;
-&lt;code&gt;fcntl&lt;/code&gt;
-اینکار را انجام می‌دهد.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>فورک بمب چیست و چطور کار می‌کند؟</title>
-        <link>https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/</link>
-        <pubDate>Wed, 27 Dec 2023 16:39:27 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/fork_bomb.jpg" alt="Featured image of post فورک بمب چیست و چطور کار می‌کند؟" /&gt;&lt;p&gt;اوایل که لینوکس نصب کرده بودم کامند هایی که توی
+&lt;a class="link" href="https://docs.python.org/3/library/fcntl.html" target="_blank" rel="noopener"
+>پایتون کتابخانه&lt;/a>
+&lt;code>fcntl&lt;/code>
+اینکار را انجام می‌دهد.&lt;/p></description></item><item><title>فورک بمب چیست و چطور کار می‌کند؟</title><link>https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/</link><pubDate>Wed, 27 Dec 2023 16:39:27 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/fork_bomb.jpg" alt="Featured image of post فورک بمب چیست و چطور کار می‌کند؟" />&lt;p>اوایل که لینوکس نصب کرده بودم کامند هایی که توی
 فروم های مختلف می‌دیدم و برای من جدید بود
 را دوست داشتم یاد بگیرم و بدانم
 کار آنها چی هست، برای همین هر کامندی را که می‌دیدم در
@@ -508,341 +471,314 @@ advisory lock
 هر کامندی اشتباهه بود. یکی از این کامند ها که اجرا کرده
 بودم، به اسم فورک بمب
 (fork bomb)
-شناخته می‌شود. کامند به این صورت هست&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt; :&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;:&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;اگر این کامند را اجرا کنید(امیدوارم تا الان نکرده باشید) تقریبا زیر یک دقیقه سیستم شما
-هنگ می‌کند و مجبور می‌شوید سیستم را ریبوت کنید.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;توی این پست ساختار این کامند را تشریح می‌کنم و باهم
+شناخته می‌شود. کامند به این صورت هست&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">:&lt;span class="o">(){&lt;/span> :&lt;span class="p">|&lt;/span>:&lt;span class="p">&amp;amp;&lt;/span> &lt;span class="o">}&lt;/span>&lt;span class="p">;&lt;/span>:
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>اگر این کامند را اجرا کنید(امیدوارم تا الان نکرده باشید) تقریبا زیر یک دقیقه سیستم شما
+هنگ می‌کند و مجبور می‌شوید سیستم را ریبوت کنید.&lt;/p>
+&lt;hr>
+&lt;p>توی این پست ساختار این کامند را تشریح می‌کنم و باهم
 کمی
 bash
-یاد می‌گیریم.&lt;/p&gt;
-&lt;p&gt;بیایید اول با مفهوم
+یاد می‌گیریم.&lt;/p>
+&lt;p>بیایید اول با مفهوم
 recustion
 آشنا بشیم، زمانی که یک قطعه کد خودش اجرا کند،
 recusion
 می‌گویم. مثلا شما یک فانکشن می‌نویسید به اسم
-&lt;em&gt;fn&lt;/em&gt;
+&lt;em>fn&lt;/em>
 و توی بدنه فانکشن فقط خود همین فانکشن را صدا می‌‌کنید،
 به این کار
 call recursion
 گفته می‌شود. فورک بمب دقیقا همین کار را می‌کند. به این
-معنی که خودش را دائم اجرا می‌کند!&lt;/p&gt;
-&lt;p&gt;به این فکر کنید که وقتی یک پراسس خودش را اجرا می‌کند
+معنی که خودش را دائم اجرا می‌کند!&lt;/p>
+&lt;p>به این فکر کنید که وقتی یک پراسس خودش را اجرا می‌کند
 ،مجدد پراسس های اجرا شده توسط اون هم دائم خودشان را اجرا
 می‌کنند،
 و دوباره هر پروسه‌ای که اجرا می‌شود بازم خودش را اجرا
 می‌کند و این روند تا زمانی که رم و پردازنده سیستم تحمل
-داشته باشد ادامه دارد.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;درختی که می‌بینید را اجرای فورک بمب درنظر بگیرید،
+داشته باشد ادامه دارد.&lt;/p>
+&lt;blockquote>
+&lt;p>درختی که می‌بینید را اجرای فورک بمب درنظر بگیرید،
 هر ستاره یک پروسه جدید است که توسط پروسه قبلی اجرا شده،
 و خودش هم دو پروسه جدید باز می‌کند و هر یک از پروسه ها
-هم همین روند را ادامه می‌دهند.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;               &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;               &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;           &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;               &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;               &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;               &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;               &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;                   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;├──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;│&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;                   &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;└──&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;من برای اینکه سیستم‌ خودم هنگ نکند فورک بمب را روی داکر
+هم همین روند را ادامه می‌دهند.&lt;/p>&lt;/blockquote>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-rust" data-lang="rust">&lt;span class="line">&lt;span class="cl">&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w">   &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w">   &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">├──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">│&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">└──&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>من برای اینکه سیستم‌ خودم هنگ نکند فورک بمب را روی داکر
 اجرا کردم و خب حتی یک ثانیه هم طول نکشید و آن کانتینر
-کاملا هنگ کرد.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;قبل از اجرا
-&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/images/post/forkbomb_docker0.jpg&#34; &gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/forkbomb_docker0.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;forkbomb on docker&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;زمان اجرا
-&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/images/post/forkbomb_docker.jpg&#34; &gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/forkbomb_docker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;forkbomb on docker&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;بیایید وارد کد بشیم، این علامت ها و کاراکتر ها چی هستند؟&lt;/p&gt;
-&lt;!-- برای تعریف یک فانکشن توی 
+کاملا هنگ کرد.&lt;/p>
+&lt;blockquote>
+&lt;p>قبل از اجرا
+&lt;a class="link" href="https://bit-orbit.github.io/images/post/forkbomb_docker0.jpg" >&lt;img src="https://bit-orbit.github.io/images/post/forkbomb_docker0.jpg"
+loading="lazy"
+alt="forkbomb on docker"
+>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>زمان اجرا
+&lt;a class="link" href="https://bit-orbit.github.io/images/post/forkbomb_docker.jpg" >&lt;img src="https://bit-orbit.github.io/images/post/forkbomb_docker.jpg"
+loading="lazy"
+alt="forkbomb on docker"
+>&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;hr>
+&lt;p>بیایید وارد کد بشیم، این علامت ها و کاراکتر ها چی هستند؟&lt;/p>
+&lt;!-- برای تعریف یک فانکشن توی
 bash
-ما به این صورت عمل می‌کنیم که اول اسم فانکشن بعد پرانتز 
-و بعد کرلی براکت(توی فارسی می‌گیم آکولاد) و داخل کرلی 
+ما به این صورت عمل می‌کنیم که اول اسم فانکشن بعد پرانتز
+و بعد کرلی براکت(توی فارسی می‌گیم آکولاد) و داخل کرلی
 براکت ما قطعه کد را می‌نویسیم. مثلا برای فانکشنی که یک
 اسم را روی صفحه چاپ کنه به این صورت عمل می‌کنیم
-
 ```bash
-pname(){ echo &#39;foo&#39;; }
-``` --&gt;
-&lt;p&gt;اگه دقت کنید اولین کاراکتر فورک بمب، علامت
-&lt;code&gt;:&lt;/code&gt;
+pname(){ echo 'foo'; }
+``` -->
+&lt;p>اگه دقت کنید اولین کاراکتر فورک بمب، علامت
+&lt;code>:&lt;/code>
 است. این علامت اسم فانکشن ما است. برخلاف قانون تعریف نام
 برای متغییر ها توی
 bash،
 می‌توانیم از کاراتر های یونیکد هم برای تعریف نام فانکشن
 استفاده کنیم، مثلا یک
-کاراکتر چینی یا حتی ایموجی!&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;雨&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;rain&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;❤️&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;love&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;خب در ادامه علامت های
-&lt;code&gt;()&lt;/code&gt;
+کاراکتر چینی یا حتی ایموجی!&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">雨&lt;span class="o">(){&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;rain&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">❤️&lt;span class="o">(){&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;love&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>خب در ادامه علامت های
+&lt;code>()&lt;/code>
 را می‌بینیم، توی
 bash
 برای تعریف فانکشن قبل از اسم فانکشن هیچ کلمه کلیدی مثل
 fn, def, void
 و &amp;hellip; نیاز نیست، فقط بجای آن باید
-&lt;strong&gt;بعد از اسم فانکشن&lt;/strong&gt;
-پرانتز ها را بگذارید.&lt;/p&gt;
-&lt;p&gt;مثل خیلی از زبان های برنامه نویسی، بدنه فانکشن توی
-کرلی براکت تعریف می‌شود.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:&lt;span class=&#34;o&#34;&gt;(){}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;پس تا اینجا ما یک فانکشن ساده با نام
-&lt;code&gt;:&lt;/code&gt;
-تعریف کردیم.&lt;/p&gt;
-&lt;p&gt;داخل بدنه این فانکشن، اسمی که برای فانکشن قرار دادیم
+&lt;strong>بعد از اسم فانکشن&lt;/strong>
+پرانتز ها را بگذارید.&lt;/p>
+&lt;p>مثل خیلی از زبان های برنامه نویسی، بدنه فانکشن توی
+کرلی براکت تعریف می‌شود.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">:&lt;span class="o">(){}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>پس تا اینجا ما یک فانکشن ساده با نام
+&lt;code>:&lt;/code>
+تعریف کردیم.&lt;/p>
+&lt;p>داخل بدنه این فانکشن، اسمی که برای فانکشن قرار دادیم
 همان
-&lt;code&gt;:&lt;/code&gt;
+&lt;code>:&lt;/code>
 را می‌نویسیم. با اینکار دقیقا
 call recursion
 را انجام دادیم، و باعث شدیم که برنامه خودش را
-توی هر اجرا مجدد اجرا کند.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt; : &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;دقت کنید توی سینتکس
+توی هر اجرا مجدد اجرا کند.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">:&lt;span class="o">(){&lt;/span> : &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>دقت کنید توی سینتکس
 bash
-حتما باید یک فاصله برای کدی که داخلی کرلی براکت می‌نویسم قرار بدیم&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;علامت
-&lt;code&gt;|&lt;/code&gt;
+حتما باید یک فاصله برای کدی که داخلی کرلی براکت می‌نویسم قرار بدیم&lt;/p>&lt;/blockquote>
+&lt;p>علامت
+&lt;code>|&lt;/code>
 به اسم پایپ شناخته می‌شود، وظیفه این علامت
 دادن خروجی یک کامند بعنوان ورودی به یک کامند دیگر هست،
 حلا
 دقت کنید که ما خروجی اجرای
-&lt;code&gt;:&lt;/code&gt;
-را به خودش می‌دهیم. دقیقا به این شکل&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt; :&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;با این علامت هر پروسه دو بار پروسه جدیدی از خودش می‌سازد
+&lt;code>:&lt;/code>
+را به خودش می‌دهیم. دقیقا به این شکل&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">:&lt;span class="o">(){&lt;/span> :&lt;span class="p">|&lt;/span>: &lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>با این علامت هر پروسه دو بار پروسه جدیدی از خودش می‌سازد
 اگر از این علامت استفاده نکنیم، پروسه ما به صورت خطی خودش
 را اجرا خواهد کرد، اینطوری کد ما با یک حلقه
-&lt;code&gt;while&lt;/code&gt;
-تفاوتی زیادی نخواهد داشت.&lt;/p&gt;
-&lt;p&gt;علامت
-&lt;code&gt;&amp;amp;&lt;/code&gt;
+&lt;code>while&lt;/code>
+تفاوتی زیادی نخواهد داشت.&lt;/p>
+&lt;p>علامت
+&lt;code>&amp;amp;&lt;/code>
 اجرای یک کامند را به بکگراند(پس زمینه) می‌برد.
 برای مثال بعد از اجرای یک دستور باید صبر کنید پروسه
 آن تمام شود تا بتوانید دستور بعدی را اجرا کنید.
 ولی اگر از علامت
-&lt;code&gt;&amp;amp;&lt;/code&gt;
+&lt;code>&amp;amp;&lt;/code>
 بعد از هر دستور استفاده کنید، دیگر نیاز نیست
 صبر کنید تا روند اجرای آن برنامه تمام شود.
 درواقع با علامت
-&lt;code&gt;&amp;amp;&lt;/code&gt;
+&lt;code>&amp;amp;&lt;/code>
 شما می‌توانید
 هر برنامه را در بکگراند اجرا کنید. حالا توی فورک بمب
 این علامت باعث می‌شود تا فانشکنی که اجرا کردین درحالی که کارش به اتمام
-نرسیده است، فانکشن بعدی اجرا بشود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/forkbomb_and.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;&amp; in bash&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;و بعد علامت
-&lt;code&gt;;&lt;/code&gt;
+نرسیده است، فانکشن بعدی اجرا بشود.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/forkbomb_and.jpg"
+loading="lazy"
+alt="&amp; in bash"
+>&lt;/p>
+&lt;p>و بعد علامت
+&lt;code>;&lt;/code>
 را می‌بینیم. این علامت کامند ها را از هم جدا می‌کند.
 مثلا شما می‌توانید چند کامند مختلف را توی یک خط بنویسید.
 توی فورک بمب این علامت فانکشنی که تعریف کردین را از
-دستور بعدی(که اجرا کننده اون فانکشن هست)جدا می‌کند.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;baz&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;آخرین علامتی که توی فورک بمب داریم همون علامت
-&lt;code&gt;:&lt;/code&gt;
+دستور بعدی(که اجرا کننده اون فانکشن هست)جدا می‌کند.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;foo&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;bar&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;baz&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>آخرین علامتی که توی فورک بمب داریم همون علامت
+&lt;code>:&lt;/code>
 یا همون اسمی هست که برای فانکشن قرار دادیم.
 خیلی ساده توی
 bash
-برای اجرای یک فانکشن فقط اسم‌ش را می‌نویسیم.&lt;/p&gt;
-&lt;p&gt;و تمام! ما یاد گرفتیم چطور فورک بمب رو بنویسیم و دیگه
-نیاز نیست حفظ‌ش کنیم :)&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:&lt;span class=&#34;o&#34;&gt;(){&lt;/span&gt; :&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;:&lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;:
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title> در لینوکس چیست؟ TTY </title>
-        <link>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link>
-        <pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/tty.jpg" alt="Featured image of post  در لینوکس چیست؟ TTY " /&gt;&lt;div dir=&#39;rtl&#39; style=&#39;font-size:x-large&#39;&gt;
-&lt;p&gt;شما باید درباره اصطلاح
+برای اجرای یک فانکشن فقط اسم‌ش را می‌نویسیم.&lt;/p>
+&lt;p>و تمام! ما یاد گرفتیم چطور فورک بمب رو بنویسیم و دیگه
+نیاز نیست حفظ‌ش کنیم :)&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">:&lt;span class="o">(){&lt;/span> :&lt;span class="p">|&lt;/span>:&lt;span class="p">&amp;amp;&lt;/span> &lt;span class="o">}&lt;/span>&lt;span class="p">;&lt;/span>:
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title> در لینوکس چیست؟ TTY</title><link>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link><pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/tty.jpg" alt="Featured image of post در لینوکس چیست؟ TTY " />&lt;div dir='rtl' style='font-size:x-large'>
+&lt;p>شما باید درباره اصطلاح
 tty
 زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما
 tty
-چیست؟&lt;/p&gt;
-&lt;p&gt;آیا برای شما به عنوان یک کاربر دستکتاپ مفید است؟&lt;/p&gt;
-&lt;p&gt;به آن نیاز دارید؟ می‌توانید با آن چه کار کنید؟&lt;/p&gt;
-&lt;p&gt;اجازه دهید هر چیز ضروری برای آشنا کردن شما با اصطلاح
+چیست؟&lt;/p>
+&lt;p>آیا برای شما به عنوان یک کاربر دستکتاپ مفید است؟&lt;/p>
+&lt;p>به آن نیاز دارید؟ می‌توانید با آن چه کار کنید؟&lt;/p>
+&lt;p>اجازه دهید هر چیز ضروری برای آشنا کردن شما با اصطلاح
 tty
-را در این پست برسی کنیم.&lt;/p&gt;
-&lt;p&gt;به یاد داشته باشید که پاسخ قطعی برای این سوال وجود ندارد،
+را در این پست برسی کنیم.&lt;/p>
+&lt;p>به یاد داشته باشید که پاسخ قطعی برای این سوال وجود ندارد،
 اما به نحوه تعامل دستگاه های
 input/output(ورودی/خروجی)
-در گذشته ربط دارد.&lt;/p&gt;
-&lt;p&gt;برای اینکه تصویری شفاف از آن داشته باشید باید کمی از تاریخ‌ش را بدانید.&lt;/p&gt;
-&lt;h3 id=&#34;تاریخ-پشت-اصطلاح-tty&#34;&gt;تاریخ پشت اصطلاح tty
-&lt;/h3&gt;&lt;p&gt;همه چیز از یک
-&lt;em&gt;teleprinter&lt;/em&gt;
-در سال 1830 شروع شد.&lt;/p&gt;
-&lt;p&gt;teleprinter
+در گذشته ربط دارد.&lt;/p>
+&lt;p>برای اینکه تصویری شفاف از آن داشته باشید باید کمی از تاریخ‌ش را بدانید.&lt;/p>
+&lt;h3 id="تاریخ-پشت-اصطلاح-tty">تاریخ پشت اصطلاح tty
+&lt;/h3>&lt;p>همه چیز از یک
+&lt;em>teleprinter&lt;/em>
+در سال 1830 شروع شد.&lt;/p>
+&lt;p>teleprinter
 به شما اجازه می‌داد که از طریق سیم پیام ارسال و دریافت کنید.
 teleprinter
 جایگزینی برای ارطبات مورس کد بود در آن دو اپراتور برای ارطبات با یکدیگر مود نیاز بود. اما در
 teleprinter
-فقط به یک اپراتور برای ارسال پیام نیاز داشت.  درحالی که
+فقط به یک اپراتور برای ارسال پیام نیاز داشت. درحالی که
 teleprinter
 یک صفحه کلید مدرن نداشت، بعد ها سیستم آن توسط
 Donald Murray
 به یک صفحه کلید
-&lt;em&gt;teletypewriter&lt;/em&gt;
-تکامل یافت.&lt;/p&gt;
-&lt;p&gt;Murray
+&lt;em>teletypewriter&lt;/em>
+تکامل یافت.&lt;/p>
+&lt;p>Murray
 زحمت اپراتور ها را برای
 ارسال و پیام را کاهش داد و این امکان را برای
 teletypeprinter
@@ -852,16 +788,11 @@ teletypewriter
 tty
 نام کوتاه شده
 teletypewrite
-است.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/teletypewrite.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;تفاوت بین
+است.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/teletypewrite.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>تفاوت بین
 teletypewrite
 و
 typewriter
@@ -872,89 +803,77 @@ teletypewriter
 ارطبات سریع تری را تا اکنون برای انسال بدون استفاده از کامپیوتر مقدور کرده است.
 و اینجا جایی است که
 tty
-بوجود آمد.&lt;/p&gt;
-&lt;h3 id=&#34;مفهوم-مدرن&#34;&gt;مفهوم مدرن
-&lt;/h3&gt;&lt;p&gt;اکنون شما باید متعجب شده باشید که چطور
+بوجود آمد.&lt;/p>
+&lt;h3 id="مفهوم-مدرن">مفهوم مدرن
+&lt;/h3>&lt;p>اکنون شما باید متعجب شده باشید که چطور
 tty
-به لینوکس و کامپیوتر مدرن آمده است.&lt;/p&gt;
-&lt;p&gt;بسیار خب، برای شروع، زمانی که
+به لینوکس و کامپیوتر مدرن آمده است.&lt;/p>
+&lt;p>بسیار خب، برای شروع، زمانی که
 teletypewriter
 به بازار رسید، چند سال بعد ترانزیستور های نیمه هادی(نیمه رسانا) توسعه داده شد که به
 میکروپروسسور(micro proccessor)
-هایی تبدیل شدند که کامپیوتر را ممکن می‌کرند.&lt;/p&gt;
-&lt;p&gt;کامپیوتر های اولیه مفهومی به اسم صفحه کلید نداشتند.
-&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Punched_card&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;کارت های پانج&lt;/a&gt;
-روش ورودی دادن به کامپیوتر ها بود&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/punch-card.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;card-punch&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;درحالی که کامپیوتر ها توسعه پیدا می‌کردند، بالاخره کارت های پانچ با
+هایی تبدیل شدند که کامپیوتر را ممکن می‌کرند.&lt;/p>
+&lt;p>کامپیوتر های اولیه مفهومی به اسم صفحه کلید نداشتند.
+&lt;a class="link" href="https://en.wikipedia.org/wiki/Punched_card" target="_blank" rel="noopener"
+>کارت های پانج&lt;/a>
+روش ورودی دادن به کامپیوتر ها بود&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/punch-card.jpg"
+loading="lazy"
+alt="card-punch"
+>&lt;/p>
+&lt;p>درحالی که کامپیوتر ها توسعه پیدا می‌کردند، بالاخره کارت های پانچ با
 teletypewriter
-به عنوان دستگاه &lt;em&gt;&lt;strong&gt;&lt;u&gt;ورودی/خروجی&lt;/u&gt;&lt;/strong&gt;&lt;/em&gt; مناسب جایگزین شد.    &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/pc-tty.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;LGP-30 computer in 1956 with a TTY attached to it&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;با توسعه تکنولوژی
+به عنوان دستگاه &lt;em>&lt;strong>&lt;u>ورودی/خروجی&lt;/u>&lt;/strong>&lt;/em> مناسب جایگزین شد.    &lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/pc-tty.jpg"
+loading="lazy"
+alt="LGP-30 computer in 1956 with a TTY attached to it"
+>&lt;/p>
+&lt;p>با توسعه تکنولوژی
 teletypewriter
 ها با استفاده از الکترونیک مجازی شدند. پس شما به یک
 tty
 فیزیکی، مکانیکی نیاز پیدا نمی‌کنید، بلکه به یک
 tty
-مجازی، الکترونیکی نیاز دارید.&lt;/p&gt;
-&lt;p&gt;اوایل کامپیوتر ها صفحه نمایش هم نداشتند. چیز ها بجای نمایش داده شدن بروی صفحه نمایش
+مجازی، الکترونیکی نیاز دارید.&lt;/p>
+&lt;p>اوایل کامپیوتر ها صفحه نمایش هم نداشتند. چیز ها بجای نمایش داده شدن بروی صفحه نمایش
 (که وجود نداشت)
 به روی کاغذ چاپ می‌شدند. به همین دلیل شما بجای دیدن اصطلاح
-&lt;code&gt;display&lt;/code&gt;
+&lt;code>display&lt;/code>
 اصطلاح
-&lt;code&gt;print&lt;/code&gt;
+&lt;code>print&lt;/code>
 را می‌بینید.
 ویدیو ها به عنوان تکنولوژی پیشرفته به ترمینال(پایانه) ها اضافه شد.
 به عبارت دیگر شما باید درباره ترمینال های ویدیویی شنیده باشید. یا شما می‌توانید
-آن ها را ترمینال های فیزیکی بنامید.&lt;/p&gt;
-&lt;p&gt;سپس اینها به ترمینال های نرم افزاری شبیه سازی شده تکامل پیدا کردند که با قابلیت ها و
+آن ها را ترمینال های فیزیکی بنامید.&lt;/p>
+&lt;p>سپس اینها به ترمینال های نرم افزاری شبیه سازی شده تکامل پیدا کردند که با قابلیت ها و
 ویژگی های تسوسعه یافته‌ای همرا بود. این چیزی است که شما آن را
 terminal emulator
-می‌نامید.&lt;/p&gt;
-&lt;p&gt;برای نمونه ترمینال
-&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/GNOME_Terminal&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;گنوم
-(Gnome)&lt;/a&gt;
+می‌نامید.&lt;/p>
+&lt;p>برای نمونه ترمینال
+&lt;a class="link" href="https://en.wikipedia.org/wiki/GNOME_Terminal" target="_blank" rel="noopener"
+>گنوم
+(Gnome)&lt;/a>
 یا
-&lt;a class=&#34;link&#34; href=&#34;https://konsole.kde.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;کنسول
-(Konsole)&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://itsfoss.com/linux-terminal-emulators/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;چنتا از بهترین ترمینال هایی هستند که می‌توانید برای لینوکس پیدا کنید.&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;بسیارخب-tty-در-لینوکس-چیست&#34;&gt;بسیارخب tty در لینوکس چیست؟
-&lt;/h3&gt;&lt;p&gt;زمانی که
+&lt;a class="link" href="https://konsole.kde.org/" target="_blank" rel="noopener"
+>کنسول
+(Konsole)&lt;/a>
+&lt;a class="link" href="https://itsfoss.com/linux-terminal-emulators/" target="_blank" rel="noopener"
+>چنتا از بهترین ترمینال هایی هستند که می‌توانید برای لینوکس پیدا کنید.&lt;/a>&lt;/p>
+&lt;h3 id="بسیارخب-tty-در-لینوکس-چیست">بسیارخب tty در لینوکس چیست؟
+&lt;/h3>&lt;p>زمانی که
 tty
 به لینوکس و یونیکس آمد، یک دستگاه مستقل در یونیکس و لینوکس بود گاهی
 tty
 به یک دستگاه ورودی فیزیکی مانند
 serial port(درگاه سریال)
 اشاره می‌کرد، و گاهی به ترمینال های مجازی اشاره می‌کرد که به کاربران اجازه تعامل با
-سیستم را می‌داد.&lt;/p&gt;
-&lt;p&gt;tty
+سیستم را می‌داد.&lt;/p>
+&lt;p>tty
 یک زیر سیستم در لینوکس و یونیکس است که مدریت فرایند، ویرایش خط و
 مدیریت نشست ها را در سطح کرنل از طریق درایور های
 tty
-ممکن می‌کند.&lt;/p&gt;
-&lt;p&gt;از دیدگاه برنامه نویسی شما باید در این موضوع عمیق تر شوید. اما محدوده این
+ممکن می‌کند.&lt;/p>
+&lt;p>از دیدگاه برنامه نویسی شما باید در این موضوع عمیق تر شوید. اما محدوده این
 پست را در نظر بگیرید، این مقاله باید یک توضیح ساده برای درک بهتر باشد.
 در حقیقت، هر گاه یک ترمینال را باز می‌کنیم یا هر نوع
 shell
@@ -963,114 +882,92 @@ shell
 با
 tty
 مجازی که
-&lt;em&gt;PTY&lt;/em&gt;
+&lt;em>PTY&lt;/em>
 یا
-&lt;em&gt;pseudo-tty&lt;/em&gt;
-هم شناخته می‌شوند، تعامل خواهد داشت.&lt;/p&gt;
-&lt;p&gt;شما می‌توانید
+&lt;em>pseudo-tty&lt;/em>
+هم شناخته می‌شوند، تعامل خواهد داشت.&lt;/p>
+&lt;p>شما می‌توانید
 tty
 را در ترمینال تایپ کنید و
 pty
-مرتبط را پیدا کنید.&lt;/p&gt;
-&lt;h3 id=&#34;چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم&#34;&gt;چگونه به tty در لینوکس دسترسی داشته باشیم؟
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/ubuntu-tty.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tty-in-ubuntu&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;دسترسی به
+مرتبط را پیدا کنید.&lt;/p>
+&lt;h3 id="چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم">چگونه به tty در لینوکس دسترسی داشته باشیم؟
+&lt;/h3>&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty.png"
+loading="lazy"
+alt="tty-in-ubuntu"
+>&lt;/p>
+&lt;p>دسترسی به
 tty
 در لینوکس ساده است. در حقیت زمانی که هیچ سرنخی از اینکه
 tty
 چیست نداشتم، به طور اتفاقی به آن دسترسی پیدا کردم و از اینکه چطوری باید
-از آن خارج شوم وحشت زده شدم!&lt;/p&gt;
-&lt;p&gt;شما می‌توانید با کلید های میانبر زیر در اکثر توزیع های لینوکس به صفحه
+از آن خارج شوم وحشت زده شدم!&lt;/p>
+&lt;p>شما می‌توانید با کلید های میانبر زیر در اکثر توزیع های لینوکس به صفحه
 tty
-دسترسی پیدا کنید.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CTRL&lt;/code&gt; + &lt;code&gt;ALT&lt;/code&gt; + &lt;code&gt;F1&lt;/code&gt; – &lt;strong&gt;Lockscreen&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CTRL&lt;/code&gt; + &lt;code&gt;ALT&lt;/code&gt; + &lt;code&gt;F2&lt;/code&gt; – &lt;strong&gt;Desktop Environment&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CTRL&lt;/code&gt; + &lt;code&gt;ALT&lt;/code&gt; + &lt;code&gt;F3&lt;/code&gt; – &lt;strong&gt;TTY3&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CTRL&lt;/code&gt; + &lt;code&gt;ALT&lt;/code&gt; + &lt;code&gt;F4&lt;/code&gt; – &lt;strong&gt;TTY4&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CTRL&lt;/code&gt; + &lt;code&gt;ALT&lt;/code&gt; + &lt;code&gt;F5&lt;/code&gt; – &lt;strong&gt;TT5&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;CTRL&lt;/code&gt; + &lt;code&gt;ALT&lt;/code&gt; + &lt;code&gt;F6&lt;/code&gt; – &lt;strong&gt;TTY6&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;شما می‌توانید حد اکثر به
-&lt;u&gt;6&lt;/u&gt;
+دسترسی پیدا کنید.&lt;/p>
+&lt;p>&lt;code>CTRL&lt;/code> + &lt;code>ALT&lt;/code> + &lt;code>F1&lt;/code> – &lt;strong>Lockscreen&lt;/strong>&lt;/p>
+&lt;p>&lt;code>CTRL&lt;/code> + &lt;code>ALT&lt;/code> + &lt;code>F2&lt;/code> – &lt;strong>Desktop Environment&lt;/strong>&lt;/p>
+&lt;p>&lt;code>CTRL&lt;/code> + &lt;code>ALT&lt;/code> + &lt;code>F3&lt;/code> – &lt;strong>TTY3&lt;/strong>&lt;/p>
+&lt;p>&lt;code>CTRL&lt;/code> + &lt;code>ALT&lt;/code> + &lt;code>F4&lt;/code> – &lt;strong>TTY4&lt;/strong>&lt;/p>
+&lt;p>&lt;code>CTRL&lt;/code> + &lt;code>ALT&lt;/code> + &lt;code>F5&lt;/code> – &lt;strong>TT5&lt;/strong>&lt;/p>
+&lt;p>&lt;code>CTRL&lt;/code> + &lt;code>ALT&lt;/code> + &lt;code>F6&lt;/code> – &lt;strong>TTY6&lt;/strong>&lt;/p>
+&lt;p>شما می‌توانید حد اکثر به
+&lt;u>6&lt;/u>
 tty
 دسترسی داشته باشید، با این حال دو تا از اولین کلید های میانبر به صفحه قفل
-و محیط دسکتاپ اشاره دارد.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/ubuntu-tty4.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;cmd-with-tty&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;بنابر این، با باقی کلید های میانبر شما به محیط
+و محیط دسکتاپ اشاره دارد.&lt;/p>
+&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty4.png"
+loading="lazy"
+alt="cmd-with-tty"
+>&lt;/p>
+&lt;p>بنابر این، با باقی کلید های میانبر شما به محیط
 command-line
-دسترسی می‌گیرید.&lt;/p&gt;
-&lt;h3 id=&#34;چه-زمانی-شما-از-tty-در-لینوکس-استفاده-خواهید-کرد&#34;&gt;چه زمانی شما از tty در لینوکس استفاده خواهید کرد؟
-&lt;/h3&gt;&lt;p&gt;tty
-فقط یک گنج تکنیکی نیست. حتی برای کاربرانی مثل من که توسعه دهنده هم نیستند مفید است.&lt;/p&gt;
-&lt;p&gt;زمانی که محیط گرافیکی فریز می‌شود باید به کار بیاید. در بعضی از مواقع
+دسترسی می‌گیرید.&lt;/p>
+&lt;h3 id="چه-زمانی-شما-از-tty-در-لینوکس-استفاده-خواهید-کرد">چه زمانی شما از tty در لینوکس استفاده خواهید کرد؟
+&lt;/h3>&lt;p>tty
+فقط یک گنج تکنیکی نیست. حتی برای کاربرانی مثل من که توسعه دهنده هم نیستند مفید است.&lt;/p>
+&lt;p>زمانی که محیط گرافیکی فریز می‌شود باید به کار بیاید. در بعضی از مواقع
 نصب مجدد محیط گرافیکی با استفاده از
 tty
-می‌تواند مشکل را حل کند.&lt;/p&gt;
-&lt;p&gt;یا شما می‌توانید
+می‌تواند مشکل را حل کند.&lt;/p>
+&lt;p>یا شما می‌توانید
 tty
 را برای انجام کار هایی مثل آپدیت انتخاب کنید جایی که شما نمی‌خواهید مشکلات بصری فرایند
-های شما را مختل کند.&lt;/p&gt;
-&lt;p&gt;بد ترین مورد سناریو، شما می‌تواند زمانی که محیط دستکتاپ جواب نمی‌دهد، برای ریبوت
+های شما را مختل کند.&lt;/p>
+&lt;p>بد ترین مورد سناریو، شما می‌تواند زمانی که محیط دستکتاپ جواب نمی‌دهد، برای ریبوت
 به
 tty
-مراجعه کنید.&lt;/p&gt;
-&lt;p&gt;بعضی از کاربران ترجیح می‌دهند که فایل های بزرگ را با
+مراجعه کنید.&lt;/p>
+&lt;p>بعضی از کاربران ترجیح می‌دهند که فایل های بزرگ را با
 tty
-منتقل کنند(من از آنها نیستم)&lt;/p&gt;
-&lt;h3 id=&#34;tty-به-عنوان-یک-دستور-در-لینوکس&#34;&gt;tty به عنوان یک دستور در لینوکس
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tty-cmd.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tty-cmd&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;همانطور که در صفحه راهنمای
+منتقل کنند(من از آنها نیستم)&lt;/p>
+&lt;h3 id="tty-به-عنوان-یک-دستور-در-لینوکس">tty به عنوان یک دستور در لینوکس
+&lt;/h3>&lt;p>&lt;img src="https://bit-orbit.github.io/images/post/tty-cmd.png"
+loading="lazy"
+alt="tty-cmd"
+>&lt;/p>
+&lt;p>همانطور که در صفحه راهنمای
 (man page)
 tty
 توضیح داده شده است، زمانی که شما
 tty
-را در ترمینال تایپ کنید، نام فایل ترمینال که به وردی استاندارد متصل است را چاپ می‌کند.&lt;/p&gt;
-&lt;p&gt;به عبارت دیگر برای دانستن عدد
+را در ترمینال تایپ کنید، نام فایل ترمینال که به وردی استاندارد متصل است را چاپ می‌کند.&lt;/p>
+&lt;p>به عبارت دیگر برای دانستن عدد
 tty
 که به آن متصل هستید، فقط
 tty
 را در ترمینال تایپ کنید.
 اگر چند کاربر از راه دور به سیستم لینوکس متصل هستند، می‌توانید برای برسی اینکه به
 چه متصل هستند از کامند
-&lt;code&gt;who&lt;/code&gt;
-استفاده کنید.&lt;/p&gt;
-&lt;h3 id=&#34;خارج-از-ترجمه&#34;&gt;خارج از ترجمه
-&lt;/h3&gt;&lt;p&gt;متن ترجمه شده بود و خب من یک مترجم تخصصی نیستم، من یک برنامه نویسم که بلاگ نویسی
+&lt;code>who&lt;/code>
+استفاده کنید.&lt;/p>
+&lt;h3 id="خارج-از-ترجمه">خارج از ترجمه
+&lt;/h3>&lt;p>متن ترجمه شده بود و خب من یک مترجم تخصصی نیستم، من یک برنامه نویسم که بلاگ نویسی
 و ترجمه رو هم دوست دارم، سعی کردم به بهترین نحو متن را ترجمه کنم
 و در اختیار بقیه بذارم، اگر حس کردین جایی از متن مشکلی داره، خیلی خوشحال می‌شوم
-که مشکلم رو بهم بیگید، این کمک بزرگیه.&lt;/p&gt;
-&lt;p&gt;متن اصلی رو می‌توانید از
-&lt;a class=&#34;link&#34; href=&#34;https://itsfoss.com/what-is-tty-in-linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این لینک&lt;/a&gt;
-بخوانید.&lt;/p&gt;
-&lt;/div&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+که مشکلم رو بهم بیگید، این کمک بزرگیه.&lt;/p>
+&lt;p>متن اصلی رو می‌توانید از
+&lt;a class="link" href="https://itsfoss.com/what-is-tty-in-linux/" target="_blank" rel="noopener"
+>این لینک&lt;/a>
+بخوانید.&lt;/p>
+&lt;/div></description></item></channel></rss>
