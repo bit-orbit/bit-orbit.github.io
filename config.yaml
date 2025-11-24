@@ -57,7 +57,7 @@ params:
 
     sidebar:
         emoji: 👾
-        subtitle: Linux | Python | Book | Fun | Life | Rust | 0110
+        subtitle: Linux | Code | Book | Movie | Fun | Code | Uf1595
         avatar:
             enabled: true
             local: true
@@ -72,7 +72,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         disqusjs:

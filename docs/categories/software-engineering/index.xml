@@ -1,203 +1,231 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software-Engineering on bit-orbit</title><link>https://bit-orbit.github.io/categories/software-engineering/</link><description>Recent content in Software-Engineering on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 11 Aug 2025 00:16:06 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/software-engineering/index.xml" rel="self" type="application/rss+xml"/><item><title>فرق utf-8 با unicode چیه؟</title><link>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</link><pubDate>Mon, 11 Aug 2025 00:16:06 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/wtf-utf8.png" alt="Featured image of post فرق utf-8 با unicode چیه؟" />&lt;p>&lt;a class="link" href="https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/" target="_blank" rel="noopener"
->این پست&lt;/a>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Software-Engineering on bit-orbit</title>
+        <link>https://bit-orbit.github.io/categories/software-engineering/</link>
+        <description>Recent content in Software-Engineering on bit-orbit</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fa</language>
+        <lastBuildDate>Mon, 11 Aug 2025 00:16:06 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>فرق utf-8 با unicode چیه؟</title>
+        <link>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</link>
+        <pubDate>Mon, 11 Aug 2025 00:16:06 +0330</pubDate>
+        
+        <guid>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/wtf-utf8.png" alt="Featured image of post فرق utf-8 با unicode چیه؟" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;این پست&lt;/a&gt;
 که درباره فرق
 unicode
 و
 utf-8
-بود خیلی مفید بنظرم رسید، برای همین خلاصه‌ای ازش رو اینجا می‌نویسم.&lt;/p>
-&lt;p>زمانی که
+بود خیلی مفید بنظرم رسید، برای همین خلاصه‌ای ازش رو اینجا می‌نویسم.&lt;/p&gt;
+&lt;p&gt;زمانی که
 ASCII
-معرفی شد کلا برای حروف انگلیسی ساخته شده بود، و البته یکسری از کاراکتر‌ها و دستورات دیگه.
+معرفی شد کلا برای حروف انگلیسی ساخته شده بود، و البته یکسری از کاراکتر‌ها و  دستورات دیگه.
 مثلا برای اسپیس کد 32 و مثلا برای حرف
 A
 از کد 65 داخلش استفاده میشد.
 ولی کد‌های قبل 32 چی؟ اون‌ها برای دستورات استفاده میشد مثلا کد 7 برای صدای
 beep
-هست!&lt;/p>
-&lt;p>تمامی این کاراکتر‌ها کلا توی
-&lt;strong>7&lt;/strong>
+هست!&lt;/p&gt;
+&lt;p&gt;تمامی این کاراکتر‌ها کلا توی
+&lt;strong&gt;7&lt;/strong&gt;
 بیت قرار می‌گیرن و فضای بیشتری نیاز ندارن.
 مثلا اگه حرف
-&lt;code>z&lt;/code>
+&lt;code&gt;z&lt;/code&gt;
 رو درنظر بگیریم، کد اسکی‌ش میشه
-&lt;code>122&lt;/code>
+&lt;code&gt;122&lt;/code&gt;
 و باینری
-&lt;code>122&lt;/code>
+&lt;code&gt;122&lt;/code&gt;
 میشه
-&lt;code>1111010&lt;/code>
+&lt;code&gt;1111010&lt;/code&gt;
 و همینطور که می‌بینید، با فقط هفت بیت حروف انگلیسی، اعداد، سیمبل‌ها و دستورات رو می‌تونیم داشته باشیم،
 اما کامپیوتر ها با
-&lt;strong>8 بیت&lt;/strong>
+&lt;strong&gt;8 بیت&lt;/strong&gt;
 کار می‌کنند، پس پیاده سازی
 ascii
 داخل کامپیوتر یک بیت اضافه‌ای به ما میده!(آخرین بیت سمت چپ).
 برای همین از کد
-&lt;code>128&lt;/code>
+&lt;code&gt;128&lt;/code&gt;
 تا
-&lt;code>255&lt;/code>
+&lt;code&gt;255&lt;/code&gt;
 برای هیچکاری
 داخل تیبل
 ascii
-استفاده نمیشه.&lt;/p>
-&lt;p>اینجاست که شرکت‌ها و برنامه نویس ها تصمیم می‌گیرن اون بیت آخر رو برای کار های خودشون استفاده کنند.
+استفاده نمیشه.&lt;/p&gt;
+&lt;p&gt;اینجاست که شرکت‌ها و برنامه نویس ها تصمیم می‌گیرن اون بیت آخر رو برای کار های خودشون استفاده کنند.
 همچنین هر زبانی مثلا یونانی برای خودش یه کد پیج داشته.
 مثلا توی بعضی از سیستم عامل ها از کد
-&lt;code>130&lt;/code>
+&lt;code&gt;130&lt;/code&gt;
 برای کاراکتر
-&lt;code>é&lt;/code>
+&lt;code&gt;é&lt;/code&gt;
 استفاده میشده،
 و یه ورژن دیگه‌ای از همون سیستم عامل
 (DOS)
 از این کد برای کاراکتر
-&lt;code>ג&lt;/code>
-استفاده میشده.&lt;/p>
-&lt;p>اینم باید بگم که همه قبول کرده بودن که تمامی کد های زیر
-&lt;code>128&lt;/code>
+&lt;code&gt;ג&lt;/code&gt;
+استفاده میشده.&lt;/p&gt;
+&lt;p&gt;اینم باید بگم که همه قبول کرده بودن که تمامی کد های زیر
+&lt;code&gt;128&lt;/code&gt;
 دست نخورده بمونه خوشبختانه.
 اینکه کدهای بالای
-&lt;code>128&lt;/code>
+&lt;code&gt;128&lt;/code&gt;
 نماینده چه کاراکتری باشه بستگی داره به اینکه از چه
-&lt;strong>code page&lt;/strong>
+&lt;strong&gt;code page&lt;/strong&gt;
 استفاده می‌کردن. مثلا
-&lt;code>code page 862&lt;/code>
+&lt;code&gt;code page 862&lt;/code&gt;
 در اسرائیل استفاده میشده و
-&lt;code>737&lt;/code>
+&lt;code&gt;737&lt;/code&gt;
 در یونان.
 حالا سیستم عامل
 DOS
-از کلی کد پیج ساپورت می‌کرده، ولی همزمان نمیشده توی یک فایل تکست از دو زبان استفاده کنی.&lt;/p>
-&lt;p>حالا عجیب‌تر اینکه این سسیتم توی زبان هایی مثل چینی بدرد نمی‌خوره، چون خب از &amp;lsquo;حرف&amp;rsquo; استفاده نمی‌کنند و کاراکترهاشون نماده و هزاران کاراکتر دارند،
+از کلی کد پیج ساپورت می‌کرده، ولی همزمان نمیشده توی یک فایل تکست از دو زبان استفاده کنی.&lt;/p&gt;
+&lt;p&gt;حالا عجیب‌تر اینکه این سسیتم توی زبان هایی مثل چینی بدرد نمی‌خوره، چون خب از &amp;lsquo;حرف&amp;rsquo; استفاده نمی‌کنند و کاراکترهاشون نماده و هزاران کاراکتر دارند،
 پس توی 8 بیت جا نمی‌شن. خب اینا چیکار کردن؟ از چیزی به اسم
-&lt;code>DBCS&lt;/code>
+&lt;code&gt;DBCS&lt;/code&gt;
 استفاده کردن این یعنی
-&lt;em>double bytes character set&lt;/em>
+&lt;em&gt;double bytes character set&lt;/em&gt;
 درواقع برای پیاده‌سازی زبان چینی باید تعداد بایت ها رو دو برابر می‌کردن،
 این خودش مشکل داره!
-اینکه تایپ یک کاراکتر ساده‌ست(حرکت رو به جلو) اما اگه بخای به عقب برگردی، این یه چالشه، چون نمی‌دونی کاراکتری که تایپ کردی یک بایتی بوده یا دو بایتی(این مشکل برنامه نویس‌ها بوده)&lt;/p>
-&lt;p>تا اینجا انچنان مشکلی هم نداشتیم، اما وقتی پای اینترنت به کامپیوتر‌ها باز شد، دیگه اینجا بود متن‌ها توی سیستم‌های مختلف به خوبی کار نمی‌کردند، پس و
-&lt;strong>unicode&lt;/strong>
-اختراع شد.&lt;/p>
-&lt;p>به صورت خلاصه
-&lt;em>unicode&lt;/em>
+اینکه تایپ یک کاراکتر ساده‌ست(حرکت رو به جلو) اما اگه بخای به عقب برگردی، این یه چالشه، چون نمی‌دونی کاراکتری که تایپ کردی یک بایتی بوده یا دو بایتی(این مشکل برنامه نویس‌ها بوده)&lt;/p&gt;
+&lt;p&gt;تا اینجا انچنان مشکلی هم نداشتیم، اما وقتی پای اینترنت به کامپیوتر‌ها باز شد، دیگه اینجا بود متن‌ها توی سیستم‌های مختلف به خوبی کار نمی‌کردند، پس و
+&lt;strong&gt;unicode&lt;/strong&gt;
+اختراع شد.&lt;/p&gt;
+&lt;p&gt;به صورت خلاصه
+&lt;em&gt;unicode&lt;/em&gt;
 به ازای هر کاراکتری یک کد داره
 (تا اینجا مثل ascii)،
 که بهش میگن
-&lt;em>code point&lt;/em>،&lt;/p>
-&lt;p>unicode
+&lt;em&gt;code point&lt;/em&gt;،&lt;/p&gt;
+&lt;p&gt;unicode
 طوری ساخته شده که حتی اگه در آینده‌هم کاراکتری و یا زبانی اختراع بشه، با
 unicode
 میشه یک کد منحصر بفرد بهش اختصاص داد.
 مثلا برای کاراکتر
-&lt;code>A&lt;/code>
+&lt;code&gt;A&lt;/code&gt;
 از کد
-&lt;code>U0041&lt;/code>
+&lt;code&gt;U0041&lt;/code&gt;
 استفاده میشه،
 و یا برای مثال
-&lt;code>U+0048 U+0065 U+006C U+006C U+006F&lt;/code>.
+&lt;code&gt;U+0048 U+0065 U+006C U+006C U+006F&lt;/code&gt;.
 میشه
-&lt;strong>Hello&lt;/strong>.
-این کد‌ها هگزادسیمال هستند.&lt;/p>
-&lt;p>اوکی حالا سوال اینجاست که ما برای هرکاراکتری یک کد در نظر گرفتیم، اوکی خب چطوری روی هارد قراره ذخیره‌ش کنیم؟&lt;/p>
-&lt;p>در حالت اول و خب خیلی ساده میشه اکثر کد ها رو داخل
-&lt;code>16&lt;/code>
-بیت دخیره کرد، اما دو مشکل وجود داره:&lt;/p>
-&lt;ol>
-&lt;li>فضای بیشتری برای ذخیره می‌گیره&lt;/li>
-&lt;li>اینکه خب اینهمه تکست که از قبل نوشته شده، یکی باید همه اونها رو تبدیل کنه.
+&lt;strong&gt;Hello&lt;/strong&gt;.
+این کد‌ها هگزادسیمال هستند.&lt;/p&gt;
+&lt;p&gt;اوکی حالا سوال اینجاست که ما برای هرکاراکتری یک کد در نظر گرفتیم، اوکی خب چطوری روی هارد قراره ذخیره‌ش کنیم؟&lt;/p&gt;
+&lt;p&gt;در حالت اول و خب خیلی ساده میشه اکثر کد ها رو داخل
+&lt;code&gt;16&lt;/code&gt;
+بیت دخیره کرد، اما دو مشکل وجود داره:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;فضای بیشتری برای ذخیره می‌گیره&lt;/li&gt;
+&lt;li&gt;اینکه خب اینهمه تکست که از قبل نوشته شده، یکی باید همه اونها رو تبدیل کنه.
 باید بتونیم یک راه
 backward compatible
-بنویسیم.&lt;/li>
-&lt;/ol>
-&lt;p>اینجاست که جادوی
-&lt;code>utf-8&lt;/code>
+بنویسیم.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;اینجاست که جادوی
+&lt;code&gt;utf-8&lt;/code&gt;
 که یک
-&lt;em>encondig&lt;/em>
+&lt;em&gt;encondig&lt;/em&gt;
 هست میاد وسط،
 توی
-&lt;em>utf-8&lt;/em>
+&lt;em&gt;utf-8&lt;/em&gt;
 از
-&lt;code>0&lt;/code>
+&lt;code&gt;0&lt;/code&gt;
 تا
-&lt;code>127&lt;/code>
+&lt;code&gt;127&lt;/code&gt;
 توی همون
-&lt;code>8&lt;/code>
+&lt;code&gt;8&lt;/code&gt;
 بیت ذخیره می‌شه
 و چیزی که به فضای بیشتری نیاز داره چی؟
 وقتی کاراکتری بیشتر از
-&lt;code>127&lt;/code>
-(یعنی نیاز به بیش از &lt;code>7&lt;/code> بیت)
+&lt;code&gt;127&lt;/code&gt;
+(یعنی نیاز به بیش از &lt;code&gt;7&lt;/code&gt; بیت)
 نیاز داشته باشه،
-&lt;em>UTF-8&lt;/em>
+&lt;em&gt;UTF-8&lt;/em&gt;
 از چند بایت استفاده می‌کنه:
 بایت اول یه &amp;ldquo;الگو&amp;rdquo; داره که نشون می‌ده این کاراکتر چند بایتیه، و بایت‌های بعدی با
-&lt;code>10xxxxxx&lt;/code>
-شروع می‌شن. اینطوری کامپیوتر می‌فهمه این یه کاراکتر چندبایتیه و چطوری باید رمزگشایی‌ش کنه.&lt;/p></description></item><item><title>تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی</title><link>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link><pubDate>Fri, 03 Nov 2023 00:21:46 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/staticvsdynamic.jpg" alt="Featured image of post تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی" />&lt;p>یکسری مفاهیمی در برنامه نویسی داریم که من تصمیم داریم درباره آنها توی چند پست توضیح بدم، اولین مورد
+&lt;code&gt;10xxxxxx&lt;/code&gt;
+شروع می‌شن. اینطوری کامپیوتر می‌فهمه این یه کاراکتر چندبایتیه و چطوری باید رمزگشایی‌ش کنه.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی</title>
+        <link>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</link>
+        <pubDate>Fri, 03 Nov 2023 00:21:46 +0330</pubDate>
+        
+        <guid>https://bit-orbit.github.io/p/%D8%AA%D9%81%D8%A7%D9%88%D8%AA-staticlink-%D9%88-dynamiclink-%D8%AF%D8%B1-%D8%B2%D8%A8%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/staticvsdynamic.jpg" alt="Featured image of post تفاوت Staticlink و Dynamiclink در زبان های برنامه نویسی" /&gt;&lt;p&gt;یکسری مفاهیمی در برنامه نویسی داریم که من تصمیم داریم درباره آنها توی چند پست توضیح بدم، اولین مورد
 که شامل این پست می‌شه تفاوت
 static linking
 و
 dynamic linking
 در زبان های برامه نویسی هست‌ش. مفاهیم دیگه‌ای که داخل پست های بعدی می‌نویسم چیز هایی مثل
-&lt;strong>static type, dynamic type, compiler language, interpreter language&lt;/strong> و &amp;hellip;
-خواهد بود.&lt;/p>
-&lt;hr>
-&lt;ul>
-&lt;li>
-&lt;p>دو مفهموم
+&lt;strong&gt;static type, dynamic type, compiler language, interpreter language&lt;/strong&gt; و &amp;hellip;
+خواهد بود.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;دو مفهموم
 static linking
 و
 dynamic linking
-چه هستند؟&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>هر کدام چه مشکلات و فوایدی دارند؟&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;p>ما در نوشتن برنامه ها معمولا از لایبراری های زیادی استفاده می‌کنیم، حتی یک برانامه ساده.
+چه هستند؟&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;هر کدام چه مشکلات و فوایدی دارند؟&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;ما در نوشتن برنامه ها معمولا از لایبراری های زیادی استفاده می‌کنیم، حتی یک برانامه ساده.
 سیستم ما برای اجرای یک برنامه، کد برنامه رو به ماشین-کد تبدیل می‌کنه و بعد خط به خط
-اون ها رو اجرا می‌کنه.&lt;/p>
-&lt;p>اصطلاح
+اون ها رو اجرا می‌کنه.&lt;/p&gt;
+&lt;p&gt;اصطلاح
 linking
 به روندی گفته می‌شود که کد شما به اشیاء(کد و داده) های خارجی برای استفاده از انها اشاره کند.
 معمولا دو روش برای اینکار وجود دارد،
 static linking(لینک کردن ایستا),
-dynamic linking(لینک کردن پویا).&lt;/p>
-&lt;blockquote>
-&lt;p>static linking
-زمانی اتفاق می‌افتد که کامپایلر منابع خارجی(لایبراری) ها را داخل فایل اجرایی برنامه کپی کند&lt;/p>&lt;/blockquote>
-&lt;p>در واقع در این روش برنامه شما تمامی لایبراری هایی که شما در کد استفاده کردین رو
+dynamic linking(لینک کردن پویا).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;static linking
+زمانی اتفاق می‌افتد که کامپایلر منابع خارجی(لایبراری) ها را داخل فایل اجرایی برنامه کپی کند&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;در واقع در این روش برنامه شما تمامی لایبراری هایی که شما در کد استفاده کردین رو
 با کد شما درون یک فایل اجرایی کامپایل می‌کند، زمانی که برنامه اجرا شود، تمامی لایبراری های
-مورد نیازش وارد مموری کامپیوتر می‌شود.&lt;/p>
-&lt;p>فایده هایی که می‌تونم بهش اشاره کنم&lt;/p>
-&lt;ul>
-&lt;li>توی منتشر کردن برنامه به دیگران، مشکل نصب کامپوننت ها رو دیگه ندارن، و به راحتی اجرا می‌کنند.&lt;/li>
-&lt;li>ممکنه برنامه اندکی سریع تر اجرا بشه&lt;/li>
-&lt;/ul>
-&lt;p>این روش واقعا خوبیه ولی خب معایب خودش رو هم داره&lt;/p>
-&lt;ul>
-&lt;li>فایل اجرایی حجم زیادی‌تری نسب‌ت به لینک کردن پویا داره&lt;/li>
-&lt;li>وقتی برنامه اجرا بشه، بخاطر اینکه همه لایبراری و داده های مورد نیاز داخل همان فایل اجرایی بود، برنامه رم زیادی استفاده می‌کنه.&lt;/li>
-&lt;li>اگر لایبراری های مورد استفاده تغییر کنند، برنامه نویس باید مجدد برنامه رو کامپایل و منتشر کنه&lt;/li>
-&lt;/ul>
-&lt;blockquote>
-&lt;p>dynamic linking
+مورد نیازش وارد مموری کامپیوتر می‌شود.&lt;/p&gt;
+&lt;p&gt;فایده هایی که می‌تونم بهش اشاره کنم&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;توی منتشر کردن برنامه به دیگران، مشکل نصب کامپوننت ها رو دیگه ندارن، و به راحتی اجرا می‌کنند.&lt;/li&gt;
+&lt;li&gt;ممکنه برنامه اندکی سریع تر اجرا بشه&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;این روش واقعا خوبیه ولی خب معایب خودش رو هم داره&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;فایل اجرایی حجم زیادی‌تری نسب‌ت به لینک کردن پویا داره&lt;/li&gt;
+&lt;li&gt;وقتی برنامه اجرا بشه، بخاطر اینکه همه لایبراری و داده های مورد نیاز داخل همان فایل اجرایی بود، برنامه رم زیادی استفاده می‌کنه.&lt;/li&gt;
+&lt;li&gt;اگر لایبراری های مورد استفاده تغییر کنند، برنامه نویس باید مجدد برنامه رو کامپایل و منتشر کنه&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;dynamic linking
 لینک کردن پویا زمانی است که نام لایبراری خارجی در زمان اجرا وارد فایل اجرایی می‌شود.
-و اینکه فقط در این زمان است که لایبراری مورد نیاز وارد مموری می‌شود.&lt;/p>&lt;/blockquote>
-&lt;p>در این مواقع لایبراری ها باید در سیستم عامل از قبل نصب شده باشند، و یا در موقغ نصب برنامه جدید
+و اینکه فقط در این زمان است که لایبراری مورد نیاز وارد مموری می‌شود.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;در این مواقع لایبراری ها باید در سیستم عامل از قبل نصب شده باشند، و یا در موقغ نصب برنامه جدید
 اون لایبراری ها نصب شوند. و اگر هر تغییری در لایبرار رخ بده، برنامه نویس نیاز نیست دوباره برنامه رو
-کامپایل و منتشر کند، فقط لایبراری مورد نیاز اپدیت می‌شود.&lt;/p>
-&lt;p>این روش هم مزیت های خودش رو داره، مثلا:&lt;/p>
-&lt;ul>
-&lt;li>حجم فایل های اجرایی خیلی کمتری داره&lt;/li>
-&lt;li>تا زمانی که نیاز به لایبراری نشده باشد(اگر در کد نویسی رعایت شده باشه) لایبراری ها رم اشغال نمی‌کنند.&lt;/li>
-&lt;/ul>
-&lt;p>مهمترین عیبی که می‌تونه این روش داشته باشه اینه که
-حذف شدن و یا خراب شدن لایبراری باعث می‌شه برنامه دیگه اجرا نشه.&lt;/p>
-&lt;hr>
-&lt;blockquote>
-&lt;p>این مطلب خلاصه‌ای کلی بود برای آشنایی با این دو مفهموم
+کامپایل و منتشر کند، فقط لایبراری مورد نیاز اپدیت می‌شود.&lt;/p&gt;
+&lt;p&gt;این روش هم مزیت های خودش رو داره، مثلا:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;حجم فایل های اجرایی خیلی کمتری داره&lt;/li&gt;
+&lt;li&gt;تا زمانی که نیاز به لایبراری نشده باشد(اگر در کد نویسی رعایت شده باشه) لایبراری ها رم اشغال نمی‌کنند.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;مهمترین عیبی که می‌تونه این روش داشته باشه اینه که
+حذف شدن و یا خراب شدن لایبراری باعث می‌شه برنامه دیگه اجرا نشه.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;این مطلب خلاصه‌ای کلی بود برای آشنایی با این دو مفهموم
 برای مطالعه بیشتر این
-&lt;a class="link" href="https://blog.hubspot.com/website/static-vs-dynamic-linking#static-linking" target="_blank" rel="noopener"
->لینک&lt;/a>
-می‌تونه مفید باشه.&lt;/p>&lt;/blockquote>
-&lt;hr></description></item></channel></rss>
+&lt;a class=&#34;link&#34; href=&#34;https://blog.hubspot.com/website/static-vs-dynamic-linking#static-linking&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;لینک&lt;/a&gt;
+می‌تونه مفید باشه.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

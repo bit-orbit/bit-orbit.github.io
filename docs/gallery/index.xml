@@ -1,10 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Galleries on bit-orbit</title><link>https://bit-orbit.github.io/gallery/</link><description>Recent content in Galleries on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/gallery/index.xml" rel="self" type="application/rss+xml"/><item><title>fsdfd</title><link>https://bit-orbit.github.io/gallery/rick-and-morty/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://bit-orbit.github.io/gallery/rick-and-morty/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/matrix.jpg" alt="Featured image of post fsdfd" />&lt;p>&lt;img src="https://bit-orbit.github.io/gallery/rick-and-morty/a.png"
-width="1920"
-height="800"
-srcset="https://bit-orbit.github.io/gallery/rick-and-morty/a_hu_c62c3a03bd68b74a.png 480w, https://bit-orbit.github.io/gallery/rick-and-morty/a_hu_98db93e0d3ba7207.png 1024w"
-loading="lazy"
-alt="p"
-class="gallery-image"
-data-flex-grow="240"
-data-flex-basis="576px"
->&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Galleries on bit-orbit</title>
+        <link>https://bit-orbit.github.io/gallery/</link>
+        <description>Recent content in Galleries on bit-orbit</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fa</language>
+        <lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/gallery/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>fsdfd</title>
+        <link>https://bit-orbit.github.io/gallery/rick-and-morty/</link>
+        <pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate>
+        
+        <guid>https://bit-orbit.github.io/gallery/rick-and-morty/</guid>
+        <description>&lt;img src="https://bit-orbit.github.io/images/post/matrix.jpg" alt="Featured image of post fsdfd" /&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/gallery/rick-and-morty/a.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;800&#34;
+	srcset=&#34;https://bit-orbit.github.io/gallery/rick-and-morty/a_hu_c62c3a03bd68b74a.png 480w, https://bit-orbit.github.io/gallery/rick-and-morty/a_hu_98db93e0d3ba7207.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;p&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;240&#34;
+		data-flex-basis=&#34;576px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
