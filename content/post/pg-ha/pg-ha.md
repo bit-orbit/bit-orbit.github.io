@@ -1,7 +1,7 @@
 ---
 title: "High Avalable کردن دیتابیس Postgesql"
 date: 2025-11-24T19:13:58+03:30
-draft: true
+draft: false
 image: images/post/pg.jpg
 ---
 
@@ -635,6 +635,16 @@ Dec 03 22:16:21 postgres-02 patroni[768]: 2024-12-03 22:16:21,780 INFO: Lock own
 Dec 03 22:16:21 postgres-02 patroni[768]: 2024-12-03 22:16:21,823 INFO: bootstrap from leader 'postgresql-01' in progress
 ```
 
+
+> این خط
+> `- host all all 0.0.0.0/0 md5`
+> اجازه می‌ده تا همه‌ی
+> IP ها
+> مجاز به اتصال به دیتابیس باشند. بنابراین
+> بر اساس
+> IP
+> سرور‌های خودتون این خط رو تغییر بدین.
+
 ---
 
 ## نصب و کانفیگ HA Proxy
@@ -788,8 +798,8 @@ vrrp_script check_haproxy {
 vrrp_instance VI_HA_PROXY {
     state BACKUP
     interface eth0
-    virtual_router_id 52
-    priority 100
+    virtual_router_id 51
+    priority 101
     advert_int 1
     authentication {
         auth_type PASS
@@ -822,7 +832,7 @@ vrrp_script check_haproxy {
 vrrp_instance VI_HA_PROXY {
     state BACKUP
     interface eth0
-    virtual_router_id 52
+    virtual_router_id 51
     priority 99
     advert_int 1
     authentication {
@@ -858,7 +868,7 @@ Floating IP(Virtual IP)
 به درستی ست شده باشه.
 
 ```asm
-ping 192.168.60.110
+ping 192.168.10.13
 ```
 
 ---
