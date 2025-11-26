@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Cloud on bit-orbit</title>
-        <link>https://bit-orbit.github.io/categories/cloud/</link>
-        <description>Recent content in Cloud on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Mon, 18 Dec 2023 00:08:38 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/cloud/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>از گوگل به تلگرام!</title>
-        <link>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</link>
-        <pubDate>Mon, 18 Dec 2023 00:08:38 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/colab.jpg" alt="Featured image of post از گوگل به تلگرام!" /&gt;&lt;p&gt;به احتمال زیاد سایت
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on bit-orbit</title><link>https://bit-orbit.github.io/categories/cloud/</link><description>Recent content in Cloud on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 18 Dec 2023 00:08:38 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/categories/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>از گوگل به تلگرام!</title><link>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</link><pubDate>Mon, 18 Dec 2023 00:08:38 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D8%B2-%DA%AF%D9%88%DA%AF%D9%84-%D8%A8%D9%87-%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/colab.jpg" alt="Featured image of post از گوگل به تلگرام!" /&gt;&lt;p&gt;به احتمال زیاد سایت
 google colab
 رو می‌شناسید، این سایت برای کسانی که پایتون کار می‌کنند
 یک معجزه‌ست. خیلی راحت شما می‌توانید کد پایتون خود
@@ -40,12 +26,12 @@ vpn
 &lt;hr&gt;
 &lt;p&gt;ادرس سرویس
 google colab
-&lt;a class=&#34;link&#34; href=&#34;https://colab.research.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این&lt;/a&gt;
+&lt;a class="link" href="https://colab.research.google.com/" target="_blank" rel="noopener"
+&gt;این&lt;/a&gt;
 هست، ولی من یک اسکریپت نوشتم که به اون نیاز داریم
 برای همین
-&lt;a class=&#34;link&#34; href=&#34;https://colab.research.google.com/github/shabane/upload-to-telegram/blob/master/upload_to_telegram.ipynb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این لینک&lt;/a&gt;
+&lt;a class="link" href="https://colab.research.google.com/github/shabane/upload-to-telegram/blob/master/upload_to_telegram.ipynb" target="_blank" rel="noopener"
+&gt;این لینک&lt;/a&gt;
 رو باز کنید
 تا اسکریپتی که من نوشته‌م توی
 colab
@@ -81,12 +67,12 @@ bash
 &lt;p&gt;پس اگه مستقیم قرار بود فایل رو از تورنت بگیرم باید برنامه
 aria2
 رو نصب می‌کردم. برای نصب کافیه این دستور رو بزنیم&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!sudo apt-get install aria2
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;!sudo apt-get install aria2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
@@ -95,12 +81,12 @@ aria2
 قبل از دستور استفاده کردم.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;بعد از نصب، لینک رو می‌دیم به برنامه تا فایل ها رو برامون
 دانلود کنه.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!aria2c &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;your magnet link&amp;gt;&amp;#39;&lt;/span&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;!aria2c &lt;span class="s1"&gt;&amp;#39;&amp;lt;your magnet link&amp;gt;&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
@@ -113,26 +99,20 @@ aria2
 wget
 می‌دیم. این برنامه به صورت دیفالت نصب هست و لازم نیست
 کار خاصی بکنیم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!wget &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;your file link&amp;gt;&amp;#39;&lt;/span&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;!wget &lt;span class="s1"&gt;&amp;#39;&amp;lt;your file link&amp;gt;&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/wgetcolab.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;from google to telegram as cloud&#34;
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/wgetcolab.jpg"
+loading="lazy"
+alt="from google to telegram as cloud"
 &gt;&lt;/p&gt;
 &lt;p&gt;بعد از اینکه فایل روی سرور گوگل دانلود شد کافیه فایل
-رو به تلگرام آپلود کنیم! ولی قبل‌ش  چند کاری هست که باید
+رو به تلگرام آپلود کنیم! ولی قبل‌ش چند کاری هست که باید
 باهم بکنیم.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;فایل من زیپه پس باید استخراج کنم.&lt;/li&gt;
@@ -148,40 +128,28 @@ mp3
 &lt;p&gt;خب برای اسختراج فایل ها خیلی ساده از کامند
 &lt;code&gt;unzip&lt;/code&gt;
 و اسم فایل جلوی این کامند استفاده می‌کنیم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!unzip &amp;lt;your file name&amp;gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;!unzip &amp;lt;your file name&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;با کامند
 &lt;code&gt;ls&lt;/code&gt;
 نام فایلی که دانلود کردین رو می‌تونید ببینید.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/unzipcolab.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;uizip in colab&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/unzipcolab.jpg"
+loading="lazy"
+alt="uizip in colab"
 &gt;&lt;/p&gt;
 &lt;p&gt;با اجرای کامند
 &lt;code&gt;tree&lt;/code&gt;
 می‌تونید دایرکتوری های تو در تو رو ببینید.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/treecolab.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tree in colab&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/treecolab.jpg"
+loading="lazy"
+alt="tree in colab"
 &gt;&lt;/p&gt;
 &lt;p&gt;توی این مرحله من همه فایل های
 mp3
@@ -194,12 +162,12 @@ mp3
 استفاده می‌کنم و هر فایل که پیدا می‌شه رو با کامند
 &lt;code&gt;mv&lt;/code&gt;
 به پوشه اصلی‌مون انتقال می‌دم.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;!find . -type f -iname &lt;span class=&#34;s1&#34;&gt;&amp;#39;*mp3&amp;#39;&lt;/span&gt; -exec mv &lt;span class=&#34;o&#34;&gt;{}&lt;/span&gt; . &lt;span class=&#34;se&#34;&gt;\;&lt;/span&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;!find . -type f -iname &lt;span class="s1"&gt;&amp;#39;*mp3&amp;#39;&lt;/span&gt; -exec mv &lt;span class="o"&gt;{}&lt;/span&gt; . &lt;span class="se"&gt;\;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;بیایید سوییچ های این دستور رو بهتون بگم&lt;/p&gt;
@@ -231,23 +199,17 @@ exec
 مشخص می‌شه.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;خب تا اینجا که خیلی ساده بود،‌ نه؟&lt;/p&gt;
 &lt;p&gt;مرحله آخر اینه که یک ربات با
-&lt;a class=&#34;link&#34; href=&#34;https://t.me/BotFather&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این ربات&lt;/a&gt;
+&lt;a class="link" href="https://t.me/BotFather" target="_blank" rel="noopener"
+&gt;این ربات&lt;/a&gt;
 بسازین، و بعد اون رو عضو یک کانالی که می‌سازید بکنید، کانال رو فعلا پابلیک بسازید و یک یوزرنیم بهش بدین.&lt;/p&gt;
 &lt;p&gt;توکن ربات رو کپی کنید و توی اسکریپت من، جایی که نوشته
 &lt;your token&gt;
 وارد کنید و توی قسمت
 &lt;chat id&gt;
 هم ایدی کانالتون رو با علامت @ اول جایگذاری کنید.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/acdccolab.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ac and dc telegram channel&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/acdccolab.jpg"
+loading="lazy"
+alt="ac and dc telegram channel"
 &gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;اگه کانال پرایوت دارید باید بجای ای‌دی کانال از
@@ -265,16 +227,7 @@ flood mood
 &lt;blockquote&gt;
 &lt;p&gt;اینم بگم که توی اسکریپت اگه
 mp3
-رو به چیز دیگه‌ای تغییر بدین، اسکریپت به دنبال اون پسوند ها خواهد گشت.&lt;/p&gt;&lt;/blockquote&gt;
-</description>
-        </item>
-        <item>
-        <title>cloud را به خانه خود ببرید!</title>
-        <link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link>
-        <pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" /&gt;&lt;h3 id=&#34;چطور-این-ایده-به-ذهن-من-رسید-&#34;&gt;چطور این ایده به ذهن من رسید ؟
+رو به چیز دیگه‌ای تغییر بدین، اسکریپت به دنبال اون پسوند ها خواهد گشت.&lt;/p&gt;&lt;/blockquote&gt;</description></item><item><title>cloud را به خانه خود ببرید!</title><link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link><pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate><guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" /&gt;&lt;h3 id="چطور-این-ایده-به-ذهن-من-رسید-"&gt;چطور این ایده به ذهن من رسید ؟
 &lt;/h3&gt;&lt;p&gt;جریان این ایده به این شکل بود که خب ما ایرانی ها اینترنت
 به شدت محدود شده‌ای داریم، برای همین ما برای استفاده از
 اینترنت از
@@ -293,12 +246,12 @@ vpn
 داخل تلگرام نوشتم، یکی کامنت گذاشت و خب این سیستم عامل
 را معرفی کرد.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چیست-&#34;&gt;umbrel چیست ؟
+&lt;h3 id="umbrel-چیست-"&gt;umbrel چیست ؟
 &lt;/h3&gt;&lt;p&gt;درواقع
 umbrel
 یک سیستم عامل است، زمانی که شما این سیستم عامل را نصب
 کنید، یک صفحه وب در اختیار شما می‌گذارد و شما از طریق این صفحه درون مرورگر خود می‌توانید به سیستم دسترسی داشته باشید. برای مثلا می‌توانید سرویس های مختلف و ابزار های
-مختلف  را روی
+مختلف را روی
 umbrel
 نصب و یا کانفیگ کنید.&lt;/p&gt;
 &lt;p&gt;سرویس هایی که
@@ -312,18 +265,12 @@ store
 این استور وجود نداشت، شما شخصا باید فرایند کانفیگ و نصب
 سرویس ها را به عهده می‌گرفتید(این کار یک متخصص دواپس
 هست، خیلی هم جالیه)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelstore.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel store&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbrelstore.jpg"
+loading="lazy"
+alt="umbrel store"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چه-نیازی-را-برطرف-میکند-&#34;&gt;umbrel چه نیازی را برطرف می‌کند ؟
+&lt;h3 id="umbrel-چه-نیازی-را-برطرف-میکند-"&gt;umbrel چه نیازی را برطرف می‌کند ؟
 &lt;/h3&gt;&lt;p&gt;وقتی از سرویس های تحت اینترنت استفاده می‌کنید،
 به احتمال زیاد شما کالای اون شرکتی هستید که ابزار را
 در اختیارتون قرار داده است. اگر دقت کنیم می‌بینیم که این
@@ -335,15 +282,9 @@ store
 بودجه این شرکت ها فقط و فقط با تبلیغات تامین نمی‌شود بلکه
 با فروش اطلاعات کاربرانشون(خود ما) به شرکت ها و دولت ها
 تامین می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/zuker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;zukerberg spying&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/zuker.jpg"
+loading="lazy"
+alt="zukerberg spying"
 &gt;&lt;/p&gt;
 &lt;p&gt;و البته اگر حتی شما برای سرویسی که استفاده می‌کنید
 هزینه‌ای پرداخت کنید، مثلا برای استفاده از گوگل دایو
@@ -363,18 +304,12 @@ umbrel
 و بعد سرویس ها راه اجرا می‌کردین.
 اما الان فقط با یک کلیک شما سرویس توییتر خود را
 راه اندازی می‌کنید!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel self hosting&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg"
+loading="lazy"
+alt="umbrel self hosting"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-به-روی-سیستم-عامل-دسکتاپ&#34;&gt;umbrel به روی سیستم عامل دسکتاپ
+&lt;h3 id="umbrel-به-روی-سیستم-عامل-دسکتاپ"&gt;umbrel به روی سیستم عامل دسکتاپ
 &lt;/h3&gt;&lt;p&gt;نصب
 umbrel
 بسیاز سادهست فقط کافیه یک سیستم عامل
@@ -400,7 +335,7 @@ debain
 umbrel
 را روی ان نصب کردین را وارد کنید و تمام!&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-به-روی-رزبری-پای&#34;&gt;umbrel به روی رزبری پای
+&lt;h3 id="umbrel-به-روی-رزبری-پای"&gt;umbrel به روی رزبری پای
 &lt;/h3&gt;&lt;p&gt;رزبری پای! یک سخت افزار کوچک که تقریبا یک کامپیوتر کامل
 است! البته که قدرت پردازش بالایی ندارد ولی در
 IOT
@@ -418,18 +353,12 @@ umbrel
 رزبری متصل کنید که فضای کافی برای سروریسی مانند
 next cloud
 داشته باشید.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelonressbery.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel on ressbery pi&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbrelonressbery.jpg"
+loading="lazy"
+alt="umbrel on ressbery pi"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-بروی-سرور-شخصی&#34;&gt;umbrel بروی سرور شخصی
+&lt;h3 id="umbrel-بروی-سرور-شخصی"&gt;umbrel بروی سرور شخصی
 &lt;/h3&gt;&lt;p&gt;به سادگی اچرای یک کامند! کافیست فقط سیستم عامل
 سرورتون
 debain
@@ -441,7 +370,7 @@ ubuntu
 IP
 سرور را وارد مرورگر کنید، تمام!&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;دستگاه-umbrel&#34;&gt;دستگاه umbrel
+&lt;h3 id="دستگاه-umbrel"&gt;دستگاه umbrel
 &lt;/h3&gt;&lt;p&gt;شرکت سازنده
 umbrel
 به جز سیستم عامل، یک دستگاهی طراحی کرده است که
@@ -457,18 +386,12 @@ rassbery PI
 را دائم خنک کند، از طرفی خود فن هم باید خنک شود.&lt;/p&gt;
 &lt;p&gt;اینجاست که این دستگاه رو برای شرکت یا خانه‌ شما مناسب‌تر
 می‌کند(مطمئن باشید تبلیغ نمی‌کنم)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldevice.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel device&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbreldevice.jpg"
+loading="lazy"
+alt="umbrel device"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چطور-کار-میکند-&#34;&gt;umbrel چطور کار می‌کند ؟
+&lt;h3 id="umbrel-چطور-کار-میکند-"&gt;umbrel چطور کار می‌کند ؟
 &lt;/h3&gt;&lt;p&gt;اگه بخواهم کمی فنی‌تر وارد ماجرا بشم، همونطور که گفت
 این سیستم عامل بهترین ویژگی که ارائه می‌کند
 store
@@ -516,18 +439,12 @@ store
 برای شما شما لیست می‌کند، شما کافیست که دکمه
 install
 را بزنید، بنگ! سرویس شما آماده است :)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldocker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel dockeriz&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbreldocker.jpg"
+loading="lazy"
+alt="umbrel dockeriz"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;امنیت&#34;&gt;امنیت
+&lt;h3 id="امنیت"&gt;امنیت
 &lt;/h3&gt;&lt;p&gt;اگر
 umbrel
 را به روی چیزی به جز سرور دارید، حتی اگر برای آن
@@ -550,18 +467,12 @@ tailscale
 که مستقیم به روی
 umbrel
 نصب می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tailscala umbrel&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg"
+loading="lazy"
+alt="tailscala umbrel"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;سرویس-های-کاربردی-umbrel&#34;&gt;سرویس های کاربردی umbrel
+&lt;h3 id="سرویس-های-کاربردی-umbrel"&gt;سرویس های کاربردی umbrel
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;matrix&lt;/li&gt;
 &lt;/ul&gt;
@@ -570,8 +481,8 @@ umbrel
 telegtam
 خودتون رو راه اندازی کنید.
 برای اینکه بیشتر درباراه این سرویس بدونید،
-&lt;a class=&#34;link&#34; href=&#34;https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این پست&lt;/a&gt;
+&lt;a class="link" href="https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/" target="_blank" rel="noopener"
+&gt;این پست&lt;/a&gt;
 من را بخوانید.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;nextcloud&lt;/li&gt;
@@ -646,7 +557,7 @@ meta
 ChatGPT
 ولی افلاین و کاملا خصوصی.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;راه-اندازی-سرویس-های-شخصی&#34;&gt;راه اندازی سرویس های شخصی
+&lt;h3 id="راه-اندازی-سرویس-های-شخصی"&gt;راه اندازی سرویس های شخصی
 &lt;/h3&gt;&lt;p&gt;خیلی از سرویس ها هنوز به
 umbrel
 اضافه نشده. اضافه کردن سرویس به خود
@@ -668,19 +579,8 @@ cache server
 ‌می‌دارد و هر بار که کاربران به محتوای قبلی درخواست
 بدهند، دیگر آن ریکوئست تا سایت اصلی نمی‌رود و خود
 کش سرور که در شبکه داخلی است جواب آن را می‌دهد&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/cacheumber.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;cache server&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/cacheumber.jpg"
+loading="lazy"
+alt="cache server"
 &gt;&lt;/p&gt;
-&lt;hr&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;hr&gt;</description></item></channel></rss>

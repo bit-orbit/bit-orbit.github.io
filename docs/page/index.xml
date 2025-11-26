@@ -1,26 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Pages on bit-orbit</title>
-        <link>https://bit-orbit.github.io/page/</link>
-        <description>Recent content in Pages on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Archives</title>
-        <link>https://bit-orbit.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>https://bit-orbit.github.io/about/</link>
-        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/about/</guid>
-        <description>&lt;p&gt;من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on bit-orbit</title><link>https://bit-orbit.github.io/page/</link><description>Recent content in Pages on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://bit-orbit.github.io/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/archives/</guid><description/></item><item><title>About</title><link>https://bit-orbit.github.io/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/about/</guid><description>&lt;p&gt;من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
 حتی شاید یه روزی از
 pastebin
 برای همین کار استفاده کنم (=&lt;/p&gt;
@@ -36,41 +14,18 @@ django
 api
 می‌نویسم، ولی همینکار رو به زودی با
 rust
-پیش می‌برم.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Links</title>
-        <link>https://bit-orbit.github.io/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/links/</guid>
-        <description>&lt;!-- 
+پیش می‌برم.&lt;/p&gt;</description></item><item><title>Links</title><link>https://bit-orbit.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/links/</guid><description>&lt;!--
 To use this feature, add `links` section to frontmatter.
-
-This page&#39;s frontmatter:
-
+This page's frontmatter:
 ```yaml
 links:
-  - title: GitHub
-    description: GitHub is the world&#39;s largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
 ``` --&gt;
-&lt;!-- `image` field accepts both local and external images. --&gt;</description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>https://bit-orbit.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://bit-orbit.github.io/search/</guid>
-        <description></description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;!-- `image` field accepts both local and external images. --&gt;</description></item><item><title>Search</title><link>https://bit-orbit.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/search/</guid><description/></item></channel></rss>

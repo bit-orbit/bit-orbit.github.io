@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>What Is Umbrel Os on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/what-is-umbrel-os/</link>
-        <description>Recent content in What Is Umbrel Os on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Mon, 11 Dec 2023 01:39:34 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/what-is-umbrel-os/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>cloud را به خانه خود ببرید!</title>
-        <link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link>
-        <pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" /&gt;&lt;h3 id=&#34;چطور-این-ایده-به-ذهن-من-رسید-&#34;&gt;چطور این ایده به ذهن من رسید ؟
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What Is Umbrel Os on bit-orbit</title><link>https://bit-orbit.github.io/tags/what-is-umbrel-os/</link><description>Recent content in What Is Umbrel Os on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 11 Dec 2023 01:39:34 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/what-is-umbrel-os/index.xml" rel="self" type="application/rss+xml"/><item><title>cloud را به خانه خود ببرید!</title><link>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</link><pubDate>Mon, 11 Dec 2023 01:39:34 +0330</pubDate><guid>https://bit-orbit.github.io/p/cloud-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AE%D8%A7%D9%86%D9%87-%D8%AE%D9%88%D8%AF-%D8%A8%D8%A8%D8%B1%DB%8C%D8%AF/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/umbrel.webp" alt="Featured image of post cloud را به خانه خود ببرید!" /&gt;&lt;h3 id="چطور-این-ایده-به-ذهن-من-رسید-"&gt;چطور این ایده به ذهن من رسید ؟
 &lt;/h3&gt;&lt;p&gt;جریان این ایده به این شکل بود که خب ما ایرانی ها اینترنت
 به شدت محدود شده‌ای داریم، برای همین ما برای استفاده از
 اینترنت از
@@ -31,12 +17,12 @@ vpn
 داخل تلگرام نوشتم، یکی کامنت گذاشت و خب این سیستم عامل
 را معرفی کرد.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چیست-&#34;&gt;umbrel چیست ؟
+&lt;h3 id="umbrel-چیست-"&gt;umbrel چیست ؟
 &lt;/h3&gt;&lt;p&gt;درواقع
 umbrel
 یک سیستم عامل است، زمانی که شما این سیستم عامل را نصب
 کنید، یک صفحه وب در اختیار شما می‌گذارد و شما از طریق این صفحه درون مرورگر خود می‌توانید به سیستم دسترسی داشته باشید. برای مثلا می‌توانید سرویس های مختلف و ابزار های
-مختلف  را روی
+مختلف را روی
 umbrel
 نصب و یا کانفیگ کنید.&lt;/p&gt;
 &lt;p&gt;سرویس هایی که
@@ -50,18 +36,12 @@ store
 این استور وجود نداشت، شما شخصا باید فرایند کانفیگ و نصب
 سرویس ها را به عهده می‌گرفتید(این کار یک متخصص دواپس
 هست، خیلی هم جالیه)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelstore.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel store&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbrelstore.jpg"
+loading="lazy"
+alt="umbrel store"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چه-نیازی-را-برطرف-میکند-&#34;&gt;umbrel چه نیازی را برطرف می‌کند ؟
+&lt;h3 id="umbrel-چه-نیازی-را-برطرف-میکند-"&gt;umbrel چه نیازی را برطرف می‌کند ؟
 &lt;/h3&gt;&lt;p&gt;وقتی از سرویس های تحت اینترنت استفاده می‌کنید،
 به احتمال زیاد شما کالای اون شرکتی هستید که ابزار را
 در اختیارتون قرار داده است. اگر دقت کنیم می‌بینیم که این
@@ -73,15 +53,9 @@ store
 بودجه این شرکت ها فقط و فقط با تبلیغات تامین نمی‌شود بلکه
 با فروش اطلاعات کاربرانشون(خود ما) به شرکت ها و دولت ها
 تامین می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/zuker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;zukerberg spying&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/zuker.jpg"
+loading="lazy"
+alt="zukerberg spying"
 &gt;&lt;/p&gt;
 &lt;p&gt;و البته اگر حتی شما برای سرویسی که استفاده می‌کنید
 هزینه‌ای پرداخت کنید، مثلا برای استفاده از گوگل دایو
@@ -101,18 +75,12 @@ umbrel
 و بعد سرویس ها راه اجرا می‌کردین.
 اما الان فقط با یک کلیک شما سرویس توییتر خود را
 راه اندازی می‌کنید!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel self hosting&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbrelselfhosting.jpg"
+loading="lazy"
+alt="umbrel self hosting"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-به-روی-سیستم-عامل-دسکتاپ&#34;&gt;umbrel به روی سیستم عامل دسکتاپ
+&lt;h3 id="umbrel-به-روی-سیستم-عامل-دسکتاپ"&gt;umbrel به روی سیستم عامل دسکتاپ
 &lt;/h3&gt;&lt;p&gt;نصب
 umbrel
 بسیاز سادهست فقط کافیه یک سیستم عامل
@@ -138,7 +106,7 @@ debain
 umbrel
 را روی ان نصب کردین را وارد کنید و تمام!&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-به-روی-رزبری-پای&#34;&gt;umbrel به روی رزبری پای
+&lt;h3 id="umbrel-به-روی-رزبری-پای"&gt;umbrel به روی رزبری پای
 &lt;/h3&gt;&lt;p&gt;رزبری پای! یک سخت افزار کوچک که تقریبا یک کامپیوتر کامل
 است! البته که قدرت پردازش بالایی ندارد ولی در
 IOT
@@ -156,18 +124,12 @@ umbrel
 رزبری متصل کنید که فضای کافی برای سروریسی مانند
 next cloud
 داشته باشید.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbrelonressbery.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel on ressbery pi&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbrelonressbery.jpg"
+loading="lazy"
+alt="umbrel on ressbery pi"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-بروی-سرور-شخصی&#34;&gt;umbrel بروی سرور شخصی
+&lt;h3 id="umbrel-بروی-سرور-شخصی"&gt;umbrel بروی سرور شخصی
 &lt;/h3&gt;&lt;p&gt;به سادگی اچرای یک کامند! کافیست فقط سیستم عامل
 سرورتون
 debain
@@ -179,7 +141,7 @@ ubuntu
 IP
 سرور را وارد مرورگر کنید، تمام!&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;دستگاه-umbrel&#34;&gt;دستگاه umbrel
+&lt;h3 id="دستگاه-umbrel"&gt;دستگاه umbrel
 &lt;/h3&gt;&lt;p&gt;شرکت سازنده
 umbrel
 به جز سیستم عامل، یک دستگاهی طراحی کرده است که
@@ -195,18 +157,12 @@ rassbery PI
 را دائم خنک کند، از طرفی خود فن هم باید خنک شود.&lt;/p&gt;
 &lt;p&gt;اینجاست که این دستگاه رو برای شرکت یا خانه‌ شما مناسب‌تر
 می‌کند(مطمئن باشید تبلیغ نمی‌کنم)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldevice.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel device&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbreldevice.jpg"
+loading="lazy"
+alt="umbrel device"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;umbrel-چطور-کار-میکند-&#34;&gt;umbrel چطور کار می‌کند ؟
+&lt;h3 id="umbrel-چطور-کار-میکند-"&gt;umbrel چطور کار می‌کند ؟
 &lt;/h3&gt;&lt;p&gt;اگه بخواهم کمی فنی‌تر وارد ماجرا بشم، همونطور که گفت
 این سیستم عامل بهترین ویژگی که ارائه می‌کند
 store
@@ -254,18 +210,12 @@ store
 برای شما شما لیست می‌کند، شما کافیست که دکمه
 install
 را بزنید، بنگ! سرویس شما آماده است :)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/umbreldocker.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;umbrel dockeriz&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/umbreldocker.jpg"
+loading="lazy"
+alt="umbrel dockeriz"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;امنیت&#34;&gt;امنیت
+&lt;h3 id="امنیت"&gt;امنیت
 &lt;/h3&gt;&lt;p&gt;اگر
 umbrel
 را به روی چیزی به جز سرور دارید، حتی اگر برای آن
@@ -288,18 +238,12 @@ tailscale
 که مستقیم به روی
 umbrel
 نصب می‌شود.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tailscala umbrel&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/tailscalaumbrel.jpg"
+loading="lazy"
+alt="tailscala umbrel"
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;سرویس-های-کاربردی-umbrel&#34;&gt;سرویس های کاربردی umbrel
+&lt;h3 id="سرویس-های-کاربردی-umbrel"&gt;سرویس های کاربردی umbrel
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;matrix&lt;/li&gt;
 &lt;/ul&gt;
@@ -308,8 +252,8 @@ umbrel
 telegtam
 خودتون رو راه اندازی کنید.
 برای اینکه بیشتر درباراه این سرویس بدونید،
-&lt;a class=&#34;link&#34; href=&#34;https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این پست&lt;/a&gt;
+&lt;a class="link" href="https://www.wiregeek.ir/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/" target="_blank" rel="noopener"
+&gt;این پست&lt;/a&gt;
 من را بخوانید.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;nextcloud&lt;/li&gt;
@@ -384,7 +328,7 @@ meta
 ChatGPT
 ولی افلاین و کاملا خصوصی.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;راه-اندازی-سرویس-های-شخصی&#34;&gt;راه اندازی سرویس های شخصی
+&lt;h3 id="راه-اندازی-سرویس-های-شخصی"&gt;راه اندازی سرویس های شخصی
 &lt;/h3&gt;&lt;p&gt;خیلی از سرویس ها هنوز به
 umbrel
 اضافه نشده. اضافه کردن سرویس به خود
@@ -406,19 +350,8 @@ cache server
 ‌می‌دارد و هر بار که کاربران به محتوای قبلی درخواست
 بدهند، دیگر آن ریکوئست تا سایت اصلی نمی‌رود و خود
 کش سرور که در شبکه داخلی است جواب آن را می‌دهد&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/cacheumber.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;cache server&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/cacheumber.jpg"
+loading="lazy"
+alt="cache server"
 &gt;&lt;/p&gt;
-&lt;hr&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;hr&gt;</description></item></channel></rss>

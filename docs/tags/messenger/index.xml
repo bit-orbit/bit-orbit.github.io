@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Messenger on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/messenger/</link>
-        <description>Recent content in Messenger on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/messenger/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title>
-        <link>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link>
-        <pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" /&gt;&lt;p&gt;ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Messenger on bit-orbit</title><link>https://bit-orbit.github.io/tags/messenger/</link><description>Recent content in Messenger on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Sat, 01 Oct 2022 01:46:23 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/messenger/index.xml" rel="self" type="application/rss+xml"/><item><title>ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس</title><link>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</link><pubDate>Sat, 01 Oct 2022 01:46:23 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7-%D8%BA%DB%8C%D8%B1-%D9%85%D8%AA%D9%85%D8%B1%DA%A9%D8%B2-%D9%88-%D8%AF%D8%B1-%D9%84%D8%AD%D8%B8%D9%87-%D8%A8%D8%A7-%D9%BE%D8%B1%D9%88%D8%AA%DA%A9%D9%84-%D9%85%D8%A7%D8%AA%D8%B1%DB%8C%DA%A9%D8%B3/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/matrix.jpg" alt="Featured image of post ارتباط غیر متمرکز و در لحظه با پروتکل ماتریکس" /&gt;&lt;p&gt;ماتریکس یک پروتکل آزاد است! به این معنی که شما میتوانید از این پروتکل برای
 ارتباطات تحت شبکه مانند پیامرسان، اینترنت چیز ها
 (IoT)
 و هر چیز دیگری
@@ -21,7 +7,7 @@
 (E2E)
 است، این ویژگی باعث میشود حتی سرور های ماتریکس که داده های ما را
 منتقل میکنند هم توانایی دسترسی به داده ها را نداشته باشند.&lt;/p&gt;
-&lt;h3 id=&#34;پیام-رسان-ماتریکس&#34;&gt;پیام رسان ماتریکس
+&lt;h3 id="پیام-رسان-ماتریکس"&gt;پیام رسان ماتریکس
 &lt;/h3&gt;&lt;p&gt;یکی از اصلی ترین استفاده های ماتریکس، پیامرسان است.
 این پیامرسان به صورت غیر متمرکز عمل میکند. با این روش سانسور/فیلتر شدن
 سرور هایی که پیام ها را ذخیره و منتقل میکنند غیر ممکن میشود!
@@ -29,7 +15,7 @@
 یکی از این سرور ها سانسور شود، شما همچنان میتوانید با سرور دیگری
 مجدد اکانت بسازید و در ارتباط بمانید.
 و یا حتی از سرور خودتان استفاده کنید!&lt;/p&gt;
-&lt;h3 id=&#34;ماتریکس-چگونه-کار-میکند&#34;&gt;ماتریکس چگونه کار میکند؟
+&lt;h3 id="ماتریکس-چگونه-کار-میکند"&gt;ماتریکس چگونه کار میکند؟
 &lt;/h3&gt;&lt;p&gt;هر سرور در ماتریکس
 &lt;em&gt;HomeServer&lt;/em&gt;
 نامیده میشود، شما به عنوان
@@ -39,35 +25,23 @@ HomeServer
 که میخواهید استفاده کنید.&lt;/p&gt;
 &lt;p&gt;HomeServer
 ها میتوانند سرور های عمومی مثل سروری که خود
-&lt;a class=&#34;link&#34; href=&#34;matrix.org&#34; &gt;&lt;strong&gt;ماتریکس&lt;/strong&gt;&lt;/a&gt;
+&lt;a class="link" href="matrix.org" &gt;&lt;strong&gt;ماتریکس&lt;/strong&gt;&lt;/a&gt;
 راه اندازی کرده است باشد
 و یا میتواند سرور های
 &lt;strong&gt;شخصی خودتان&lt;/strong&gt;
 باشد.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/images/post/page2-768x768.png&#34; &gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/page2-768x768.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;matrix-homeserver&#34;
-	
-	
+&lt;p&gt;&lt;a class="link" href="https://bit-orbit.github.io/images/post/page2-768x768.png" &gt;&lt;img src="https://bit-orbit.github.io/images/post/page2-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;زمانی که شما از یک
 HomeServer
 استفاده میکنید، این به آن معنی است که کلاینت شما به اکانتتان در آن
 HomeServer
 متصل میشود.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/images/post/page3-768x768.png&#34; &gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/page3-768x768.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;matrix-homeserver&#34;
-	
-	
+&lt;p&gt;&lt;a class="link" href="https://bit-orbit.github.io/images/post/page3-768x768.png" &gt;&lt;img src="https://bit-orbit.github.io/images/post/page3-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;زمانی که شما پیامی ارسال میکنید، پیامتان به
 HomeServer
@@ -78,15 +52,9 @@ HomeServer
 &lt;p&gt;در ماتریکس هر نوع چت(شخصی و یا گروه) را
 room
 مینامند&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/images/post/page4-768x768.png&#34; &gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/page4-768x768.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;matrix-homeserver&#34;
-	
-	
+&lt;p&gt;&lt;a class="link" href="https://bit-orbit.github.io/images/post/page4-768x768.png" &gt;&lt;img src="https://bit-orbit.github.io/images/post/page4-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;در واقع زمانی که شما پیامی ارسال میکنید
 HomeServer
@@ -103,15 +71,9 @@ HomerServer
 های دیگر ارسال خواهد کرد. و آن
 HomeServer
 پیام را دریافت و به کاربران مربوطه ارسال خواهد کرد.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://bit-orbit.github.io/images/post/page6-768x768.png&#34; &gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/page6-768x768.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;matrix-homeserver&#34;
-	
-	
+&lt;p&gt;&lt;a class="link" href="https://bit-orbit.github.io/images/post/page6-768x768.png" &gt;&lt;img src="https://bit-orbit.github.io/images/post/page6-768x768.png"
+loading="lazy"
+alt="matrix-homeserver"
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;زمانی که شما پیامی را برای کاربر
@@ -121,7 +83,7 @@ HomeServer
 خودتان ذخیره نخواهد شد. بلکه در
 HomeServer
 کاربری/کاربرانی که پیام را به آن ارسال کرده اید هم ذخیره میشود.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;اصطلاحات-در-ماتریکس&#34;&gt;اصطلاحات در ماتریکس
+&lt;h3 id="اصطلاحات-در-ماتریکس"&gt;اصطلاحات در ماتریکس
 &lt;/h3&gt;&lt;p&gt;در ماتریکس چند اصطلاح وجود دارد که آشنایی با آنها به درک بهتر این پروتکل کمک میکند.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -175,28 +137,28 @@ Brdige تلگرام
 میتوانید با ماتریکس به کاربران تلگرام پیام ارسال و دریافت کنید.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;چگونه-از-ماتریکس-استفاده-کنیم&#34;&gt;چگونه از ماتریکس استفاده کنیم؟
+&lt;h3 id="چگونه-از-ماتریکس-استفاده-کنیم"&gt;چگونه از ماتریکس استفاده کنیم؟
 &lt;/h3&gt;&lt;p&gt;برای استفاده از ماتریکس، شما کافیست یکی از کلاینت های آن را نصب و به یک
 HomeServer
 متصل شوید.&lt;/p&gt;
 &lt;p&gt;یکی از محبوب ترین کلاینت ها، کلاینت
-&lt;a class=&#34;link&#34; href=&#34;https://element.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Element&lt;/a&gt;
+&lt;a class="link" href="https://element.io/" target="_blank" rel="noopener"
+&gt;Element&lt;/a&gt;
 است، که شامل نسخه
-&lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=im.vector.app&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Android&lt;/a&gt;،
-&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/app/vector/id1083446067&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;IOS&lt;/a&gt;،
-&lt;a class=&#34;link&#34; href=&#34;https://element.io/get-started#downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Windows, Linux، Mac&lt;/a&gt;
+&lt;a class="link" href="https://play.google.com/store/apps/details?id=im.vector.app" target="_blank" rel="noopener"
+&gt;Android&lt;/a&gt;،
+&lt;a class="link" href="https://apps.apple.com/app/vector/id1083446067" target="_blank" rel="noopener"
+&gt;IOS&lt;/a&gt;،
+&lt;a class="link" href="https://element.io/get-started#downloads" target="_blank" rel="noopener"
+&gt;Windows, Linux، Mac&lt;/a&gt;
 و البته
-&lt;a class=&#34;link&#34; href=&#34;https://app.element.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;نسخه تحت وب میشود&lt;/a&gt;.&lt;/p&gt;
+&lt;a class="link" href="https://app.element.io/" target="_blank" rel="noopener"
+&gt;نسخه تحت وب میشود&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;استفاده از المنت مانند هر پیامرسان دیگری ساده است، اما اگر نیاز به کمک دارید
-&lt;a class=&#34;link&#34; href=&#34;https://static.element.io/pdfs/element-user-guide.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این لینک&lt;/a&gt;
+&lt;a class="link" href="https://static.element.io/pdfs/element-user-guide.pdf" target="_blank" rel="noopener"
+&gt;این لینک&lt;/a&gt;
 میتواند کمکتان کند.&lt;/p&gt;
-&lt;h3 id=&#34;چطور-از-سرور-شخصی-خودمان-استفاده-کنیم&#34;&gt;چطور از سرور شخصی خودمان استفاده کنیم؟
+&lt;h3 id="چطور-از-سرور-شخصی-خودمان-استفاده-کنیم"&gt;چطور از سرور شخصی خودمان استفاده کنیم؟
 &lt;/h3&gt;&lt;p&gt;شما مجبور نیستید سرویس ماتریکس را روی سرور شخصی خودتان اجرا کنید مگر اینکه:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;سرور های عمومی ماتریکس سانسور و از دسترس خارج شده باشند&lt;/li&gt;
@@ -208,21 +170,16 @@ Bridge
 بسازید.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;نسخه سرور ماتریکس
-&lt;a class=&#34;link&#34; href=&#34;https://github.com/matrix-org/synapse&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;em&gt;Synapse&lt;/em&gt;&lt;/a&gt;
+&lt;a class="link" href="https://github.com/matrix-org/synapse" target="_blank" rel="noopener"
+&gt;&lt;em&gt;Synapse&lt;/em&gt;&lt;/a&gt;
 نام دارد، شما میتوانید با استفاده از
-&lt;a class=&#34;link&#34; href=&#34;https://hub.docker.com/r/matrixdotorg/synapse/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ایمیج داکر رسمی ماتریکس&lt;/a&gt;،
+&lt;a class="link" href="https://hub.docker.com/r/matrixdotorg/synapse/" target="_blank" rel="noopener"
+&gt;ایمیج داکر رسمی ماتریکس&lt;/a&gt;،
 سرور شخصی خودتان را اجرا کنید.&lt;/p&gt;
-&lt;h3 id=&#34;نتیجه-گیری&#34;&gt;نتیجه گیری
+&lt;h3 id="نتیجه-گیری"&gt;نتیجه گیری
 &lt;/h3&gt;&lt;p&gt;هدف من از نوشتن این پست در این روز های تلخ این بود که ابزاری را معرفی کنم
 تا ما با وجود قطعی های متعدد اینترنت و قطع دسترسی ما از سرور های خارجی، کماکان
 در ارتباط نگهدارد و صدایمان را&amp;hellip;&lt;/p&gt;
 &lt;p&gt;اگر روزی دسترسی ما از اینترنت قطع شد، کاری که لازم است برای در ارتباط ماندن انجام بدهیم
 این است که یک سرویس ماتریکس داخلی راه اندازی کنیم.&lt;/p&gt;
-&lt;hr&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;hr&gt;</description></item></channel></rss>

@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Utf-8 چیست on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/utf-8-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <description>Recent content in Utf-8 چیست on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Mon, 11 Aug 2025 00:16:06 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/utf-8-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>فرق utf-8 با unicode چیه؟</title>
-        <link>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</link>
-        <pubDate>Mon, 11 Aug 2025 00:16:06 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/wtf-utf8.png" alt="Featured image of post فرق utf-8 با unicode چیه؟" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این پست&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Utf-8 چیست on bit-orbit</title><link>https://bit-orbit.github.io/tags/utf-8-%DA%86%DB%8C%D8%B3%D8%AA/</link><description>Recent content in Utf-8 چیست on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 11 Aug 2025 00:16:06 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/utf-8-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml"/><item><title>فرق utf-8 با unicode چیه؟</title><link>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</link><pubDate>Mon, 11 Aug 2025 00:16:06 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D9%81%D8%B1%D9%82-utf-8-%D8%A8%D8%A7-unicode-%DA%86%DB%8C%D9%87/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/wtf-utf8.png" alt="Featured image of post فرق utf-8 با unicode چیه؟" /&gt;&lt;p&gt;&lt;a class="link" href="https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/" target="_blank" rel="noopener"
+&gt;این پست&lt;/a&gt;
 که درباره فرق
 unicode
 و
@@ -21,7 +7,7 @@ utf-8
 بود خیلی مفید بنظرم رسید، برای همین خلاصه‌ای ازش رو اینجا می‌نویسم.&lt;/p&gt;
 &lt;p&gt;زمانی که
 ASCII
-معرفی شد کلا برای حروف انگلیسی ساخته شده بود، و البته یکسری از کاراکتر‌ها و  دستورات دیگه.
+معرفی شد کلا برای حروف انگلیسی ساخته شده بود، و البته یکسری از کاراکتر‌ها و دستورات دیگه.
 مثلا برای اسپیس کد 32 و مثلا برای حرف
 A
 از کد 65 داخلش استفاده میشد.
@@ -145,9 +131,4 @@ backward compatible
 از چند بایت استفاده می‌کنه:
 بایت اول یه &amp;ldquo;الگو&amp;rdquo; داره که نشون می‌ده این کاراکتر چند بایتیه، و بایت‌های بعدی با
 &lt;code&gt;10xxxxxx&lt;/code&gt;
-شروع می‌شن. اینطوری کامپیوتر می‌فهمه این یه کاراکتر چندبایتیه و چطوری باید رمزگشایی‌ش کنه.&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+شروع می‌شن. اینطوری کامپیوتر می‌فهمه این یه کاراکتر چندبایتیه و چطوری باید رمزگشایی‌ش کنه.&lt;/p&gt;</description></item></channel></rss>

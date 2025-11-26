@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Tty چیست on bit-orbit</title>
-        <link>https://bit-orbit.github.io/tags/tty-%DA%86%DB%8C%D8%B3%D8%AA/</link>
-        <description>Recent content in Tty چیست on bit-orbit</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>fa</language>
-        <lastBuildDate>Mon, 31 Jan 2022 19:57:05 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/tty-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title> در لینوکس چیست؟ TTY </title>
-        <link>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link>
-        <pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate>
-        
-        <guid>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid>
-        <description>&lt;img src="https://bit-orbit.github.io/images/post/tty.jpg" alt="Featured image of post  در لینوکس چیست؟ TTY " /&gt;&lt;div dir=&#39;rtl&#39; style=&#39;font-size:x-large&#39;&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tty چیست on bit-orbit</title><link>https://bit-orbit.github.io/tags/tty-%DA%86%DB%8C%D8%B3%D8%AA/</link><description>Recent content in Tty چیست on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Mon, 31 Jan 2022 19:57:05 +0330</lastBuildDate><atom:link href="https://bit-orbit.github.io/tags/tty-%DA%86%DB%8C%D8%B3%D8%AA/index.xml" rel="self" type="application/rss+xml"/><item><title> در لینوکس چیست؟ TTY</title><link>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</link><pubDate>Mon, 31 Jan 2022 19:57:05 +0330</pubDate><guid>https://bit-orbit.github.io/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/</guid><description>&lt;img src="https://bit-orbit.github.io/images/post/tty.jpg" alt="Featured image of post در لینوکس چیست؟ TTY " /&gt;&lt;div dir='rtl' style='font-size:x-large'&gt;
 &lt;p&gt;شما باید درباره اصطلاح
 tty
 زمانی که به لینوکس و یونیکس آمد، شنیده باشید. اما
@@ -28,7 +14,7 @@ tty
 input/output(ورودی/خروجی)
 در گذشته ربط دارد.&lt;/p&gt;
 &lt;p&gt;برای اینکه تصویری شفاف از آن داشته باشید باید کمی از تاریخ‌ش را بدانید.&lt;/p&gt;
-&lt;h3 id=&#34;تاریخ-پشت-اصطلاح-tty&#34;&gt;تاریخ پشت اصطلاح tty
+&lt;h3 id="تاریخ-پشت-اصطلاح-tty"&gt;تاریخ پشت اصطلاح tty
 &lt;/h3&gt;&lt;p&gt;همه چیز از یک
 &lt;em&gt;teleprinter&lt;/em&gt;
 در سال 1830 شروع شد.&lt;/p&gt;
@@ -37,7 +23,7 @@ input/output(ورودی/خروجی)
 teleprinter
 جایگزینی برای ارطبات مورس کد بود در آن دو اپراتور برای ارطبات با یکدیگر مود نیاز بود. اما در
 teleprinter
-فقط به یک اپراتور برای ارسال پیام نیاز داشت.  درحالی که
+فقط به یک اپراتور برای ارسال پیام نیاز داشت. درحالی که
 teleprinter
 یک صفحه کلید مدرن نداشت، بعد ها سیستم آن توسط
 Donald Murray
@@ -55,13 +41,8 @@ tty
 نام کوتاه شده
 teletypewrite
 است.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/teletypewrite.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/teletypewrite.jpg"
+loading="lazy"
 &gt;&lt;/p&gt;
 &lt;p&gt;تفاوت بین
 teletypewrite
@@ -75,7 +56,7 @@ teletypewriter
 و اینجا جایی است که
 tty
 بوجود آمد.&lt;/p&gt;
-&lt;h3 id=&#34;مفهوم-مدرن&#34;&gt;مفهوم مدرن
+&lt;h3 id="مفهوم-مدرن"&gt;مفهوم مدرن
 &lt;/h3&gt;&lt;p&gt;اکنون شما باید متعجب شده باشید که چطور
 tty
 به لینوکس و کامپیوتر مدرن آمده است.&lt;/p&gt;
@@ -85,31 +66,19 @@ teletypewriter
 میکروپروسسور(micro proccessor)
 هایی تبدیل شدند که کامپیوتر را ممکن می‌کرند.&lt;/p&gt;
 &lt;p&gt;کامپیوتر های اولیه مفهومی به اسم صفحه کلید نداشتند.
-&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Punched_card&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;کارت های پانج&lt;/a&gt;
+&lt;a class="link" href="https://en.wikipedia.org/wiki/Punched_card" target="_blank" rel="noopener"
+&gt;کارت های پانج&lt;/a&gt;
 روش ورودی دادن به کامپیوتر ها بود&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/punch-card.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;card-punch&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/punch-card.jpg"
+loading="lazy"
+alt="card-punch"
 &gt;&lt;/p&gt;
 &lt;p&gt;درحالی که کامپیوتر ها توسعه پیدا می‌کردند، بالاخره کارت های پانچ با
 teletypewriter
 به عنوان دستگاه &lt;em&gt;&lt;strong&gt;&lt;u&gt;ورودی/خروجی&lt;/u&gt;&lt;/strong&gt;&lt;/em&gt; مناسب جایگزین شد.    &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/pc-tty.jpg&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;LGP-30 computer in 1956 with a TTY attached to it&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/pc-tty.jpg"
+loading="lazy"
+alt="LGP-30 computer in 1956 with a TTY attached to it"
 &gt;&lt;/p&gt;
 &lt;p&gt;با توسعه تکنولوژی
 teletypewriter
@@ -133,16 +102,16 @@ tty
 terminal emulator
 می‌نامید.&lt;/p&gt;
 &lt;p&gt;برای نمونه ترمینال
-&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/GNOME_Terminal&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;گنوم
+&lt;a class="link" href="https://en.wikipedia.org/wiki/GNOME_Terminal" target="_blank" rel="noopener"
+&gt;گنوم
 (Gnome)&lt;/a&gt;
 یا
-&lt;a class=&#34;link&#34; href=&#34;https://konsole.kde.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;کنسول
+&lt;a class="link" href="https://konsole.kde.org/" target="_blank" rel="noopener"
+&gt;کنسول
 (Konsole)&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://itsfoss.com/linux-terminal-emulators/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;چنتا از بهترین ترمینال هایی هستند که می‌توانید برای لینوکس پیدا کنید.&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;بسیارخب-tty-در-لینوکس-چیست&#34;&gt;بسیارخب tty در لینوکس چیست؟
+&lt;a class="link" href="https://itsfoss.com/linux-terminal-emulators/" target="_blank" rel="noopener"
+&gt;چنتا از بهترین ترمینال هایی هستند که می‌توانید برای لینوکس پیدا کنید.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="بسیارخب-tty-در-لینوکس-چیست"&gt;بسیارخب tty در لینوکس چیست؟
 &lt;/h3&gt;&lt;p&gt;زمانی که
 tty
 به لینوکس و یونیکس آمد، یک دستگاه مستقل در یونیکس و لینوکس بود گاهی
@@ -174,16 +143,10 @@ tty
 را در ترمینال تایپ کنید و
 pty
 مرتبط را پیدا کنید.&lt;/p&gt;
-&lt;h3 id=&#34;چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم&#34;&gt;چگونه به tty در لینوکس دسترسی داشته باشیم؟
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/ubuntu-tty.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tty-in-ubuntu&#34;
-	
-	
+&lt;h3 id="چگونه-به-tty-در-لینوکس-دسترسی-داشته-باشیم"&gt;چگونه به tty در لینوکس دسترسی داشته باشیم؟
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty.png"
+loading="lazy"
+alt="tty-in-ubuntu"
 &gt;&lt;/p&gt;
 &lt;p&gt;دسترسی به
 tty
@@ -205,20 +168,14 @@ tty
 tty
 دسترسی داشته باشید، با این حال دو تا از اولین کلید های میانبر به صفحه قفل
 و محیط دسکتاپ اشاره دارد.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/ubuntu-tty4.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;cmd-with-tty&#34;
-	
-	
+&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/ubuntu-tty4.png"
+loading="lazy"
+alt="cmd-with-tty"
 &gt;&lt;/p&gt;
 &lt;p&gt;بنابر این، با باقی کلید های میانبر شما به محیط
 command-line
 دسترسی می‌گیرید.&lt;/p&gt;
-&lt;h3 id=&#34;چه-زمانی-شما-از-tty-در-لینوکس-استفاده-خواهید-کرد&#34;&gt;چه زمانی شما از tty در لینوکس استفاده خواهید کرد؟
+&lt;h3 id="چه-زمانی-شما-از-tty-در-لینوکس-استفاده-خواهید-کرد"&gt;چه زمانی شما از tty در لینوکس استفاده خواهید کرد؟
 &lt;/h3&gt;&lt;p&gt;tty
 فقط یک گنج تکنیکی نیست. حتی برای کاربرانی مثل من که توسعه دهنده هم نیستند مفید است.&lt;/p&gt;
 &lt;p&gt;زمانی که محیط گرافیکی فریز می‌شود باید به کار بیاید. در بعضی از مواقع
@@ -236,16 +193,10 @@ tty
 &lt;p&gt;بعضی از کاربران ترجیح می‌دهند که فایل های بزرگ را با
 tty
 منتقل کنند(من از آنها نیستم)&lt;/p&gt;
-&lt;h3 id=&#34;tty-به-عنوان-یک-دستور-در-لینوکس&#34;&gt;tty به عنوان یک دستور در لینوکس
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://bit-orbit.github.io/images/post/tty-cmd.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;tty-cmd&#34;
-	
-	
+&lt;h3 id="tty-به-عنوان-یک-دستور-در-لینوکس"&gt;tty به عنوان یک دستور در لینوکس
+&lt;/h3&gt;&lt;p&gt;&lt;img src="https://bit-orbit.github.io/images/post/tty-cmd.png"
+loading="lazy"
+alt="tty-cmd"
 &gt;&lt;/p&gt;
 &lt;p&gt;همانطور که در صفحه راهنمای
 (man page)
@@ -262,17 +213,13 @@ tty
 چه متصل هستند از کامند
 &lt;code&gt;who&lt;/code&gt;
 استفاده کنید.&lt;/p&gt;
-&lt;h3 id=&#34;خارج-از-ترجمه&#34;&gt;خارج از ترجمه
+&lt;h3 id="خارج-از-ترجمه"&gt;خارج از ترجمه
 &lt;/h3&gt;&lt;p&gt;متن ترجمه شده بود و خب من یک مترجم تخصصی نیستم، من یک برنامه نویسم که بلاگ نویسی
 و ترجمه رو هم دوست دارم، سعی کردم به بهترین نحو متن را ترجمه کنم
 و در اختیار بقیه بذارم، اگر حس کردین جایی از متن مشکلی داره، خیلی خوشحال می‌شوم
 که مشکلم رو بهم بیگید، این کمک بزرگیه.&lt;/p&gt;
 &lt;p&gt;متن اصلی رو می‌توانید از
-&lt;a class=&#34;link&#34; href=&#34;https://itsfoss.com/what-is-tty-in-linux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;این لینک&lt;/a&gt;
+&lt;a class="link" href="https://itsfoss.com/what-is-tty-in-linux/" target="_blank" rel="noopener"
+&gt;این لینک&lt;/a&gt;
 بخوانید.&lt;/p&gt;
-&lt;/div&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+&lt;/div&gt;</description></item></channel></rss>

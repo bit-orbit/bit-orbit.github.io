@@ -1,383 +1,16 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می\u200cکنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می\u200cدهد.">
-<title>etc/resolve.conf/</title>
-
-<link rel='canonical' href='https://bit-orbit.github.io/p/etc/resolve.conf/'>
-
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="etc/resolve.conf/">
-<meta property='og:description' content="در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می\u200cکنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می\u200cدهد.">
-<meta property='og:url' content='https://bit-orbit.github.io/p/etc/resolve.conf/'>
-<meta property='og:site_name' content='bit-orbit'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='DNS در لینوکس' /><meta property='article:tag' content='/etc/resolve.conf' /><meta property='article:tag' content='/etc/systemd/resolved.conf' /><meta property='article:tag' content='کانفیگ کردن DNS در لینوکس' /><meta property='article:tag' content='arya shabane' /><meta property='article:tag' content='m_shabane' /><meta property='article:published_time' content='2024-08-01T03:03:46&#43;03:30'/><meta property='article:modified_time' content='2024-08-01T03:03:46&#43;03:30'/><meta property='og:image' content='https://bit-orbit.github.io/images/post/OIG4.jpeg' />
-<meta name="twitter:title" content="etc/resolve.conf/">
-<meta name="twitter:description" content="در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می\u200cکنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می\u200cدهد."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://bit-orbit.github.io/images/post/OIG4.jpeg' />
-    <link rel="shortcut icon" href="/favico.ico" />
-
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="منو">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_81b80a29838d792.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-                    <span class="emoji">👾</span>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">bit-orbit</a></h1>
-            <h2 class="site-description">Linux | Code | Book | Movie | Fun | Code | Uf1595</h2>
-        </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/shabane'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://twitter.com/m_shabane'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-                    
-                        <li id="i18n-switch">  
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
-                                
-                                    <option value="https://bit-orbit.github.io/en/" >English</option>
-                                
-                                    <option value="https://bit-orbit.github.io/" selected>فارسی</option>
-                                
-                            </select>
-                        </li>
-                    
-                
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>حالت شب</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">فهرست</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li>
-      <ol>
-        <li><a href="#مقدمه">مقدمه</a></li>
-        <li><a href="#دستورات">دستورات</a></li>
-        <li><a href="#سرویس-systemd-resolve">سرویس systemd-resolve</a></li>
-        <li><a href="#مثال">مثال</a></li>
-        <li><a href="#سخنی-با-شما">سخنی با شما</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
-            <main class="main full-width">
-    <article class="has-image main-article">
-    <header class="article-header">
-        <div class="article-image">
-            <a href="/p/etc/resolve.conf/">
-                
-                    <img src="/images/post/OIG4.jpeg" loading="lazy" alt="Featured image of post etc/resolve.conf/" />
-                
-            </a>
-        </div>
-    
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/linux/" >
-                Linux
-            </a>
-        
-            <a href="/categories/network/" >
-                Network
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/etc/resolve.conf/">etc/resolve.conf/</a>
-        </h2>
-    
-        
-        <h3 class="article-subtitle">
-            در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می‌کنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می‌دهد.
-        </h3>
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">اوت 01, 2024</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    مطالعه در 5 دقیقه
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-
-    <section class="article-content">
-    
-    
-    <span style='font-size: 25px'>
-<h3 id="مقدمه">مقدمه
-</h3><p>همیشه موقع ویرایش فایل
+<!doctype html><html lang=fa dir=rtl><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می\u200cکنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می\u200cدهد."><title>etc/resolve.conf/</title><link rel=canonical href=https://bit-orbit.github.io/p/etc/resolve.conf/><link rel=stylesheet href=/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css><meta property='og:title' content="etc/resolve.conf/"><meta property='og:description' content="در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می\u200cکنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می\u200cدهد."><meta property='og:url' content='https://bit-orbit.github.io/p/etc/resolve.conf/'><meta property='og:site_name' content='bit-orbit'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='DNS در لینوکس'><meta property='article:tag' content='/etc/resolve.conf'><meta property='article:tag' content='/etc/systemd/resolved.conf'><meta property='article:tag' content='کانفیگ کردن DNS در لینوکس'><meta property='article:tag' content='arya shabane'><meta property='article:tag' content='m_shabane'><meta property='article:published_time' content='2024-08-01T03:03:46+03:30'><meta property='article:modified_time' content='2024-08-01T03:03:46+03:30'><meta property='og:image' content='https://bit-orbit.github.io/images/post/OIG4.jpeg'><meta name=twitter:title content="etc/resolve.conf/"><meta name=twitter:description content="در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می\u200cکنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می\u200cدهد."><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://bit-orbit.github.io/images/post/OIG4.jpeg'><link rel="shortcut icon" href=/favico.ico></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=منو>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu_81b80a29838d792.png width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>👾</span></figure><div class=site-meta><h1 class=site-name><a href=/>bit-orbit</a></h1><h2 class=site-description>DevOps | Linux | Code | Book | Movie | Fun | Python | Go | Js | U1f595</h2></div></header><ol class=menu-social><li><a href=https://github.com/shabane target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://twitter.com/m_shabane target=_blank title=Twitter rel=me><svg class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/about/><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+<span>About</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/links/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><li class=menu-bottom-section><ol class=menu><li id=i18n-switch><svg class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language title=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://bit-orbit.github.io/en/>English</option><option value=https://bit-orbit.github.io/ selected>فارسی</option></select></li><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>حالت شب</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">فهرست</h2><div class=widget--toc><nav id=TableOfContents><ol><li><ol><li><a href=#مقدمه>مقدمه</a></li><li><a href=#دستورات>دستورات</a></li><li><a href=#سرویس-systemd-resolve>سرویس systemd-resolve</a></li><li><a href=#مثال>مثال</a></li><li><a href=#سخنی-با-شما>سخنی با شما</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/etc/resolve.conf/><img src=/images/post/OIG4.jpeg loading=lazy alt="Featured image of post etc/resolve.conf/"></a></div><div class=article-details><header class=article-category><a href=/categories/linux/>Linux
+</a><a href=/categories/network/>Network</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/etc/resolve.conf/>etc/resolve.conf/</a></h2><h3 class=article-subtitle>در لینوکس کوئری های DNS مسیر خاص خودشون رو سفر می‌کنند تا به جواب برسند. این پست حداقل این مسیر را در یک سیستم توضیح می‌دهد.</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>اوت 01, 2024</time></div><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>مطالعه در 5 دقیقه</time></div></footer></div></header><section class=article-content><span style=font-size:25px><h3 id=مقدمه>مقدمه</h3><p>همیشه موقع ویرایش فایل
 <em>resolve.conf</em>
 برام سوال بود که گزین های دیگه‌ای که توی این فایل تنظیم شده‌اند چکاری انجام می‌دهند.
 درواقع من همیشه دستور
@@ -386,10 +19,7 @@
 <em>dns</em>
 ویرایش می‌کردم. اما دستور هایی دیگه‌ای هم برای این فایل وجود دارد که لیست آنها در
 <code>man resolve.conf</code>
-توضیح داده شده است.</p>
-<p>توی این پست من بعضی از دستورات این فایل را توضیح می‌دم.</p>
-<blockquote>
-<p>در مرحله اول یادتون باشه لینوکس هایی که
+توضیح داده شده است.</p><p>توی این پست من بعضی از دستورات این فایل را توضیح می‌دم.</p><blockquote><p>در مرحله اول یادتون باشه لینوکس هایی که
 systemd
 دارند، معمولا از سرویس
 systemd-resolved
@@ -399,46 +29,27 @@ DNS
 resolve
 می‌کند و سپس آنها را کش می‌کند که یک دامنه را چندین بار
 resolve
-نکند.</p></blockquote>
-<blockquote>
-<p>یک دامنه حد اقل از <em>دو</em> بخش تشکیل می‌شود.</p>
-<ol>
-<li>TLD</li>
-<li>Domain</li>
-</ol></blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">bin.example.com        
-</span></span><span class="line"><span class="cl">│     │     │         
-</span></span><span class="line"><span class="cl">│     │     └─► TDL(Top Level Domain) 
-</span></span><span class="line"><span class="cl">│     │               
-</span></span><span class="line"><span class="cl">│     └───────► Domain
-</span></span><span class="line"><span class="cl">│                                        
-</span></span><span class="line"><span class="cl">└─────────────► SubDomain
-</span></span><span class="line"><span class="cl">                                                 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h3 id="دستورات">دستورات
-</h3><ul>
-<li>
-<p>1 <code>nameserver</code></p>
-<p>این دستور برای تعیین
+نکند.</p></blockquote><blockquote><p>یک دامنه حد اقل از <em>دو</em> بخش تشکیل می‌شود.</p><ol><li>TLD</li><li>Domain</li></ol></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-txt data-lang=txt><span class=line><span class=cl>bin.example.com        
+</span></span><span class=line><span class=cl>│     │     │         
+</span></span><span class=line><span class=cl>│     │     └─► TDL(Top Level Domain) 
+</span></span><span class=line><span class=cl>│     │               
+</span></span><span class=line><span class=cl>│     └───────► Domain
+</span></span><span class=line><span class=cl>│                                        
+</span></span><span class=line><span class=cl>└─────────────► SubDomain
+</span></span><span class=line><span class=cl>                                                 
+</span></span></code></pre></td></tr></table></div></div><hr><h3 id=دستورات>دستورات</h3><ul><li><p>1 <code>nameserver</code></p><p>این دستور برای تعیین
 IP
 یک سرور
 DNS
-استفاده می‌شود.(در واقع اینجا منظورم یک سرویسی است که به نامه دامنه ها پاسخ دهد که به آن NS می‌گویم.)</p>
-<p>شما می‌توانید تا حداقل سه
+استفاده می‌شود.(در واقع اینجا منظورم یک سرویسی است که به نامه دامنه ها پاسخ دهد که به آن NS می‌گویم.)</p><p>شما می‌توانید تا حداقل سه
 IP
 لیست کنید، و
 resolver
@@ -447,36 +58,15 @@ resolver
 NS
 جواب گو نباشد، از دیگر
 NS
-های لیست شده استفاده خواهد شد.</p>
-<p>اگر به همین ترتیب هر یک از
+های لیست شده استفاده خواهد شد.</p><p>اگر به همین ترتیب هر یک از
 NS
-ها جوابگو نباشد، کوئری ها از اول شروع می‌شود تا به حداکثر تعداد کوئری تعیین شده برسد.</p>
-<p>برای مثال من می‌توانم چند
+ها جوابگو نباشد، کوئری ها از اول شروع می‌شود تا به حداکثر تعداد کوئری تعیین شده برسد.</p><p>برای مثال من می‌توانم چند
 NS
-مختلف را برای خودم تعیین کنم.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">nameserver 1.1.1.1
-</span></span><span class="line"><span class="cl">nameserver 8.8.8.8
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>2 <code>options</code></p>
-<p>برای این دستور متغیر های مختلفی را می‌توان تعیین کرد.</p>
-<ul>
-<li>
-<p>2.1 <code>ndots</code></p>
-<ul>
-<li>
-<p>حداقل هر دامنه‌ای در سطح اینترنت یک نقطه دارد، برای مثال
+مختلف را برای خودم تعیین کنم.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-txt data-lang=txt><span class=line><span class=cl>nameserver 1.1.1.1
+</span></span><span class=line><span class=cl>nameserver 8.8.8.8
+</span></span></code></pre></td></tr></table></div></div></li></ul><hr><ul><li><p>2 <code>options</code></p><p>برای این دستور متغیر های مختلفی را می‌توان تعیین کرد.</p><ul><li><p>2.1 <code>ndots</code></p><ul><li><p>حداقل هر دامنه‌ای در سطح اینترنت یک نقطه دارد، برای مثال
 google.com
 یک نقطه دارد.
 شما می‌توانید با این متغیر تعین کنید که دامنه‌های در سطح اینترنت
@@ -494,21 +84,13 @@ google.com
 شما
 <code>arya</code>
 باشد، دامنه به این شکل کوئری زده خواهد شد
-<code>google.com.arya</code></p>
-<p>در صورتی که شما برای جست و جوی یک دامنه از هیچ
+<code>google.com.arya</code></p><p>در صورتی که شما برای جست و جوی یک دامنه از هیچ
 <strong>TLD</strong>
 استفاده نکید، از
 <code>hostname</code>
 و یا از مقداری که برای
 <code>search</code>
-مشخص کرده‌اید استفاده خواهد شد.</p>
-</li>
-</ul>
-</li>
-<li>
-<p>2.2 <code>timeout</code></p>
-<ul>
-<li>این متغیر تعیین می‌کند که
+مشخص کرده‌اید استفاده خواهد شد.</p></li></ul></li><li><p>2.2 <code>timeout</code></p><ul><li>این متغیر تعیین می‌کند که
 resolver
 چه مقدار زمانی باید منتظر جواب از سمت
 NS
@@ -516,19 +98,11 @@ NS
 NS
 جواب نداد، از
 NS
-های بعدی سوال کند.</li>
-</ul>
-</li>
-<li>
-<p>2.3 <code>attempts</code></p>
-<ul>
-<li>این متغیر تعین می‌کند که
+های بعدی سوال کند.</li></ul></li><li><p>2.3 <code>attempts</code></p><ul><li>این متغیر تعین می‌کند که
 resolver
 در صورت جواب ندادن توسط
 NS
-باید در نهایت چند کوئری دیگر ارسال کند.</li>
-</ul>
-<p>برای مثال اگر اولین
+باید در نهایت چند کوئری دیگر ارسال کند.</li></ul><p>برای مثال اگر اولین
 NS
 پاسخ نداد، سوال از
 NS
@@ -539,12 +113,7 @@ attempts
 attempts
 مجوع سوال ها از همه
 NS
-ها است.)</p>
-</li>
-<li>
-<p>2.4 <code>rotate</code></p>
-<ul>
-<li>به صورت پیشفرض کوئری های
+ها است.)</p></li><li><p>2.4 <code>rotate</code></p><ul><li>به صورت پیشفرض کوئری های
 DNS
 همه برای اولین
 NS
@@ -555,15 +124,7 @@ NS
 ها تقسیم کنیم، کافیست از این متغیر استفاده کنیم.
 اینکار باعث می‌شود که هر کوئری ها به صورت چرخشی به ترتیب به
 NS
-های لیست شده ارسال شود.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>3 <code>search</code>
+های لیست شده ارسال شود.</li></ul></li></ul></li></ul><hr><ul><li>3 <code>search</code>
 همانطور که در مثال بالا گفتم، ما نام دامنه ها را تنظیم می‌کنیم که حداقل وقتی یک نقطه دارند،
 resolver
 آنها را دامنه‌ در سطح اینترنت در نظر بگیرد و به
@@ -577,28 +138,17 @@ NS
 تلقی خواهد شد.
 اما اگر می‌خواهید قبل از اضافه شدن
 <code>hostname</code>
-به آن چیز دیگری اضافه کنید، کافیست متغیر سرچ را تعریف کنید و یک یا چند مقدار برای آن تعیین کنید.</li>
-</ul>
-<hr>
-<h3 id="سرویس-systemd-resolve">سرویس systemd-resolve
-</h3><p>اگر به فایل
+به آن چیز دیگری اضافه کنید، کافیست متغیر سرچ را تعریف کنید و یک یا چند مقدار برای آن تعیین کنید.</li></ul><hr><h3 id=سرویس-systemd-resolve>سرویس systemd-resolve</h3><p>اگر به فایل
 /etc/resolve.conf
 نگاه کنید، می‌بینید که یک
 ns
 برای شما تنظیم شده است که
 IP
-آن داخلی است.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl"># cat /etc/resolve.conf
-</span></span><span class="line"><span class="cl">nameserver 127.0.0.53
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>همانطور که توی نکته‌ای در مقدمه این پست گفتم،
+آن داخلی است.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-txt data-lang=txt><span class=line><span class=cl># cat /etc/resolve.conf
+</span></span><span class=line><span class=cl>nameserver 127.0.0.53
+</span></span></code></pre></td></tr></table></div></div><p>همانطور که توی نکته‌ای در مقدمه این پست گفتم،
 سیستم عاملی هایی که از
 systemd
 استفاده می‌کنند معمولا سرویس
@@ -610,305 +160,65 @@ IP
 127.0.0.53
 و
 127.0.0.54
-شنود می‌کند.</p>
-<p>این سرویس خودش یک کانفیگ در
+شنود می‌کند.</p><p>این سرویس خودش یک کانفیگ در
 <code>etc/ststemd/resolved.conf/</code>
-دارد.</p>
-<p>اگر داخل این فایل را نگاه کنیم، می‌بنیم که در قسمت
+دارد.</p><p>اگر داخل این فایل را نگاه کنیم، می‌بنیم که در قسمت
 ‌DNS
 می‌توان
 NS
 های بالاتر را وارد کرد، اینکار باعث می‌شود که سیستم شما وقتی یک دامنه را
 در حافظه کش خود نداشت، از
 NS
-های بالاتر که در این فایل تنظیم شده است سوال کند.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[Resolve]
-</span></span><span class="line"><span class="cl">DNS=1.1.1.1 8.8.8.8
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>ابته تاکید کنم در صورتی از این
+های بالاتر که در این فایل تنظیم شده است سوال کند.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-txt data-lang=txt><span class=line><span class=cl>[Resolve]
+</span></span><span class=line><span class=cl>DNS=1.1.1.1 8.8.8.8
+</span></span></code></pre></td></tr></table></div></div><p>ابته تاکید کنم در صورتی از این
 NS
 ها استفاده می‌شود که شما
 ‌از 127.0.0.53 و 127.0.0.54 در کانفیگ
 /etc/resolve.conf
-استفاده کرده باشید.</p>
-<blockquote>
-<p>تفاوت 127.0.0.54 این است که هر کوئری را مستقیم به
+استفاده کرده باشید.</p><blockquote><p>تفاوت 127.0.0.54 این است که هر کوئری را مستقیم به
 NS
 بالاتر ارسال خواهد کرد و از دیتای کش شده استفاده نمی‌کند.
-ولی 127.0.0.53 از قابلیت کش استفاده می‌کند.</p></blockquote>
-<hr>
-<h3 id="مثال">مثال
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nameserver 1.1.1.1
-</span></span><span class="line"><span class="cl">nameserver 8.8.8.8
-</span></span><span class="line"><span class="cl">nameserver 9.9.9.9
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">options ndots:1
-</span></span><span class="line"><span class="cl">options timeout:2
-</span></span><span class="line"><span class="cl">options attempts:3
-</span></span><span class="line"><span class="cl">options rotate
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">search server1 server2
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h3 id="سخنی-با-شما">سخنی با شما
-</h3><p>این را بگم که
+ولی 127.0.0.53 از قابلیت کش استفاده می‌کند.</p></blockquote><hr><h3 id=مثال>مثال</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>nameserver 1.1.1.1
+</span></span><span class=line><span class=cl>nameserver 8.8.8.8
+</span></span><span class=line><span class=cl>nameserver 9.9.9.9
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>options ndots:1
+</span></span><span class=line><span class=cl>options timeout:2
+</span></span><span class=line><span class=cl>options attempts:3
+</span></span><span class=line><span class=cl>options rotate
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>search server1 server2
+</span></span></code></pre></td></tr></table></div></div><hr><h3 id=سخنی-با-شما>سخنی با شما</h3><p>این را بگم که
 DNS
 به صورت
 recursive(بازگشتی)
 عمل می‌کنه، این یعنی وقتی شما یک کوئری ارسال می‌کنید،
 این کوئری هر بار به یک سرور بالاتر ارسال می‌شود
 تا در نهایت به جواب برسه. و خب این موضوع خودش در نهایت یک جریان
-خیلی جالب داره که امیدوارم یک روز اون رو هم بنویسم :)</p>
-</span>
-</section>
-
-
-    <footer class="article-footer">
-    
-    <section class="article-tags">
-        
-            <a href="/tags/dns-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/">DNS در لینوکس</a>
-        
-            <a href="/tags/etc/resolve.conf/">/Etc/Resolve.conf</a>
-        
-            <a href="/tags/etc/systemd/resolved.conf/">/Etc/Systemd/Resolved.conf</a>
-        
-            <a href="/tags/%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF-%DA%A9%D8%B1%D8%AF%D9%86-dns-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/">کانفیگ کردن DNS در لینوکس</a>
-        
-            <a href="/tags/arya-shabane/">Arya Shabane</a>
-        
-            <a href="/tags/m_shabane/">M_shabane</a>
-        
-    </section>
-
-
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
-</svg>
-
-
-
-        <span>Licensed under CC BY-NC-SA 4.0</span>
-    </section>
-    </footer>
-
-
-    
-</article>
-
-    
-
-    
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">مطالب مرتبط</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/images/post/fork_bomb.jpg" loading="lazy" data-key="" data-hash="/images/post/fork_bomb.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">فورک بمب چیست و چطور کار می‌کند؟</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/images/post/flilock.jpeg" loading="lazy" data-key="" data-hash="/images/post/flilock.jpeg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Linux File Locking چیست؟</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/">
-        
-        
-            <div class="article-image">
-                
-                    <img src="/images/post/tty.jpg" loading="lazy" data-key="" data-hash="/images/post/tty.jpg"/>
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title"> در لینوکس چیست؟ TTY </h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
-    </div>
-</aside>
-
-     
-    
-        
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2025 bit-orbit
-    </section>
-    
-    <section class="powerby">
-        قدرت گرفته از <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        قالب <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> ساخته شده توسط <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
-</footer>
-
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
-</html>
+خیلی جالب داره که امیدوارم یک روز اون رو هم بنویسم :)</p></span></section><footer class=article-footer><section class=article-tags><a href=/tags/dns-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/>DNS در لینوکس</a>
+<a href=/tags/etc/resolve.conf/>/Etc/Resolve.conf</a>
+<a href=/tags/etc/systemd/resolved.conf/>/Etc/Systemd/Resolved.conf</a>
+<a href=/tags/%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF-%DA%A9%D8%B1%D8%AF%D9%86-dns-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/>کانفیگ کردن DNS در لینوکس</a>
+<a href=/tags/arya-shabane/>Arya Shabane</a>
+<a href=/tags/m_shabane/>M_shabane</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>مطالب مرتبط</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/%D9%81%D9%88%D8%B1%DA%A9-%D8%A8%D9%85%D8%A8-%DA%86%DB%8C%D8%B3%D8%AA-%D9%88-%DA%86%D8%B7%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1-%D9%85%DB%8C%DA%A9%D9%86%D8%AF/><div class=article-image><img src=/images/post/fork_bomb.jpg loading=lazy data-key data-hash=/images/post/fork_bomb.jpg></div><div class=article-details><h2 class=article-title>فورک بمب چیست و چطور کار می‌کند؟</h2></div></a></article><article class=has-image><a href=/p/linux-file-locking-%DA%86%DB%8C%D8%B3%D8%AA/><div class=article-image><img src=/images/post/flilock.jpeg loading=lazy data-key data-hash=/images/post/flilock.jpeg></div><div class=article-details><h2 class=article-title>Linux File Locking چیست؟</h2></div></a></article><article class=has-image><a href=/p/%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%DA%86%DB%8C%D8%B3%D8%AA-tty/><div class=article-image><img src=/images/post/tty.jpg loading=lazy data-key data-hash=/images/post/tty.jpg></div><div class=article-details><h2 class=article-title>در لینوکس چیست؟ TTY</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2025 bit-orbit</section><section class=powerby>قدرت گرفته از <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>قالب <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.27.0>Stack</a></b> ساخته شده توسط <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
