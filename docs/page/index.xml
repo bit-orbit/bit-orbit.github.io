@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on bit-orbit</title><link>https://bit-orbit.github.io/page/</link><description>Recent content in Pages on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://bit-orbit.github.io/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/archives/</guid><description/></item><item><title>About</title><link>https://bit-orbit.github.io/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/about/</guid><description>&lt;p&gt;من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on bit-orbit</title><link>https://bit-orbit.github.io/page/</link><description>Recent content in Pages on bit-orbit</description><generator>Hugo -- gohugo.io</generator><language>fa</language><lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://bit-orbit.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>CV</title><link>https://bit-orbit.github.io/cv/</link><pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/cv/</guid><description>&lt;div dir='ltr'&gt;
+&lt;h1 id="arya-shabaneh"&gt;Arya Shabaneh
+&lt;/h1&gt;&lt;h2 id="contact-information"&gt;Contact Information
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a class="link" href="mailto:m.mohamadshabane@gmail.com" &gt;m.mohamadshabane@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a class="link" href="https://github.com/shabane" target="_blank" rel="noopener"
+&gt;github.com/shabane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a class="link" href="https://www.linkedin.com/in/m-shabane/" target="_blank" rel="noopener"
+&gt;https://www.linkedin.com/in/m-shabane/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blog:&lt;/strong&gt; &lt;a class="link" href="https://wiregeek.ir/" target="_blank" rel="noopener"
+&gt;WireGeek&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="professional-summary"&gt;Professional Summary
+&lt;/h2&gt;&lt;p&gt;DevOps Engineer and Backend Systems Developer with over 1.5 years of experience in managing Linux infrastructure and implementing CI/CD pipelines. Proficient in &lt;strong&gt;Python&lt;/strong&gt; and the &lt;strong&gt;Django&lt;/strong&gt; framework,
+with working knowledge of &lt;strong&gt;Go&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;. Possessing deep experience in containerization tools (Docker/Swarm), monitoring (Prometheus/Grafana),
+and &lt;strong&gt;networking concepts&lt;/strong&gt;. Focused on achieving High Availability (HA) for critical services like databases (Patroni/PostgreSQL) and nginx with Keepalived.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="technical-skills"&gt;Technical Skills
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;Category&lt;/th&gt;
+&lt;th style="text-align: left"&gt;Skills&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Languages &amp;amp; Frameworks&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Python&lt;/strong&gt; (Django), &lt;strong&gt;Go&lt;/strong&gt; (Gin), JavaScript, Bash Scriptin&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;DevOps &amp;amp; Infrastructure&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Linux Administration&lt;/strong&gt; (Deep Knowledge), Git, &lt;strong&gt;Docker&lt;/strong&gt;, Docker Swarm, Nginx, Keepalived, Gitlab(CI/CD), Ansible&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Database &amp;amp; Caching&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; (Configuration, HA), Redis (Configuration), Nexus, Etcd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Monitoring &amp;amp; Logging&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Prometheus&lt;/strong&gt; (Configuration), &lt;strong&gt;Grafana&lt;/strong&gt; (Dashboarding)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Networking &amp;amp; Concepts&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;understanding of TCP/IP, DNS, Network Troubleshooting, and basic security concepts.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;strong&gt;Currently Learning&lt;/strong&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;Kubernetes, System Desing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="professional-experience"&gt;Professional Experience
+&lt;/h2&gt;&lt;h3 id="devops-engineer"&gt;DevOps Engineer
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Company:&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;[Maaher TSP]&lt;/code&gt;&lt;/strong&gt;
+&lt;strong&gt;Dates:&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;Present&lt;/code&gt;&lt;/strong&gt; (Approx. 1.5 years of experience)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Designed and managed infrastructure based on &lt;strong&gt;Linux&lt;/strong&gt; operating systems for both Staging and Production environments.&lt;/li&gt;
+&lt;li&gt;Implemented and maintained containerization tools (&lt;strong&gt;Docker&lt;/strong&gt; and &lt;strong&gt;Docker Swarm&lt;/strong&gt;) to ensure consistent development and deployment environments.&lt;/li&gt;
+&lt;li&gt;Configured and deployed High Availability (HA) systems for &lt;strong&gt;PostgreSQL&lt;/strong&gt;, &lt;strong&gt;Nginx&lt;/strong&gt;, &lt;strong&gt;MySql&lt;/strong&gt;, &lt;strong&gt;API Services&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Monitored system and infrastructure performance using &lt;strong&gt;Prometheus&lt;/strong&gt; and built visual dashboards in &lt;strong&gt;Grafana&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="django-developer"&gt;Django Developer
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Company:&lt;/strong&gt; &lt;strong&gt;&lt;code&gt;[Dade Pardaz Tadbir Farda]&lt;/code&gt;&lt;/strong&gt;
+&lt;strong&gt;Dates:&lt;/strong&gt; (Approx. 1 years of experience)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed and maintained backend application features using the &lt;strong&gt;Django&lt;/strong&gt; framework and &lt;strong&gt;Python&lt;/strong&gt; language.&lt;/li&gt;
+&lt;li&gt;Collaborated with the frontend team using &lt;strong&gt;Vue.js&lt;/strong&gt; components to integrate APIs.&lt;/li&gt;
+&lt;li&gt;Collaborated closely with the frontend team to provide RESTful APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="personal-projects-open-source--blog-content"&gt;Personal Projects (Open Source &amp;amp; Blog Content)
+&lt;/h2&gt;&lt;p&gt;Personal projects demonstrate hands-on experience in DevOps, Automation, and Systems Development.&lt;/p&gt;
+&lt;h3 id="1-kamaji"&gt;1. Kamaji
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; Python, Network Testing, Automation, Docker&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; An advanced automation tool for scraping, testing, and aggregating VPN configurations (Shadowsocks, Vmess, Vless, Trojan) from public channels, ensuring high reliability for end-users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="link" href="https://github.com/shabane/kamaji" target="_blank" rel="noopener"
+&gt;https://github.com/shabane/kamaji&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-crul-paste"&gt;2. Crul Paste
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; Python, Terminal, File-Sharing Concept&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; A custom Terminal-based FileBin utility, simplifying file-sharing for developers and system administrators.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="link" href="https://wiregeek.ir/crul-paste/" target="_blank" rel="noopener"
+&gt;https://wiregeek.ir/crul-paste/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-radio"&gt;3. Radio
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; Vue, JavaScript, Web App&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; A server-less web application for online radio streaming that uses repository sources for its feed. Demonstrates working knowledge of frontend frameworks and Github.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="link" href="https://github.com/shabane/radio" target="_blank" rel="noopener"
+&gt;https://github.com/shabane/radio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="4-commodore"&gt;4. Commodore
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; &lt;strong&gt;A configuration-based Telegram bot utility.&lt;/strong&gt; Allows users to define bot commands and corresponding response messages simply by editing a YAML file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="link" href="https://github.com/shabane/commodore" target="_blank" rel="noopener"
+&gt;https://github.com/shabane/commodore&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="5-percival"&gt;5. Percival
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; &lt;strong&gt;Express.js (Node.js), Vue.js, JavaScript, Full-Stack Web App&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; A simple web application designed for sharing of files, texts, and links between users using a unique username or QR code for identification.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="link" href="https://github.com/shabane/percival" target="_blank" rel="noopener"
+&gt;https://github.com/shabane/percival&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="6-the-secret-bit-bit-orbitthe-secret-bit"&gt;6. The Secret Bit (bit-orbit/the-secret-bit)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; Linux, Documentation, Open Source&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; A community-driven, open-source Persian book focused on advanced Linux concepts and system administration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link:&lt;/strong&gt; &lt;a class="link" href="https://github.com/shabane/the-secret-bit" target="_blank" rel="noopener"
+&gt;https://github.com/shabane/the-secret-bit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="education"&gt;Education
+&lt;/h2&gt;&lt;h3 id="master-of-science-msc-in-software-engineering"&gt;Master of Science (M.Sc.) in Software Engineering
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Institution:&lt;/strong&gt; Islamic Azad University, Central Tehran Branch&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Note:&lt;/strong&gt; Currently pursuing the degree.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="bachelor-of-science-bsc-in-software-engineering"&gt;Bachelor of Science (B.Sc.) in Software Engineering
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Institution:&lt;/strong&gt; Ramsar Technical and Vocational University (Fanni University of Ramsar)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="associates-degree-ad--kar-dāni-in-software-engineering"&gt;Associate&amp;rsquo;s Degree (A.D.) / Kar-dāni in Software Engineering
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Institution:&lt;/strong&gt; Soroush Technical School, Isfahan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;/div&gt;</description></item><item><title>Archives</title><link>https://bit-orbit.github.io/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/archives/</guid><description/></item><item><title>About</title><link>https://bit-orbit.github.io/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://bit-orbit.github.io/about/</guid><description>&lt;p&gt;من از هر پلتفرمی که بتونم داخلش متن بنویسم به عنوان وبلاگ استفاده می‌کنم،
 حتی شاید یه روزی از
 pastebin
 برای همین کار استفاده کنم (=&lt;/p&gt;
