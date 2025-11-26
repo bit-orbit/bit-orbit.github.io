@@ -57,7 +57,7 @@ params:
 
     sidebar:
         emoji: 👾
-        subtitle: Linux | Code | Book | Movie | Fun | Code | Uf1595
+        subtitle: DevOps | Linux | Code | Book | Movie | Fun | Python | Go | Js | U1f595
         avatar:
             enabled: true
             local: true
